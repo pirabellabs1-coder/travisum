@@ -56,7 +56,7 @@ export function TraductionsVue({ lang = "fr", cheminFr = "/traductions/" }: { la
     <Page actif="traductions" lang={lang} cheminFr={cheminFr}>
       {/* ---------------------------------------------------------- BANNIÈRE */}
       <section
-        className="w-full bg-primary relative overflow-hidden -mt-20 pt-40 pb-24 md:pb-32"
+        className="w-full bg-primary relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-16 md:pb-20"
         id="estimation"
       >
         <div

@@ -103,7 +103,7 @@ export default function PageLegale({
   return (
     <Page sansRythme lang={lang} cheminFr={courante}>
       {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-40 pb-16 md:pb-20 border-b border-tertiary-fixed-dim/20">
+      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-14 md:pb-16 border-b border-tertiary-fixed-dim/20">
         <div
           className="guilloche absolute inset-0 opacity-[0.08] pointer-events-none"
           aria-hidden="true"

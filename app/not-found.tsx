@@ -21,7 +21,7 @@ const SECOURS = [
 export default function Introuvable() {
   return (
     <Page sansRythme>
-      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-40 pb-24 min-h-[80vh] flex items-center">
+      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-16 md:pb-20 min-h-[80vh] flex items-center">
         <div
           className="guilloche absolute inset-0 opacity-[0.08] pointer-events-none"
           aria-hidden="true"

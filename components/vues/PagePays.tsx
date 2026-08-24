@@ -221,7 +221,7 @@ export function PagePaysVue({
   return (
     <Page actif="visas" lang={lang} cheminFr={cheminFr}>
       {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-36 pb-16 border-b border-tertiary-fixed-dim/20">
+      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-14 md:pb-16 border-b border-tertiary-fixed-dim/20">
         <div
           className="guilloche absolute inset-0 opacity-[0.09] pointer-events-none"
           aria-hidden="true"

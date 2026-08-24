@@ -31,87 +31,106 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
   return (
     <Page lang={lang} cheminFr={cheminFr}>
       {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="relative w-full bg-primary overflow-hidden -mt-20 pt-28 md:pt-32 pb-14 md:pb-16">
+      <section className="relative w-full bg-primary overflow-hidden -mt-20 pt-28 md:pt-32 pb-16">
         <div
-          className="absolute inset-y-0 right-0 w-full lg:w-1/2 h-full opacity-30 lg:opacity-60 bg-cover bg-center mix-blend-luminosity border-l border-tertiary-fixed-dim/20"
-          style={{ backgroundImage: "url('/assets/img/photos/hero-avenue-louise.jpg')" }}
+          className="guilloche absolute inset-0 opacity-[0.05] pointer-events-none"
           aria-hidden="true"
         />
-        <div
-          className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent lg:w-3/4"
-          aria-hidden="true"
-        />
+        <div className={`relative ${MAXW} z-10`}>
+          {/* Deux colonnes : texte à gauche, image à droite */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            {/* ---- Colonne texte ---- */}
+            <div className="lg:col-span-6">
+              <div className="flex items-center gap-4 mb-5">
+                <span className="w-10 h-px bg-tertiary-fixed-dim" />
+                <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">
+                  {c.hero_surtitre}
+                </span>
+              </div>
 
-        <div className={`relative ${MAXW} w-full flex flex-col z-10`}>
-          <div className="flex items-center gap-4 mb-5">
-            <span className="w-12 h-px bg-tertiary-fixed-dim" />
-            <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">
-              {c.hero_surtitre}
-            </span>
+              <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary leading-[1.06] mb-5">
+                {c.hero_titre}{" "}
+                <span className="text-tertiary-fixed-dim italic">{c.hero_titre_italique}</span>
+              </h1>
+
+              <p className="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mb-7">
+                {c.hero_chapeau}
+              </p>
+
+              {/* Portes d'entrée */}
+              <p className="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim/60 mb-3">
+                {c.doors_label}
+              </p>
+              <div className="grid gap-2 max-w-md mb-8">
+                {c.doors.map(([label, href]) => (
+                  <a
+                    key={label}
+                    href={L(href)}
+                    className="group flex items-center justify-between gap-3 px-4 py-3 rounded-sm border border-tertiary-fixed-dim/25 hover:border-tertiary-fixed-dim/60 hover:bg-white/[0.04] transition-colors"
+                  >
+                    <span className="font-body-md text-body-md text-on-primary">{label}</span>
+                    <Icone
+                      nom="arrow_forward"
+                      taille="text-[18px] group-hover:translate-x-1 transition-transform"
+                      couleur="text-tertiary-fixed-dim"
+                    />
+                  </a>
+                ))}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  className="bg-tertiary-fixed-dim text-on-tertiary-fixed px-7 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-sm text-center"
+                  href={L("/tarifs/")}
+                >
+                  {c.hero_cta1}
+                </a>
+                <a
+                  className="bg-transparent text-tertiary-fixed-dim border border-tertiary-fixed-dim px-7 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-tertiary-fixed-dim/10 transition-colors duration-300 rounded-sm text-center"
+                  href="mailto:info@travisum.com?subject=D%C3%A9p%C3%B4t%20de%20document"
+                >
+                  {c.hero_cta2}
+                </a>
+              </div>
+            </div>
+
+            {/* ---- Colonne image ---- */}
+            <div className="lg:col-span-6">
+              <div className="relative rounded-sm overflow-hidden border border-tertiary-fixed-dim/25 aspect-[4/3] lg:aspect-[5/4]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/img/photos/hero-avenue-louise.jpg"
+                  alt="Le bureau Travisum, avenue Louise à Bruxelles"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  width={1000}
+                  height={800}
+                />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/10 to-transparent"
+                  aria-hidden="true"
+                />
+                <div className="absolute left-5 bottom-5 flex items-center gap-2.5 bg-primary/80 backdrop-blur-sm border border-tertiary-fixed-dim/30 rounded-sm px-4 py-2.5">
+                  <Icone nom="location_on" taille="text-[18px]" couleur="text-tertiary-fixed-dim" />
+                  <span className="font-body-md text-[14px] text-on-primary">
+                    367, avenue Louise · 1050 Bruxelles
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-4xl leading-[1.05] mb-5">
-            {c.hero_titre}{" "}
-            <span className="text-tertiary-fixed-dim italic">
-              {c.hero_titre_italique}
-            </span>
-          </h1>
-
-          <p className="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mb-8">
-            {c.hero_chapeau}
-          </p>
-
-          {/* Portes d'entree : par ou commencer */}
-          <p className="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim/60 mb-3">
-            {c.doors_label}
-          </p>
-          <div className="grid gap-2 max-w-md mb-9">
-            {c.doors.map(([label, href]) => (
-              <a
-                key={label}
-                href={L(href)}
-                className="group flex items-center justify-between gap-3 px-4 py-3 rounded-sm border border-tertiary-fixed-dim/25 hover:border-tertiary-fixed-dim/60 hover:bg-white/[0.04] transition-colors"
-              >
-                <span className="font-body-md text-body-md text-on-primary">{label}</span>
-                <Icone nom="arrow_forward" taille="text-[18px] group-hover:translate-x-1 transition-transform" couleur="text-tertiary-fixed-dim" />
-              </a>
-            ))}
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-3 mb-12">
-            <a
-              className="bg-tertiary-fixed-dim text-on-tertiary-fixed px-8 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-sm border border-tertiary-fixed-dim hover:border-white text-center"
-              href={L("/tarifs/")}
-            >
-              {c.hero_cta1}
-            </a>
-            <a
-              className="bg-transparent text-tertiary-fixed-dim border border-tertiary-fixed-dim px-8 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-tertiary-fixed-dim/10 transition-colors duration-300 rounded-sm text-center"
-              href="mailto:info@travisum.com?subject=D%C3%A9p%C3%B4t%20de%20document"
-            >
-              {c.hero_cta2}
-            </a>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 pt-8 border-t border-tertiary-fixed-dim/30 mt-auto">
-            {[
-              `${LANGUES.length}`,
-              "9h–17h",
-              "100%",
-              "4,5M",
-            ].map((valeur, i) => {
-              const libelle = c.stats[i];
-              return (
-              <div key={libelle} className="flex flex-col">
+          {/* Chiffres, pleine largeur sous les deux colonnes */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mt-12 pt-8 border-t border-tertiary-fixed-dim/25">
+            {[`${LANGUES.length}`, "9h–17h", "100%", "4,5M"].map((valeur, i) => (
+              <div key={c.stats[i]} className="flex flex-col">
                 <span className="font-display-lg text-headline-md text-tertiary-fixed-dim mb-1">
                   {valeur}
                 </span>
                 <span className="font-label-sm text-label-sm text-primary-fixed-dim uppercase">
-                  {libelle}
+                  {c.stats[i]}
                 </span>
               </div>
-              );
-            })}
+            ))}
           </div>
         </div>
       </section>

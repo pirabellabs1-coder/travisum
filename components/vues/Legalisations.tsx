@@ -46,7 +46,7 @@ export function LegalisationsVue({ lang = "fr", cheminFr = "/legalisations/" }: 
   return (
     <Page actif="legalisations" lang={lang} cheminFr={cheminFr}>
       {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-40 pb-20 border-b border-tertiary-fixed-dim/20">
+      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-16 border-b border-tertiary-fixed-dim/20">
         <div
           className="guilloche absolute inset-0 opacity-[0.10] pointer-events-none"
           aria-hidden="true"
