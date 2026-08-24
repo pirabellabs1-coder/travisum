@@ -107,7 +107,7 @@ export default function Entete({
                     }}
                   >
                     <a
-                      className={`relative inline-flex items-center h-20 font-label-sm text-label-sm uppercase tracking-[0.1em] whitespace-nowrap transition-colors group ${
+                      className={`relative inline-flex items-center gap-1 h-20 font-label-sm text-label-sm uppercase tracking-[0.1em] whitespace-nowrap transition-colors group ${
                         courant
                           ? "text-primary font-bold"
                           : "text-on-surface-variant hover:text-primary"
@@ -118,6 +118,16 @@ export default function Entete({
                       aria-expanded={aMega ? ouvert === cle : undefined}
                     >
                       {libelle}
+                      {aMega && (
+                        <span
+                          className={`material-symbols-outlined text-[18px] -mr-1 transition-transform duration-200 ${
+                            ouvert === cle ? "rotate-180 text-primary" : "text-on-surface-variant/70"
+                          }`}
+                          aria-hidden="true"
+                        >
+                          expand_more
+                        </span>
+                      )}
                       <span
                         className={`pointer-events-none absolute inset-x-0 bottom-0 h-px bg-primary origin-left transition-transform duration-300 ${
                           courant ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"

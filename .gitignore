@@ -18,3 +18,5 @@ Thumbs.db
 
 # exports de maquette et relevés de travail (référence, non déployés)
 /_html-v1
+
+.vercel

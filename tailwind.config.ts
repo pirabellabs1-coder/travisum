@@ -55,7 +55,7 @@ const config: Config = {
         "on-secondary-fixed": "#001d34",
         "surface-container-lowest": "#ffffff",
         "on-primary-container": "#7587a0",
-        "primary": "#00050e",
+        "primary": "#0b1f33",
         "surface-dim": "#dbd9db",
         "error-container": "#ffdad6",
         "surface-bright": "#fbf9fb",
@@ -69,7 +69,7 @@ const config: Config = {
         "secondary-fixed-dim": "#acc9ec",
         "inverse-on-surface": "#f2f0f2",
         "outline-variant": "#c4c6cd",
-        "primary-container": "#0b1f33",
+        "primary-container": "#17324e",
         "primary-fixed": "#d1e4ff"
       },
       borderRadius: {
@@ -101,35 +101,19 @@ const config: Config = {
           "system-ui",
           "sans-serif"
         ],
-        "display-lg": [
-          "Playfair Display",
-          "Georgia",
-          "serif"
-        ],
-        "display-lg-mobile": [
-          "Playfair Display",
-          "Georgia",
-          "serif"
-        ],
-        "headline-lg": [
-          "Playfair Display",
-          "Georgia",
-          "serif"
-        ],
-        "headline-md": [
-          "Playfair Display",
-          "Georgia",
-          "serif"
-        ]
+        "display-lg": ["Poppins", "Inter", "system-ui", "sans-serif"],
+        "display-lg-mobile": ["Poppins", "Inter", "system-ui", "sans-serif"],
+        "headline-lg": ["Poppins", "Inter", "system-ui", "sans-serif"],
+        "headline-md": ["Poppins", "Inter", "system-ui", "sans-serif"]
       },
       fontSize: {
-      "body-lg": ["18px", {"lineHeight":"1.7","letterSpacing":"0em","fontWeight":"400"}],
-      "display-lg-mobile": ["34px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],
+      "body-lg": ["16px", {"lineHeight":"1.7","letterSpacing":"0em","fontWeight":"400"}],
+      "display-lg-mobile": ["29px", {"lineHeight":"1.1","letterSpacing":"-0.01em","fontWeight":"700"}],
       "label-sm": ["12px", {"lineHeight":"1","letterSpacing":"0.18em","fontWeight":"600"}],
-      "display-lg": ["52px", {"lineHeight":"1.1","letterSpacing":"-0.03em","fontWeight":"700"}],
-      "headline-md": ["26px", {"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"600"}],
+      "display-lg": ["42px", {"lineHeight":"1.1","letterSpacing":"-0.015em","fontWeight":"700"}],
+      "headline-md": ["22px", {"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"600"}],
       "body-md": ["16px", {"lineHeight":"1.6","letterSpacing":"0em","fontWeight":"400"}],
-      "headline-lg": ["38px", {"lineHeight":"1.15","letterSpacing":"-0.02em","fontWeight":"600"}],
+      "headline-lg": ["30px", {"lineHeight":"1.15","letterSpacing":"-0.01em","fontWeight":"600"}],
       },
     },
   },

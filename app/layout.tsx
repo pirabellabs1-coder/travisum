@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  themeColor: "#00050e",
+  themeColor: "#0b1f33",
   width: "device-width",
   initialScale: 1,
 };
@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@100..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
         <script
