@@ -1,0 +1,95 @@
+{
+ "slug": "iran",
+ "nom": "Iran",
+ "url": "https://www.travisum.com/visas/iran/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/iran/iran-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager à l’Iran. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour remplir la demande en ligne.",
+      "Sous la rubrique «Visa Type», indiquez le type de visa demandé.",
+      "Sous la rubrique «Nationality», indiquez votre nationalité actuelle.",
+      "Sous la rubrique «Type of Passport», indiquez le type de votre passeport.",
+      "Téléchargez un photo d’identité numérique et un scan de la page principale de votre passeport.",
+      "Sous la rubrique «Place of Issue», écrivez le lieu de délivrance.",
+      "Cochez «Save and proceed».",
+      "Remplissez la partie suivante concernant votre voyage à l’Iran.",
+      "Imprimez votre formulaire de demande."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "IRAN INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/iran/iran-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables si vous optez pour la procédure normale. Pour les demandes plus urgentes, optez pour un traitement express qui prend 1 jour ouvrable."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Délai | Entrée simple | Particuliers | Agences de voyages | Organisation internationale",
+      "Normal",
+      "50€",
+      "* | * | *",
+      "Express | 100€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade de l'Iran",
+     "details": [
+      "Adresse: Avenue Franklin Roosevelt 15, 1050 Ixelles",
+      "Tél.02/627.03.50",
+      "Email: secretariat@iranembassy.be",
+      "Jours d’ouverture:",
+      "lundi et jeudi",
+      "Horaire: de 10h00 à 12h00 et de 14h30 à 16h30"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

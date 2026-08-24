@@ -1,0 +1,90 @@
+{
+ "slug": "etats-unis-2",
+ "nom": "États-Unis",
+ "url": "https://www.travisum.com/visas/etats-unis-2/",
+ "sous_pages": [
+  {
+   "type": "autre",
+   "titre": "ESTA",
+   "url": "http://www.travisum.com/visas/etats-unis-2/etats-unis-esta/",
+   "statut_http": 200,
+   "intro": [
+    "SOLLICITER UN NOUVEL ESTA",
+    "Tous les voyageurs internationaux autorisés qui souhaitent se rendre aux États-Unis dans le cadre du Visa Waiver Program doivent solliciter une autorisation .",
+    "Votre identité :",
+    "Vous êtes citoyen ou ressortissant d’un pays ayant droit au Visa Waiver Program.",
+    "Vous ne détenez pas actuellement de visa de visiteur.",
+    "Votre séjour dure moins de 90 jours.",
+    "Vous prévoyez de vous rendre aux États-Unis pour affaires ou loisirs.",
+    "Vous souhaitez demander une nouvelle autorisation pour une personne ou un groupe de demandes pour deux personnes ou plus.",
+    "Ce qu’il vous faut :",
+    "Passeport valide d’un pays du Visa Waiver Program.",
+    "Carte de crédit valide (MasterCard, VISA, American Express et Discover (JCB, Diners Club) ou PayPal pour payer 14 USD pour chaque demande.",
+    "Vos coordonnées",
+    "Votre emploi le plus récent, le cas échéant.",
+    "Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Scan de votre passeport",
+     "details": [
+      "Veuillez faire un scan de la page principale de votre passeport et le téléchargez.",
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre ESTA."
+     ]
+    },
+    {
+     "nom": "Une demande pour l'ESTA en ligne",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Suivez ce lien pour la demande en ligne."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "ÉTATS-UNIS INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/etats-unis-2/etats-unis-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables si vous optez pour la procédure normale."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Entrée simple | Particuliers | Agences de voyages | Organisation internationale",
+      "ESTA",
+      "Tourisme/",
+      "Business",
+      "14$",
+      "* | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade des États-Unis",
+     "details": [
+      "Adresse: Boulevard du Régent 27, 1000 Bruxelles",
+      "Tél. 02 811 40 00",
+      "Jours d’ouverture: du lundi au vendredi",
+      "Horaire: 9h-17h"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

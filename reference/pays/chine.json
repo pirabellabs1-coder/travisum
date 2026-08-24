@@ -1,0 +1,256 @@
+{
+ "slug": "chine",
+ "nom": "Chine",
+ "url": "https://www.travisum.com/visas/chine/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/chine-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager en Chine. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant: Photos pour la Chine"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à imprimer, dater et signer à l’encre noir).",
+      "Pour remplir les formulaires en ligne, vous aurez avant tout besoin d’une photo. Celle-ci doit répondre à des exigences bien précises. Ici le lien avec les exigences:",
+      "https://bio.visaforchina.org/template/common/photoRequirementsModal-en.html",
+      "Une fois que vous aurez la photo physique, il vous faudra la scanner suivant les exigences suivantes:",
+      "– Format JPEG",
+      "– entre 354×472 et 420×560",
+      "– entre 40 et 120 KB",
+      "Vous pourrez ensuite vous connecter sur le site permettant de remplir le formulaire en ligne:",
+      "https://bio.visaforchina.org/#/nav/quickSelection?visacenterCode=BRU2&request_locale=fr_FC&site_alias=BRU2_fr",
+      "Une fois le formulaire pleinement rempli, il faut l’imprimer et le demandeur doit alors signer et dater la première page (en bas) et l’une des dernières pages à l’encre noir. S’il faut être précis lors du remplissage, certaines parties du formulaire ne doivent toutefois pas être remplies avec tous les détails. Par exemple: pour les expériences scolaires et professionnelles, reprenez les plus significatives…"
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "Les demandeurs ne détenant pas de passeport belge doivent également présenter une copie recto verso en couleur de leur carte d’identité et de leur carte de résident en Belgique (au cas ou ils en possèdent une).",
+      "Travisum peut se charger de l’impression de ces documents après leur réception des images par email."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour.",
+      "• Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    },
+    {
+     "nom": "Une réservation d’hôtel(s)",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement.",
+      "• Il est important que votre nom et les dates de séjour soient mentionnés sur la réservation."
+     ]
+    },
+    {
+     "nom": "Photocopies des anciens visas",
+     "details": [
+      "• Si vous vous êtes déjà rendu en Chine auparavant, vous devez faire des photocopies en couleur des tous vos anciens visas.",
+      "• Si l’ancien visa ne figure pas dans le passeport actuel, il faut présenter l’ancien passeport qui contient l’ancien visa. Au cas échéant une copie de l’ancien visa et de la page de renseignements de l’ancien passeport peuvent être fournis.",
+      "• Les anciens visas sont d’ailleurs obligatoires pour toute demande double ou multiples entrées. Sans les copies des anciens visas, le demandeur ne sera éligible que pour une entrée simple 3 mois."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur",
+     "details": [
+      "• Même si vous partez pour des raisons touristiques, votre employeur doit attester par une lettre que vous vous rendez en Chine pour des raisons strictement… touristiques! Ceci afin d’assurer que vous n’allez pas en Chine pour des raisons d’affaires, etc.",
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici Lettre de présentation pour la Chine"
+     ]
+    },
+    {
+     "nom": "Documents à fournir pour les retraités (à la place de la lettre de présentation de l'employeur)",
+     "details": [
+      "Attestation du Service Féderal des Pensions",
+      "• Vous pouvez vous procurer une attestation en appelant le numéro suivant 1765 (numéro spécial de pension). L’attestation sera envoyé à votre domicile.",
+      "Attestation bancaire ou extrait de compte",
+      "• Suivant votre situation (allocataire de la mutuelle, demandeur d’emploi, etc.), il se peut que le consulat de Chine vous demande une attestation de fonds. Ceci permet de prouver que vous avez des ressources financières suffisantes pour voyager en Chine. En règle générale, 1000€ par semaine de séjour et par personne conviennent. L’attestation bancaire ou l’extrait de banque doit afficher votre nom, le solde et la date. Il doit être récent, soit maximum deux semaines avant la date du dépôt de la demande de visa."
+     ]
+    },
+    {
+     "nom": "Documents à fournir pour les independants (à la place de la lettre de présentation de l'employeur)",
+     "details": [
+      "Lettre de présentation",
+      "• Même si vous partez pour des raisons touristiques, vous devez attester par une lettre que vous vous rendez en Chine pour des raisons strictement… touristiques! Ceci afin d’assurer que vous n’allez pas en Chine pour des raisons d’affaires, etc.",
+      "• Cette lettre doit être rédigée sur du papier à en-tête de votre entreprise.",
+      "• Il faut mentionner le nom, la date de naissance et le numéro de passeport, ainsi que le nom et l’adresse de l’entreprise (ou de la personne physique)",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici : Lettre de présentation",
+      "Autre attestation",
+      "• Demandez une attestation à votre guichet d’entreprise, à votre notaire ou comptable…",
+      "Une attestation bancaire ou extrait bancaire",
+      "• Il se peut que le consulat de Chine vous demande une attestation de fonds. Ceci permet de prouver que vous avez des ressources financières suffisantes pour voyager en Chine. En règle générale, 1000€ par semaine de séjour et par personne conviennent. L’attestation bancaire ou l’extrait de banque doit afficher votre nom, le solde et la date. Il doit être récent, soit maximum deux semaines avant la date du dépôt de la demande de visa."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/chine-visa-business/",
+   "statut_http": 200,
+   "intro": [
+    "Formalités et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires en Chine. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour.",
+      "• Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond blanc uni, au format 33x48mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "• Le consulat de Chine porte une attention particulière aux photos, c’est pourquoi nous vous invitons à consulter le document suivant relatif aux exigences photo pour la Chine: Exigences photo ."
+     ]
+    },
+    {
+     "nom": "Formulaire d'application de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à imprimer, dater et signer à l’encre noir).",
+      "Pour remplir les formulaires en ligne, vous aurez avant tout besoin d’une photo. Celle-ci doit répondre à des exigences bien précises. Ici le lien avec les exigences:",
+      "https://bio.visaforchina.org/template/common/photoRequirementsModal-en.html",
+      "Une fois que vous aurez la photo physique, il vous faudra la scanner suivant les exigences suivantes:",
+      "– Format JPEG",
+      "– entre 354×472 et 420×560",
+      "– entre 40 et 120 KB",
+      "Vous pourrez ensuite vous connecter sur le site permettant de remplir le formulaire en ligne:",
+      "https://bio.visaforchina.org/#/nav/quickSelection?visacenterCode=BRU2&request_locale=fr_FC&site_alias=BRU2_fr",
+      "Une fois le formulaire pleinement rempli, il faut l’imprimer et le demandeur doit alors signer et dater la première page (en bas) et l’une des dernières pages à l’encre noir. S’il faut être précis lors du remplissage, certaines parties du formulaire ne doivent toutefois pas être remplies avec tous les détails… Par exemple: pour les expériences scolaires et professionnelles, reprenez les plus significatives…",
+      "Nous restons à votre disposition pour tout renseignement complémentaire."
+     ]
+    },
+    {
+     "nom": "Photocopie de la page principale du passeport",
+     "details": [
+      "• Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "• Les demandeurs ne détenant pas de passeport belge doivent également présenter une copie recto verso en couleur de leur carte d’identité et de leur carte de résident en Belgique (au cas ou ils en possèdent une).",
+      "• Travisum peut se charger de l’impression de ces documents après leur réception par email."
+     ]
+    },
+    {
+     "nom": "Réservation d’hôtel",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement.",
+      "• Il est important que votre nom et les dates de séjour soient mentionnés sur la réservation."
+     ]
+    },
+    {
+     "nom": "Copie des billets d'avion",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour.",
+      "• Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)."
+     ]
+    },
+    {
+     "nom": "Photocopies des anciens visas",
+     "details": [
+      "• Si vous vous êtes déjà rendu en Chine auparavant, vous devez faire des photocopies en couleur des tous vos anciens visas.",
+      "• Si l’ancien visa ne figure pas dans le passeport actuel, il faut présenter l’ancien passeport qui contient l’ancien visa. Au cas échéant une copie de l’ancien visa et de la page de renseignements de l’ancien passeport peuvent être fournis.",
+      "• Les anciens visas sont d’ailleurs obligatoires pour toute demande double ou multiples entrées. Sans les copies des anciens visas, le demandeur ne sera éligible que pour une entrée simple 3 mois."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement en Chine.",
+      "• Cela doit être adressé au centre d’application de Chine.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut également mentionner que l’entreprise se porte garante pour tous les frais liées au séjour en Chine.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "CHINE INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/chine-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 8-12 jours ouvrables si vous optez pour la procédure normale. Pour les demandes plus urgentes, optez pour un traitement express qui prend 4-6 jours ouvrables. Les demandes rush sont parfois possibles, contactez-nous pour ce type de demande exceptionnelle."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Délai normal | Délai express | Particuliers | Agence de voyages | Organisation internationale",
+      "Séjour d’un mois, d’entrée simple | 126.55€ | 175.75€ | * | * | *",
+      "Séjour d’un mois, d’entrée double | 126.55€ | 175.75€ | * | * | *",
+      "Séjour de 6 mois, d’entrée multiple | 126.55€ | 175.75€ | * | * | *",
+      "Séjour d’un an, d’entrée multiple.",
+      "126.55€ | 175.75€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact du Centre d'application visa pour la Chine",
+     "details": [
+      "Adresse: No. 109 Rue Neerveld, Woluwe Saint-Lambert, 1200 Bruxelles, Belgique",
+      "Tél. 02 775 0888",
+      "Email: brusselscenter@visaforchina.org",
+      "Jours d’ouverture: du lundi au vendredi",
+      "Horaire: 9h-15h (dépôt/récupération)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

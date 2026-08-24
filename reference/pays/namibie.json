@@ -1,0 +1,171 @@
+{
+ "slug": "namibie",
+ "nom": "Namibie",
+ "url": "https://www.travisum.com/visas/namibie/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/namibie/namibie-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [],
+   "texte_libre": [
+    "Pas besoin d’un visa tourisme pour un séjour en Namibie de maximum 3 mois."
+   ]
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/namibie/namibie-visa-business",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires en Namibie. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage. • Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "• Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport). • Vérifiez si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire d'application de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et par imprimer deux exemplaires du formulaire de demande de visa à l’aide du lien suivant : Namibie Formulaire",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Surname», écrivez votre nom de famille.",
+      "Sous la rubrique «First names», écrivez vos prénoms.",
+      "Sous la rubrique «Maiden name», en cas échéant, écrivez le nom de jeune fille.",
+      "Sous la rubrique «Sex», sélectionnez votre sexe.",
+      "Sous la rubrique «Marital status», indiquez votre état civil.",
+      "En cas échéant, indiquez si vous avez déjà fait une demande pour un permis de résident en Namibie.",
+      "Indiquez, si vous avez déjà été refusé par les autorités en Namibie.",
+      "Indiquez, si vous avez déjà été déporté de Namibie.",
+      "Indiquez, si vous avez déjà été reconnu coupable d’un crime dans un pays.",
+      "Indiquez, si vous souffrez d’une maladie mentale ou physique.",
+      "Sous question 12, écrivez votre date, lieu et pays de naissance.",
+      "Sous la rubrique «Citizenship», écrivez votre nationalité actuelle.",
+      "Sous la rubrique «Passport Number», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Place of issue», écrivez votre lieu de délivrance.",
+      "Sous la rubrique «Date of Issue», écrivez votre date de délivrance.",
+      "Sous la rubrique «Date of expiry», écrivez votre date d’expiration.",
+      "Sous la rubrique «Is passport valid for travel to Namibia?», indiquez, si votre passeport est valable pour voyager en Namibie.",
+      "Sous la rubrique «Present residential address», écrivez votre adresse actuelle.",
+      "Sous la rubrique «Telephone number», écrivez le numéro de votre téléphone.",
+      "Sous la rubrique «Residential address», écrivez votre adresse permanente.",
+      "Sous la rubrique «Telephone number», écrivez votre numéro de téléphone permanente.",
+      "Sous la rubrique «Period», écrivez la durée de votre résidence dans le pays.",
+      "Sous la rubrique «Occupation pr profession», indiquez votre profession.",
+      "Sous la rubrique «Firm, company, university, etc., to which you are attached or which you represent», écrivez le nom et l’adresse de votre employeur. Indiquez le type de l’entreprise.",
+      "Si vous allez voyager avez vos enfants ou votre époux(se), donnez leurs informations dans le tableau.",
+      "Indiquez la somme des fonds pour votre séjour en Namibie.",
+      "Indiquez, si vous avez des billets d’avion aller-retour.",
+      "Sous la rubrique «Intended date and port of arrival in Namibia», écrivez la date et le lieu d’entrée en Namibie.",
+      "Sous la rubrique «What is the purpose of your visits?», écrivez Business.",
+      "Sous la rubrique «If it is for business purposes, explain in detail the nature of business», expliquez la raison spécifique pour votre voyage d’affaires en Namibie.",
+      "Sous la rubrique «Duration of intended visit (Number of days, weeks or months)», indiquez la durée de votre séjour en Namibie.",
+      "Sous la rubrique «Places to be visited in Namibia (full addresses, including telephone number must be provided)», indiquez les adresses et numéros de téléphone de(s) lieu(x) à visiter en Namibie.",
+      "Sous la rubrique «Proposed residential address in Namibia», écrivez l’adresse de votre hôtel en Namibie.",
+      "Si vous avez des membres de famille en Namibie, écrivez leurs données dans le tableau.",
+      "En cas échéant, écrivez la date de votre dernier séjour en Namibie sous la rubrique «Date of last visit, if any, to Namibia».",
+      "Indiquez, si vous êtes journaliste sous la rubrique «Do you contribute professionally or otherwise to publications, radio, television or films?».",
+      "En cas de transit, indiquez le pays de destination après votre séjour en Namibie sous la rubrique «Destination after leaving Namibia».",
+      "Sous la rubrique «Mode of travel to destination», indiquez le moyen de transport de votre départ.",
+      "Sous la rubrique «Intended day and port of departure», écrivez la date et le lieu de votre départ.",
+      "Indiquez, si vous avez la preuve de votre résidence dans votre pays de destination (Carte d’identité/ résident) sous la rubrique «Is your entry to that destination assured, e.g. do you hold a visa or a permit for permanent or temporary residence?»",
+      "Sous la rubrique «Reasons for travelling through Namibia?», indiquez le motif de votre voyage en Namibie.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Photocopie de la carte d'identité",
+     "details": [
+      "• Prenez soin de faire une photocopie recto verso de votre carte d’identité. • Les demandeurs qui ne détiennent pas un passeport belge, néerlandais ou luxembourgeois, doivent présenter une copie de la carte de résidence."
+     ]
+    },
+    {
+     "nom": "Copie des billets d'avion",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols."
+     ]
+    },
+    {
+     "nom": "Carnet de vaccination contre la fièvre jaune si le voyageur va passer par un zone de la fièvre jaune en Afrique",
+     "details": [
+      "• Si vous n’êtes pas en ordre de vaccination (carnet de vaccination), renseignez-vous auprès de votre médecin traitant, d’un centre agréé ou d’un hôpital. Sachez qu’il existe une travel clinic (la Travel and Vaccine Clinic du CHU Saint-Pierre à Bruxelles) où il est possible d’obtenir son vaccin sans rendez-vous."
+     ]
+    },
+    {
+     "nom": "Une lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.’",
+      "Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Une lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement en Namibie. • Cela doit être adressé au consulat de Namibie à Bruxelles • Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport. • Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées. • Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise • Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/namibie/informations-generales-namibie/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 3 jours ouvrables si vous optez pour la procédure normale. Pour les demandes plus urgentes, optez pour un traitement express qui prend 1 jour ouvrable."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "| Frais consulaires | Frais de service Travisum",
+      "Nombre d’entrées | Délai normal | Délai express | Particuliers | |",
+      "Entrée simple | 50€ | – | * | * | *",
+      "Entrée simple express | – | 80€ | * | * | *",
+      "Entrées multiples | 65€ | – | | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade de Namibie",
+     "details": [
+      "Adresse: Avenue de Tervuren 454, 1150",
+      "Tel.: 02 771 14 10",
+      "eMail: info@namibiaembassy.be",
+      "Jours d’ouverture: Du lundi au jeudi",
+      "Horaire: 9h00 -13h00 (déposer) 14h00 -16h00 (récupérer)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

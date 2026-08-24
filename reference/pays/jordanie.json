@@ -1,0 +1,170 @@
+{
+ "slug": "jordanie",
+ "nom": "Jordanie",
+ "url": "https://www.travisum.com/visas/jordanie/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/jordanie/jordanie-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager en Jordanie. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande au format pdf.",
+      "Imprimez le formulaire.",
+      "Remplissez le formulaire en majuscules à l’encre noir. Soyez précis.",
+      "Sous la rubrique «First Name», écrivez votre prénom.",
+      "Sous la rubrique «Last Name», écrivez votre nom de famille.",
+      "Sous la rubrique «Birth Date», indiquez votre date de naissance.",
+      "Sous la rubrique «Place of Birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Nationality», écrivez votre Nationalité.",
+      "Sous la rubrique «Passport Number», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Date Issued», écrivez la date de délivrance».",
+      "Sous la rubrique «Place Issued», écrivez le lieu de délivrance.",
+      "Sous la rubrique «Valid until», écrivez la date d’expiration.",
+      "Sous la rubrique «Occupation», indiquez votre Profession.",
+      "Sous la rubrique «Address», écrivez l’adresse de votre domicile.",
+      "Sous la rubrique «Telephone Number», indiquez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail», écrivez votre adresse E-mail.",
+      "Sous la rubrique «Purpose of Trip», sélectionnez votre motif de voyage dans le tableau (Tourism).",
+      "Sous la rubrique «Port of Entry», indiquez le lieu d’entrée en Jordanie.",
+      "Sous la rubrique «Tour operator & Airline», indiquez la compagnie aérienne.",
+      "Sous la rubrique «Expected date of Arrival», indiquez la date de votre arrivée en Jordanie.",
+      "Sous la rubrique «Expected date of Departure», indiquez la date de départ.",
+      "Indiquez le nombre d’entrées du visa demandé.",
+      "Signez et datez votre formulaire."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/jordanie/jordanie-visa-business/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires en Jordanie. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande au format pdf.",
+      "Imprimez le formulaire.",
+      "Remplissez le formulaire en majuscules à l’encre noir. Soyez précis.",
+      "Sous la rubrique «First Name», écrivez votre prénom.",
+      "Sous la rubrique «Last Name», écrivez votre nom de famille.",
+      "Sous la rubrique «Birth Date», indiquez votre date de naissance.",
+      "Sous la rubrique «Place of Birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Nationality», écrivez votre Nationalité.",
+      "Sous la rubrique «Passport Number», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Date Issued», écrivez la date de délivrance».",
+      "Sous la rubrique «Place Issued», écrivez le lieu de délivrance.",
+      "Sous la rubrique «Valid until», écrivez la date d’expiration.",
+      "Sous la rubrique «Occupation», indiquez votre Profession.",
+      "Sous la rubrique «Address», écrivez l’adresse de votre domicile.",
+      "Sous la rubrique «Telephone Number», indiquez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail», écrivez votre adresse E-mail.",
+      "Sous la rubrique «Purpose of Trip», sélectionnez votre motif de voyage dans le tableau (Business).",
+      "Sous la rubrique «Port of Entry», indiquez le lieu d’entrée en Jordanie.",
+      "Sous la rubrique «Tour operator & Airline», indiquez la compagnie aérienne.",
+      "Sous la rubrique «Expected date of Arrival», indiquez la date de votre arrivée en Jordanie.",
+      "Sous la rubrique «Expected date of Departure», indiquez la date de départ.",
+      "Indiquez le nombre d’entrées du visa demandé.",
+      "Signez et datez votre formulaire."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise. • Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise. • Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées. • Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/jordanie/jordanie-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa le même jour."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "| Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Délai normal | | Particuliers | Agences de voyages | Organisation internationale",
+      "Entrée simple, 2 mois | 67.50€ | | * | * | *",
+      "Entrée double, 3 mois | 97.50€ | | * | * | *",
+      "Entrées multiples, 6 mois | 187.50€ | | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade de Jordanie",
+     "details": [
+      "Adresse: Avenue Franklin Roosevelt 104, 1050",
+      "Tel.: 02/640 77 55",
+      "eMail: jordan.embassy@skynet.be",
+      "Jours d’ouverture: lundi – vendredi",
+      "Horaire:9.00-12.00 (déposer) 14.00-15.00 (recupérer)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

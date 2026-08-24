@@ -1,0 +1,256 @@
+{
+ "slug": "egypte",
+ "nom": "Egypte",
+ "url": "https://www.travisum.com/visas/egypte/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/egypte/visa-tourisme-egypte/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager en Egypte. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Formulaire de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, remplir dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande au format .pdf.",
+      "Téléchargez et imprimez le formulaire.",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Nom de famille», écrivez le nom dans votre passeport.",
+      "Sous la rubrique «Prénom», écrivez le prénom dans votre passeport.",
+      "Si vous avez autres noms, écrivez-les sous la rubrique «Autres Noms».",
+      "Sous la rubrique «Date de Naissance», indiquez votre date de naissance.",
+      "Sous la rubrique «Lieu de Naissance», indiquez votre lieu de naissance.",
+      "Indiquez votre sexe.",
+      "Sous la rubrique «Nationalité», écrivez votre nationalité actuelle.",
+      "Si différente, indiquez votre nationalité d’origine sous la rubrique «Nationalité d’origine».",
+      "Sous la rubrique «Profession», écrivez votre profession actuelle. Si vous êtes retraité, écrivez «Retraité».",
+      "Indiquez votre état civil sous la rubrique «Statut familial».",
+      "Puis, écrivez les renseignements de votre passeport.",
+      "Écrivez votre numéro de passeport sous la rubrique «Numéro et Type du passeport». Indiquez si vous avez un passeport ordinaire ou un passeport diplomatique.",
+      "Sous la rubrique «Délivré a», écrivez le lieu de délivrance.",
+      "Sous la rubrique «Délivré le», écrivez la date de délivrance.",
+      "Sous la rubrique «Expire le», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Adresse actuelle», écrivez l’adresse de votre domicile.",
+      "Indiquez votre numéro de téléphone actuelle.",
+      "Puis, écrivez votre adresse permanente et votre numéro de téléphone permanente.",
+      "Indiquez le motif de votre voyage (Tourisme) en Egypte sous la rubrique «Motif du voyage».",
+      "Sous la rubrique «Date d’arrivée en Egypte», écrivez la date de votre première entrée en Egypte.",
+      "Indiquez la durée de votre séjour sous la rubrique «Durée du Séjour en Egypte».",
+      "Indiquez le nombre d’entrées demandées du visa sous la rubrique «Nombre d’entrées demandées».",
+      "Sous la rubrique «Port d’entrée en Egypte», indiquez le lieu de votre entrée en Egypte.",
+      "Sous la rubrique «Adresse en République Arabe d’Egypte» écrivez l’adresse de votre hôtel en Egypte.",
+      "Si vous avez des relatifs ou d’amis en Egypte, écrivez leurs noms et leurs adresses dans le tableau.",
+      "Si vous voyagerez en Egypte avec des membres de votre famille, écrivez leurs informations personnelles dans le tableau.",
+      "S’il y a des enfants ajoutés sur votre passeport, écrivez leurs informations personnelles dans le tableau.",
+      "Si vous avez déjà été en Egypte, écrivez les renseignements sur vos derniers séjours.",
+      "Sous la rubrique «Lieu et date de demande de visa», écrivez «Bruxelles, Belgique».",
+      "Signez et datez votre formulaire de demande à l’encre noir."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "Les demandeurs ne détenant pas de passeport belge doivent également présenter une copie recto verso en couleur de leur carte d’identité et de leur carte de résident en Belgique (au cas ou ils en possèdent une).",
+      "Travisum peut se charger de l’impression de ces documents après leur réception des images par email."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour. • Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    },
+    {
+     "nom": "Une photocopie de carte d'identité",
+     "details": [
+      "Copie recto verso de carte d’identité de Belgique ou de Luxembourg (ou une copie de la carte de résident pour les ressortissants non-belges)."
+     ]
+    },
+    {
+     "nom": "Une réservation d’hôtel(s)",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement. • Il est important que votre nom et les dates de séjour soient mentionnés sur la réservation."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/egypte/visa-business-egypte/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires en Egypte. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Formulaire de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, remplir dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande au format .pdf.",
+      "Téléchargez et imprimez le formulaire.",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Nom de famille», écrivez le nom dans votre passeport.",
+      "Sous la rubrique «Prénom», écrivez le prénom dans votre passeport.",
+      "Si vous avez autres noms, écrivez-les sous la rubrique «Autres Noms».",
+      "Sous la rubrique «Date de Naissance», indiquez votre date de naissance.",
+      "Sous la rubrique «Lieu de Naissance», indiquez votre lieu de naissance.",
+      "Indiquez votre sexe.",
+      "Sous la rubrique «Nationalité», écrivez votre nationalité actuelle.",
+      "Si différente, indiquez votre nationalité d’origine sous la rubrique «Nationalité d’origine».",
+      "Sous la rubrique «Profession», écrivez votre profession actuelle.",
+      "Indiquez votre état civil sous la rubrique «Statut familial».",
+      "Puis, écrivez les renseignements de votre passeport.",
+      "Écrivez votre numéro de passeport sous la rubrique «Numéro et Type du passeport». Indiquez si vous avez un passeport ordinaire ou un passeport diplomatique.",
+      "Sous la rubrique «Délivré à», écrivez le lieu de délivrance.",
+      "Sous la rubrique «Délivré le», écrivez la date de délivrance.",
+      "Sous la rubrique «Expire le», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Adresse actuelle», écrivez l’adresse de votre domicile.",
+      "Indiquez votre numéro de téléphone actuelle.",
+      "Puis, écrivez votre adresse permanente et votre numéro de téléphone permanente.",
+      "Indiquez le motif de votre voyage (Business) en Egypte sous la rubrique «Motif du voyage».",
+      "Sous la rubrique «Date d’arrivée en Egypte», écrivez la date de votre première entrée en Egypte.",
+      "Indiquez la durée de votre séjour sous la rubrique «Durée du Séjour en Egypte».",
+      "Indiquez le nombre d’entrées demandées du visa sous la rubrique «Nombre d’entrées demandées».",
+      "Sous la rubrique «Port d’entrée en Egypte», indiquez le lieu de votre entrée en Egypte.",
+      "Sous la rubrique «Adresse en République Arabe d’Egypte» écrivez l’adresse de votre hôtel en Egypte.",
+      "Si vous avez des relatifs ou d’amis en Egypte, écrivez leurs noms et leurs adresses dans le tableau.",
+      "Si vous voyagerez en Egypte avec des membres de votre famille, écrivez leurs informations personnelles dans le tableau.",
+      "S’il y a des enfants ajoutés sur votre passeport, écrivez leurs informations personnelles dans le tableau.",
+      "Si vous avez déjà été en Egypte, écrivez les renseignements sur vos derniers séjours.",
+      "Sous la rubrique «Lieu et date de demande de visa», écrivez «Bruxelles, Belgique».",
+      "Signez et datez votre formulaire de demande à l’encre noir."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "Les demandeurs ne détenant pas de passeport belge doivent également présenter une copie recto verso en couleur de leur carte d’identité et de leur carte de résident en Belgique (au cas ou ils en possèdent une).",
+      "Travisum peut se charger de l’impression de ces documents après leur réception des images par email."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour. • Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    },
+    {
+     "nom": "Une photocopie de carte d'identité",
+     "details": [
+      "Copie recto verso de carte d’identité de Belgique ou de Luxembourg (ou une copie de la carte de résident pour les ressortissants non-belges)."
+     ]
+    },
+    {
+     "nom": "Une réservation d’hôtel(s)",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement. • Il est important que votre nom et les dates de séjour soient mentionnés sur la réservation."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement en Egypte.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/egypte/informations-generales-egypte/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables si vous optez pour la procédure normale."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "| Frais consulaires | Frais de service Travisum",
+      "Durée de Visa | | Particuliers | Agences de voyages | Organisation internationale",
+      "1 Mois | 59€ | * | * | *",
+      "3 Mois | 83€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'ambassade d'Egypte",
+     "details": [
+      "Adresse: Avenue de l’Uruguay 19, 1000 Brussels, Belgium",
+      "Tel.: 02 663 58 08",
+      "eMail: eg.sec.be@hotmail.com",
+      "Jours d’ouverture: du lundi au vendredi",
+      "Horaire: 9h30-11h30"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+# -*- coding: utf-8 -*-
+"""
+Contenu redactionnel : questions fréquentes et grille tarifaire.
+
+AVERTISSEMENT SUR LES TARIFS
+Le site actuel ne publié aucun prix ni aucun délai. Les montants ci-dessous
+proviennent de la maquette Stitch (45 EUR de base + 30 EUR par page
+supplémentaire pour la traduction ; 165 / 126 / 85 EUR pour la Russie, la
+Chine et l'Inde). Tous les autres montants sont des ORDRES DE GRANDEUR à
+faire valider par le bureau avant mise en ligne. Ils sont marqués comme
+indicatifs partout où ils apparaissent.
+
+Le devis TRV-2026-01 (section 03) fait de la publication des prix et des
+délais l'objectif numéro un de la refonte : c'est la première question de
+tout visiteur. D'ou une page dédiée, mais pas au prix d'un chiffre inventé.
+"""
+
+# --------------------------------------------------------------------------
+# Grille tarifaire — traduction
+# --------------------------------------------------------------------------
+TARIFS_TRADUCTION = {
+    "colonnes": ["Prestation", "Délai standard", "Prioritaire 48 h", "Express 24 h"],
+    "lignes": [
+        ["Traduction libre, la page", "35 EUR", "50 EUR", "70 EUR"],
+        ["Traduction assermentée, la page", "45 EUR", "65 EUR", "90 EUR"],
+        ["Page supplémentaire", "30 EUR", "45 EUR", "60 EUR"],
+        ["Relecture d’une traduction existante", "20 EUR", "30 EUR", "45 EUR"],
+        ["Copie certifiée supplémentaire", "10 EUR", "10 EUR", "15 EUR"],
+    ],
+    "note": (
+        "Prix par page de 300 mots environ, hors TVA. Le tarif définitif dépend "
+        "de la langue, de la technicité du document et de sa lisibilité : "
+        "envoyez-nous un scan pour un devis ferme."
+    ),
+}
+
+TARIFS_LEGALISATION = {
+    "colonnes": ["Instance", "Délai moyen", "Frais officiels", "Honoraires"],
+    "lignes": [
+        [
+            "Tribunal de première instance",
+            "Immédiat à 1 jour",
+            "Selon tarif officiel",
+            "25 EUR",
+        ],
+        ["SPF Justice", "1 à 2 jours", "Selon tarif officiel", "35 EUR"],
+        [
+            "SPF Affaires étrangères — apostille",
+            "1 à 2 jours",
+            "Selon tarif officiel",
+            "35 EUR",
+        ],
+        ["Chaîne consulaire complète", "2 à 14 jours", "Selon le consulat", "Sur devis"],
+        ["Chambre de commerce (BECI)", "1 à 3 jours", "Selon tarif officiel", "30 EUR"],
+    ],
+    "note": (
+        "Les frais officiels sont ceux réclamés par l’administration ou le "
+        "consulat : ils sont refacturés à l’euro près, sur justificatif, et "
+        "sont distincts des honoraires du bureau."
+    ),
+}
+
+TARIFS_VISA = {
+    "colonnes": ["Destination", "Type de procédure", "Délai moyen", "À partir de"],
+    "lignes": [
+        ["Fédération de Russie", "Visa consulaire", "10 à 15 jours", "165 EUR"],
+        ["République Populaire de Chine", "Visa consulaire / e-visa", "6 à 8 jours", "126 EUR"],
+        ["République de l’Inde", "e-visa", "3 à 5 jours", "85 EUR"],
+        ["États-Unis", "ESTA", "1 à 3 jours", "Sur devis"],
+        ["Autres destinations", "Selon le pays", "Variable", "Sur devis"],
+    ],
+    "note": (
+        "Montants incluant les honoraires du bureau, hors frais consulaires. "
+        "Le site actuel ne publié pas de tarif par pays : pour les destinations "
+        "hors liste, le devis est établi sous 2 heures ouvrables."
+    ),
+}
+
+# --------------------------------------------------------------------------
+# Questions frequentes
+# --------------------------------------------------------------------------
+FAQ_TRADUCTION = [
+    (
+        "Quelle est la différence entre une traduction assermentée et une traduction libre ?",
+        "Une traduction assermentée est réalisée par un traducteur expert agréé par un "
+        "Tribunal de première instance belge. Elle porte sa signature, son cachet et sa "
+        "déclaration d’exactitude, ce qui lui donne une valeur juridique. Une traduction "
+        "libre, réalisée par un traducteur professionnel, n’à pas cette valeur officielle : "
+        "elle convient à la communication d’entreprise, aux sites web, aux manuels "
+        "techniques et aux documents internes.",
+    ),
+    (
+        "Ma traduction sera-t-elle acceptée par l’administration ?",
+        "Pour tout document destiné à une autorité officielle — commune, tribunal, "
+        "université, consulat — une traduction assermentée est exigée. Nos traducteurs sont "
+        "inscrits auprès des tribunaux belges et leurs traductions sont reconnues par les "
+        "autorités belges et internationales. Selon le pays de destination, une légalisation "
+        "ou une apostille peut s’ajouter : nous vous le signalons dès le devis.",
+    ),
+    (
+        "Dans combien de langues traduisez-vous ?",
+        "Le bureau couvre plus de 80 langues, de l’albanais au wolof, à partir et vers "
+        "toute autre langue. L’assermentation n’est pas disponible dans toutes les langues : "
+        "la liste indique celles pour lesquelles un traducteur juré est disponible.",
+    ),
+    (
+        "Comment obtenir un devis rapidement ?",
+        "Envoyez le scan de vos documents, à la meilleure qualité possible, à "
+        "info@travisum.com. Vous recevez une proposition détaillée — prix ferme et délai — "
+        "en moins de 2 heures ouvrables. Vous pouvez aussi déposer vos documents au bureau, "
+        "367 avenue Louise, du lundi au vendredi.",
+    ),
+    (
+        "Dois-je fournir l’original de mon document ?",
+        "Pour la traduction seule, un scan lisible suffit. Si une légalisation ou une "
+        "apostille est nécessaire, l’original est généralement requis : il peut être déposé "
+        "au bureau ou envoyé. Les originaux confiés ne quittent jamais le bureau sans "
+        "tracabilite.",
+    ),
+    (
+        "Que deviennent les copies de mes documents ?",
+        "Les documents transmis sont traités comme confidentiels et ne sont ni communiqués "
+        "ni réutilisés. Les copies numériques sont supprimées une fois le dossier clôture.",
+    ),
+]
+
+FAQ_LEGALISATION = [
+    (
+        "Apostille ou légalisation complète : comment savoir ?",
+        "Cela dépend exclusivement du pays de destination. Si le pays a signé la Convention "
+        "de La Haye, une simple apostille délivrée par le SPF Affaires étrangères suffit et "
+        "aucun passage en ambassade n’est requis. Sinon, la procédure complète s’applique, "
+        "avec une légalisation finale par l’ambassade ou le consulat du pays concerne.",
+    ),
+    (
+        "Quelles instances couvrez-vous ?",
+        "SPF Justice, SPF Affaires étrangères, Tribunal de première instance, cours d’appel "
+        "de Bruxelles, Liège, Namur, Mons, Nivelles et Anvers, notaires, Commission "
+        "européenne, ambassades et consulats, universités et écoles, communes, chambres de "
+        "commerce, Communaute francaise et Communaute flamande.",
+    ),
+    (
+        "Combien de temps prend une légalisation ?",
+        "L’authentification au tribunal est souvent immédiate. Le SPF Justice et les "
+        "Affaires étrangères demandent généralement 1 à 2 jours ouvrables chacun. La "
+        "légalisation consulaire varie fortement selon le pays : de 2 à 14 jours. Le délai "
+        "total vous est annoncé dès le devis.",
+    ),
+    (
+        "Faut-il traduire le document avant de le légaliser ?",
+        "Le plus souvent oui : la traduction jurée intervient en premier, puis la signature "
+        "du traducteur est authentifiée par le greffe du tribunal, avant les étapes "
+        "fédérales et consulaires. C’est l’ordre qui évite les allers-retours.",
+    ),
+    (
+        "Vous deplacez-vous vous-memes auprès des administrations ?",
+        "Oui. Notre présence physique quotidienne auprès des instances bruxelloises est ce "
+        "qui permet de raccourcir les délais. Nous proposons également des services de "
+        "livraison à Bruxelles et ailleurs.",
+    ),
+]
+
+FAQ_VISA = [
+    (
+        "Pouvez-vous garantir l’obtention de mon visa ?",
+        "Non, et aucun intermédiaire ne le peut : la décision appartient exclusivement au "
+        "consulat du pays de destination. Notre prestation porte sur la conformite et la "
+        "complétude du dossier, la prise de rendez-vous, le dépôt et le suivi — c’est-a-dire "
+        "sur tout ce qui reduit le risque de refus pour un motif administratif.",
+    ),
+    (
+        "En quoi consiste exactement votre service ?",
+        "En trois choses : nous vous renseignons clairement sur la procédure applicable à "
+        "votre destination, nous vérifions l’ensemble des documents fournis avant de les "
+        "soumettre au consulat, puis, une fois le visa délivré, nous vous livrons votre "
+        "passeport au lieu de votre choix.",
+    ),
+    (
+        "Quelles destinations prenez-vous en charge ?",
+        "Le bureau traité 70 destinations, de l’Algerie au Zimbabwe, ainsi que les e-visas "
+        "et l’ESTA. Pour toute destination hors liste, prenez contact avec le bureau : nous "
+        "traitons également ces demandes.",
+    ),
+    (
+        "Quelle est la différence entre un visa consulaire, un e-visa et un ESTA ?",
+        "Un visa consulaire suppose le dépôt physique du passeport auprès de la "
+        "representation diplomatique. Un e-visa est délivré par voie électronique, sans "
+        "dépôt du passeport. L’ESTA est une autorisation de voyage électronique propre aux "
+        "États-Unis, qui ne constitué pas un visa. La procédure applicable dépend du pays et "
+        "de votre nationalité.",
+    ),
+    (
+        "Dois-je me déplacer en personne ?",
+        "Cela dépend du consulat : certains exigent une comparution personnelle ou un relevé "
+        "biométrique, d’autres non. Nous vous le précisons des l’analyse du dossier, et nous "
+        "prenons le rendez-vous à votre place lorsque c’est possible.",
+    ),
+    (
+        "Combien de temps à l’avance dois-je m’y prendre ?",
+        "Le plus tot possible. Les délais annoncés courent à partir du dépôt d’un dossier "
+        "complet et ne tiennent pas compte des periodes de forte affluence ni des jours "
+        "fériés locaux, qui peuvent les allonger sensiblement.",
+    ),
+]
+
+FAQ_GENERALE = [
+    (
+        "Ou se trouve le bureau et quand est-il ouvert ?",
+        "Travisum Louise Office, 367 avenue Louise, 1050 Bruxelles. Le bureau est ouvert du "
+        "lundi au vendredi, de 9 h 00 à 17 h 00 sans interruption, pour déposer et récupérer "
+        "vos documents. Rendez-vous et conseils personnalises également possibles.",
+    ),
+    (
+        "Comment vous joindre ?",
+        "Par téléphone au 02 642 00 25 ou au 0485 948 935, par e-mail à info@travisum.com, "
+        "ou en passant au bureau. Pour un devis rapide, le plus efficace reste l’envoi du "
+        "scan de vos documents par e-mail.",
+    ),
+    (
+        "Traitez-vous les trois services ensemble ?",
+        "Oui, et c’est l’intérêt d’un interlocuteur unique : une même demande peut enchaîner "
+        "la traduction jurée, la légalisation auprès des instances belges et le dépôt "
+        "consulaire, sans que vous ayez à coordonner trois prestataires.",
+    ),
+    (
+        "Puis-je faire livrer mes documents ?",
+        "Oui. Le bureau propose des services de livraison à Bruxelles et ailleurs, et vous "
+        "livre votre passeport au lieu de votre choix après délivrance du visa.",
+    ),
+]

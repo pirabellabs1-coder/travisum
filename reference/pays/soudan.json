@@ -1,0 +1,222 @@
+{
+ "slug": "soudan",
+ "nom": "Soudan",
+ "url": "https://www.travisum.com/visas/soudan/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/soudan/soudan-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Soudan. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par cliquer sur le lien suivant pour la demande : Formulaire Soudan.",
+      "Sous la rubrique «Full Name», écrivez votre nom complet.",
+      "Sous la rubrique «Nationality», écrivez votre nationalité.",
+      "Sous la rubrique «Mother Name», écrivez votre nom de jeune fille, en cas échéant.",
+      "Sous la rubrique «Date of Birth», écrivez votre date de naissance.",
+      "Sous la rubrique «Place of Birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Profession», indiquez votre profession.",
+      "Sous la rubrique «Sex», indiquez votre sexe.",
+      "Sous la rubrique «Home Address», écrivez l’adresse de domicile.",
+      "Sous la rubrique «Tel No», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail address», écrivez votre adresse e-mail.",
+      "Sous la rubrique «Type of the travel Document», indiquez le type de votre passeport.",
+      "Sous la rubrique «Passport No», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Place of Issue», écrivez le lieu de délivrance.",
+      "Sous la rubrique «Date of Issue», écrivez la date de délivrance.",
+      "Sous la rubrique «Date of Expiry», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Have you ever visited Sudan?», indiquez, si vous avez déjà visité le Soudan.",
+      "En cas d’une réponse positive, donnez les détails de votre dernier séjour.",
+      "Sous la rubrique «Have you a valid visas for other countries», indiquez, si vous avez déjà obtenu des visas pour des autres pays.",
+      "Sous la rubrique «Names and ages of persons accompanying the applicant», si vous allez voyages avec les enfants mineurs, écrivez leurs noms et âges.",
+      "Sous la rubrique «Reason of the Visit», indiquez le motif de votre voyage.",
+      "Si vous sélectionnez «Sponsor», donnez les détails au-dessous.",
+      "Sous la rubrique «Date of departure», indiquez le date d’arrivée au Soudan.",
+      "Sous la rubrique «Period of stay», indiquez la durée de votre séjour.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Preuve de moyens financiers",
+     "details": [
+      "Preuve de ressources financières suffisantes pour voyager."
+     ]
+    },
+    {
+     "nom": "Une lettre de l’employeur",
+     "details": [
+      "Veuillez fournir une lettre de l’employeur confirmant la position dans l’entreprise et la période du congé."
+     ]
+    },
+    {
+     "nom": "Une lettre de l’agence de voyage",
+     "details": [
+      "Veuillez fournir une lettre de l’agence de voyage afin de confirmer les dates et la réservation d’hôtel pour votre séjour au Soudan."
+     ]
+    },
+    {
+     "nom": "Copie de carte de résident",
+     "details": [
+      "Pour les Non-Belges, il faut fournir une photocopie de votre carte de résident belge."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/soudan/soudan-visa-business/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires au Soudan. Ci-dessous, la liste des documents à présenter:",
+    "Rem: Le partenaire d’affaires au Soudan doit introduire une demande de visa auprès du Ministère de l’intérieur et s’assurer que l’accord, si applicable soit envoyé à l’Ambassade à Bruxelles via le Ministère des Affaires Étrangères à Khartoum."
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par cliquer sur le lien suivant pour la demande : Formulaire Soudan.",
+      "Sous la rubrique «Full Name», écrivez votre nom complet.",
+      "Sous la rubrique «Nationality», écrivez votre nationalité.",
+      "Sous la rubrique «Mother Name», écrivez votre nom de jeune fille, en cas échéant.",
+      "Sous la rubrique «Date of Birth», écrivez votre date de naissance.",
+      "Sous la rubrique «Place of Birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Profession», indiquez votre profession.",
+      "Sous la rubrique «Sex», indiquez votre sexe.",
+      "Sous la rubrique «Home Address», écrivez l’adresse de domicile.",
+      "Sous la rubrique «Tel No», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail address», écrivez votre adresse e-mail.",
+      "Sous la rubrique «Type of the travel Document», indiquez le type de votre passeport.",
+      "Sous la rubrique «Passport No», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Place of Issue», écrivez le lieu de délivrance.",
+      "Sous la rubrique «Date of Issue», écrivez la date de délivrance.",
+      "Sous la rubrique «Date of Expiry», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Have you ever visited Sudan?», indiquez, si vous avez déjà visité le Soudan.",
+      "En cas d’une réponse positive, donnez les détails de votre dernier séjour.",
+      "Sous la rubrique «Have you a valid visas for other countries», indiquez, si vous avez déjà obtenu des visas pour des autres pays.",
+      "Sous la rubrique «Names and ages of persons accompanying the applicant», si vous allez voyages avec les enfants mineurs, écrivez leurs noms et âges.",
+      "Sous la rubrique «Reason of the Visit», indiquez le motif de votre voyage.",
+      "Si vous sélectionnez «Sponsor», donnez les détails au-dessous.",
+      "Sous la rubrique «Date of departure», indiquez le date d’arrivée au Soudan.",
+      "Sous la rubrique «Period of stay», indiquez la durée de votre séjour.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Copie de carte de résident",
+     "details": [
+      "Pour les Non-Belges, il faut fournir une photocopie de votre carte de résident belge."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement au Soudan.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut également mentionner que l’entreprise se porte garante pour tous les frais liées au séjour au Soudan.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "SOUDAN INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/soudan/soudan-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 7 jours ouvrables si vous optez pour la procédure normale."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Type de Visa | Particuliers | Agence de voyages",
+      "Organisation",
+      "internationale",
+      "Visa Tourisme | 50€ | * | * | *",
+      "Visa Business | 50€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade du Soudan",
+     "details": [
+      "Adresse: Avenue Franklin Roosevelt 124, 1050",
+      "Tel.: 02/ 647 51 59 ou 02/ 647 94 94",
+      "eMail: info@sudanembassy.be",
+      "Jours d’ouverture: lundi, mercredi, jeudi",
+      "Horaire: 9h30-12h30 (lundi et jeudi) 12h30-15h00 (mercredi)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

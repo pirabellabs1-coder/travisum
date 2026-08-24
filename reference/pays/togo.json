@@ -1,0 +1,190 @@
+{
+ "slug": "togo",
+ "nom": "Togo",
+ "url": "https://www.travisum.com/visas/togo/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/togo/togo-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Togo. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celle-ci doit être en couleur, prise sur un fond clair uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Formulaire d'application de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et par imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire pour le Togo.",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Indiquez vos informations personnelles: écrivez votre nom, prénom, la date et le lieu de naissance, sexe, nationalité d’origine, nationalité actuelle, état civil et profession.",
+      "Indiquez le type de document de voyage.",
+      "Écrivez le numéro, la date de délivrance, la date d’expiration et l’autorité de votre passeport.",
+      "Indiquez le motif du voyage, la durée du séjour, le nombre d’entrées et la date d’arrivée au Togo.",
+      "Écrivez les données d’une personne à contacter en cas d’urgence.",
+      "Indiquez, si vous avez visité le Togo. En cas d’une réponse positive, donnez les détails de votre dernier séjour au Togo.",
+      "Indiquez, si vous avez l’intention de vous installer au Togo.",
+      "Indiquez, si vous engagez-vous à quitter le territoire de la République Togolaise à l’expiration du visa qui vous sera éventuellement accordé.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Réservation d'hôtel",
+     "details": [
+      "Imprimez une copie de votre réservation d’hébergement.",
+      "Attention: Les demandeurs qui ne détiennent pas un passeport belge, néerlandais ou luxembourgeois, doivent aussi présenter une carte de résidence."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/togo/togo-visa-business/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires au Togo. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celle-ci doit être en couleur, prise sur un fond clair uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Formulaire d'application de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et par imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire pour le Togo.",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Indiquez vos informations personnelles: écrivez votre nom, prénom, la date et le lieu de naissance, sexe, nationalité d’origine, nationalité actuelle, état civil et profession.",
+      "Indiquez le type de document de voyage.",
+      "Écrivez le numéro, la date de délivrance, la date d’expiration et l’autorité de votre passeport.",
+      "Indiquez le motif du voyage, la durée du séjour, le nombre d’entrées et la date d’arrivée au Togo.",
+      "Écrivez les données d’une personne à contacter en cas d’urgence.",
+      "Indiquez, si vous avez visité le Togo. En cas d’une réponse positive, donnez les détails de votre dernier séjour au Togo.",
+      "Indiquez, si vous avez l’intention de vous installer au Togo.",
+      "Indiquez, si vous engagez-vous à quitter le territoire de la République Togolaise à l’expiration du visa qui vous sera éventuellement accordé.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Réservation d'hôtel",
+     "details": [
+      "Imprimez une copie de votre réservation d’hébergement.",
+      "Attention: Les demandeurs qui ne détiennent pas un passeport belge, néerlandais ou luxembourgeois, doivent aussi présenter une carte de résidence."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement au Togo.",
+      "Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "Il faut également mentionner que l’entreprise se porte garante pour tous les frais liées au séjour au Togo.",
+      "Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "TOGO INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/togo/togo-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 3 jours ouvrables si vous optez pour la procédure normale."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Délai normal | Délai Express | Particuliers | Agence de voyages",
+      "Organisation",
+      "internationale",
+      "1 à 30 jours, simple entrée | 50€ | 70€ | * | * | *",
+      "1 à 30 jours, entrées multiples | 70€ | 90€ | * | * | *",
+      "1 à 90 jours, entrées multiples | 100€ | 120€ | * | * | *",
+      "Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade du Togo",
+     "details": [
+      "Adresse: Avenue de Tervuren 264, Woluwe-Saint-Pierre, 1150",
+      "Tel.: 02/ 770 17 91",
+      "eMail: ambassadetogo@ambassadetogo.be",
+      "Jours d’ouverture: mardi et jeudi",
+      "Horaire: 10h00 – 12h30 (dépôt) et 15h30 – 17h00 (récupération)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

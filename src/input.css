@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   Travisum — couche de base
+   Reprise à l'identique du <style> inline des maquettes Stitch, à une
+   exception près, signalée plus bas.
+   ========================================================================== */
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* La maquette masque la barre de défilement (::-webkit-scrollbar{display:none}).
+     Volontairement non repris : sur des pages longues et denses en information,
+     supprimer le seul repère de progression natif dégrade la navigation et
+     pénalise les utilisateurs qui s'y appuient. Le filet de laiton en haut de
+     page joue ce rôle, en cohérence avec la charte. */
+
+  /* Cible de survol suffisante et lecture confortable des tableaux de données */
+  :focus-visible {
+    outline: 1px solid theme("colors.tertiary-fixed-dim");
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Filet de progression de lecture, en haut de page.
+     Dans la maquette il est figé à 100 % ; ici il suit réellement le
+     défilement (voir assets/js/site.js). */
+  .brass-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, #c6a15b, #e7bf97);
+    transition: width 120ms linear;
+  }
+
+  /* Trame guilloche — motif d'ondes entrelacées repris du logo Travisum.
+     Identique au data-URI des maquettes, sorti en classe pour éviter de le
+     répéter dans chaque page. */
+  .guilloche {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 25, 50 50 T 100 50' fill='none' stroke='%2300050e' stroke-width='0.5'/%3E%3Cpath d='M0 52 Q 25 27, 50 52 T 100 52' fill='none' stroke='%2300050e' stroke-width='0.5'/%3E%3Cpath d='M0 54 Q 25 29, 50 54 T 100 54' fill='none' stroke='%2300050e' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+  }
+
+  /* Bandeau des langues — défilement infini */
+  .marquee-track {
+    animation: marquee-slide 40s linear infinite;
+  }
+
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Menu mobile — absent des maquettes, qui ne montrent que le point de vue
+   large (la navigation y est en `hidden lg:flex`). Ajouté pour que le site
+   soit utilisable sous 1024 px, dans le langage visuel de la charte. */
+.menu-mobile {
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: transform 480ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 480ms;
+}
+
+.menu-mobile[data-ouvert] {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Accessibilité : respect de la préférence « réduire les animations » */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   Mega-menu (ecran 12 du devis)
+   Le panneau se deploie sous la barre, sur toute sa largeur. L'entree de
+   premier niveau reste un lien : le menu ne doit jamais bloquer l'acces a
+   la page pilier.
+   ========================================================================== */
+.mega {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 220ms ease, transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1),
+    visibility 220ms;
+}
+
+[data-mega][data-ouvert] .mega {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Les colonnes entrent en decalage, comme prevu au devis */
+[data-mega][data-ouvert] .mega > div > div {
+  animation: mega-colonne 420ms cubic-bezier(0.2, 0.7, 0.3, 1) backwards;
+}
+[data-mega][data-ouvert] .mega > div > div:nth-child(2) { animation-delay: 55ms; }
+[data-mega][data-ouvert] .mega > div > div:nth-child(3) { animation-delay: 110ms; }
+[data-mega][data-ouvert] .mega > div > div:nth-child(4) { animation-delay: 165ms; }
+
+@keyframes mega-colonne {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Sous-menu mobile deplie */
+[data-sous-menu]:not(.hidden) {
+  animation: mega-colonne 300ms ease backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mega,
+  [data-mega][data-ouvert] .mega > div > div,
+  [data-sous-menu]:not(.hidden) {
+    animation: none;
+    transition: opacity 1ms, visibility 1ms;
+    transform: none;
+  }
+}

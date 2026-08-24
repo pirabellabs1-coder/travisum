@@ -1,0 +1,217 @@
+{
+ "slug": "cuba",
+ "nom": "Cuba",
+ "url": "https://www.travisum.com/visas/cuba/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME (CARTE DE TOURISME)",
+   "url": "http://www.travisum.com/visas/cuba/cuba-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Cuba. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "Travisum peut se charger de l’impression de ces documents après leur réception des images par email."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande au format .pdf.",
+      "Remplissez le formulaire sur votre ordinateur avant vous imprimez le formulaire.",
+      "Sous la rubrique «Nombre y Apellidos», écrivez votre nom complet.",
+      "Sous la rubrique «Fecha de Nacimiento», écrivez votre date de naissance.",
+      "Sous la rubrique «País de Nacimiento», sélectionnez votre pays de naissance dans le menu déroulant.",
+      "Sous la rubrique «Sexo», indiquez votre sexe.",
+      "Sous la rubrique «Estado Civil», écrivez votre état civil.",
+      "Sous la rubrique «No. Pasaporte», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Tipo de Pasaporte», sélectionnez le type de votre passeport dans le menu déroulant.",
+      "Sous la rubrique «Fecha de Expedición», écrivez la date de délivrance.",
+      "Sous la rubrique «Fecha de Vencimiento», écrivez la date d’expiration.",
+      "Sous la rubrique «Direccíon de Residencia», écrivez l’adresse de votre domicile.",
+      "Sous la rubrique «Numéro de Teléfono», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «Profesíon de Oficio», sélectionnez votre profession actuelle dans le menu déroulant.",
+      "Sous la rubrique «Tipo de visa», sélectionnez le type de visa demandé.",
+      "Sous la rubrique «Fecha de ingreso a Cuba», écrivez la date d’arrivée au Cuba.",
+      "Sous la rubrique «Fecha de salida de Cuba», écrivez la date de votre départ.",
+      "Sous la rubrique «Nombre del hotel», écrivez le nom de votre hôtel.",
+      "Sous la rubrique «Direccíon», écrivez l’adresse de votre hôtel.",
+      "Sous la rubrique «No, Vuelo de entrada», écrivez le numéro d’avion pour votre arrivée au Cuba.",
+      "Sous la rubrique «No. Vuelo Salida», écrivez le numéro d’avion pour votre départ.",
+      "Imprimez, signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour.",
+      "• Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/cuba/cuba-visa-business/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires au Cuba. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "Travisum peut se charger de l’impression de ces documents après leur réception des images par email."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande au format .pdf.",
+      "Remplissez le formulaire sur votre ordinateur avant vous imprimez le formulaire.",
+      "Sous la rubrique «Nombre y Apellidos», écrivez votre nom complet.",
+      "Sous la rubrique «Fecha de Nacimiento», écrivez votre date de naissance.",
+      "Sous la rubrique «País de Nacimiento», sélectionnez votre pays de naissance dans le menu déroulant.",
+      "Sous la rubrique «Sexo», indiquez votre sexe.",
+      "Sous la rubrique «Estado Civil», écrivez votre état civil.",
+      "Sous la rubrique «No. Pasaporte», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Tipo de Pasaporte», sélectionnez le type de votre passeport dans le menu déroulant.",
+      "Sous la rubrique «Fecha de Expedición», écrivez la date de délivrance.",
+      "Sous la rubrique «Fecha de Vencimiento», écrivez la date d’expiration.",
+      "Sous la rubrique «Direccíon de Residencia», écrivez l’adresse de votre domicile.",
+      "Sous la rubrique «Numéro de Teléfono», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «Profesíon de Oficio», sélectionnez votre profession actuelle dans le menu déroulant.",
+      "Sous la rubrique «Tipo de visa», sélectionnez le type de visa demandé.",
+      "Sous la rubrique «Fecha de ingreso a Cuba», écrivez la date d’arrivée au Cuba.",
+      "Sous la rubrique «Fecha de salida de Cuba», écrivez la date de votre départ.",
+      "Sous la rubrique «Nombre del hotel», écrivez le nom de votre hôtel.",
+      "Sous la rubrique «Direccíon», écrivez l’adresse de votre hôtel.",
+      "Sous la rubrique «Razones del Viaje», écrivez le motif de votre voyage (Business).",
+      "Sous la rubrique «Organismo responsable del viaje», écrivez l’entreprise d’accueil au Cuba.",
+      "Imprimez, signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour.",
+      "• Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement au Cuba.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut également mentionner que l’entreprise se porte garante pour tous les frais liées au séjour au Cuba.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "CUBA INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/cuba/cuba-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa le même jour ouvrable."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Type de Visa | Particuliers | Agences de voyages | Organisation internationale",
+      "Tourisme",
+      "30 jours entrée simple",
+      "22€** | * | * | *",
+      "Business",
+      "30 jours entrée simple",
+      "80€ | * | * | *",
+      "Chaque personne supplémentaire | 25€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale).",
+      "**Attention, c’est 22€ si c’est le client qui fait la démarche de visa. Par contre, s’il s’agit d’une entreprise comme Travisum on doit payer 47€."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade de Cuba",
+     "details": [
+      "Adresse: 80, Avenue Brugmann, 1190 Forest",
+      "Tel.: 02/343 00 20 ou 02/346 29 03",
+      "eMail: consulado@embacuba.be",
+      "Jours d’ouverture: Du lundi au vendredi",
+      "Horaire: 09h30-12h30"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

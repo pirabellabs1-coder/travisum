@@ -1,0 +1,124 @@
+{
+ "slug": "nepal",
+ "nom": "Népal",
+ "url": "https://www.travisum.com/visas/nepal/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/nepal/visa-tourisme-nepal/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Népal. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d’identité",
+     "details": [
+      "Celle-ci doit être en couleur, prise sur un fond blanc uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire d’application complété et signé",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire Népal",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «First Name» , écrivez votre prénom.",
+      "Sous la rubrique «Family Name», écrivez votre nom de famille.",
+      "Sous la rubrique «Nationality», indiquez votre nationalité.",
+      "Sous la rubrique «Occupation», indiquez votre profession.",
+      "Sous la rubrique «Place of birth», indiquez votre lieu de naissance.",
+      "Sous la rubrique «Date of Birth», indiquez votre date de naissance.",
+      "Sous la rubrique «Permanent address», écrivez votre adresse permanente.",
+      "Sous la rubrique «Temporary Address in Nepal», écrivez l’adresse de votre hôtel au Népal.",
+      "Sous la rubrique «Passport Number», indiquez le numéro de votre passeport.",
+      "Sous la rubrique «Date of issue», écrivez la date de délivrance de votre passeport.",
+      "Sous la rubrique «Date of expiry», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Purpose of visit in Nepal», indiquez le motif de votre voyage au Népal (Tourisme).",
+      "Sous la rubrique «Length of probable stay in Nepal», indiquez la durée de votre séjour au Népal.",
+      "Sous la rubrique «Date of arrival in Nepal», indiquez la date d’arrivée au Népal.",
+      "En cas échéant, sous la rubrique «Number of previous visits to Nepal», indiquez le nombre des derniers visites au Népal.",
+      "En cas échéant, écrivez les dates de votre dernier séjour au Népal.",
+      "Sous la rubrique «Telephone No.», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail», écrivez votre adresse E-mail.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Une copie des billets d'avion",
+     "details": [
+      "Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/nepal/visa-business-nepal/",
+   "statut_http": 200,
+   "intro": [
+    "Il n’est pas possible de demander un visa business pour le Népal en Belgique."
+   ],
+   "documents": [],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES NÉPAL",
+   "url": "http://www.travisum.com/visas/nepal/informations-generales-nepal/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 2 jours ouvrables."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Délai normal | Particuliers | Agence de voyages",
+      "Organisation",
+      "internationale",
+      "15 jours, entrées multiples | 25€ | * | * | *",
+      "30 jours, entrées multiples | 40€ | * | * | *",
+      "90 jours, entrées multiples | 100€ | * | * | *",
+      "Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade du Népal",
+     "details": [
+      "Adresse: 210, Avenue Brugmann. 1050 Ixelles",
+      "Tel.: 02/ 346 26 58",
+      "eMail: embassynepal@yahoo.com, embn@skynet.be",
+      "Jours d’ouverture: Lundi au vendredi",
+      "Horaire: 9h30-12h30"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "slug": "ghana",
+ "nom": "Ghana",
+ "url": "https://www.travisum.com/visas/ghana/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/ghana/visa-tourisme-ghana/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Ghana. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour le site-web de l’ambassade du Ghana.",
+      "Cliquez sur «VISA APPLICATION FORM» à droite de la page d’accueil.",
+      "Téléchargez le formulaire de demande de visa.",
+      "Remplissez le formulaire en format .pdf sur votre ordinateur.",
+      "Remplissez le formulaire en anglais.",
+      "Sous la rubrique «Visa Required», indiquez le type (la durée et le nombre d’entrées) du visa demandé.",
+      "Sous la rubrique «Processing Service», sélectionnez «Standard Service» dans le menu déroulant.",
+      "Sous la rubrique «Collection Service», sélectionnez «Collect from Mission» dans le menu déroulant.",
+      "Sous la rubrique «Payment Method», sélectionnez «Card» dans le menu déroulant, si Travisum va déposer votre demande de visa à l’ambassade du Ghana.",
+      "Sous la rubrique «Purpose of Trip», sélectionnez «Holiday/Tourism» dans le menu déroulant.",
+      "Sous la rubrique «Date of travel to Ghana», écrivez la date de votre entrée au Ghana.",
+      "Sous la rubrique «Means of Travel», indiquez le moyen de transport pour votre voyage au Ghana.",
+      "Sous la rubrique «Length of Stay», écrivez la durée de votre séjour au Ghana.",
+      "Sous la rubrique «Flight Number», écrivez le numéro de votre vol au Ghana.",
+      "Sous la rubrique «Return ticket for this trip», indiquez, si vous avez un vol aller-retour pour le séjour au Ghana.",
+      "Sous la rubrique «Funds for this trip», écrivez des fonds suffisants pour votre séjour au Ghana.",
+      "Si vous êtes déjà allé au Ghana, écrivez le date de votre dernier séjour au Ghana sous la rubrique «Date of last visit».",
+      "Puis, sous la rubrique «Title», écrivez votre titre.",
+      "Sous la rubrique «First Name», écrivez votre prénom.",
+      "Sous la rubrique «Surname», écrivez votre nom/ nom de famille.",
+      "Sous la rubrique «Previous Names», si le cas échéant, écrivez votre nom d’usage ou nom(s) de naissance.",
+      "Sous la rubrique «Date of Birth», écrivez votre date de naissance.",
+      "Sous la rubrique «Place of birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Present Nationality», indiquez votre nationalité actuelle.",
+      "Sous la rubrique «Prev. Nationality», si le cas échéant, écrivez votre dernière nationalité.",
+      "Sous la rubrique «Passport Number», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Place of Issue of Passport», écrivez le lieu de délivrance de votre passeport.",
+      "Sous la rubrique «Date of Issue of Passport», écrivez la date de délivrance de votre passeport.",
+      "Sous la rubrique «Passport Expiry Date», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Current Residential Address», écrivez votre adresse actuelle.",
+      "Sous la rubrique «Name, Address & Telephone of Employer», écrivez le nom, l’adresse et le numéro de téléphone de votre employeur.",
+      "Sous la rubrique «Contact Telephone», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail adresse», écrivez votre adresse e-mail.",
+      "Sous la rubrique «Occupation», indiquez votre profession.",
+      "Sous la rubrique «Name, Address & Telephone of person inviting you», écrivez le nom, l’adresse et le numéro de téléphone de votre hôtel au Ghana ou votre agence de voyages au Ghana.",
+      "Sous la rubrique «Adresse of Hotel where you will be staying», écrivez l’adresse de votre hôtel au Ghana.",
+      "Imprimez, signez et datez votre formulaire de demande à l’encre noir."
+     ]
+    },
+    {
+     "nom": "Preuve de fonds suffisants",
+     "details": [
+      "Vous doivent fournir une attestation de fonds suffisants ou une copie des trois derniers relevées bancaires du demandeur (ou des parents du demandeur si le voyageur est un étudiant)."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour.",
+      "• Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    },
+    {
+     "nom": "Une copie du certificat de vaccination contre la fièvre jaune",
+     "details": [
+      "• Si vous n’êtes pas en ordre de vaccination (carnet de vaccination), renseignez-vous auprès de votre médecin traitant, d’un centre agréé ou d’un hôpital. Sachez qu’il existe une travel clinic (la Travel and Vaccine Clinic du CHU Saint-Pierre à Bruxelles) où il est possible d’obtenir son vaccin sans rendez-vous."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/ghana/visa-business-ghana/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires au Ghana. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour le site-web de l’ambassade du Ghana.",
+      "Cliquez sur «VISA APPLICATION FORM» à droite de la page d’accueil.",
+      "Téléchargez le formulaire de demande de visa.",
+      "Remplissez le formulaire en format .pdf sur votre ordinateur.",
+      "Remplissez le formulaire en anglais.",
+      "Sous la rubrique «Visa Required», indiquez le type (la durée et le nombre d’entrées) du visa demandé.",
+      "Sous la rubrique «Processing Service», sélectionnez «Standard Service» dans le menu déroulant.",
+      "Sous la rubrique «Collection Service», sélectionnez «Collect from Mission» dans le menu déroulant.",
+      "Sous la rubrique «Payment Method», sélectionnez «Card» dans le menu déroulant, si Travisum va déposer votre demande de visa à l’ambassade du Ghana.",
+      "Sous la rubrique «Purpose of Trip», sélectionnez «Business» dans le menu déroulant.",
+      "Sous la rubrique «Date of travel to Ghana», écrivez la date de votre entrée au Ghana.",
+      "Sous la rubrique «Means of Travel», indiquez le moyen de transport pour votre voyage au Ghana.",
+      "Sous la rubrique «Length of Stay», écrivez la durée de votre séjour au Ghana.",
+      "Sous la rubrique «Flight Number», écrivez le numéro de votre vol au Ghana.",
+      "Sous la rubrique «Return ticket for this trip», indiquez, si vous avez un vol aller-retour pour le séjour au Ghana.",
+      "Sous la rubrique «Funds for this trip», écrivez des fonds suffisants pour votre séjour au Ghana.",
+      "Si vous êtes déjà allé au Ghana, écrivez le date de votre dernier séjour au Ghana sous la rubrique «Date of last visit».",
+      "Puis, sous la rubrique «Title», écrivez votre titre.",
+      "Sous la rubrique «First Name», écrivez votre prénom.",
+      "Sous la rubrique «Surname», écrivez votre nom/ nom de famille.",
+      "Sous la rubrique «Previous Names», si le cas échéant, écrivez votre nom d’usage ou nom(s) de naissance.",
+      "Sous la rubrique «Date of Birth», écrivez votre date de naissance.",
+      "Sous la rubrique «Place of birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Present Nationality», indiquez votre nationalité actuelle.",
+      "Sous la rubrique «Prev. Nationality», si le cas échéant, écrivez votre dernière nationalité.",
+      "Sous la rubrique «Passport Number», écrivez le numéro de votre passeport.",
+      "Sous la rubrique «Place of Issue of Passport», écrivez le lieu de délivrance de votre passeport.",
+      "Sous la rubrique «Date of Issue of Passport», écrivez la date de délivrance de votre passeport.",
+      "Sous la rubrique «Passport Expiry Date», écrivez la date d’expiration de votre passeport.",
+      "Sous la rubrique «Current Residential Address», écrivez votre adresse actuelle.",
+      "Sous la rubrique «Name, Address & Telephone of Employer», écrivez le nom, l’adresse et le numéro de téléphone de votre employeur.",
+      "Sous la rubrique «Contact Telephone», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «E-mail adresse», écrivez votre adresse e-mail.",
+      "Sous la rubrique «Occupation», indiquez votre profession.",
+      "Sous la rubrique «Name, Address & Telephone of person inviting you», écrivez le nom, l’adresse et le numéro de téléphone de l’entreprise au Ghana.",
+      "Sous la rubrique «Adresse of Hotel where you will be staying», écrivez l’adresse de votre hôtel au Ghana.",
+      "Imprimez, signez et datez votre formulaire de demande à l’encre noir."
+     ]
+    },
+    {
+     "nom": "Preuve de fonds suffisants",
+     "details": [
+      "Vous doivent fournir une attestation de fonds suffisants ou une copie des trois derniers relevées bancaires du demandeur (ou des parents du demandeur si le voyageur est un étudiant)."
+     ]
+    },
+    {
+     "nom": "La réservation de vol aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour.",
+      "• Le détail de tous les vols est nécessaire lorsqu’il s’agit d’un itinéraire (transit, etc.)"
+     ]
+    },
+    {
+     "nom": "Une copie du certificat de vaccination contre la fièvre jaune",
+     "details": [
+      "• Si vous n’êtes pas en ordre de vaccination (carnet de vaccination), renseignez-vous auprès de votre médecin traitant, d’un centre agréé ou d’un hôpital. Sachez qu’il existe une travel clinic (la Travel and Vaccine Clinic du CHU Saint-Pierre à Bruxelles) où il est possible d’obtenir son vaccin sans rendez-vous."
+     ]
+    },
+    {
+     "nom": "Réservation d’hôtel",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement.",
+      "• Il est important que votre nom et les dates de séjour soient mentionnés sur la réservation."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement au Ghana.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES GHANA",
+   "url": "http://www.travisum.com/visas/ghana/informations-generales-ghana/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables si vous optez pour la procédure normale. Pour les demandes plus urgentes, optez pour un traitement express qui prend 3 jours ouvrables."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Délai normal | Particuliers | Agences de voyages | Organisation internationale",
+      "Entrée simple | 70€ | * | * | *",
+      "Multiples entrées, 3 mois | 160€ | * | * | *",
+      "Multiples entrées, 6 mois | 210€ | * | * | *",
+      "Multiples entrées, 1 an | 260€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'ambassade du Ghana",
+     "details": [
+      "Adresse: 7, Boulevard Général Wahis. 1030 Schaerbeek",
+      "Tel.: 02/ 705 82 20",
+      "eMail: ghanaemb@chello.be",
+      "Jours d’ouverture: Du lundi au jeudi",
+      "Horaire: 10h-12h (dépôt) – 14h30 – 15h00 (récupération)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

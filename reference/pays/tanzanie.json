@@ -1,0 +1,215 @@
+{
+ "slug": "tanzanie",
+ "nom": "Tanzanie",
+ "url": "https://www.travisum.com/visas/tanzanie/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/tanzanie/tanzanie-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager en Tanzanie. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "• Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond clair uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "• Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Formulaire d'application de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande.",
+      "Sous la rubrique «Type of visa requested», indiquez le type de visa demandé:",
+      "Sous la rubrique «Surname»; écrivez votre nom de famille.",
+      "Sous la rubrique «First names», écrivez vos prénoms.",
+      "Sous la rubrique «Maiden name», en cas échéant, écrivez votre nom de jeune fille.",
+      "Sous la rubrique «Date of Birth», écrivez votre date de naissance.",
+      "Sous la rubrique «Sex», indiquez votre sexe.",
+      "Sous la rubrique «Purpose of visit», indiquez le motif de votre voyage.",
+      "Sous la rubrique «Requested number of entries», indiquez le nombre d’entrées.",
+      "Sous la rubrique «Requested duration of stay», indiquez la durée de votre voyage.",
+      "Sous la rubrique «Passport number», écrivez votre numéro de passeport.",
+      "Sous la rubrique «Type of passport», indiquez le type de passeport:",
+      "Sous la rubrique «Issued on»; écrivez la date de délivrance.",
+      "Sous la rubrique «Valid until»; écrivez la date d’expiration.",
+      "Sous la rubrique «Issued at», écrivez l’autorité.",
+      "Sous la rubrique «Place of birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Country of Birth», écrivez le pays de naissance.",
+      "Sous la rubrique «Present Nationality», écrivez votre nationalité actuelle.",
+      "Sous la rubrique «Nationality at Birth», écrivez votre nationalité d’origine.",
+      "Sous la rubrique «Marital status», indiquez votre état civil.",
+      "Sous la rubrique «Address», écrivez votre adresse de domicile.",
+      "Sous la rubrique «Telephone No.», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «Current Occupation», indiquez votre profession actuelle.",
+      "Sous la rubrique «Employer’s Address», écrivez l’adresse de votre employeur.",
+      "Sous la rubrique «Arrival Dates in Tanzania», écrivez votre date d’arrivée en Tanzanie.",
+      "Sous la rubrique «Departure dates from Tanzania», écrivez votre date de départ.",
+      "Sous la rubrique «Your physical address in Tanzania», écrivez l’adresse de votre hôtel en Tanzanie.",
+      "Écrivez le nom, l’adresse et le numéro de téléphone de votre hôte en Tanzanie.",
+      "Sous la rubrique «Budget available for your stay», indiquez, si vous avez des fonds suffisants pour votre séjour en Tanzanie.",
+      "En cas de transit, indiquez, si vous avez un visa pour votre pays de destination.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Copie des billets d’avion aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/tanzanie/tanzanie-visa-business/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires en Tanzanie. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "• Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond clair uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "• Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Formulaire d'application de demande de visa",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande.",
+      "Sous la rubrique «Type of visa requested», indiquez le type de visa demandé:",
+      "Sous la rubrique «Surname»; écrivez votre nom de famille.",
+      "Sous la rubrique «First names», écrivez vos prénoms.",
+      "Sous la rubrique «Maiden name», en cas échéant, écrivez votre nom de jeune fille.",
+      "Sous la rubrique «Date of Birth», écrivez votre date de naissance.",
+      "Sous la rubrique «Sex», indiquez votre sexe.",
+      "Sous la rubrique «Purpose of visit», indiquez le motif de votre voyage.",
+      "Sous la rubrique «Requested number of entries», indiquez le nombre d’entrées.",
+      "Sous la rubrique «Requested duration of stay», indiquez la durée de votre voyage.",
+      "Sous la rubrique «Passport number», écrivez votre numéro de passeport.",
+      "Sous la rubrique «Type of passport», indiquez le type de passeport:",
+      "Sous la rubrique «Issued on»; écrivez la date de délivrance.",
+      "Sous la rubrique «Valid until»; écrivez la date d’expiration.",
+      "Sous la rubrique «Issued at», écrivez l’autorité.",
+      "Sous la rubrique «Place of birth», écrivez votre lieu de naissance.",
+      "Sous la rubrique «Country of Birth», écrivez le pays de naissance.",
+      "Sous la rubrique «Present Nationality», écrivez votre nationalité actuelle.",
+      "Sous la rubrique «Nationality at Birth», écrivez votre nationalité d’origine.",
+      "Sous la rubrique «Marital status», indiquez votre état civil.",
+      "Sous la rubrique «Address», écrivez votre adresse de domicile.",
+      "Sous la rubrique «Telephone No.», écrivez votre numéro de téléphone.",
+      "Sous la rubrique «Current Occupation», indiquez votre profession actuelle.",
+      "Sous la rubrique «Employer’s Address», écrivez l’adresse de votre employeur.",
+      "Sous la rubrique «Arrival Dates in Tanzania», écrivez votre date d’arrivée en Tanzanie.",
+      "Sous la rubrique «Departure dates from Tanzania», écrivez votre date de départ.",
+      "Sous la rubrique «Your physical address in Tanzania», écrivez l’adresse de votre hôtel en Tanzanie.",
+      "Écrivez le nom, l’adresse et le numéro de téléphone de votre hôte en Tanzanie.",
+      "Sous la rubrique «Budget available for your stay», indiquez, si vous avez des fonds suffisants pour votre séjour en Tanzanie.",
+      "En cas de transit, indiquez, si vous avez un visa pour votre pays de destination.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Copie des billets d’avion aller-retour",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    },
+    {
+     "nom": "Lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement en Tanzanie.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut également mentionner que l’entreprise se porte garante pour tous les frais liées au séjour en Tanzanie.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "TANZANIE INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/tanzanie/tanzanie-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 3-5 jours ouvrables."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Type de Visa | Délai normal | Particuliers | Agence de voyages",
+      "Organisation",
+      "internationale",
+      "Visa Tourisme; Entrée simple | 50€ | * | * | *",
+      "Visa Business, Visa d’études; | 250€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade de Tanzanie",
+     "details": [
+      "Adresse: 72, Franklin Roosevelt, 1050 Ixelles",
+      "Tel.: 02/ 640 65 00",
+      "eMail: tanzania@skynet.be",
+      "Jours d’ouverture: Du lundi au vendredi",
+      "Horaire: 9h30-13h"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

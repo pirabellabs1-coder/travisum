@@ -1,0 +1,182 @@
+{
+ "slug": "mali",
+ "nom": "Mali",
+ "url": "https://www.travisum.com/visas/mali/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/mali/visa-tourisme-mali/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Mali. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage. • Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d’identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond blanc uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport). • Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires d’application complétés et signés",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire Mali",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Données personnelles», écrivez votre nom, prénom, date de naissance, lieu de naissance, nationalité, état civil, nombre d’enfants et votre profession.",
+      "Puis, sous la rubrique «Adresse complète», écrivez votre adresse actuelle, ainsi que votre numéro de téléphone et adresse e-mail.",
+      "Sous la rubrique «Documents», indiquez le numéro, la date et le lieu de délivrance de votre passeport, ainsi que le numéro de votre carte d’identité.",
+      "Sous la rubrique «Données de séjour», indiquez la date d’arrivée, la durée de votre séjour, le lieu de provenance, votre destination au Mali, le moyen de transport, le lieu du séjour, le(s) date(s) et lieu(x) des précédents séjours au Mali (en cas échéant), le motif du voyage (Tourisme), le type du visa demandé et les noms et adresses de référence au Mali.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Une copie des billets d'avion",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    },
+    {
+     "nom": "Carnet de vaccination contre la fièvre jaune",
+     "details": [
+      "• Si vous n’êtes pas en ordre de vaccination (carnet de vaccination), renseignez-vous auprès de votre médecin traitant, d’un centre agréé ou d’un hôpital. Sachez qu’il existe une travel clinic (la Travel and Vaccine Clinic du CHU Saint-Pierre à Bruxelles) où il est possible d’obtenir son vaccin sans rendez-vous."
+     ]
+    },
+    {
+     "nom": "Réservation d’hôtel ou une lettre d’invitation de votre hôte",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement ou demandez à votre hôte d’écrire une lettre qui explique que vous prévoyez d’héberger chez eux."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/mali/visa-business-mali/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires au Mali. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage. • Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d’identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond blanc uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport). • Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires d’application complétés et signés",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire Mali",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Données personnelles», écrivez votre nom, prénom, date de naissance, lieu de naissance, nationalité, état civil, nombre d’enfants et votre profession.",
+      "Puis, sous la rubrique «Adresse complète», écrivez votre adresse actuelle, ainsi que votre numéro de téléphone et adresse e-mail.",
+      "Sous la rubrique «Documents», indiquez le numéro, la date et le lieu de délivrance de votre passeport, ainsi que le numéro de votre carte d’identité.",
+      "Sous la rubrique «Données de séjour», indiquez la date d’arrivée, la durée de votre séjour, le lieu de provenance, votre destination au Mali, le moyen de transport, le lieu du séjour, le(s) date(s) et lieu(x) des précédents séjours au Mali (en cas échéant), le motif du voyage (Business), le type du visa demandé et les noms et adresses de référence au Mali.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Une copie des billets d'avion",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    },
+    {
+     "nom": "Carnet de vaccination contre la fièvre jaune",
+     "details": [
+      "• Si vous n’êtes pas en ordre de vaccination (carnet de vaccination), renseignez-vous auprès de votre médecin traitant, d’un centre agréé ou d’un hôpital. Sachez qu’il existe une travel clinic (la Travel and Vaccine Clinic du CHU Saint-Pierre à Bruxelles) où il est possible d’obtenir son vaccin sans rendez-vous."
+     ]
+    },
+    {
+     "nom": "Réservation d’hôtel ou une lettre d’invitation de votre hôte",
+     "details": [
+      "• Imprimez une copie de votre réservation d’hébergement ou demandez à votre hôte d’écrire une lettre qui explique que vous prévoyez d’héberger chez eux."
+     ]
+    },
+    {
+     "nom": "Une lettre de présentation de l’employeur du demandeur",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise. • Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise. • Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées. • Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature. • Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Une lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement au Mali. • Cela doit être adressé à l’ambassade du Mali. • Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport. • Vérifiez que la date d’arrivée et de départ du pays visité soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées. • Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise • Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/mali/informations-generales-mali/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 4 jours ouvrables si vous optez pour la procédure normale. Pour les demandes plus urgentes, optez pour un traitement express qui prend 1 jour ouvrable."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "| Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Entrée simple | Entrées multiples | Particuliers | Agences de voyages | Organisation internationale",
+      "Séjour d’un mois ou moins | 70€ | – | * | * | *",
+      "Séjour de 3 mois | – | 90€ | * | * | *",
+      "Séjour de 6 mois | – | 120€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Information sur l'ambassade du Mali",
+     "details": [
+      "• Le traitement consulaire prend normalement deux jours. Il est toutefois possible de faire une demande express (1 jour). • Les frais consulaires doivent être payés en liquide."
+     ]
+    },
+    {
+     "nom": "Contact de l'ambassade du Mali",
+     "details": [
+      "Adresse: 487, Avenue Molière, 1050 Bruxelles",
+      "Tél. 02 340 81 32",
+      "Email: info@amba-mali.be",
+      "Horaires d’ouverture: du lundi au vendredi:",
+      "9h – 12h (dépôt ) et 15h – 16h30 (retrait)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

@@ -1,0 +1,192 @@
+{
+ "slug": "madagascar",
+ "nom": "Madagascar",
+ "url": "https://www.travisum.com/visas/madagascar/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/madagascar/visa-tourisme-madagascar/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Madagascar. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "• Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d’identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond blanc uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "• Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires d’application complétés et signés",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire Madagascar",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Nom», écrivez votre nom complet, votre nom de jeune fille (en cas échéant) et vos prénoms.",
+      "Puis, écrivez votre date et lieu de naissance.",
+      "Indiquez votre nationalité actuelle et votre nationalité d’origine.",
+      "Indiquez votre situation de famille.",
+      "Écrivez votre adresse permanente.",
+      "Écrivez votre adresse actuelle.",
+      "Indiquez votre profession.",
+      "Puis, écrivez votre numéro de passeport, la date de délivrance, l’autorité et la date d’expiration.",
+      "En cas de transit, indiquez votre destination et les informations sur votre voyage après Madagascar.",
+      "Indiquez la durée de votre séjour au Madagascar sous la rubrique «Court Séjour de».",
+      "Sous la rubrique «Valable du», écrivez la validité du visa demandé.",
+      "Puis, indiquez le nombre d’entrées du visa demandé.",
+      "Si vous êtes accompagné durant votre voyage, indiquez les noms et prénoms.",
+      "Indiquez le motif de votre voyage (Tourisme).",
+      "Indiquez, si vous avez déjà habité Madagascar pendant plus de trois mois sans interruption.",
+      "Donnez les coordonnées d’une personne à contacter en cas d’urgence.",
+      "Donnez les coordonnées d’une personne au Madagascar.",
+      "Indiquez les dates et les lieux d’entrée et de départ au Madagascar.",
+      "Indiquez le moyen de transport utilisé.",
+      "Écrivez l’adresse de votre hôtel au Madagascar.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Deux copies des billets d'avion",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/madagascar/visa-business-madagascar/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires au Madagascar. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "• Votre passeport doit être valable au moins 6 mois après la date de retour de votre voyage.",
+      "• Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d’identité",
+     "details": [
+      "• Celle-ci doit être en couleur, prise sur un fond blanc uni, au format 35x45mm et imprimée sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "• Vous pouvez vérifier si votre photo correspond aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires d’application complétés et signés",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger et imprimer le formulaire de demande de visa à l’aide du lien suivant : Formulaire Madagascar",
+      "Remplissez le formulaire en majuscules. Soyez précis.",
+      "Sous la rubrique «Nom», écrivez votre nom complet, votre nom de jeune fille (en cas échéant) et vos prénoms.",
+      "Puis, écrivez votre date et lieu de naissance.",
+      "Indiquez votre nationalité actuelle et votre nationalité d’origine.",
+      "Indiquez votre situation de famille.",
+      "Écrivez votre adresse permanente.",
+      "Écrivez votre adresse actuelle.",
+      "Indiquez votre profession.",
+      "Puis, écrivez votre numéro de passeport, la date de délivrance, l’autorité et la date d’expiration.",
+      "En cas de transit, indiquez votre destination et les informations sur votre voyage après Madagascar.",
+      "Indiquez la durée de votre séjour au Madagascar sous la rubrique «Court Séjour de».",
+      "Sous la rubrique «Valable du», écrivez la validité du visa demandé.",
+      "Puis, indiquez le nombre d’entrées du visa demandé.",
+      "Si vous êtes accompagné durant votre voyage, indiquez les noms et prénoms.",
+      "Indiquez le motif de votre voyage (Business).",
+      "Indiquez, si vous avez déjà habité Madagascar pendant plus de trois mois sans interruption.",
+      "Donnez les coordonnées d’une personne à contacter en cas d’urgence.",
+      "Donnez les coordonnées d’une personne à l’entreprise d’accueil au Madagascar.",
+      "Indiquez les dates et les lieux d’entrée et de départ au Madagascar.",
+      "Indiquez le moyen de transport utilisé.",
+      "Écrivez l’adresse de votre hôtel au Madagascar.",
+      "Signez et datez votre formulaire de demande."
+     ]
+    },
+    {
+     "nom": "Deux copies des billets d'avion",
+     "details": [
+      "• Imprimez une copie de votre réservation de vols aller-retour."
+     ]
+    },
+    {
+     "nom": "Lettre d'invitation",
+     "details": [
+      "• Cette lettre doit être rédigée par une entreprise ou une organisation enregistrée officiellement au Madagascar.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport.",
+      "• Vérifiez que la date d’arrivée et de départ du pays de la destination soit également mentionnée ainsi que la durée souhaitée du visa et le nombre d’entrées.",
+      "• Il est nécessaire d’expliquer le motif de voyage ainsi que préciser les endroits où le voyageur se rendra.",
+      "• Il faut également mentionner que l’entreprise se porte garante pour tous les frais liées au séjour au Madagascar.",
+      "• Il faut que la lettre soit signée et qu’elle ait un cachet officiel de l’entreprise.",
+      "• Vous pouvez télécharger un exemple type de lettre d’invitation ici: Lettre d’invitation type"
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES MADAGASCAR",
+   "url": "http://www.travisum.com/visas/madagascar/informations-generales-madagascar/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 3 jours ouvrables."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "La durée du séjour | Délai normal | Particuliers | Agence de voyages",
+      "Organisation",
+      "internationale",
+      "Une entrée de moins de 1 mois | Gratuit | * | * | *",
+      "Une entrée entre 1 et 2 mois",
+      "55€ | * | * | *",
+      "Une entrée entre 1 et 3 mois | 77€ | * | * | *",
+      "Pour deux entrées (ou entrées multiples) | 83€",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade du Madagascar",
+     "details": [
+      "Adresse: Avenue de Tervuren 276 – 1150 Woluwe-Saint-Pierre",
+      "Tel.: 02/770 17 26",
+      "eMail: info@madagascar-embassy.eu",
+      "Jours d’ouverture: Du lundi au vendredi",
+      "Horaire: 9h30 -12h"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

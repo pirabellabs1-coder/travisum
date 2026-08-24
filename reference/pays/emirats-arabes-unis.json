@@ -1,0 +1,109 @@
+{
+ "slug": "emirats-arabes-unis",
+ "nom": "Émirats Arabes Unis",
+ "url": "https://www.travisum.com/visas/emirats-arabes-unis/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/emirats-arabes-unis/emirats-arabes-unis-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Les belges n’ont pas besoin d’un visa (ils reçoivent un visa à l’arrivée à condition d’avoir un passeport valide 6 mois). Le visa est le plus souvent nécessaire pour non-européens…",
+    "Ci-dessous la liste des pays pour lesquels le visa est obtenu à l’arrivée:",
+    "France, Italie, Allemagne, Pays-Bas, Belgique, Luxembourg, Suisse, Autriche, Suède, Norvège, Danemark, Portugal, Irlande, Grèce, Finlande, Monaco, Vatican, Islande, Andorre, Saint-Marin, Liechtenstein, Pologne, Slovénie, Slovaquie, République tchèque, Lituanie, Hongrie, Lettonie, Estonie, Malte, Chypre, Croatie, Roumanie et Bulgarie",
+    "États-Unis, Australie, Nouvelle-Zélande, Japon, Brunei, Singapour, Malaisie et Hong Kong.",
+    "Ci-dessous, la liste des documents à présenter pour un voyage avec Etihad Airways:"
+   ],
+   "documents": [
+    {
+     "nom": "Copie du passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Photocopie de la page principale du passeport",
+     "details": [
+      "Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "Travisum peut se charger de l’impression de ces documents après leur réception par email."
+     ]
+    },
+    {
+     "nom": "Formulaire de demande",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour la demande en ligne.",
+      "Sous la rubrique «Applicant Details (Passport)», écrivez votre titre, vos prénoms, votre nom, le nom complet de votre père, le nom complet de votre mère, votre date de naissance, votre sexe, votre nationalité actuelle et d’origine, le lieu de naissance et le pays de naissance.",
+      "Puis, remplissez la partie concernant votre passeport en notant le numéro, la date de délivrance, la date d’expiration, le lieu et le pays de délivrance.",
+      "Indiquez l’adresse de votre hôtel aux émirats arabes unis.",
+      "Puis, indiquez votre langue maternelle, votre état civil, votre religion, le niveau d’études, votre profession, le numéro de téléphone de votre hôtel aux émirats arabes unis et votre adresse e-mail.",
+      "Puis sous la rubrique «Travel & Visa», indiquez la date d’arrivée, la date de départ, le type de visa demandé, le mode de paiement pour votre visa, le frais de visa, et le numéro de votre billet d’avion pour Etihad Airways.",
+      "Téléchargez les documents supplémentaires pour votre demande et faire la paiement en ligne."
+     ]
+    },
+    {
+     "nom": "Billet d’avion d’Etihad Airways confirmé",
+     "details": [
+      "Le billet d’avion d’Etihad Airways à Abu Dhabi et en avant (aller-retour uniquement) avec dates confirmées."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "ÉMIRATS ARABES UNIS INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/emirats-arabes-unis/emirats-arabes-unis-ig/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Type de Visa | Particuliers | Agences de voyages | Organisation internationale",
+      "Visa Tourisme 30 jours",
+      "96$",
+      "| * | *",
+      "Visa Tourisme un séjour plus de 30 jours | 275$ | * | * | *",
+      "Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade des Émirats Arabes Unis",
+     "details": [
+      "Adresse: Rue des Colonies 11, 1000 Bruxelles",
+      "Tél. 02 640 60 00",
+      "Email: consbruxelles@mofa.gov.ae",
+      "Jours d’ouverture: du lundi au vendredi",
+      "Horaire: 9h30 – 14h"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

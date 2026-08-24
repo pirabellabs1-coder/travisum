@@ -1,0 +1,16 @@
+import type { Metadata } from "next";
+import { alternates } from "@/lib/i18n";
+import { AccueilVue } from "@/components/vues/Accueil";
+
+export const metadata: Metadata = {
+  title: "Traduction assermentée, légalisation et visa à Bruxelles",
+  description:
+    "Travisum, bureau de traduction jurée avenue Louise à Bruxelles : traductions " +
+    "assermentées, légalisations, apostilles et visas de voyage. Devis détaillé en " +
+    "moins de 2 heures ouvrables.",
+  alternates: alternates("/"),
+};
+
+export default function Accueil() {
+  return <AccueilVue />;
+}

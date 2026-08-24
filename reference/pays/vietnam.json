@@ -1,0 +1,105 @@
+{
+ "slug": "vietnam",
+ "nom": "Vietnam",
+ "url": "https://www.travisum.com/visas/vietnam/",
+ "sous_pages": [
+  {
+   "type": "visa-tourisme",
+   "titre": "VISA TOURISME",
+   "url": "http://www.travisum.com/visas/vietnam/vietnam-visa-tourisme/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour voyager au Vietnam. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Une photo d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Un formulaire de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire en ligne (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par suivre ce lien pour remplir la demande en ligne.",
+      "Sous la rubrique «Les informations pratiques», indiquez le motif votre voyage (Tourisme) et le lieu de recevoir le visa (Ambassade du Vietnam en Belgique) et attachez un photo d’identité.",
+      "Cliquez sur «Continuer».",
+      "Puis, sous la rubrique «Les informations personnelles», écrivez votre nom et vos prénoms.",
+      "Puis, sélectionnez votre sexe dans le menu déroulant.",
+      "Sélectionnez la date et le lieu de naissance dans les menus déroulants.",
+      "Indiquez votre nationalité d’origine et actuelle.",
+      "Sélectionnez votre profession dans le menu déroulant.",
+      "Indiquez votre religion.",
+      "Sous la rubrique «Lieu de travail», écrivez le nom et l’adresse de votre employeur.",
+      "Puis, écrivez l’adresse du domicile, votre numéro de téléphone et adresse e-mail.",
+      "Sous la rubrique «Les informations sur le passeport», écrivez le numéro, le type, le lieu de délivrance, la date de délivrance et la date d’expiration de votre passeport.",
+      "Sous la rubrique «Les informations sur le visa», indiquez la date prévue d’entrée, les délais du visa, la date prévue de départ, le nombre d’entrées et l’adresse de votre hôtel au Vietnam.",
+      "Si vous avez déjà visité le Vietnam, indiquez la date d’entrée la plus récente.",
+      "Cliquez sur «Continuer».",
+      "Sous la rubrique «Les informations sur l’établissement/l’organisation/la personne qui vous invite», écrivez le nom, l’adresse et le numéro de téléphone de votre hôtel/agence de voyages au Vietnam.",
+      "Sous la rubrique «Contact en cas de besoin», écrivez le nom, l’adresse, le numéro de téléphone d’une personne à contacter en cas d’urgence.",
+      "Imprimez, signez et datez votre formulaire de demande."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "VIETNAM INFORMATIONS GÉNÉRALES",
+   "url": "http://www.travisum.com/visas/vietnam/vietnam-informations-generales/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 7 jours ouvrables si vous optez pour la procédure normale. Pour les demandes plus urgentes, optez pour un traitement express qui prend 4 jours ouvrables."
+     ]
+    },
+    {
+     "nom": "Les tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Nombre d’entrées |  | Particuliers | Agences de voyages",
+      "Organisation",
+      "internationale",
+      "Simple",
+      "55€",
+      "* | * | *",
+      "Multiple 3 Mois | 160€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'Ambassade du Vietnam",
+     "details": [
+      "Adresse: 1, Boulevard Général Jacques. 1050, Bruxelles",
+      "Tel.: 02/ 37 927 37 (02/ 37 927 33 ou 02/37 927 36)",
+      "eMail: vnemb.brussels@skynet.be",
+      "Jours d’ouverture: Lundi, mercredi, vendredi",
+      "Horaire: 14h – 17h (dépôt / retrait)"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}

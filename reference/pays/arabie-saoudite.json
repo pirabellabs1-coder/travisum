@@ -1,0 +1,129 @@
+{
+ "slug": "arabie-saoudite",
+ "nom": "Arabie Saoudite",
+ "url": "https://www.travisum.com/visas/arabie-saoudite/",
+ "sous_pages": [
+  {
+   "type": "visa-business",
+   "titre": "VISA BUSINESS",
+   "url": "http://www.travisum.com/visas/arabie-saoudite/visa-business-arabie-saoudite/",
+   "statut_http": 200,
+   "intro": [
+    "Formalité et liste des documents:",
+    "Un visa est obligatoire pour un voyage d’affaires en Arabie Saoudite. Ci-dessous, la liste des documents à présenter:"
+   ],
+   "documents": [
+    {
+     "nom": "Passeport",
+     "details": [
+      "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre visa.",
+      "Il doit également contenir au moins 2 pages vierges."
+     ]
+    },
+    {
+     "nom": "Deux photos d'identité",
+     "details": [
+      "Celles-ci doivent être en couleur, prises sur un fond clair uni, au format 35x45mm et imprimées sur du papier photo (comme pour votre carte d’identité ou pour votre passeport).",
+      "Vous pouvez vérifier si vos photos correspondent aux exigences requises à l’aide de document suivant : Exigences pour les photos"
+     ]
+    },
+    {
+     "nom": "Deux formulaires de demande de visa officiel",
+     "details": [
+      "Travisum peut se charger de remplir le formulaire pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
+      "Ci-dessous, les différentes étapes pour remplir le formulaire (à imprimer, dater et signer à l’encre noir).",
+      "Commencez par télécharger ce demande de visa .",
+      "Remplissez bien la première partie en notant votre nom et prénom, le nom et prénom de votre mère, la date et le lieu de votre naissance, votre nationalité, votre sexe, votre état civil, votre religion, votre niveau des études et votre profession.",
+      "Puis, écrivez votre adresse et numéro de téléphone et l’adresse et le numéro de téléphone de votre employeur.",
+      "Indiquez le motif de votre séjour (Work).",
+      "Écrivez le lieu et la date de délivrance et la date d’expiration de votre passeport. Indiquez votre numéro de passeport.",
+      "Indiquez la durée de votre séjour, le date d’arrivée et le date du départ prévue.",
+      "Indiquez le mode de paiement (Cash).",
+      "S’il y a des enfants mineurs dans votre passeport, écrivez leurs renseignements dans le tableau.",
+      "Remplissez le nom et l’adresse de l’entreprise en Arabie Saoudite, où vous visiterez.",
+      "Signez et datez votre formulaire de demande à l’encre noir."
+     ]
+    },
+    {
+     "nom": "Déclaration générale originale signée",
+     "details": []
+    },
+    {
+     "nom": "Photocopie de la carte d'identité",
+     "details": [
+      "Prenez soin de faire une photocopie recto verso de votre carte d’identité.",
+      "Les demandeurs qui ne détiennent pas un passeport belge, néerlandais ou luxembourgeois, doivent présenter une copie de leur carte de résidence."
+     ]
+    },
+    {
+     "nom": "Une photocopie de la page principale du passeport",
+     "details": [
+      "• Veuillez faire une photocopie en couleur de la page principale de votre passeport.",
+      "• Les demandeurs ne détenant pas de passeport belge doivent également présenter une copie recto verso en couleur de leur carte d’identité et de leur carte de résident en Belgique (au cas ou ils en possèdent une).",
+      "• Travisum peut se charger de l’impression de ces documents après leur réception par email."
+     ]
+    },
+    {
+     "nom": "Une lettre d’introduction originale de la société belge",
+     "details": [
+      "• Cette lettre doit être rédigée sur du papier à en-tête de l’entreprise.",
+      "• Il faut mentionner le nom du voyageur, sa date de naissance et son numéro de passeport, ainsi que le nom et l’adresse de l’entreprise.",
+      "• Vérifiez que la date d’arrivée et de départ du pays visité est également mentionnée et précisez la durée souhaitée du visa ainsi que le nombre d’entrées.",
+      "• Il est important d’indiquer que l’entreprise se porte garante pour tous les frais liés au voyage avec un cachet de la société et une signature.",
+      "• Vous pouvez télécharger un exemple type de lettre de présentation ici: Lettre de présentation type"
+     ]
+    },
+    {
+     "nom": "Une lettre d’invitation",
+     "details": [
+      "Il faut fournir une lettre d’invitation avec le nom du demandeur et délivrée par le Ministère des Affaires étrangères en Arabie Saoudite."
+     ]
+    }
+   ],
+   "texte_libre": []
+  },
+  {
+   "type": "informations-generales",
+   "titre": "INFORMATIONS GÉNÉRALES ARABIE SAOUDITE",
+   "url": "http://www.travisum.com/arabie-saoudite/ig-arabie-saoudite/",
+   "statut_http": 200,
+   "intro": [],
+   "documents": [
+    {
+     "nom": "Délai d'obtention",
+     "details": [
+      "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables si vous optez pour la procédure normale."
+     ]
+    },
+    {
+     "nom": "Les Tarifs",
+     "details": [
+      "Frais consulaires | Frais de service Travisum",
+      "Délai | Particuliers | Agences de voyages | Organisation internationale",
+      "Tous entrées | 120€ | * | * | *",
+      "Registration Affaires étrangères | 50€ | * | * | *",
+      "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
+     ]
+    },
+    {
+     "nom": "Livraison",
+     "details": [
+      "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
+     ]
+    },
+    {
+     "nom": "Contact de l'ABLCC",
+     "details": [
+      "Adresse: 60, Rue Mignot Delstanche – 1050 Bruxelles, Belgique",
+      "Tél. +32.2.344.82.04",
+      "Email: info@ablcc.org",
+      "Jours d’ouverture: du lundi au vendredi",
+      "Horaire: du lundi au jeudi: de 9h à 16h",
+      "vendredi: de 9h à 13h"
+     ]
+    }
+   ],
+   "texte_libre": []
+  }
+ ]
+}
