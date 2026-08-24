@@ -31,7 +31,7 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
   return (
     <Page lang={lang} cheminFr={cheminFr}>
       {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="relative w-full bg-primary overflow-hidden min-h-[85vh] flex flex-col justify-center -mt-20 pt-20">
+      <section className="relative w-full bg-primary overflow-hidden -mt-20 pt-28 md:pt-32 pb-14 md:pb-16">
         <div
           className="absolute inset-y-0 right-0 w-full lg:w-1/2 h-full opacity-30 lg:opacity-60 bg-cover bg-center mix-blend-luminosity border-l border-tertiary-fixed-dim/20"
           style={{ backgroundImage: "url('/assets/img/photos/hero-avenue-louise.jpg')" }}
@@ -42,26 +42,43 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
           aria-hidden="true"
         />
 
-        <div className={`relative ${MAXW} w-full py-16 md:py-24 flex flex-col z-10`}>
-          <div className="flex items-center gap-4 mb-8">
+        <div className={`relative ${MAXW} w-full flex flex-col z-10`}>
+          <div className="flex items-center gap-4 mb-5">
             <span className="w-12 h-px bg-tertiary-fixed-dim" />
             <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">
               {c.hero_surtitre}
             </span>
           </div>
 
-          <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-4xl leading-none mb-6">
+          <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary max-w-4xl leading-[1.05] mb-5">
             {c.hero_titre}{" "}
             <span className="text-tertiary-fixed-dim italic">
               {c.hero_titre_italique}
             </span>
           </h1>
 
-          <p className="font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl mb-12">
+          <p className="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mb-8">
             {c.hero_chapeau}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          {/* Portes d'entree : par ou commencer */}
+          <p className="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim/60 mb-3">
+            {c.doors_label}
+          </p>
+          <div className="grid gap-2 max-w-md mb-9">
+            {c.doors.map(([label, href]) => (
+              <a
+                key={label}
+                href={L(href)}
+                className="group flex items-center justify-between gap-3 px-4 py-3 rounded-sm border border-tertiary-fixed-dim/25 hover:border-tertiary-fixed-dim/60 hover:bg-white/[0.04] transition-colors"
+              >
+                <span className="font-body-md text-body-md text-on-primary">{label}</span>
+                <Icone nom="arrow_forward" taille="text-[18px] group-hover:translate-x-1 transition-transform" couleur="text-tertiary-fixed-dim" />
+              </a>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 mb-12">
             <a
               className="bg-tertiary-fixed-dim text-on-tertiary-fixed px-8 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-sm border border-tertiary-fixed-dim hover:border-white text-center"
               href={L("/tarifs/")}
@@ -129,8 +146,7 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
             sansMarge
           />
           <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
-            Nous simplifions la complexité administrative. De la traduction assermentée à
-{c.metiers_intro}
+            {c.metiers_intro}
           </p>
         </div>
 

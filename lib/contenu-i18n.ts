@@ -139,6 +139,8 @@ type Accueil = {
   hero_chapeau: string;
   hero_cta1: string;
   hero_cta2: string;
+  doors_label: string;
+  doors: [string, string][];
   stats: string[]; // 4 libellés
   metiers_surtitre: string;
   metiers_titre_1: string;
@@ -163,6 +165,12 @@ export const ACCUEIL: Trad<Accueil> = {
       "Traductions assermentées, légalisations consulaires, apostilles et visas de voyage. Une expertise rigoureuse pour vos démarches internationales.",
     hero_cta1: "Obtenir mon devis instantané",
     hero_cta2: "Déposer un document",
+    doors_label: "Par où commencer",
+    doors: [
+      ["J’ai un document à faire traduire", "/traductions/"],
+      ["J’ai un document à faire légaliser", "/legalisations/"],
+      ["Je pars à l’étranger", "/visas/"],
+    ],
     stats: ["Langues traitées", "Dépôt & retrait", "Traducteurs jurés", "Vues Google"],
     metiers_surtitre: "Notre expertise",
     metiers_titre_1: "Trois métiers,",
@@ -216,6 +224,12 @@ export const ACCUEIL: Trad<Accueil> = {
       "Beëdigde vertalingen, consulaire legalisaties, apostilles en reisvisa. Nauwkeurige expertise voor uw internationale formaliteiten.",
     hero_cta1: "Mijn offerte meteen aanvragen",
     hero_cta2: "Een document indienen",
+    doors_label: "Waar beginnen",
+    doors: [
+      ["Ik moet een document laten vertalen", "/traductions/"],
+      ["Ik moet een document laten legaliseren", "/legalisations/"],
+      ["Ik vertrek naar het buitenland", "/visas/"],
+    ],
     stats: ["Behandelde talen", "Indienen & ophalen", "Beëdigde vertalers", "Google-weergaven"],
     metiers_surtitre: "Onze expertise",
     metiers_titre_1: "Drie vakgebieden,",
@@ -269,6 +283,12 @@ export const ACCUEIL: Trad<Accueil> = {
       "Sworn translations, consular legalisations, apostilles and travel visas. Rigorous expertise for your international formalities.",
     hero_cta1: "Get my instant quote",
     hero_cta2: "Submit a document",
+    doors_label: "Where to start",
+    doors: [
+      ["I need a document translated", "/traductions/"],
+      ["I need a document legalised", "/legalisations/"],
+      ["I’m travelling abroad", "/visas/"],
+    ],
     stats: ["Languages handled", "Drop-off & pickup", "Sworn translators", "Google views"],
     metiers_surtitre: "Our expertise",
     metiers_titre_1: "Three services,",
