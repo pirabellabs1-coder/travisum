@@ -159,10 +159,10 @@ type Accueil = {
 export const ACCUEIL: Trad<Accueil> = {
   fr: {
     hero_surtitre: "Bureau de traduction jurée — Bruxelles, avenue Louise",
-    hero_titre: "Vos documents officiels, traduits, légalisés et validés.",
-    hero_titre_italique: "Sans un seul aller-retour inutile.",
+    hero_titre: "Vos documents officiels : traduits, légalisés et reconnus.",
+    hero_titre_italique: "Nous vous guidons à chaque étape.",
     hero_chapeau:
-      "Traductions assermentées, légalisations consulaires, apostilles et visas de voyage. Une expertise rigoureuse pour vos démarches internationales.",
+      "Traduction assermentée, légalisation, apostille ou visa : chaque autorité a ses propres exigences. Nous les vérifions pour vous, préparons le dossier complet et suivons chaque étape — vous savez toujours quoi fournir, à quel prix et dans quel délai.",
     hero_cta1: "Obtenir mon devis instantané",
     hero_cta2: "Déposer un document",
     doors_label: "Par où commencer",
@@ -176,7 +176,7 @@ export const ACCUEIL: Trad<Accueil> = {
     metiers_titre_1: "Trois métiers,",
     metiers_titre_2: "une seule adresse.",
     metiers_intro:
-      "Nous simplifions la complexité administrative. De la traduction assermentée à l’obtention de votre visa, nous gérons l’intégralité de la chaîne documentaire.",
+      "Trois expertises réunies sous un même toit. Nous vous expliquons la démarche adaptée à votre situation, puis prenons tout en charge : de la traduction jurée au dépôt du visa, vous n’avez qu’un seul interlocuteur.",
     metiers: [
       {
         titre: ["Traductions", "Jurées"],
@@ -218,10 +218,10 @@ export const ACCUEIL: Trad<Accueil> = {
 
   nl: {
     hero_surtitre: "Kantoor voor beëdigde vertalingen — Brussel, Louizalaan",
-    hero_titre: "Uw officiële documenten: vertaald, gelegaliseerd en gevalideerd.",
-    hero_titre_italique: "Zonder één overbodige heen-en-weer.",
+    hero_titre: "Uw officiële documenten: vertaald, gelegaliseerd en erkend.",
+    hero_titre_italique: "Wij begeleiden u bij elke stap.",
     hero_chapeau:
-      "Beëdigde vertalingen, consulaire legalisaties, apostilles en reisvisa. Nauwkeurige expertise voor uw internationale formaliteiten.",
+      "Beëdigde vertaling, legalisatie, apostille of visum: elke autoriteit heeft haar eigen eisen. Wij controleren ze voor u, stellen het volledige dossier samen en volgen elke stap op — zo weet u altijd wat u moet aanleveren, tegen welke prijs en binnen welke termijn.",
     hero_cta1: "Mijn offerte meteen aanvragen",
     hero_cta2: "Een document indienen",
     doors_label: "Waar beginnen",
@@ -235,7 +235,7 @@ export const ACCUEIL: Trad<Accueil> = {
     metiers_titre_1: "Drie vakgebieden,",
     metiers_titre_2: "één adres.",
     metiers_intro:
-      "Wij vereenvoudigen de administratieve complexiteit. Van beëdigde vertaling tot het verkrijgen van uw visum beheren wij de volledige documentaire keten.",
+      "Drie expertises onder één dak. Wij leggen u de juiste procedure voor uw situatie uit en nemen daarna alles in handen: van de beëdigde vertaling tot de visumaanvraag heeft u één aanspreekpunt.",
     metiers: [
       {
         titre: ["Beëdigde", "vertalingen"],
@@ -277,10 +277,10 @@ export const ACCUEIL: Trad<Accueil> = {
 
   en: {
     hero_surtitre: "Sworn translation office — Brussels, Avenue Louise",
-    hero_titre: "Your official documents: translated, legalised and validated.",
-    hero_titre_italique: "Without a single needless back-and-forth.",
+    hero_titre: "Your official documents: translated, legalised and accepted.",
+    hero_titre_italique: "We guide you at every step.",
     hero_chapeau:
-      "Sworn translations, consular legalisations, apostilles and travel visas. Rigorous expertise for your international formalities.",
+      "Sworn translation, legalisation, apostille or visa: every authority has its own requirements. We check them for you, assemble the complete file and follow each step — so you always know what to provide, at what price and within what timeframe.",
     hero_cta1: "Get my instant quote",
     hero_cta2: "Submit a document",
     doors_label: "Where to start",
@@ -294,7 +294,7 @@ export const ACCUEIL: Trad<Accueil> = {
     metiers_titre_1: "Three services,",
     metiers_titre_2: "one address.",
     metiers_intro:
-      "We simplify administrative complexity. From sworn translation to obtaining your visa, we handle the entire documentary chain.",
+      "Three areas of expertise under one roof. We explain the right procedure for your situation, then handle everything: from sworn translation to visa submission, you have a single point of contact.",
     metiers: [
       {
         titre: ["Sworn", "translations"],

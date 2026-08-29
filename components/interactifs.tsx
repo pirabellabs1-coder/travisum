@@ -9,7 +9,7 @@
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { aplatir, type BlocTarifaire, type Question } from "@/lib/donnees";
-import { Carte, EnteteSection, Icone, Section } from "./ui";
+import { Carte, EnteteSection, Icone, MAXW, Section } from "./ui";
 
 // --------------------------------------------------------------------------
 /** Filet de progression de lecture. Figé à 100 % dans la maquette. */
@@ -214,13 +214,15 @@ export function GrilleFiltrable({
         </p>
       </div>
 
-      <div className={classes}>
-        {filtrees.map((e) => (
-          <span key={e.cle} className="contents">
-            {e.noeud}
-          </span>
-        ))}
-      </div>
+      {filtrees.length > 0 && (
+        <div className={classes}>
+          {filtrees.map((e) => (
+            <span key={e.cle} className="contents">
+              {e.noeud}
+            </span>
+          ))}
+        </div>
+      )}
 
       {filtrees.length === 0 && (
         <div className="mt-10">
@@ -345,14 +347,26 @@ export function OngletsTarifs({
  * cookies du site promet qu'aucun traceur n'est déposé avant consentement :
  * la carte n'est donc chargée que sur action explicite.
  */
-export function PlanAcces() {
+export function PlanAcces({ bandeau = false }: { bandeau?: boolean }) {
   const [charge, setCharge] = useState(false);
   const src =
     "https://www.google.com/maps?q=Travisum+Louise+Office,+Avenue+Louise+367,+1050+Bruxelles&output=embed";
 
   return (
-    <div className="border border-tertiary-fixed-dim/30 rounded-sm overflow-hidden bg-surface-container-lowest">
-      <div className="relative aspect-[4/3] bg-primary">
+    <div
+      className={
+        bandeau
+          ? "overflow-hidden bg-surface-container-lowest"
+          : "border border-tertiary-fixed-dim/30 rounded-sm overflow-hidden bg-surface-container-lowest"
+      }
+    >
+      <div
+        className={
+          bandeau
+            ? "relative h-[360px] md:h-[460px] bg-primary"
+            : "relative aspect-[4/3] bg-primary"
+        }
+      >
         {charge ? (
           <iframe
             src={src}
@@ -388,19 +402,26 @@ export function PlanAcces() {
           </div>
         )}
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4 border-t border-tertiary-fixed-dim/25">
-        <p className="font-body-md text-[15px] text-on-surface-variant">
-          Métro Louise, trams 8 et 93, bus 54.
-        </p>
-        <a
-          className="inline-flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-primary hover:text-on-tertiary-fixed-variant transition-colors"
-          href="https://maps.app.goo.gl/avsW7i5xRo2qmt2s5"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="border-t border-tertiary-fixed-dim/25">
+        <div
+          className={
+            (bandeau ? MAXW + " " : "px-6 ") +
+            "flex flex-wrap items-center justify-between gap-4 py-4"
+          }
         >
-          Itinéraire
-          <Icone nom="open_in_new" taille="text-[16px]" couleur="" />
-        </a>
+          <p className="font-body-md text-[15px] text-on-surface-variant">
+            Métro Louise, trams 8 et 93, bus 54.
+          </p>
+          <a
+            className="inline-flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-primary hover:text-on-tertiary-fixed-variant transition-colors"
+            href="https://maps.app.goo.gl/avsW7i5xRo2qmt2s5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Itinéraire
+            <Icone nom="open_in_new" taille="text-[16px]" couleur="" />
+          </a>
+        </div>
       </div>
     </div>
   );

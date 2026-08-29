@@ -2,43 +2,27 @@
   "traduction": {
     "colonnes": [
       "Prestation",
-      "Délai standard",
-      "Prioritaire 48 h",
-      "Express 24 h"
+      "Tarif"
     ],
     "lignes": [
       [
-        "Traduction libre, la page",
-        "35 EUR",
-        "50 EUR",
-        "70 EUR"
+        "Traduction assermentée (jurée), par document",
+        "Sur devis"
       ],
       [
-        "Traduction assermentée, la page",
-        "45 EUR",
-        "65 EUR",
-        "90 EUR"
-      ],
-      [
-        "Page supplémentaire",
-        "30 EUR",
-        "45 EUR",
-        "60 EUR"
+        "Traduction libre, par document",
+        "Sur devis"
       ],
       [
         "Relecture d’une traduction existante",
-        "20 EUR",
-        "30 EUR",
-        "45 EUR"
+        "Sur devis"
       ],
       [
         "Copie certifiée supplémentaire",
-        "10 EUR",
-        "10 EUR",
-        "15 EUR"
+        "Sur devis"
       ]
     ],
-    "note": "Prix par page de 300 mots environ, hors TVA. Le tarif définitif dépend de la langue, de la technicité du document et de sa lisibilité : envoyez-nous un scan pour un devis ferme."
+    "note": "Le tarif d’une traduction dépend du nombre de caractères, de la langue et de la technicité du document : il est établi sur devis. Envoyez-nous un scan pour un devis ferme et gratuit."
   },
   "legalisation": {
     "colonnes": [
@@ -50,76 +34,70 @@
     "lignes": [
       [
         "Tribunal de première instance",
-        "Immédiat à 1 jour",
+        "1 à 2 semaines",
         "Selon tarif officiel",
-        "25 EUR"
+        "Sur devis"
       ],
       [
         "SPF Justice",
-        "1 à 2 jours",
+        "1 à 2 semaines",
         "Selon tarif officiel",
-        "35 EUR"
+        "Sur devis"
       ],
       [
         "SPF Affaires étrangères — apostille",
-        "1 à 2 jours",
+        "1 à 2 semaines",
         "Selon tarif officiel",
-        "35 EUR"
+        "Sur devis"
       ],
       [
         "Chaîne consulaire complète",
-        "2 à 14 jours",
+        "2 à 4 semaines",
         "Selon le consulat",
         "Sur devis"
       ],
       [
         "Chambre de commerce (BECI)",
-        "1 à 3 jours",
+        "1 à 2 semaines",
         "Selon tarif officiel",
-        "30 EUR"
+        "Sur devis"
       ]
     ],
-    "note": "Les frais officiels sont ceux réclamés par l’administration ou le consulat : ils sont refacturés à l’euro près, sur justificatif, et sont distincts des honoraires du bureau."
+    "note": "Les honoraires du bureau sont fixés par dossier, sur devis. Les frais officiels réclamés par l'administration ou le consulat sont refacturés à l'euro près, sur justificatif."
   },
   "visa": {
     "colonnes": [
       "Destination",
       "Type de procédure",
       "Délai moyen",
-      "À partir de"
+      "Tarif"
     ],
     "lignes": [
       [
         "Fédération de Russie",
         "Visa consulaire",
-        "10 à 15 jours",
-        "165 EUR"
+        "2 à 3 semaines",
+        "Sur devis"
       ],
       [
         "République Populaire de Chine",
         "Visa consulaire / e-visa",
-        "6 à 8 jours",
-        "126 EUR"
+        "2 à 3 semaines",
+        "Sur devis"
       ],
       [
         "République de l’Inde",
         "e-visa",
-        "3 à 5 jours",
-        "85 EUR"
-      ],
-      [
-        "États-Unis",
-        "ESTA",
-        "1 à 3 jours",
+        "1 à 2 semaines",
         "Sur devis"
       ],
       [
         "Autres destinations",
         "Selon le pays",
-        "Variable",
+        "2 à 3 semaines",
         "Sur devis"
       ]
     ],
-    "note": "Montants incluant les honoraires du bureau, hors frais consulaires. Le site actuel ne publié pas de tarif par pays : pour les destinations hors liste, le devis est établi sous 2 heures ouvrables."
+    "note": "Tous les tarifs sont établis sur devis, hors frais consulaires. Nous établissons une offre personnalisée pour chaque destination."
   }
 }

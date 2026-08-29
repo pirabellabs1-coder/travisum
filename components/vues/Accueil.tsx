@@ -1,10 +1,10 @@
 import Page from "@/components/Page";
 import { Faq } from "@/components/interactifs";
 import {
+  BandeauCarte,
   BandeauConversion,
   DestinationsPhares,
   GrilleLangues,
-  LeBureau,
   ListeDocuments,
 } from "@/components/sections";
 import { EnteteSection, Icone, LienFleche, MAXW, Section } from "@/components/ui";
@@ -24,6 +24,9 @@ const METIERS_META = [
   { icone: "verified", href: "/legalisations/" },
   { icone: "airplane_ticket", href: "/visas/" },
 ];
+
+/* Icônes des 4 étapes du processus, par ordre (indépendant de la langue). */
+const ICONES_PROCESSUS = ["upload_file", "request_quote", "workspace_premium", "local_shipping"];
 export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; cheminFr?: string }) {
   const L = (c: string) => lien(lang, c);
   const c = accueil(lang);
@@ -87,7 +90,7 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
                 </a>
                 <a
                   className="bg-transparent text-tertiary-fixed-dim border border-tertiary-fixed-dim px-7 py-4 font-label-sm text-label-sm uppercase tracking-widest hover:bg-tertiary-fixed-dim/10 transition-colors duration-300 rounded-sm text-center"
-                  href="mailto:info@travisum.com?subject=D%C3%A9p%C3%B4t%20de%20document"
+                  href={L("/a-propos/#contact")}
                 >
                   {c.hero_cta2}
                 </a>
@@ -136,23 +139,43 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
       </section>
 
       {/* ----------------------------------------------------------- MARQUEE */}
-      <div className="marquee w-full bg-surface-container-highest border-b border-tertiary-fixed-dim/20 py-3 overflow-hidden flex whitespace-nowrap">
-        <div className="marquee-track flex items-center gap-8 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
-          {[...MARQUEE, ...MARQUEE].map((langue, i) => (
-            <span key={i} className="flex items-center gap-8">
-              {langue}
-              <span
-                className="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"
-                aria-hidden="true"
-              />
+      <div className="w-full bg-surface-container-highest border-y border-tertiary-fixed-dim/20 relative">
+        <div className="flex items-center">
+          {/* Étiquette fixe à gauche */}
+          <div className="hidden sm:flex shrink-0 items-center gap-2.5 pl-margin-mobile md:pl-margin-desktop pr-6 py-3.5 relative z-10 bg-surface-container-highest border-r border-tertiary-fixed-dim/20">
+            <Icone nom="translate" taille="text-[18px]" couleur="text-tertiary-fixed-dim" />
+            <span className="font-label-sm text-label-sm text-primary uppercase tracking-widest whitespace-nowrap">
+              Nos langues
             </span>
-          ))}
+          </div>
+          {/* Piste défilante, avec fondus sur les bords */}
+          <div
+            className="marquee grow overflow-hidden flex whitespace-nowrap py-3.5"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)",
+              maskImage:
+                "linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)",
+            }}
+          >
+            <div className="marquee-track flex items-center gap-10 pl-10 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
+              {[...MARQUEE, ...MARQUEE].map((langue, i) => (
+                <span key={i} className="flex items-center gap-10">
+                  {langue}
+                  <span
+                    className="w-1.5 h-1.5 bg-tertiary-fixed-dim rotate-45"
+                    aria-hidden="true"
+                  />
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       {/* ------------------------------------------------------ TROIS MÉTIERS */}
       <Section fond="surface">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
           <EnteteSection
             surtitre={c.metiers_surtitre}
             titre={
@@ -173,38 +196,47 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
           {c.metiers.map((m, i) => (
             <div
               key={i}
-              className="p-8 md:p-10 flex flex-col h-full border border-tertiary-fixed-dim/30 rounded-sm bg-surface-container-lowest hover:border-tertiary-fixed-dim hover:bg-surface-container-low transition-colors duration-500 group"
+              className="group relative flex flex-col h-full p-7 md:p-8 border border-tertiary-fixed-dim/30 rounded-sm bg-surface-container-lowest hover:border-tertiary-fixed-dim transition-colors duration-300"
             >
-              <div className="w-12 h-12 mb-8 text-on-tertiary-fixed-variant bg-surface-container flex items-center justify-center rounded-sm">
-                <Icone nom={METIERS_META[i].icone} plein />
+              {/* filet de laiton qui se trace au survol */}
+              <span
+                className="absolute inset-x-0 top-0 h-0.5 bg-tertiary-fixed-dim origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
+                aria-hidden="true"
+              />
+
+              <div className="flex items-center justify-between mb-7">
+                <div className="w-11 h-11 flex items-center justify-center rounded-sm bg-surface-container border border-tertiary-fixed-dim/20 text-on-tertiary-fixed-variant">
+                  <Icone nom={METIERS_META[i].icone} plein taille="text-[22px]" />
+                </div>
+                <span className="font-display-lg text-[22px] font-bold text-tertiary-fixed-dim/70">
+                  {`0${i + 1}`}
+                </span>
               </div>
-              <h3 className="font-display-lg text-headline-md text-primary mb-4">
-                {m.titre[0]}
-                <br />
-                {m.titre[1]}
+
+              <h3 className="font-display-lg text-[22px] text-primary mb-3 leading-snug">
+                {m.titre.join(" ")}
               </h3>
-              <p className="font-body-md text-body-md text-on-surface-variant mb-8 grow">
+              <p className="font-body-md text-body-md text-on-surface-variant mb-6 grow">
                 {m.texte}
               </p>
-              <ul className="flex flex-col gap-3 mb-12">
+
+              <ul className="flex flex-col gap-2.5 mb-7">
                 {m.points.map((p) => (
-                  <li
-                    key={p}
-                    className="flex items-center gap-3 font-label-sm text-label-sm text-on-surface uppercase"
-                  >
-                    <span className="w-4 h-px bg-tertiary-fixed-dim" />
-                    {p}
+                  <li key={p} className="flex items-start gap-2.5">
+                    <Icone nom="check_circle" taille="text-[15px] mt-0.5 shrink-0" couleur="text-seal" />
+                    <span className="font-body-md text-[15px] text-on-surface">{p}</span>
                   </li>
                 ))}
               </ul>
+
               <a
-                className="inline-flex items-center gap-2 font-label-sm text-label-sm text-primary uppercase tracking-widest group-hover:text-on-tertiary-fixed-variant transition-colors mt-auto"
+                className="inline-flex items-center gap-2 mt-auto pt-5 border-t border-tertiary-fixed-dim/20 font-label-sm text-label-sm text-primary uppercase tracking-widest group-hover:text-on-tertiary-fixed-variant transition-colors"
                 href={L(METIERS_META[i].href)}
               >
                 {m.decouvrir}
                 <Icone
                   nom="arrow_forward"
-                  taille="text-sm transform group-hover:translate-x-2 transition-transform"
+                  taille="text-[16px] group-hover:translate-x-1 transition-transform"
                   couleur=""
                 />
               </a>
@@ -215,42 +247,50 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
 
       {/* -------------------------------------------------------- PROCESSUS */}
       <Section fond="encre" guilloche>
-        <div className="text-center mb-24">
-          <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest mb-4 block">
-            {c.processus_surtitre}
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <span className="inline-flex items-center gap-4 mb-4">
+            <span className="w-8 h-px bg-tertiary-fixed-dim" aria-hidden="true" />
+            <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">
+              {c.processus_surtitre}
+            </span>
+            <span className="w-8 h-px bg-tertiary-fixed-dim" aria-hidden="true" />
           </span>
           <h2 className="font-display-lg text-headline-md md:text-headline-lg text-on-primary">
             {c.processus_titre}
           </h2>
         </div>
 
-        <div className="relative">
-          <div
-            className="hidden md:block absolute top-[40px] left-0 w-full h-px bg-tertiary-fixed-dim/30"
-            aria-hidden="true"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
-            {c.etapes.map(([titre, texte], i) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          {c.etapes.map(([titre, texte], i) => {
+            const dernier = i === c.etapes.length - 1;
+            return (
               <div
                 key={titre}
-                className="relative flex flex-col items-center md:items-start text-center md:text-left"
+                className={`group relative flex flex-col h-full p-7 rounded-sm border transition-colors duration-300 ${
+                  dernier
+                    ? "border-tertiary-fixed-dim bg-tertiary-fixed-dim/[0.06]"
+                    : "border-tertiary-fixed-dim/25 bg-primary-container/30 hover:border-tertiary-fixed-dim/60"
+                }`}
               >
-                <div
-                  className={`w-20 h-20 rounded-full flex items-center justify-center font-display-lg text-headline-md mb-8 relative z-10 border ${
-                    i === 3
-                      ? "bg-tertiary-fixed-dim border-tertiary-fixed-dim text-primary"
-                      : "bg-primary-container border-tertiary-fixed-dim/50 text-tertiary-fixed-dim"
-                  }`}
-                >
-                  {String(i + 1).padStart(2, "0")}
+                <div className="flex items-center justify-between mb-6">
+                  <span className="font-display-lg text-[26px] font-bold text-tertiary-fixed-dim leading-none">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span
+                    className={`w-11 h-11 flex items-center justify-center rounded-sm border text-tertiary-fixed-dim ${
+                      dernier ? "border-tertiary-fixed-dim/60 bg-primary/40" : "border-tertiary-fixed-dim/30"
+                    }`}
+                  >
+                    <Icone nom={ICONES_PROCESSUS[i] ?? "check_circle"} plein taille="text-[20px]" />
+                  </span>
                 </div>
                 <h3 className="font-label-sm text-label-sm uppercase tracking-widest text-on-primary mb-3">
                   {titre}
                 </h3>
                 <p className="font-body-md text-body-md text-primary-fixed-dim">{texte}</p>
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </Section>
 
@@ -261,7 +301,6 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
         chapeau={c.langues_chapeau}
       />
       <DestinationsPhares lang={lang} />
-      <LeBureau lang={lang} />
       <Faq titre="Les questions que l’on nous pose le plus" questions={FAQ.generale} />
 
       <BandeauConversion
@@ -269,6 +308,10 @@ export function AccueilVue({ lang = "fr", cheminFr = "/" }: { lang?: Locale; che
         titre={c.cta_titre}
         chapeau={c.cta_chapeau}
       />
+
+      {/* Plan d'accès, pleine largeur, tout en bas — les coordonnées détaillées
+          restent sur la page contact (À propos). */}
+      <BandeauCarte lang={lang} />
     </Page>
   );
 }

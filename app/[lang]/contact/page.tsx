@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { VisasVue } from "@/components/vues/Visas";
+import { ContactVue } from "@/components/vues/Contact";
 import { LOCALES, alternates, estLocale, lien, type Locale } from "@/lib/i18n";
 
 export function generateStaticParams() {
@@ -8,16 +8,16 @@ export function generateStaticParams() {
 
 const META: Record<string, { title: string; description: string }> = {
   nl: {
-    title: "Visumaanvraag en reisformaliteiten",
+    title: "Contact en afspraak",
     description:
-      "Travisum begeleidt u bij uw aanvragen voor een visum, e-visum en toeristenkaart. " +
-      "Bekijk de formaliteiten per bestemming en laat uw dossier controleren.",
+      "Contacteer het kantoor van Travisum in Brussel: telefoon, e-mail, adres en " +
+      "afsprakenformulier voor uw visa, vertalingen en legalisaties.",
   },
   en: {
-    title: "Visa application and travel formalities",
+    title: "Contact and appointment",
     description:
-      "Travisum supports you with your visa, e-visa and travel-card applications. " +
-      "Check the requirements by destination and have your file reviewed.",
+      "Contact the Travisum office in Brussels: phone, email, address and " +
+      "appointment form for your visas, translations and legalisations.",
   },
 };
 
@@ -26,11 +26,11 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
   const m = META[lang];
   return {
     ...(m ? { title: m.title, description: m.description } : {}),
-    alternates: { ...alternates("/visas/"), canonical: lien(lang, "/visas/") },
+    alternates: { ...alternates("/contact/"), canonical: lien(lang, "/contact/") },
   };
 }
 
 export default function Localise({ params }: { params: { lang: string } }) {
   const lang = (estLocale(params.lang) ? params.lang : "fr") as Locale;
-  return <VisasVue lang={lang} cheminFr="/visas/" />;
+  return <ContactVue lang={lang} cheminFr="/contact/" />;
 }

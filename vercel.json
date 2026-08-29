@@ -71,11 +71,6 @@
       "permanent": true
     },
     {
-      "source": "/contact/",
-      "destination": "/a-propos/#contact",
-      "permanent": true
-    },
-    {
       "source": "/djibouti-informations-generales/",
       "destination": "/visas/djibouti/",
       "permanent": true
@@ -1028,6 +1023,21 @@
     {
       "source": "/visas/zimbabwe/zimbabwe-visa-tourisme/",
       "destination": "/visas/zimbabwe/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifs/",
+      "destination": "/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/nl/tarifs/",
+      "destination": "/nl/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/en/tarifs/",
+      "destination": "/en/a-propos/",
       "permanent": true
     }
   ]

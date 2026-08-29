@@ -39,7 +39,7 @@ export default function PiedDePage({ lang = "fr" }: { lang?: Locale }) {
   const L = (c: string) => lien(lang, c);
 
   return (
-    <footer className="w-full bg-primary text-on-primary relative overflow-hidden pt-20 md:pt-24 pb-12">
+    <footer className="w-full bg-[#081726] text-on-primary relative overflow-hidden pt-20 md:pt-24 pb-12">
       <div
         className="guilloche absolute inset-0 opacity-[0.06] pointer-events-none"
         aria-hidden="true"
@@ -124,7 +124,11 @@ export default function PiedDePage({ lang = "fr" }: { lang?: Locale }) {
                   {CONTACT.email}
                 </a>
               </p>
-              <p className="text-[15px]">{CONTACT.horaires}</p>
+              <p className="text-[15px]">
+                <span className="block font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest mb-1">{d.horaires_label}</span>
+                {CONTACT.horaires}
+              </p>
+              <p className="text-[13px] text-primary-fixed-dim/55">{d.bce}</p>
             </address>
 
             <div className="flex gap-3 mt-6">
@@ -184,7 +188,10 @@ export default function PiedDePage({ lang = "fr" }: { lang?: Locale }) {
           </form>
         </div>
 
-        <div className="mt-14 pt-8 border-t border-tertiary-fixed-dim/25 flex flex-col md:flex-row justify-between items-start md:items-center gap-5">
+        <p className="mt-14 pt-8 border-t border-tertiary-fixed-dim/25 font-body-md text-[13px] text-primary-fixed-dim/70 max-w-3xl">
+          {d.notice}
+        </p>
+        <div className="mt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-5">
           <p className="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-widest">
             &copy; 2026 Travisum Louise Office. {d.droits}
           </p>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { alternates } from "@/lib/i18n";
-import { AccueilVue } from "@/components/vues/Accueil";
+import AccueilV3 from "@/components/vues/AccueilV3";
 
 export const metadata: Metadata = {
   title: "Traduction assermentée, légalisation et visa à Bruxelles",
@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function Accueil() {
-  return <AccueilVue />;
+  return <AccueilV3 />;
 }

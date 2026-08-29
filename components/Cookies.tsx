@@ -15,7 +15,7 @@
 
 import { useEffect, useState } from "react";
 import { Icone } from "./ui";
-import { estLocale, t, type Locale } from "@/lib/i18n";
+import { estLocale, lien, t, type Locale } from "@/lib/i18n";
 
 const CLE = "travisum-cookies";
 
@@ -68,7 +68,7 @@ export default function BandeauCookies() {
                 {d.texte}{" "}
                 <a
                   className="underline decoration-tertiary-fixed-dim underline-offset-4 hover:text-on-primary transition-colors"
-                  href="/cookies/"
+                  href={lien(lang, "/cookies/")}
                 >
                   {d.en_savoir}
                 </a>

@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import { alternates } from "@/lib/i18n";
-import { DESTINATIONS } from "@/lib/donnees";
 import { VisasVue } from "@/components/vues/Visas";
 
 export const metadata: Metadata = {
-  title: "Visas, e-visas et ESTA depuis la Belgique",
+  title: "Demande de visa et formalités de voyage",
   description:
-    `Assistance complète pour vos visas consulaires, e-visas et ESTA, pour ` +
-    `${DESTINATIONS.length} destinations. Constitution du dossier, dépôt consulaire, ` +
-    `suivi et retrait.`,
+    "Travisum vous accompagne dans vos demandes de visa, e-visa et carte touristique. " +
+    "Consultez les formalités par destination et faites vérifier votre dossier.",
   alternates: alternates("/visas/"),
 };
 

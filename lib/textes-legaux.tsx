@@ -194,6 +194,15 @@ export const CONFIDENTIALITE: Article[] = [
           Ils ne sont traités que sur votre demande expresse, pour la seule exécution de la
           prestation.
         </Encart>
+        <Encart titre="Assistant en ligne et prise de rendez-vous">
+          Le site propose un assistant de discussion : le contenu des messages que vous y
+          saisissez est transmis à un prestataire technique d’intelligence artificielle
+          (Anthropic) dans le seul but de générer une réponse. N’y communiquez ni pièces
+          d’identité ni données sensibles. Le formulaire « Prendre rendez-vous » transmet
+          les coordonnées que vous indiquez, par courrier électronique et via un prestataire
+          d’envoi d’e-mails, au bureau afin qu’il vous recontacte. Ces échanges ne servent
+          qu’à traiter votre demande.
+        </Encart>
       </>
     ),
   },

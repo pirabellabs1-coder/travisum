@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { CONTACT, URL_SITE } from "@/lib/donnees";
+import { URL_SITE } from "@/lib/donnees";
 import BandeauCookies from "@/components/Cookies";
+import AutoLangue from "@/components/AutoLangue";
 import "./globals.css";
 
 /**
@@ -15,12 +16,24 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(URL_SITE),
   title: {
-    default: "Traduction assermentée, légalisation et visa à Bruxelles — Travisum",
+    default: "Traduction assermentée, légalisation et visa — Travisum",
     template: "%s — Travisum",
   },
   description:
-    "Travisum Louise Office, 367 avenue Louise à Bruxelles : traductions assermentées, " +
-    "légalisations, apostilles et visas de voyage. Devis en moins de 2 heures ouvrables.",
+    "Travisum : traductions assermentées, légalisations, apostilles et visas de voyage. " +
+    "Devis en moins de 2 heures ouvrables.",
+  keywords: [
+    "traduction assermentée",
+    "traduction jurée",
+    "traducteur juré",
+    "traduction officielle",
+    "légalisation de documents",
+    "apostille",
+    "visa",
+    "e-visa",
+    "demande de visa",
+    "Travisum",
+  ],
   applicationName: "Travisum",
   authors: [{ name: "Travisum Louise Office" }],
   manifest: "/site.webmanifest",
@@ -45,35 +58,6 @@ export const viewport = {
   initialScale: 1,
 };
 
-/** Données structurées de l'établissement, présentes sur toutes les pages. */
-const ETABLISSEMENT = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: CONTACT.raison,
-  description:
-    "Traductions assermentées, légalisations, apostilles et visas de voyage.",
-  url: `${URL_SITE}/`,
-  telephone: [CONTACT.telephone_tel, CONTACT.mobile_tel],
-  email: CONTACT.email,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: CONTACT.rue,
-    postalCode: CONTACT.code_postal,
-    addressLocality: CONTACT.ville,
-    addressCountry: "BE",
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-  ],
-  areaServed: "BE",
-  availableLanguage: ["fr", "nl", "en"],
-};
-
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
@@ -85,15 +69,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ETABLISSEMENT) }}
         />
       </head>
       <body className="bg-surface font-body-md text-on-surface">
+        <AutoLangue />
         {children}
         <BandeauCookies />
       </body>

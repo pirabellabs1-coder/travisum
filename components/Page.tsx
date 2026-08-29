@@ -17,8 +17,9 @@ import {
   type ReactElement,
   type ReactNode,
 } from "react";
-import Entete from "./Entete";
+import EnteteV3 from "./EnteteV3";
 import PiedDePage from "./PiedDePage";
+import Chat from "./Chat";
 import { FiletProgression } from "./interactifs";
 import { SyncLangue } from "./SyncLangue";
 import type { CleEntree } from "@/lib/navigation";
@@ -71,11 +72,12 @@ export default function Page({
     <>
       {lang !== "fr" && <SyncLangue lang={lang} />}
       <FiletProgression />
-      <Entete actif={actif} lang={lang} cheminFr={cheminFr} />
+      <EnteteV3 lang={lang} cheminFr={cheminFr} />
       <main className="w-full pt-20 bg-surface">
         {sansRythme ? children : rythmer(children)}
       </main>
       <PiedDePage lang={lang} />
+      <Chat lang={lang} />
     </>
   );
 }

@@ -68,6 +68,9 @@ type Dico = {
     email_placeholder: string;
     droits: string;
     toutes_destinations: string;
+    bce: string;
+    notice: string;
+    horaires_label: string;
   };
   cookies: {
     titre: string;
@@ -90,7 +93,7 @@ const FR: Dico = {
     ressources: "Ressources",
     "a-propos": "À propos",
   },
-  cta_devis: "Devis en 2 minutes",
+  cta_devis: "Obtenir votre devis",
   suivre_dossier: "Suivre mon dossier",
   aller_contenu: "Aller au contenu",
   pied: {
@@ -105,6 +108,9 @@ const FR: Dico = {
     email_placeholder: "vous@exemple.be",
     droits: "Tous droits réservés.",
     toutes_destinations: "Les {n} destinations",
+    bce: "Numéro d’entreprise (BCE) : [à compléter]",
+    notice: "Travisum n’est pas une autorité consulaire. Les informations fournies sont indicatives.",
+    horaires_label: "Horaires",
   },
   cookies: {
     titre: "Cookies : votre choix",
@@ -128,7 +134,7 @@ const NL: Dico = {
     ressources: "Hulpbronnen",
     "a-propos": "Over ons",
   },
-  cta_devis: "Offerte in 2 minuten",
+  cta_devis: "Uw offerte aanvragen",
   suivre_dossier: "Mijn dossier volgen",
   aller_contenu: "Naar de inhoud",
   pied: {
@@ -143,6 +149,9 @@ const NL: Dico = {
     email_placeholder: "u@voorbeeld.be",
     droits: "Alle rechten voorbehouden.",
     toutes_destinations: "De {n} bestemmingen",
+    bce: "Ondernemingsnummer (KBO): [aan te vullen]",
+    notice: "Travisum is geen consulaire autoriteit. De verstrekte informatie is indicatief.",
+    horaires_label: "Openingsuren",
   },
   cookies: {
     titre: "Cookies: uw keuze",
@@ -166,7 +175,7 @@ const EN: Dico = {
     ressources: "Resources",
     "a-propos": "About",
   },
-  cta_devis: "Quote in 2 minutes",
+  cta_devis: "Get your quote",
   suivre_dossier: "Track my file",
   aller_contenu: "Skip to content",
   pied: {
@@ -181,6 +190,9 @@ const EN: Dico = {
     email_placeholder: "you@example.be",
     droits: "All rights reserved.",
     toutes_destinations: "The {n} destinations",
+    bce: "Company number (CBE): [to be completed]",
+    notice: "Travisum is not a consular authority. The information provided is indicative.",
+    horaires_label: "Opening hours",
   },
   cookies: {
     titre: "Cookies: your choice",

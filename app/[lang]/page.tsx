@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AccueilVue } from "@/components/vues/Accueil";
+import AccueilV3 from "@/components/vues/AccueilV3";
 import { LOCALES, alternates, estLocale, lien, type Locale } from "@/lib/i18n";
 
 /**
@@ -24,5 +24,5 @@ export function generateMetadata({ params }: { params: { lang: string } }): Meta
 
 export default function AccueilLocalise({ params }: { params: { lang: string } }) {
   const lang = (estLocale(params.lang) ? params.lang : "fr") as Locale;
-  return <AccueilVue lang={lang} cheminFr="/" />;
+  return <AccueilV3 initialLang={lang} />;
 }

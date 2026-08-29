@@ -211,7 +211,16 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — demande au consulat (pas d'e-visa général)",
+      "frais": "Visa 90 j entrée unique : ~110 €",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type de visa",
+      "reforme": "Un e-visa est annoncé pour 2026, mais la voie consulaire reste requise pour l'instant.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/algerie"
+    }
   },
   {
     "slug": "angola",
@@ -517,7 +526,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 30 jours (UE) — sinon e-visa",
+      "portail": {
+        "libelle": "e-visa officiel Angola",
+        "url": "https://smevisa.gov.ao/"
+      },
+      "frais": "Exemption gratuite ; e-visa ~120 USD si requis",
+      "delai": "e-visa en ligne avant le départ",
+      "validite": "30 j/entrée, max 90 j/an civil",
+      "reforme": "Exemption de visa 30 jours pour les ressortissants de l'UE.",
+      "verifie_le": "2026-08-25",
+      "source": "https://smevisa.gov.ao/"
+    }
   },
   {
     "slug": "arabie-saoudite",
@@ -646,7 +668,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa touristique requis (entrées multiples, 1 an)",
+      "portail": {
+        "libelle": "visa.visitsaudi.com",
+        "url": "https://visa.visitsaudi.com/"
+      },
+      "frais": "SAR 300 + assurance santé obligatoire (+ TVA)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "1 an, entrées multiples · séjour jusqu’à 90 jours",
+      "reforme": "e-Visa touristique ouvert aux ressortissants belges/UE (Omra hors période du Hajj incluse).",
+      "verifie_le": "2026-08-25",
+      "source": "https://visa.visitsaudi.com/"
+    }
   },
   {
     "slug": "bangladesh",
@@ -859,7 +894,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — visa à l'arrivée possible (UE) ou e-visa",
+      "portail": {
+        "libelle": "visa.gov.bd + haut-commissariat",
+        "url": "https://www.visa.gov.bd/"
+      },
+      "frais": "Visa à l'arrivée ~51 USD (30 j, entrée unique), payable en USD/EUR espèces",
+      "delai": "À l'arrivée (Dhaka, Chittagong) — à la discrétion de l'agent",
+      "validite": "30 jours, prolongeable 30 j ; passeport ≥ 6 mois, billet retour + hébergement",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.visa.gov.bd/"
+    }
   },
   {
     "slug": "birmanie-myanmar",
@@ -1080,7 +1127,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa touristique requis",
+      "portail": {
+        "libelle": "evisa.moip.gov.mm",
+        "url": "https://evisa.moip.gov.mm/"
+      },
+      "frais": "50 USD (tourisme)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour 28 jours ; e-visa valable 90 jours",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.moip.gov.mm/"
+    }
   },
   {
     "slug": "bielorussie",
@@ -1292,7 +1351,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 30 jours (38 pays européens dont la Belgique)",
+      "portail": {
+        "libelle": "MAE de Biélorussie",
+        "url": "https://mfa.gov.by/en/visa/freemove/europe/"
+      },
+      "frais": "Aucun (exemption)",
+      "delai": "Sans objet",
+      "validite": "≤ 30 jours/entrée, max 90 j/an ; entrée par aéroports et postes routiers/ferroviaires",
+      "reforme": "Exemption prolongée jusqu'au 31 décembre 2026. Le transit vers la Russie est exclu du régime sans visa.",
+      "verifie_le": "2026-08-25",
+      "source": "https://mfa.gov.by/en/visa/freemove/europe/"
+    }
   },
   {
     "slug": "burkina-faso",
@@ -1446,7 +1518,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (jusqu'à 90 jours)",
+      "portail": {
+        "libelle": "visaburkina.bf (seul portail officiel)",
+        "url": "https://www.visaburkina.bf/"
+      },
+      "frais": "≈ 84 à 143 € (droits consulaires)",
+      "delai": "En ligne",
+      "validite": "Jusqu'à 90 jours",
+      "reforme": "Nouvelle grille tarifaire e-visa depuis octobre 2025.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.visaburkina.bf/"
+    }
   },
   {
     "slug": "burundi",
@@ -1619,7 +1704,15 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa ou visa à l'arrivée (Bujumbura)",
+      "frais": "90 USD (1 mois) · 180 USD (2 mois) · 270 USD (3 mois)",
+      "delai": "En ligne ou à l'arrivée",
+      "validite": "1 mois ; fièvre jaune + passeport ≥ 6 mois",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/burundi"
+    }
   },
   {
     "slug": "benin",
@@ -1777,7 +1870,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis",
+      "portail": {
+        "libelle": "evisa.bj",
+        "url": "https://evisa.bj/"
+      },
+      "frais": "60 € (30 j, entrée unique) · 85 € (multiple 30 j) · 110 € (multiple 90 j)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type ; passeport ≥ 6 mois, vaccination fièvre jaune requise",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.bj/"
+    }
   },
   {
     "slug": "cambodge-2",
@@ -1942,7 +2047,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa touristique requis (entrée unique)",
+      "portail": {
+        "libelle": "evisa.gov.kh",
+        "url": "https://www.evisa.gov.kh/"
+      },
+      "frais": "e-Visa tourisme (type T) : ~30 USD",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour 30 jours ; passeport ≥ 6 mois, 2 pages vierges",
+      "reforme": "Carte d'arrivée numérique (e-Arrival) mise en place.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisa.gov.kh/"
+    }
   },
   {
     "slug": "cameroun",
@@ -2151,7 +2269,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis",
+      "portail": {
+        "libelle": "evisacam.cm (seul portail officiel)",
+        "url": "https://www.evisacam.cm/"
+      },
+      "frais": "≈ 75 € (tourisme 30 j) · 100 € (tourisme 90 j) · 25 € (transit 7 j)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type ; possible aussi via l'ambassade (Bruxelles/Paris)",
+      "reforme": "Plateforme evisacam.cm lancée en septembre 2023 — ne payer que sur ce site officiel.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisacam.cm/"
+    }
   },
   {
     "slug": "chine",
@@ -2407,13 +2538,34 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu’à 30 jours (tourisme, affaires, visite, transit)",
+      "portail": {
+        "libelle": "visaforchina.cn — Bruxelles (au-delà de 30 j)",
+        "url": "https://www.visaforchina.cn/BRU3_FR/"
+      },
+      "frais": "Aucun pour l’entrée sans visa",
+      "delai": "Sans objet (entrée sans visa)",
+      "validite": "Séjour ≤ 30 jours par entrée",
+      "reforme": "Exemption de visa (30 jours) pour les passeports belges ordinaires, prolongée jusqu’au 31 décembre 2026.",
+      "verifie_le": "2026-08-25",
+      "source": "https://be.china-embassy.gov.cn/eng/lsfw/zytz_en/202501/t20250114_11533701.htm"
+    }
   },
   {
     "slug": "congo-brazzaville",
     "nom": "Congo Brazzaville",
     "url": "https://www.travisum.com/visas/congo-brazzaville/",
-    "sous_pages": []
+    "sous_pages": [],
+    "synthese": {
+      "statut": "Visa requis — demande via le consulat (pré-enregistrement en ligne)",
+      "frais": "À confirmer (droits consulaires)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour 15 à 90 jours (entrée simple ou multiple)",
+      "reforme": "Enregistrement en ligne obligatoire + prise de rendez-vous avant dépôt du dossier.",
+      "verifie_le": "2026-08-25"
+    }
   },
   {
     "slug": "republique-democratique-du-congo",
@@ -2626,7 +2778,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — demande à l'ambassade (Bruxelles) / consulat (Anvers)",
+      "portail": {
+        "libelle": "Ambassade de RDC à Bruxelles",
+        "url": "https://ambardc.be/conditions-dobtention/"
+      },
+      "frais": "À confirmer (droits consulaires)",
+      "delai": "À confirmer",
+      "validite": "Séjour 30 jours (court séjour)",
+      "reforme": "Les résidents belges passent par l'ambassade/consulat, non par le portail e-visa.",
+      "verifie_le": "2026-08-25",
+      "source": "https://ambardc.be/conditions-dobtention/"
+    }
   },
   {
     "slug": "coree-du-sud",
@@ -2761,7 +2926,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Dispense de K-ETA jusqu'au 31/12/2026 — séjour ≤ 90 jours",
+      "portail": {
+        "libelle": "k-eta.go.kr (K-ETA facultatif)",
+        "url": "https://www.k-eta.go.kr/"
+      },
+      "frais": "Gratuit pendant l'exemption (K-ETA facultatif : ~10 000 KRW)",
+      "delai": "Sans objet pendant l'exemption",
+      "validite": "Séjour ≤ 90 jours",
+      "reforme": "Exemption temporaire de K-ETA pour la Belgique prolongée jusqu'au 31 décembre 2026.",
+      "verifie_le": "2026-08-25",
+      "source": "https://be.mofa.go.kr/be-en/brd/m_7440/view.do?seq=749020"
+    }
   },
   {
     "slug": "cuba",
@@ -2978,7 +3156,16 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Carte de tourisme (tarjeta del turista) requise — pas de visa classique",
+      "frais": "≈ 25–100 USD selon le canal (compagnie aérienne, consulat)",
+      "delai": "À l'achat (compagnie / agence / consulat)",
+      "validite": "Carte « verte » (hors USA) · séjour 30 jours, prolongeable une fois",
+      "reforme": "Assurance santé couvrant les frais médicaux à Cuba obligatoire.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/cuba"
+    }
   },
   {
     "slug": "djibouti",
@@ -3188,7 +3375,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (plus de visa à l'arrivée depuis 2024)",
+      "portail": {
+        "libelle": "evisa.gouv.dj",
+        "url": "https://www.evisa.gouv.dj/"
+      },
+      "frais": "23 € (court séjour 15–90 j) · 12 € (transit 1–14 j)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type ; e-visa envoyé par e-mail",
+      "reforme": "Depuis 2024, le visa à l'arrivée n'existe plus : e-visa obligatoire.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisa.gouv.dj/"
+    }
   },
   {
     "slug": "egypte",
@@ -3444,7 +3644,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (entrée unique ou multiple)",
+      "portail": {
+        "libelle": "visa2egypt.gov.eg",
+        "url": "https://visa2egypt.gov.eg/"
+      },
+      "frais": "30 USD (entrée unique) / 65 USD (entrées multiples)",
+      "delai": "À confirmer (non précisé officiellement)",
+      "validite": "À confirmer (non précisé sur la page officielle)",
+      "reforme": "Frais de l’e-Visa relevés à 30/65 USD en 2026.",
+      "verifie_le": "2026-08-25",
+      "source": "https://visa2egypt.gov.eg/eVisa/FAQ"
+    }
   },
   {
     "slug": "gabon",
@@ -3722,7 +3935,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (entrée par voie aérienne)",
+      "portail": {
+        "libelle": "evisa.dgdi.ga (DGDI)",
+        "url": "https://evisa.dgdi.ga/"
+      },
+      "frais": "≈ 85 € (70 € de droits + frais), 1 à 3 mois entrée unique ; sticker payé en espèces à l'arrivée",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "1 à 3 mois ; entrée par l'aéroport Léon-Mba (Libreville)",
+      "reforme": "e-visa modernisé depuis fin 2025, procédure recommandée.",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.dgdi.ga/"
+    }
   },
   {
     "slug": "ghana",
@@ -3981,7 +4207,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (visa à l'arrivée supprimé)",
+      "portail": {
+        "libelle": "evisa.immigration.gov.gh",
+        "url": "https://evisa.immigration.gov.gh/"
+      },
+      "frais": "À confirmer (voir le portail officiel)",
+      "delai": "En ligne avant le départ",
+      "validite": "Selon le type de visa",
+      "reforme": "Depuis le 25 mai 2026, e-Visa/ETA obligatoire et visa à l'arrivée supprimé.",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.immigration.gov.gh/"
+    }
   },
   {
     "slug": "guinee-republique",
@@ -4159,7 +4398,15 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis",
+      "frais": "≈ 94 € ; converti en visa biométrique à l'arrivée à Conakry",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type de visa",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/guinee/voyager-en-guinee-conseils-aux-voyageurs/informations-pratiques-pour-la-guinee"
+    }
   },
   {
     "slug": "guinee-equatoriale",
@@ -4353,7 +4600,16 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (entrée par Malabo)",
+      "frais": "75 USD",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour 90 jours ; entrée par l'aéroport de Malabo",
+      "reforme": "e-Visa ouvert à toutes les nationalités depuis le 1er juillet 2023.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/guinee-equatoriale"
+    }
   },
   {
     "slug": "guinee-bissau",
@@ -4513,7 +4769,15 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa ou visa à l'arrivée (jusqu'à 90 jours)",
+      "frais": "À confirmer (droits + ~2,50 € de frais de dossier)",
+      "delai": "En ligne ou à l'arrivée (permis du Service des migrations)",
+      "validite": "Jusqu'à 90 jours",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/guinee-bissau"
+    }
   },
   {
     "slug": "inde",
@@ -5014,7 +5278,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (e-Tourist, e-Business, e-Medical…)",
+      "portail": {
+        "libelle": "indianvisaonline.gov.in",
+        "url": "https://indianvisaonline.gov.in/"
+      },
+      "frais": "e-Tourist : 10/25 USD (30 j), 40 USD (1 an), 200 USD (5 ans) + 3 % de frais bancaires",
+      "delai": "À confirmer (non précisé officiellement)",
+      "validite": "Selon le type : 30 jours, 1 an ou 5 ans",
+      "reforme": "Grille tarifaire de l’e-Visa mise à jour en 2026.",
+      "verifie_le": "2026-08-25",
+      "source": "https://indianvisaonline.gov.in/"
+    }
   },
   {
     "slug": "indonesie",
@@ -5220,7 +5497,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-VOA / visa à l'arrivée (tourisme)",
+      "portail": {
+        "libelle": "evisa.imigrasi.go.id",
+        "url": "https://evisa.imigrasi.go.id/"
+      },
+      "frais": "IDR 500 000 (~32 USD)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour 30 jours, prolongeable une fois (+30 j)",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.imigrasi.go.id/"
+    }
   },
   {
     "slug": "iran",
@@ -5315,7 +5604,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis (e-visa) — circuit guidé obligatoire pour les ressortissants UE",
+      "portail": {
+        "libelle": "evisa.mfa.ir",
+        "url": "https://evisa.mfa.ir/en/"
+      },
+      "frais": "À confirmer (droits consulaires ; via agence agréée)",
+      "delai": "~2 à 3 semaines",
+      "validite": "Visa touristique 30 jours (prolongeable), valable 3 mois",
+      "reforme": "Depuis septembre 2025, les ressortissants européens (dont la Belgique) doivent voyager via un circuit guidé organisé par une agence agréée (dossier CV + itinéraire imposés).",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.mfa.ir/en/"
+    }
   },
   {
     "slug": "jordanie",
@@ -5485,7 +5787,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa à l'arrivée / Jordan Pass (ressortissants UE éligibles)",
+      "portail": {
+        "libelle": "jordanpass.jo (officiel)",
+        "url": "https://www.jordanpass.jo/"
+      },
+      "frais": "Jordan Pass 70–80 JOD (visa inclus dès 3 nuits) ; sinon visa à l'arrivée 40 JOD",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Jordan Pass : 12 mois, actif 14 j dès la 1re utilisation ; VOA séjour 30 j",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.jordanpass.jo/"
+    }
   },
   {
     "slug": "kazakhstan",
@@ -5768,7 +6082,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 30 jours",
+      "portail": {
+        "libelle": "egov.kz (régime des visas)",
+        "url": "https://egov.kz/cms/en/articles/for_foreigners/visa_regime_for_foreigners"
+      },
+      "frais": "Aucun (exemption)",
+      "delai": "Sans objet",
+      "validite": "Séjour ≤ 30 jours par entrée",
+      "verifie_le": "2026-08-25",
+      "source": "https://egov.kz/cms/en/articles/for_foreigners/visa_regime_for_foreigners"
+    }
   },
   {
     "slug": "kenya",
@@ -5960,7 +6286,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "eTA (autorisation électronique) requise",
+      "portail": {
+        "libelle": "etakenya.go.ke",
+        "url": "https://www.etakenya.go.ke/"
+      },
+      "frais": "30 USD (toutes catégories)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Voyage dans les 90 jours suivant la délivrance",
+      "reforme": "eTA obligatoire pour tous les visiteurs (régime « sans visa » depuis 2024).",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.etakenya.go.ke/"
+    }
   },
   {
     "slug": "laos",
@@ -6182,7 +6521,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa touristique requis",
+      "portail": {
+        "libelle": "laoevisa.gov.la",
+        "url": "https://laoevisa.gov.la/"
+      },
+      "frais": "~35 USD",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "À utiliser dans les 60 j ; séjour 30 jours (entrée unique)",
+      "verifie_le": "2026-08-25",
+      "source": "https://laoevisa.gov.la/"
+    }
   },
   {
     "slug": "liban",
@@ -6362,7 +6713,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa à l'arrivée gratuit (1 mois)",
+      "portail": {
+        "libelle": "Sûreté générale du Liban",
+        "url": "https://www.general-security.gov.lb/en"
+      },
+      "frais": "Gratuit (1 mois), prolongeable 2 mois",
+      "delai": "À l'arrivée (aéroport de Beyrouth)",
+      "validite": "1 mois ; passeport SANS tampon/visa israélien ; assurance voyage ≥ 30 000 €",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/liban"
+    }
   },
   {
     "slug": "liberia",
@@ -6567,7 +6930,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — via l'ambassade (Bruxelles) ; pas d'e-visa pour les Belges",
+      "portail": {
+        "libelle": "Ambassade du Libéria en Belgique",
+        "url": "https://embassyofliberia.be/visiting-tourism/"
+      },
+      "frais": "≈ 165 € (+50 € pour traitement le jour même)",
+      "delai": "À l'ambassade",
+      "validite": "Selon le type ; certificat de vaccination fièvre jaune obligatoire",
+      "reforme": "L'e-visa à l'arrivée du Libéria n'est pas ouvert aux Belges (ambassade présente) : demande à l'ambassade.",
+      "verifie_le": "2026-08-25",
+      "source": "https://embassyofliberia.be/visiting-tourism/"
+    }
   },
   {
     "slug": "madagascar",
@@ -6759,7 +7135,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa ou visa à l'arrivée (tourisme)",
+      "portail": {
+        "libelle": "e-visa officiel Madagascar",
+        "url": "https://www.evisamada.gov.mg/"
+      },
+      "frais": "≈ 30 € / 35 USD (15 j) · ~41 USD (30 j)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Jusqu'à 60 jours ; même file que le visa à l'arrivée",
+      "reforme": "Depuis le 16 février 2026, l'e-visa court séjour (15 j) passe à 30 €.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisamada.gov.mg/"
+    }
   },
   {
     "slug": "malawi",
@@ -6952,7 +7341,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa ou visa à l'arrivée",
+      "portail": {
+        "libelle": "evisa.gov.mw",
+        "url": "https://www.evisa.gov.mw/"
+      },
+      "frais": "50 USD (entrée simple) ; 150–250 USD (multiple)",
+      "delai": "En ligne (recommandé) ou à l'arrivée",
+      "validite": "Séjour 30 jours",
+      "reforme": "Visa à l'arrivée confirmé pour 160 pays, dont la Belgique.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisa.gov.mw/"
+    }
   },
   {
     "slug": "mali",
@@ -7134,7 +7536,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — via l'ambassade (Bruxelles) ; ni e-visa ni visa à l'arrivée",
+      "portail": {
+        "libelle": "Ambassade du Mali en Belgique",
+        "url": "https://www.amba-mali.be/article/les-visas"
+      },
+      "frais": "À confirmer (tarifs consulaires de l'ambassade)",
+      "delai": "Variable — vérifier la disponibilité du service",
+      "validite": "Selon le type de visa",
+      "reforme": "Le service visa de l'ambassade peut être suspendu : vérifier avant toute démarche.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.amba-mali.be/article/les-visas"
+    }
   },
   {
     "slug": "mauritanie",
@@ -7332,7 +7747,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa / visa à l'arrivée biométrique (Nouakchott)",
+      "portail": {
+        "libelle": "ANRPTS (e-visa officiel)",
+        "url": "https://anrpts.gov.mr/"
+      },
+      "frais": "≈ 55 € (tourisme, entrée unique)",
+      "delai": "En ligne (recommandé) ou à l'arrivée",
+      "validite": "Selon le type ; visa biométrique délivré à l'aéroport d'Oumtounsy",
+      "reforme": "Depuis le 5 janvier 2025, l'ambassade de Bruxelles ne délivre plus de visa : demande électronique via l'ANRPTS.",
+      "verifie_le": "2026-08-25",
+      "source": "https://anrpts.gov.mr/"
+    }
   },
   {
     "slug": "mongolie-2",
@@ -7505,7 +7933,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 30 jours (tourisme)",
+      "portail": {
+        "libelle": "Immigration de Mongolie",
+        "url": "https://immigration.gov.mn/en/"
+      },
+      "frais": "Aucun (exemption)",
+      "delai": "Sans objet",
+      "validite": "Séjour ≤ 30 jours (passeport ordinaire)",
+      "reforme": "Exemption de visa pour 34 pays (dont la Belgique) prolongée jusqu'au 1er janvier 2027.",
+      "verifie_le": "2026-08-25",
+      "source": "https://brussels.embassy.mn/subcategory/431"
+    }
   },
   {
     "slug": "mozambique",
@@ -7732,7 +8173,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Exemption 30 j (tourisme/affaires) mais autorisation préalable (ETA) requise",
+      "portail": {
+        "libelle": "evisa.gov.mz",
+        "url": "https://evisa.gov.mz/"
+      },
+      "frais": "ETA en ligne ~48 USD ; taxe à l'arrivée ~650 MZN (~10 USD)",
+      "delai": "En ligne avant le départ",
+      "validite": "30/60/90 j, entrée simple ou multiple ; prolongeable 30 j",
+      "reforme": "Nouvelle plateforme e-Visa/ETA lancée le 11 février 2026.",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.gov.mz/"
+    }
   },
   {
     "slug": "namibie",
@@ -7903,7 +8357,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis depuis le 1er avril 2025 (e-visa ou à l'arrivée)",
+      "portail": {
+        "libelle": "eservices.mhaiss.gov.na",
+        "url": "https://eservices.mhaiss.gov.na/"
+      },
+      "frais": "≈ N$ 1 600 (~82 €) à l'arrivée",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour touristique ; entrée par aéroports et postes principaux",
+      "reforme": "Depuis le 1er avril 2025, les passeports belges doivent obtenir un visa (e-visa recommandé).",
+      "verifie_le": "2026-08-25",
+      "source": "https://eservices.mhaiss.gov.na/"
+    }
   },
   {
     "slug": "niger",
@@ -8114,7 +8581,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — l'ambassade de Bruxelles ne délivre plus les visas ordinaires aux Belges",
+      "portail": {
+        "libelle": "Ambassade du Niger (Bruxelles)",
+        "url": "https://ambaniger-bruxelles.be/"
+      },
+      "frais": "À confirmer",
+      "delai": "Variable",
+      "validite": "Selon le type de visa",
+      "reforme": "Depuis le 22 août 2025, les visas ordinaires pour passeports belges se demandent aux représentations du Niger à Genève, Ankara ou Moscou.",
+      "verifie_le": "2026-08-25",
+      "source": "https://ambaniger-bruxelles.be/index.php/service-consulaire-visa-passeports/demande-de-visa"
+    }
   },
   {
     "slug": "nigeria",
@@ -8442,7 +8922,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (nouveau système)",
+      "portail": {
+        "libelle": "evisa.immigration.gov.ng",
+        "url": "https://evisa.immigration.gov.ng/"
+      },
+      "frais": "À confirmer (voir le portail officiel)",
+      "delai": "En ligne",
+      "validite": "Séjour 30 jours (non prolongeable)",
+      "reforme": "Nouveau système e-Visa + carte d'arrivée/sortie électronique obligatoire depuis le 1er mai 2025.",
+      "verifie_le": "2026-08-25",
+      "source": "https://immigration.gov.ng/"
+    }
   },
   {
     "slug": "nepal",
@@ -8566,7 +9059,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa à l'arrivée ou en ligne (tourisme)",
+      "portail": {
+        "libelle": "immigration.gov.np / nepaliport",
+        "url": "https://nepaliport.immigration.gov.np/"
+      },
+      "frais": "30 USD (15 j) · 50 USD (30 j) · 125 USD (90 j)",
+      "delai": "À l'arrivée (Katmandou, postes frontières)",
+      "validite": "Entrées multiples ; passeport ≥ 6 mois",
+      "reforme": "Carte d'arrivée en ligne (nepaliport) à remplir dans les 15 j avant l'arrivée.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.immigration.gov.np/"
+    }
   },
   {
     "slug": "oman",
@@ -8691,7 +9197,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 14 jours (exemption) ; e-visa au-delà",
+      "portail": {
+        "libelle": "evisa.rop.gov.om (Royal Oman Police)",
+        "url": "https://evisa.rop.gov.om/"
+      },
+      "frais": "Exemption 14 j gratuite ; e-visa 1 mois : OMR 20",
+      "delai": "e-visa en ligne",
+      "validite": "Exemption 14 j (billet retour + hôtel + assurance) ; passeport ≥ 6 mois",
+      "reforme": "Exemption de visa de 14 jours pour plus de 100 pays, dont la Belgique.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.fm.gov.om/en/visitors/entry-visas/"
+    }
   },
   {
     "slug": "ouganda",
@@ -8879,7 +9398,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (plus de visa à l'arrivée)",
+      "portail": {
+        "libelle": "visas.immigration.go.ug",
+        "url": "https://visas.immigration.go.ug/"
+      },
+      "frais": "50 USD (touristique)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Lettre d'autorisation/visa obligatoire avant l'embarquement ; option visa touristique Afrique de l'Est",
+      "reforme": "Demande en ligne obligatoire — aucun visa délivré à l'arrivée.",
+      "verifie_le": "2026-08-25",
+      "source": "https://visas.immigration.go.ug/"
+    }
   },
   {
     "slug": "ouzbekistan",
@@ -9110,7 +9642,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 30 jours (tourisme et affaires)",
+      "portail": {
+        "libelle": "e-visa.gov.uz (si non exempté)",
+        "url": "https://e-visa.gov.uz/"
+      },
+      "frais": "Aucun (exemption) ; sinon e-visa : 20/35/50 USD",
+      "delai": "Sans objet",
+      "validite": "Séjour ≤ 30 jours ; passeport valable 6 mois au-delà du séjour",
+      "verifie_le": "2026-08-25",
+      "source": "https://belgium.mfa.uz/page/795"
+    }
   },
   {
     "slug": "pakistan",
@@ -9323,7 +9867,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (touristique)",
+      "portail": {
+        "libelle": "visa.nadra.gov.pk (seul portail officiel)",
+        "url": "https://visa.nadra.gov.pk/"
+      },
+      "frais": "Selon la nationalité — voir le calculateur du portail officiel",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "30 à 90 jours selon le type",
+      "verifie_le": "2026-08-25",
+      "source": "https://visa.nadra.gov.pk/"
+    }
   },
   {
     "slug": "papouasie-nouvelle-guinee",
@@ -9529,7 +10085,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (visa à l'arrivée suspendu)",
+      "portail": {
+        "libelle": "ica.gov.pg (Immigration PNG)",
+        "url": "https://www.ica.gov.pg/"
+      },
+      "frais": "≈ 100 USD (entrée unique) / 150 USD (multiple)",
+      "delai": "En ligne",
+      "validite": "Séjour touristique ; passeport valide",
+      "reforme": "Visa à l'arrivée suspendu : e-visa obligatoire via ica.gov.pg.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.ica.gov.pg/"
+    }
   },
   {
     "slug": "qatar",
@@ -9688,7 +10257,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa — dispense d'entrée à l'arrivée",
+      "portail": {
+        "libelle": "Portail officiel Hukoomi",
+        "url": "https://hukoomi.gov.qa/en/category/visas-and-immigration"
+      },
+      "frais": "Gratuit (dispense à l'arrivée)",
+      "delai": "À l'arrivée",
+      "validite": "Jusqu'à 30 jours (prolongeable) — durée selon la catégorie",
+      "reforme": "Dispense de visa pour ~80 pays, dont la Belgique.",
+      "verifie_le": "2026-08-25",
+      "source": "https://hukoomi.gov.qa/en/category/visas-and-immigration"
+    }
   },
   {
     "slug": "russie",
@@ -9994,7 +10576,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa électronique unifié requis (entrée unique)",
+      "portail": {
+        "libelle": "evisa.kdmid.ru",
+        "url": "https://evisa.kdmid.ru/"
+      },
+      "frais": "≈ 52 USD (droit consulaire + frais)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Visa valable 120 jours · séjour max. 30 jours",
+      "reforme": "Depuis le 1er août 2025, la validité de l’e-visa passe à 120 jours et le séjour autorisé à 30 jours.",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.kdmid.ru/"
+    }
   },
   {
     "slug": "rwanda",
@@ -10204,7 +10799,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa à l'arrivée / e-visa (tous pays)",
+      "portail": {
+        "libelle": "irembo.gov.rw",
+        "url": "https://irembo.gov.rw/"
+      },
+      "frais": "50 USD (entrée simple, 30 j) ; option entrées multiples 90 j",
+      "delai": "À l'arrivée (Kigali, postes frontières) ou en ligne",
+      "validite": "30 jours (entrée simple)",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.migration.gov.rw/visa-on-arrival"
+    }
   },
   {
     "slug": "republique-centrafricaine",
@@ -10440,7 +11047,16 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — demande au consulat/ambassade (pas d'e-visa pour les Belges)",
+      "frais": "À confirmer (droits consulaires)",
+      "delai": "À confirmer",
+      "validite": "Selon le type de visa",
+      "reforme": "Zone déconseillée : consultez l'avis de voyage du SPF Affaires étrangères avant toute démarche.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/republique-centrafricaine"
+    }
   },
   {
     "slug": "sao-tome-et-principe",
@@ -10581,7 +11197,15 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 15 jours (UE) ; e-visa au-delà",
+      "frais": "Exemption gratuite (≤ 15 j) ; e-visa payant au-delà",
+      "delai": "Sans objet (≤ 15 j)",
+      "validite": "≤ 15 jours (UE) ; passeport ≥ 6 mois, 1 page vierge ; visa Schengen multi-entrées reconnu",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/sao-tome-et-principe"
+    }
   },
   {
     "slug": "sierra-leone",
@@ -10788,7 +11412,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa (ou visa à l'arrivée) requis",
+      "portail": {
+        "libelle": "e-visa Sierra Leone",
+        "url": "https://evisa.sl.gov.sl/"
+      },
+      "frais": "80 USD (e-visa ou à l'arrivée)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Passeport ≥ 6 mois",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.sierraleoneembassy.brussels/type-of-visas-and-fees/"
+    }
   },
   {
     "slug": "soudan",
@@ -11010,7 +11646,16 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — via l'ambassade (Bruxelles)",
+      "frais": "À confirmer",
+      "delai": "À confirmer",
+      "validite": "Selon le type de visa",
+      "reforme": "Voyage fortement déconseillé (conflit armé depuis 2023). Vérifiez l'avis du SPF Affaires étrangères.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/soudan"
+    }
   },
   {
     "slug": "sud-soudan",
@@ -11249,7 +11894,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — e-visa ou ambassade",
+      "portail": {
+        "libelle": "MAE du Soudan du Sud",
+        "url": "https://mofaic.gov.ss/visas/"
+      },
+      "frais": "À confirmer",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Entrée par l'aéroport de Djouba et 5 postes terrestres",
+      "reforme": "Zone déconseillée : consultez l'avis de voyage du SPF Affaires étrangères.",
+      "verifie_le": "2026-08-25",
+      "source": "https://mofaic.gov.ss/visas/"
+    }
   },
   {
     "slug": "suriname",
@@ -11444,7 +12102,15 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Tourist Card (tourisme) — jusqu'à 90 jours",
+      "frais": "≈ 50 USD",
+      "delai": "En ligne (autorisation par e-mail)",
+      "validite": "Jusqu'à 90 jours (tourisme) ; Belgique éligible",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/suriname"
+    }
   },
   {
     "slug": "tadjikistan",
@@ -11645,7 +12311,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (portail officiel)",
+      "portail": {
+        "libelle": "evisa.tj",
+        "url": "https://www.evisa.tj/"
+      },
+      "frais": "30 USD (entrée unique) / 50 USD (multiple) ; permis GBAO +20 USD",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type ; permis GBAO obligatoire pour le Pamir / Gorno-Badakhshan",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisa.tj/"
+    }
   },
   {
     "slug": "tanzanie",
@@ -11860,7 +12538,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (Tanzanie continentale et Zanzibar)",
+      "portail": {
+        "libelle": "visa.immigration.go.tz",
+        "url": "https://visa.immigration.go.tz/"
+      },
+      "frais": "Touristique 50 USD (entrée unique) ; payer en coupures de 50/100 USD",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour jusqu'à 90 jours",
+      "verifie_le": "2026-08-25",
+      "source": "https://visa.immigration.go.tz/"
+    }
   },
   {
     "slug": "tchad",
@@ -12058,7 +12748,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa obligatoire",
+      "portail": {
+        "libelle": "evisa.td",
+        "url": "https://evisa.td/"
+      },
+      "frais": "À partir de ~134 €",
+      "delai": "En ligne",
+      "validite": "15, 30 ou 90 jours",
+      "reforme": "Depuis le 11 mai 2026, e-visa obligatoire (evisa.td) ; après le 21 mai 2026, un visa hors plateforme n'autorise plus l'entrée.",
+      "verifie_le": "2026-08-25",
+      "source": "https://evisa.td/"
+    }
   },
   {
     "slug": "thailande",
@@ -12190,7 +12893,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu'à 60 jours (tourisme)",
+      "portail": {
+        "libelle": "thaievisa.go.th (e-visa si besoin)",
+        "url": "https://www.thaievisa.go.th/"
+      },
+      "frais": "Exemption gratuite ; e-visa si requis : 40 USD (entrée unique) / 80 USD (multiple)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour 60 jours ; passeport valable 6 mois",
+      "reforme": "Carte d'arrivée numérique (Digital Arrival Card) obligatoire, à remplir dans les 3 jours avant l'arrivée.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.thaievisa.go.th/"
+    }
   },
   {
     "slug": "togo",
@@ -12380,7 +13096,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (exclusivement en ligne)",
+      "portail": {
+        "libelle": "voyage.gouv.tg",
+        "url": "https://voyage.gouv.tg/"
+      },
+      "frais": "≈ 39 à 100 € selon la durée",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Selon le type d'e-visa",
+      "reforme": "Depuis fin 2022, le visa Togo est exclusivement en ligne (plus de visa sur passeport à l'ambassade).",
+      "verifie_le": "2026-08-25",
+      "source": "https://voyage.gouv.tg/"
+    }
   },
   {
     "slug": "turkmenistan",
@@ -12553,7 +13282,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — lettre d'invitation (LOI) obligatoire",
+      "portail": {
+        "libelle": "Ambassade du Turkménistan (Bruxelles)",
+        "url": "https://belgium.tmembassy.gov.tm/"
+      },
+      "frais": "À confirmer (droits consulaires selon l'ambassade)",
+      "delai": "LOI ~3–4 semaines, puis visa à l'ambassade",
+      "validite": "LOI valable 3 mois après certification par le Service national des migrations",
+      "reforme": "Pas d'e-visa fiable : la demande passe par la LOI puis l'ambassade.",
+      "verifie_le": "2026-08-25",
+      "source": "https://belgium.tmembassy.gov.tm/en/consular-services/questionnaire-for-transit-visa"
+    }
   },
   {
     "slug": "vietnam",
@@ -12658,7 +13400,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa jusqu’à 45 jours (tourisme) ; e-Visa au-delà",
+      "portail": {
+        "libelle": "evisa.gov.vn",
+        "url": "https://evisa.gov.vn/"
+      },
+      "frais": "e-Visa : 25 USD (entrée unique) / 50 USD (entrées multiples)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Exemption 45 j · e-Visa jusqu’à 90 j",
+      "reforme": "Exemption de visa de 45 jours pour la Belgique, du 15 août 2025 au 14 août 2028.",
+      "verifie_le": "2026-08-25",
+      "source": "https://vnembassy-bruxelles.mofa.gov.vn/"
+    }
   },
   {
     "slug": "yemen",
@@ -12814,7 +13569,16 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis — via l'ambassade/consulat",
+      "frais": "À confirmer",
+      "delai": "À confirmer",
+      "validite": "Certificat médical + passeport ≥ 6 mois",
+      "reforme": "Voyage à proscrire (niveau « ne pas voyager » : guerre civile, terrorisme, enlèvements). Avis du SPF Affaires étrangères.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/yemen"
+    }
   },
   {
     "slug": "zambie",
@@ -13019,7 +13783,20 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa pour un court séjour touristique",
+      "portail": {
+        "libelle": "eservices.zambiaimmigration.gov.zm",
+        "url": "https://eservices.zambiaimmigration.gov.zm/"
+      },
+      "frais": "Aucun (exemption touristique)",
+      "delai": "Sans objet",
+      "validite": "Court séjour ; billet retour requis (durée exacte à confirmer)",
+      "reforme": "La Zambie a exempté de visa de nombreux pays occidentaux (dont la Belgique) pour le tourisme.",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.zambiaimmigration.gov.zm/"
+    }
   },
   {
     "slug": "zimbabwe",
@@ -13234,7 +14011,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis (catégorie B) — en ligne ou à l'arrivée",
+      "portail": {
+        "libelle": "evisa.gov.zw",
+        "url": "https://www.evisa.gov.zw/"
+      },
+      "frais": "30 USD (entrée unique) / 45 USD (double)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "Séjour jusqu'à 30 jours",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisa.gov.zw/"
+    }
   },
   {
     "slug": "emirats-arabes-unis",
@@ -13343,7 +14132,19 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "Sans visa préalable — entrée / visa gratuit à l’arrivée",
+      "portail": {
+        "libelle": "u.ae (portail officiel)",
+        "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/"
+      },
+      "frais": "Aucun à l’arrivée (frais en cas de prolongation)",
+      "delai": "Sans objet (à l’arrivée)",
+      "validite": "Séjour max. 90 jours par période de 180 jours",
+      "verifie_le": "2026-08-25",
+      "source": "https://u.ae/"
+    }
   },
   {
     "slug": "erythree",
@@ -13545,97 +14346,16 @@
         ],
         "texte_libre": []
       }
-    ]
-  },
-  {
-    "slug": "etats-unis-2",
-    "nom": "États-Unis",
-    "url": "https://www.travisum.com/visas/etats-unis-2/",
-    "sous_pages": [
-      {
-        "type": "autre",
-        "titre": "ESTA",
-        "url": "http://www.travisum.com/visas/etats-unis-2/etats-unis-esta/",
-        "statut_http": 200,
-        "intro": [
-          "SOLLICITER UN NOUVEL ESTA",
-          "Tous les voyageurs internationaux autorisés qui souhaitent se rendre aux États-Unis dans le cadre du Visa Waiver Program doivent solliciter une autorisation .",
-          "Votre identité :",
-          "Vous êtes citoyen ou ressortissant d’un pays ayant droit au Visa Waiver Program.",
-          "Vous ne détenez pas actuellement de visa de visiteur.",
-          "Votre séjour dure moins de 90 jours.",
-          "Vous prévoyez de vous rendre aux États-Unis pour affaires ou loisirs.",
-          "Vous souhaitez demander une nouvelle autorisation pour une personne ou un groupe de demandes pour deux personnes ou plus.",
-          "Ce qu’il vous faut :",
-          "Passeport valide d’un pays du Visa Waiver Program.",
-          "Carte de crédit valide (MasterCard, VISA, American Express et Discover (JCB, Diners Club) ou PayPal pour payer 14 USD pour chaque demande.",
-          "Vos coordonnées",
-          "Votre emploi le plus récent, le cas échéant.",
-          "Ci-dessous, la liste des documents à présenter:"
-        ],
-        "documents": [
-          {
-            "nom": "Scan de votre passeport",
-            "details": [
-              "Veuillez faire un scan de la page principale de votre passeport et le téléchargez.",
-              "Votre passeport doit être valable au moins 6 mois après la date de la demande de votre ESTA."
-            ]
-          },
-          {
-            "nom": "Une demande pour l'ESTA en ligne",
-            "details": [
-              "Travisum peut se charger de remplir le formulaire en ligne pour vous. N’hésitez pas à nous contacter par email ou par téléphone à cet égard.",
-              "Suivez ce lien pour la demande en ligne."
-            ]
-          }
-        ],
-        "texte_libre": []
-      },
-      {
-        "type": "informations-generales",
-        "titre": "ÉTATS-UNIS INFORMATIONS GÉNÉRALES",
-        "url": "http://www.travisum.com/visas/etats-unis-2/etats-unis-informations-generales/",
-        "statut_http": 200,
-        "intro": [],
-        "documents": [
-          {
-            "nom": "Délai d'obtention",
-            "details": [
-              "On peut prendre votre demande en charge et obtenir votre visa en 5 jours ouvrables si vous optez pour la procédure normale."
-            ]
-          },
-          {
-            "nom": "Les tarifs",
-            "details": [
-              "Frais consulaires | Frais de service Travisum",
-              "Entrée simple | Particuliers | Agences de voyages | Organisation internationale",
-              "ESTA",
-              "Tourisme/",
-              "Business",
-              "14$",
-              "* | * | *",
-              "* Veuillez nous envoyer un email à info@travisum.com avec votre demande ou appelez-nous à 0485 948 935 pour en savoir plus sur nos offres et tarifs (particulier, agences de voyages ou organisation internationale)."
-            ]
-          },
-          {
-            "nom": "Livraison",
-            "details": [
-              "On peut également prendre en charge la livraison à Bruxelles, ailleurs en Belgique ou à l’international. Le prix de la livraison à Bruxelles est de 10€, pour les tarifs en Belgique et à l’international veuillez nous contacter."
-            ]
-          },
-          {
-            "nom": "Contact de l'Ambassade des États-Unis",
-            "details": [
-              "Adresse: Boulevard du Régent 27, 1000 Bruxelles",
-              "Tél. 02 811 40 00",
-              "Jours d’ouverture: du lundi au vendredi",
-              "Horaire: 9h-17h"
-            ]
-          }
-        ],
-        "texte_libre": []
-      }
-    ]
+    ],
+    "synthese": {
+      "statut": "Visa requis (vignette) — demande à l'ambassade (Bruxelles)",
+      "frais": "À confirmer",
+      "delai": "2 à 25 jours (prévoir ~6 semaines)",
+      "validite": "Formulaire B62.3 + relevés bancaires + itinéraire ; passeport ≥ 6 mois",
+      "reforme": "Pas de visa à l'arrivée : obtenir la vignette avant le départ.",
+      "verifie_le": "2026-08-25",
+      "source": "https://diplomatie.belgium.be/fr/pays/erythree"
+    }
   },
   {
     "slug": "ethiopie",
@@ -13804,6 +14524,18 @@
         ],
         "texte_libre": []
       }
-    ]
+    ],
+    "synthese": {
+      "statut": "e-Visa requis",
+      "portail": {
+        "libelle": "evisa.gov.et",
+        "url": "https://www.evisa.gov.et/"
+      },
+      "frais": "62 USD (touristique 30 jours, entrée unique)",
+      "delai": "Prévoir 2 à 3 semaines",
+      "validite": "30 jours à partir de l'arrivée",
+      "verifie_le": "2026-08-25",
+      "source": "https://www.evisa.gov.et/"
+    }
   }
 ]

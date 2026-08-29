@@ -77,7 +77,7 @@ export default function Entete({
         className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-tertiary-fixed-dim/30 transition-all duration-300"
         onMouseLeave={() => programmer(null, 170)}
       >
-        <div className="h-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex items-center gap-6 2xl:gap-10">
+        <div className="h-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex items-center gap-4 2xl:gap-8">
           <a className="flex items-center shrink-0" href={lien(lang, "/")} aria-label="Travisum">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -90,7 +90,7 @@ export default function Entete({
           </a>
 
           <nav className="hidden xl:block ml-auto" aria-label="Navigation">
-            <ul className="flex items-stretch gap-6 2xl:gap-8">
+            <ul className="flex items-stretch gap-4 2xl:gap-7">
               {ENTREES.map(({ libelle, cle, href, mega: aMega }) => {
                 const courant = cle === actif;
                 return (
@@ -107,7 +107,7 @@ export default function Entete({
                     }}
                   >
                     <a
-                      className={`relative inline-flex items-center gap-1 h-20 font-label-sm text-label-sm uppercase tracking-[0.1em] whitespace-nowrap transition-colors group ${
+                      className={`relative inline-flex items-center gap-1 h-20 font-label-sm text-[11px] uppercase tracking-[0.08em] whitespace-nowrap transition-colors group ${
                         courant
                           ? "text-primary font-bold"
                           : "text-on-surface-variant hover:text-primary"
@@ -157,7 +157,7 @@ export default function Entete({
             />
 
             <a
-              className="bg-primary text-on-primary px-5 py-3 font-label-sm text-label-sm uppercase tracking-[0.1em] whitespace-nowrap hover:bg-primary-container transition-all rounded-sm"
+              className="bg-primary text-on-primary px-4 py-3 font-label-sm text-[11px] uppercase tracking-[0.08em] whitespace-nowrap hover:bg-primary-container transition-all rounded-sm"
               href={lien(lang, "/tarifs/")}
             >
               {dico.cta_devis}
@@ -215,17 +215,17 @@ type BlocMega = NonNullable<ReturnType<typeof mega>[CleEntree]>;
 function PanneauMega({ bloc }: { bloc: BlocMega }) {
   return (
     <div className="mega absolute left-0 right-0 top-full bg-surface border-t border-tertiary-fixed-dim/30 shadow-xl">
-      <div className="max-w-max-width mx-auto px-margin-desktop py-10 grid grid-cols-12 gap-gutter">
+      <div className="max-w-max-width mx-auto px-margin-desktop py-8 grid grid-cols-12 gap-gutter">
         {bloc.colonnes.map((colonne) => (
           <div key={colonne.titre} className="col-span-12 md:col-span-3">
-            <p className="font-label-sm text-label-sm uppercase text-on-tertiary-fixed-variant pb-3 mb-3 border-b border-tertiary-fixed-dim/40">
+            <p className="font-label-sm text-[10px] tracking-[0.15em] uppercase text-on-tertiary-fixed-variant pb-2.5 mb-2.5 border-b border-tertiary-fixed-dim/40">
               {colonne.titre}
             </p>
             <ul className="flex flex-col">
               {colonne.liens.map(([libelle, href]) => (
                 <li key={libelle}>
                   <a
-                    className="block py-1.5 font-body-md text-body-md text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200"
+                    className="block py-1 font-body-md text-[14px] text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-200"
                     href={href}
                   >
                     {libelle}
@@ -237,13 +237,13 @@ function PanneauMega({ bloc }: { bloc: BlocMega }) {
         ))}
 
         <div className="col-span-12 md:col-span-3">
-          <div className="h-full bg-primary text-on-primary p-6 flex flex-col gap-4 rounded-sm">
-            <p className="font-label-sm text-label-sm uppercase text-tertiary-fixed-dim">
+          <div className="h-full bg-primary text-on-primary p-5 flex flex-col gap-3 rounded-sm">
+            <p className="font-label-sm text-[10px] tracking-[0.15em] uppercase text-tertiary-fixed-dim">
               {bloc.carte.surtitre}
             </p>
-            <p className="font-display-lg text-[20px] leading-snug">{bloc.carte.titre}</p>
+            <p className="font-display-lg text-[15px] leading-snug">{bloc.carte.titre}</p>
             <a
-              className="mt-auto inline-flex items-center justify-center gap-2 bg-tertiary-fixed-dim text-on-tertiary-fixed px-5 py-3 font-label-sm text-label-sm uppercase tracking-widest rounded-sm hover:bg-white transition-colors"
+              className="mt-auto inline-flex items-center justify-center gap-2 bg-tertiary-fixed-dim text-on-tertiary-fixed px-4 py-2.5 font-label-sm text-[11px] uppercase tracking-widest rounded-sm hover:bg-white transition-colors"
               href={bloc.carte.href}
             >
               {bloc.carte.action}
@@ -350,27 +350,27 @@ function MenuMobile({
             <li key={cle} className="border-b border-tertiary-fixed-dim/20">
               <div className="flex items-center gap-2">
                 <a
-                  className={`flex items-baseline gap-5 py-4 font-display-lg text-[26px] leading-tight grow hover:text-tertiary-fixed-dim transition-colors ${
+                  className={`flex items-baseline gap-3.5 py-3 font-display-lg text-[17px] leading-tight grow hover:text-tertiary-fixed-dim transition-colors ${
                     cle === actif ? "text-tertiary-fixed-dim" : "text-on-primary"
                   }`}
                   href={href}
                   aria-current={cle === actif ? "page" : undefined}
                   onClick={fermer}
                 >
-                  <span className="font-label-sm text-label-sm text-tertiary-fixed-dim">
+                  <span className="font-label-sm text-[10px] tracking-[0.15em] text-tertiary-fixed-dim/70">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   {libelle}
                 </a>
                 {aMega && (
                   <button
-                    className="shrink-0 w-11 h-11 flex items-center justify-center text-tertiary-fixed-dim"
+                    className="shrink-0 w-9 h-9 flex items-center justify-center text-tertiary-fixed-dim"
                     onClick={() => setDeplie((v) => (v === cle ? null : cle))}
                     aria-expanded={deplie === cle}
                     aria-label={libelle}
                   >
                     <span
-                      className={`material-symbols-outlined transition-transform duration-300 ${
+                      className={`material-symbols-outlined text-[20px] transition-transform duration-300 ${
                         deplie === cle ? "rotate-180" : ""
                       }`}
                       aria-hidden="true"
@@ -382,17 +382,17 @@ function MenuMobile({
               </div>
 
               {aMega && deplie === cle && MEGA[cle] && (
-                <div className="pb-5 pl-9">
+                <div className="pb-5 pl-7">
                   {MEGA[cle]!.colonnes.map((colonne) => (
                     <div key={colonne.titre}>
-                      <p className="font-label-sm text-label-sm uppercase text-tertiary-fixed-dim mt-5 mb-2 first:mt-0">
+                      <p className="font-label-sm text-[10px] tracking-[0.15em] uppercase text-tertiary-fixed-dim/70 mt-4 mb-1.5 first:mt-0">
                         {colonne.titre}
                       </p>
                       <ul className="flex flex-col">
                         {colonne.liens.map(([lib, h]) => (
                           <li key={lib}>
                             <a
-                              className="block py-1.5 font-body-md text-body-md text-primary-fixed-dim hover:text-on-primary transition-colors"
+                              className="block py-1 font-body-md text-[14px] text-primary-fixed-dim hover:text-on-primary transition-colors"
                               href={h}
                               onClick={fermer}
                             >
@@ -410,8 +410,8 @@ function MenuMobile({
         </ul>
       </nav>
 
-      <div className="mt-10 flex flex-col gap-3 font-body-md text-body-md text-primary-fixed-dim">
-        <p className="font-label-sm text-label-sm uppercase text-tertiary-fixed-dim">
+      <div className="mt-8 flex flex-col gap-2.5 font-body-md text-[14px] text-primary-fixed-dim">
+        <p className="font-label-sm text-[10px] tracking-[0.15em] uppercase text-tertiary-fixed-dim/70">
           {dico.pied.bureau}
         </p>
         <p>

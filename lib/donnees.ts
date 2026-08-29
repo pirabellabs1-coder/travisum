@@ -70,11 +70,28 @@ export type SousPage = {
   texte_libre: string[];
 };
 
+/**
+ * Synthèse visa vérifiée — bloc « à jour » en tête de fiche. Renseignée à partir
+ * de sources officielles (portails e-visa, ambassades) avec date de vérification.
+ * Reste indicative : la décision appartient toujours au consulat.
+ */
+export type Synthese = {
+  statut: string; // ex. « Sans visa jusqu'à 30 jours », « e-Visa requis », « ESTA (dispense de visa) »
+  portail?: { libelle: string; url: string };
+  frais?: string;
+  delai?: string;
+  validite?: string;
+  reforme?: string;
+  verifie_le: string; // AAAA-MM-JJ
+  source?: string;
+};
+
 export type FichePays = {
   slug: string;
   nom: string;
   url: string;
   sous_pages: SousPage[];
+  synthese?: Synthese;
 };
 
 // --------------------------------------------------------------------------

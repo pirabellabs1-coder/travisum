@@ -1,206 +1,136 @@
-import Page from "@/components/Page";
-import { BandeauConversion, LeBureau } from "@/components/sections";
-import {
-  Carte,
-  CartoucheIcone,
-  EnteteSection,
-  Icone,
-  MAXW,
-  Section,
-} from "@/components/ui";
-import { CONTACT, DESTINATIONS, LANGUES } from "@/lib/donnees";
+import PageV3 from "@/components/PageV3";
+import { CONTACT } from "@/lib/donnees";
 import { lien, type Locale } from "@/lib/i18n";
-
-
-const CHIFFRES: [string, string][] = [
-  [`${LANGUES.length}`, "Langues traitées"],
-  [`${DESTINATIONS.length}`, "Destinations visa"],
-  ["4,5 M", "Vues Google Local Guide"],
-  ["9h–17h", "Sans interruption"],
-];
-
-const ENGAGEMENTS = [
-  [
-    "verified_user",
-    "Traducteurs jurés",
-    "Les traductions assermentées sont réalisées par des traducteurs experts agréés par un Tribunal de première instance belge, et reconnues par les autorités belges et internationales.",
-  ],
-  [
-    "directions_walk",
-    "Présence quotidienne",
-    "Le bureau se déplace chaque jour auprès des instances bruxelloises. C’est ce qui permet de raccourcir des délais que la voie postale allongerait.",
-  ],
-  [
-    "lock",
-    "Confidentialité",
-    "Les documents transmis sont traités comme confidentiels, ne sont ni communiqués ni réutilisés, et les copies numériques sont supprimées une fois le dossier clôturé.",
-  ],
-  [
-    "hub",
-    "Un seul interlocuteur",
-    "Traduction, légalisation et visa dans la même maison : une demande peut enchaîner les trois sans que vous ayez à coordonner trois prestataires.",
-  ],
-];
-
-const CARTES_LEGALES = [
-  ["/mentions-legales/", "gavel", "Mentions légales", "Éditeur, directeur de la publication, hébergement et limites de responsabilité."],
-  ["/confidentialite/", "lock", "Politique de confidentialité", "Ce que deviennent les copies de passeports, actes et diplômes que vous nous confiez."],
-  ["/cgv/", "description", "Conditions générales", "Devis, délais, prix, responsabilité et réclamations."],
-  ["/cookies/", "cookie", "Politique cookies", "Aucun traceur publicitaire. Ce que le site dépose réellement."],
-];
+import { tp } from "@/lib/tpages";
 
 export function AProposVue({ lang = "fr", cheminFr = "/a-propos/" }: { lang?: Locale; cheminFr?: string }) {
   const L = (c: string) => lien(lang, c);
+  const d = tp(lang);
+  const eng: [string, string, string][] = [
+    ["01", d.ap_e1h, d.ap_e1p], ["02", d.ap_e2h, d.ap_e2p], ["03", d.ap_e3h, d.ap_e3p],
+  ];
+
   return (
-    <Page actif="a-propos" lang={lang} cheminFr={cheminFr}>
-      {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-16 border-b border-tertiary-fixed-dim/20">
-        <div
-          className="guilloche absolute inset-0 opacity-[0.10] pointer-events-none"
-          aria-hidden="true"
-        />
-        <div className={`${MAXW} relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-10`}>
-          <div className="flex flex-col gap-6 max-w-3xl">
-            <div className="flex items-center gap-4">
-              <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-fixed-variant">
-                Service 06
-              </span>
-              <span className="h-px bg-tertiary-fixed-dim grow max-w-[120px]" />
+    <PageV3 lang={lang} cheminFr={cheminFr}>
+      <section className="dark hero-lite">
+        <div className="wrap hgrid-lite">
+          <div>
+            <div className="eb">{d.ap_eb}</div>
+            <h1>{d.ap_h1a} <span className="g">{d.ap_h1g}</span></h1>
+            <p className="sub">{d.ap_sub.replace("{r}", CONTACT.raison)}</p>
+            <div className="cta">
+              <a className="btn btn-p" href="#contact">{d.ap_visite} <span className="ar">→</span></a>
+              <a className="btn btn-out" href="tel:026420025">{d.cta_conseiller}</a>
             </div>
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight">
-              Le bureau, avenue Louise.
-            </h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              {CONTACT.raison} accompagne particuliers et entreprises dans leurs démarches
-              documentaires internationales : traduction jurée, légalisation et visas de
-              voyage.
-            </p>
           </div>
-          <div className="shrink-0 border border-tertiary-fixed-dim/60 rounded-sm px-8 py-6 text-center bg-surface-container-lowest">
-            <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-2">
-              Vues Google
-            </p>
-            <p className="font-display-lg text-headline-md text-on-tertiary-fixed-variant">
-              4,5 M
-            </p>
-            <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-2">
-              Local Guide
-            </p>
+          <div className="statbox">
+            <span className="k">4,5 M</span>
+            <span className="l">{d.ap_stat}</span>
           </div>
         </div>
       </section>
 
-      {/* --------------------------------------------------------- MANIFESTE */}
-      <Section fond="surface" id="manifeste">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-24 items-start">
+      <section>
+        <div className="wrap">
+          <h2 className="lead-h">{d.ap_lead}</h2>
+          <div className="split">
+            <div>
+              <div className="eb">{d.ap_metier}</div>
+              <p style={{ color: "var(--muted)", fontSize: 16, marginBottom: 16 }}>{d.ap_metier1}</p>
+              <p style={{ color: "var(--muted)", fontSize: 16 }}>{d.ap_metier2}</p>
+            </div>
+            <div className="holder">
+              <span className="hlab">{d.ap_ph_lab}</span>
+              <h3>{d.ap_ph_h}</h3>
+              <p>{d.ap_ph_p}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="tint">
+        <div className="wrap">
+          <div className="eb">{d.ap_eng_eb}</div>
+          <h2 className="sec-h">{d.ap_eng_h}</h2>
+          <div className="cards3">
+            {eng.map(([n, t, p]) => (
+              <div key={n} className="card"><div className="num">{n}</div><h3>{t}</h3><p>{p}</p></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="dark conf">
+        <div className="narrow">
+          <div className="eb ctr">{d.ap_conf_eb}</div>
+          <h2 style={{ fontSize: "clamp(26px,2.8vw,36px)", marginBottom: 18 }}>{d.ap_conf_h}</h2>
+          <p className="intro">{d.ap_conf_p}</p>
+          <ul>
+            <li><b>✓</b><span>{d.ap_conf1}</span></li>
+            <li><b>✓</b><span>{d.ap_conf2}</span></li>
+            <li><b>✓</b><span>{d.ap_conf3}</span></li>
+            <li><b>✓</b><span>{d.ap_conf4}</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="tint">
+        <div className="wrap split">
           <div>
-            <EnteteSection
-              surtitre="Notre métier"
-              titre="Supprimer la corvée administrative"
-            />
-            <div className="flex flex-col gap-5 font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-              <p>
-                Faire traduire, légaliser puis déposer un document auprès d’un consulat
-                suppose de connaître l’ordre exact des étapes, les guichets compétents et
-                les pièces attendues. Une erreur au début de la chaîne se paie à la fin, en
-                semaines perdues.
-              </p>
-              <p>
-                Le bureau prend cette chaîne en charge de bout en bout. Vous confiez un
-                document ; vous récupérez un dossier conforme, dans un délai annoncé
-                d’avance.
-              </p>
-              <p>
-                C’est un métier de précision et de présence : nos traducteurs sont
-                assermentés près les tribunaux belges, et le bureau se rend chaque jour
-                auprès des administrations bruxelloises.
-              </p>
-            </div>
+            <div className="eb">{d.ap_gg_eb}</div>
+            <h2 className="sec-h">{d.ap_gg_h}</h2>
+            <p style={{ color: "var(--muted)", fontSize: 15, marginBottom: 22 }}>{d.ap_gg_p}</p>
+            <a className="btn btn-out-d" href="https://maps.app.goo.gl/avsW7i5xRo2qmt2s5" target="_blank" rel="noopener noreferrer">{d.ap_gg_btn} <span className="ar">→</span></a>
           </div>
+          <div className="ggbox">
+            <span className="hlab">{d.ap_gg_lab}</span>
+            <b>4,5 M</b>
+            <span>{d.ap_gg_sub}</span>
+          </div>
+        </div>
+      </section>
 
-          <div className="border border-tertiary-fixed-dim/30 rounded-sm bg-surface-container-lowest p-8">
-            <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-6">
-              En chiffres
+      <section id="contact">
+        <div className="wrap split">
+          <div>
+            <div className="eb">{d.ap_ct_eb}</div>
+            <h2 className="sec-h">{CONTACT.rue}.</h2>
+            <p className="sec-p">{CONTACT.code_postal} {CONTACT.ville}. {CONTACT.horaires}</p>
+            <p style={{ marginBottom: 8 }}>
+              <strong>{d.ap_ct_tel}</strong> —{" "}
+              <a className="more-l" href={`tel:${CONTACT.telephone_tel}`}>{CONTACT.telephone}</a> ·{" "}
+              <a className="more-l" href={`tel:${CONTACT.mobile_tel}`}>{CONTACT.mobile}</a>
             </p>
-            <div className="flex flex-wrap gap-y-8">
-              {CHIFFRES.map(([valeur, libelle], i) => (
-                <div
-                  key={libelle}
-                  className={`flex flex-col gap-2 px-6 basis-1/2 border-l border-tertiary-fixed-dim/30 ${
-                    i % 2 === 0 ? "first:pl-0 [&:nth-child(3)]:pl-0 [&:nth-child(3)]:border-l-0 first:border-l-0" : ""
-                  }`}
-                >
-                  <span className="font-display-lg text-headline-md text-on-tertiary-fixed-variant">
-                    {valeur}
-                  </span>
-                  <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">
-                    {libelle}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <p style={{ marginBottom: 8 }}>
+              <strong>{d.ap_ct_mail}</strong> —{" "}
+              <a className="more-l" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+            </p>
+            <p style={{ marginBottom: 20 }}>
+              <strong>{d.ap_ct_acces}</strong> — {d.ap_ct_acces_v}
+            </p>
+            <a className="btn btn-out-d" href="https://maps.app.goo.gl/avsW7i5xRo2qmt2s5" target="_blank" rel="noopener noreferrer">{d.ap_ct_maps} <span className="ar">→</span></a>
+          </div>
+          <iframe
+            className="mapframe"
+            title="Plan — 367 avenue Louise, 1050 Bruxelles"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Travisum%20Louise%20Office%2C%20367%20Avenue%20Louise%2C%201050%20Bruxelles&z=16&output=embed"
+          />
+        </div>
+      </section>
+
+      <section className="dark final">
+        <div className="wrap">
+          <div className="rule" />
+          <h2>{d.ap_cta_h}</h2>
+          <p>{d.ap_cta_p}</p>
+          <div className="cta">
+            <a className="btn btn-p" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a>
+            <a className="btn btn-out" href={`mailto:${CONTACT.email}`}>{d.cta_ecrire}</a>
           </div>
         </div>
-      </Section>
-
-      {/* ------------------------------------------------------- ENGAGEMENTS */}
-      <Section fond="basse" id="engagements">
-        <EnteteSection
-          surtitre="Nos engagements"
-          titre="Ce sur quoi nous nous engageons"
-          chapeau="Le client confie des originaux : acte de naissance, diplôme, passeport. Cela impose un niveau d’exigence particulier."
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-          {ENGAGEMENTS.map(([ic, titre, texte]) => (
-            <Carte key={titre}>
-              <CartoucheIcone nom={ic} />
-              <h3 className="font-display-lg text-[21px] text-primary mb-3">{titre}</h3>
-              <p className="font-body-md text-body-md text-on-surface-variant">{texte}</p>
-            </Carte>
-          ))}
-        </div>
-      </Section>
-
-      <LeBureau lang={lang} id="contact" />
-
-      {/* ------------------------------------------------- INFORMATIONS LÉGALES */}
-      <Section fond="surface" id="legal" filetBas={false}>
-        <EnteteSection
-          surtitre="Informations légales"
-          titre="Mentions, conditions et confidentialité"
-          chapeau="Quatre textes distincts, consultables à tout moment et accessibles depuis le pied de page de chaque page du site."
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          {CARTES_LEGALES.map(([href, ic, titre, texte]) => (
-            <a
-              key={href}
-              className="group flex flex-col gap-3 p-7 border border-tertiary-fixed-dim/30 rounded-sm bg-surface-container-lowest hover:border-tertiary-fixed-dim transition-colors"
-              href={href}
-            >
-              <Icone nom={ic} taille="text-[22px]" />
-              <h3 className="font-display-lg text-[20px] text-primary group-hover:text-on-tertiary-fixed-variant transition-colors">
-                {titre}
-              </h3>
-              <p className="font-body-md text-[15px] text-on-surface-variant">{texte}</p>
-              <span className="inline-flex items-center gap-2 mt-2 font-label-sm text-label-sm uppercase tracking-widest text-primary">
-                Consulter
-                <Icone
-                  nom="arrow_forward"
-                  taille="text-[16px] group-hover:translate-x-1 transition-transform"
-                  couleur=""
-                />
-              </span>
-            </a>
-          ))}
-        </div>
-      </Section>
-
-      <BandeauConversion lang={lang}
-        titre="Passez au bureau, ou envoyez un scan."
-        chapeau="367 avenue Louise, du lundi au vendredi de 9 h à 17 h sans interruption. Rendez-vous et conseils personnalisés également possibles."
-        action="Nous contacter"
-        href={`mailto:${CONTACT.email}`}
-      />
-    </Page>
+      </section>
+    </PageV3>
   );
 }

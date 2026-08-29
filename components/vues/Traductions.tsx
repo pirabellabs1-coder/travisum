@@ -1,145 +1,123 @@
-import Page from "@/components/Page";
-import { EstimateurTraduction, Faq, TableauTarifs } from "@/components/interactifs";
-import { BandeauConversion, GrilleLangues, ListeDocuments } from "@/components/sections";
-import { EnteteSection, Icone, LienFleche, MAXW, Section } from "@/components/ui";
-import { FAQ, LANGUES, TARIFS } from "@/lib/donnees";
+import PageV3 from "@/components/PageV3";
+import { DOCUMENTS_TRADUCTION, LANGUES } from "@/lib/donnees";
+import { faqL, tarifsL } from "@/lib/data-i18n";
+import { trData } from "@/lib/translate-data";
 import { lien, type Locale } from "@/lib/i18n";
-
-
-const ASSERMENTEE = [
-  "Réalisée par un traducteur expert agréé par un Tribunal de Première Instance belge.",
-  "Comporte la signature, le cachet et la déclaration du traducteur attestant de l'exactitude.",
-  "Obligatoire pour les actes d'état civil, diplômes, jugements, statuts de société destinés à une administration.",
-  "Légalisation supplémentaire souvent requise (Apostille ou consulaire) selon la destination.",
-];
-
-const LIBRE = [
-  "Réalisée par un traducteur professionnel spécialisé dans le domaine du texte.",
-  "Ne possède pas de valeur légale officielle pour les autorités de l'État.",
-  "Idéale pour la communication d'entreprise, sites web, manuels techniques, documents internes.",
-  "Focus sur la fluidité, le style et l'adaptation culturelle du message.",
-];
-
-function Colonne({
-  titre,
-  icone,
-  points,
-}: {
-  titre: string;
-  icone: string;
-  points: string[];
-}) {
-  return (
-    <div>
-      <div className="flex items-center gap-4 border-b border-tertiary-fixed-dim pb-4 mb-6">
-        <Icone nom={icone} taille="text-3xl" couleur="text-tertiary-fixed-dim" plein />
-        <h3 className="font-display-lg text-[24px] text-primary">{titre}</h3>
-      </div>
-      <ul className="flex flex-col gap-4 font-body-md text-on-surface">
-        {points.map((p) => (
-          <li
-            key={p}
-            className="flex items-start gap-3 border-b border-surface-container-high pb-4 last:border-b-0"
-          >
-            <Icone nom="check_circle" taille="text-sm mt-1 shrink-0" couleur="text-secondary" />
-            <span>{p}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+import { tp } from "@/lib/tpages";
 
 export function TraductionsVue({ lang = "fr", cheminFr = "/traductions/" }: { lang?: Locale; cheminFr?: string }) {
   const L = (c: string) => lien(lang, c);
+  const d = tp(lang);
+  const tar = tarifsL(lang);
+  const faq = faqL(lang);
+
   return (
-    <Page actif="traductions" lang={lang} cheminFr={cheminFr}>
-      {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section
-        className="w-full bg-primary relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-16 md:pb-20"
-        id="estimation"
-      >
-        <div
-          className="absolute inset-0 pointer-events-none bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url('/assets/img/photos/hero-traductions.jpg')" }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-primary/80 to-primary pointer-events-none"
-          aria-hidden="true"
-        />
-
-        <div className={`${MAXW} relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center`}>
-          <div className="lg:col-span-7 flex flex-col gap-6 text-on-primary">
-            <div className="flex items-center gap-4">
-              <span className="w-8 h-px bg-tertiary-fixed-dim" />
-              <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">
-                Service 01
-              </span>
+    <PageV3 lang={lang} cheminFr={cheminFr}>
+      <section className="dark hero-lite">
+        <div className="wrap hgrid-lite">
+          <div>
+            <div className="eb">{d.tr_eb}</div>
+            <h1>{d.tr_h1a} <span className="g">{d.tr_h1g}</span></h1>
+            <p className="sub">{d.tr_sub}</p>
+            <div className="cta">
+              <a className="btn btn-p" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a>
+              <a className="btn btn-out" href="tel:026420025">{d.cta_conseiller}</a>
             </div>
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary">
-              Traductions assermentées,
-              <br />
-              <span className="text-tertiary-fixed-dim italic font-light">
-                jurées et libres
-              </span>
-            </h1>
-            <p className="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mt-4">
-              Reconnues par les autorités belges et internationales. Notre réseau de
-              traducteurs experts garantit l&apos;exactitude absolue et la conformité légale
-              de vos documents.
-            </p>
           </div>
-
-          <div className="lg:col-span-5 relative mt-12 lg:mt-0 z-30">
-            <EstimateurTraduction />
+          <div className="statbox">
+            <span className="k">{LANGUES.length}</span>
+            <span className="l">{d.tr_stat}</span>
           </div>
         </div>
       </section>
 
-      {/* -------------------------------------------------- ASSERMENTÉE / LIBRE */}
-      <Section fond="surface">
-        <div className="lg:w-7/12 lg:pr-24 mb-16">
-          <h2 className="font-display-lg text-headline-md md:text-headline-lg text-primary mb-6">
-            Assermentée ou libre ?
-          </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Comprendre la différence est crucial pour la validité de vos démarches. Une
-            traduction assermentée est exigée pour tout document destiné à une autorité
-            officielle.
-          </p>
+      <section>
+        <div className="wrap">
+          <div className="facts">
+            <div><span className="k">{LANGUES.length}</span><h3>{d.tr_f1}</h3><p>{d.tr_f1p}</p></div>
+            <div><span className="k">Jurés</span><h3>{d.tr_f2}</h3><p>{d.tr_f2p}</p></div>
+            <div><span className="k">3–5 j</span><h3>{d.tr_f3}</h3><p>{d.tr_f3p}</p></div>
+            <div><span className="k">Louise</span><h3>{d.tr_f4}</h3><p>{d.tr_f4p}</p></div>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-12">
-          <Colonne titre="Traduction Assermentée" icone="verified" points={ASSERMENTEE} />
-          <Colonne titre="Traduction Libre" icone="description" points={LIBRE} />
+      </section>
+
+      <section className="tint">
+        <div className="wrap">
+          <div className="eb">{d.tr_two_eb}</div>
+          <h2 className="sec-h">{d.tr_two_h}</h2>
+          <div className="cards3" style={{ gridTemplateColumns: "repeat(2,1fr)" }}>
+            <div className="card"><div className="num">01</div><h3>{d.tr_c1h}</h3><p>{d.tr_c1p}</p><a className="more" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a></div>
+            <div className="card"><div className="num">02</div><h3>{d.tr_c2h}</h3><p>{d.tr_c2p}</p><a className="more" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a></div>
+          </div>
         </div>
-      </Section>
+      </section>
 
-      <ListeDocuments variante="traduction" />
-
-      <GrilleLangues lang={lang}
-        titre={`Les ${LANGUES.length} langues que nous traduisons`}
-        chapeau="Assermentée ou libre, à partir et vers toute autre langue."
-      />
-
-      <Section fond="basse" id="tarifs">
-        <EnteteSection
-          surtitre="Délais et tarifs"
-          titre="Délais et tarifs de traduction"
-          chapeau="Trois niveaux d’urgence, du standard à l’express 24 heures."
-        />
-        <TableauTarifs bloc={TARIFS.traduction} />
-        <div className="mt-8">
-          <LienFleche href={L("/tarifs/")}>Voir la grille complète</LienFleche>
+      <section>
+        <div className="wide">
+          <div className="eb">{d.tr_doc_eb}</div>
+          <h2 className="sec-h">{d.tr_doc_h}</h2>
+          <p className="sec-p">{d.tr_doc_p}</p>
+          <div className="dest">
+            {DOCUMENTS_TRADUCTION.map((doc) => (
+              <div key={doc} className="dcard" style={{ cursor: "default" }}>
+                <b style={{ fontWeight: 600, fontSize: 13.5 }}>{trData(lang, doc)}</b>
+              </div>
+            ))}
+          </div>
         </div>
-      </Section>
+      </section>
 
-      <Faq titre="Questions sur la traduction" questions={FAQ.traduction} />
+      <section className="tint" id="langues">
+        <div className="wide">
+          <div className="eb">{d.tr_lang_eb}</div>
+          <h2 className="sec-h">{d.tr_lang_h.replace("{n}", String(LANGUES.length))}</h2>
+          <p className="sec-p">{d.tr_lang_p}</p>
+          <div className="langs">
+            {LANGUES.map((l) => (<span key={l} className="lchip">{l}</span>))}
+          </div>
+        </div>
+      </section>
 
-      <BandeauConversion lang={lang}
-        titre="Faites estimer votre traduction."
-        chapeau="Un scan lisible suffit pour obtenir un prix ferme et un délai."
-      />
-    </Page>
+      <section>
+        <div className="wrap">
+          <div className="eb">{d.tarifs_delais}</div>
+          <h2 className="sec-h">{d.tr_tar_h}</h2>
+          <div className="tscroll">
+            <table className="ptable">
+              <thead><tr>{tar.traduction.colonnes.map((c) => (<th key={c}>{c}</th>))}</tr></thead>
+              <tbody>
+                {tar.traduction.lignes.map((r, i) => (
+                  <tr key={i}>{r.map((cell, j) => (<td key={j}>{j === 0 ? cell : <span className="pph">{cell}</span>}</td>))}</tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {tar.traduction.note && <p className="tnote">{tar.traduction.note}</p>}
+        </div>
+      </section>
+
+      <section className="tint">
+        <div className="wrap">
+          <div className="eb">{d.q_freq}</div>
+          <h2 className="sec-h">{d.tr_faq_h}</h2>
+          <div className="v3faq" style={{ marginTop: 12 }}>
+            {faq.traduction.map(([q, a], i) => (<details key={i}><summary>{q}</summary><p>{a}</p></details>))}
+          </div>
+        </div>
+      </section>
+
+      <section className="dark final">
+        <div className="wrap">
+          <div className="rule" />
+          <h2>{d.tr_cta_h}</h2>
+          <p>{d.tr_cta_p}</p>
+          <div className="cta">
+            <a className="btn btn-p" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a>
+            <a className="btn btn-out" href={L("/contact/")}>{d.cta_contact}</a>
+          </div>
+        </div>
+      </section>
+    </PageV3>
   );
 }

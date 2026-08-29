@@ -59,7 +59,7 @@ export function BandeauConversion({
         <div className="flex items-center gap-4">
           <span className="w-8 h-px bg-tertiary-fixed-dim" />
           <span className="font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed-dim">
-            Devis en 2 minutes
+            Votre devis
           </span>
           <span className="w-8 h-px bg-tertiary-fixed-dim" />
         </div>
@@ -106,13 +106,22 @@ export function GrilleLangues({
       terme: aplatir(nom),
       noeud: (
         <a
-          className="inline-flex items-center gap-2 px-4 py-2 border border-tertiary-fixed-dim/30 rounded-sm font-body-md text-[15px] text-on-surface-variant bg-surface-container-lowest hover:border-tertiary-fixed-dim hover:text-primary transition-colors"
+          className={
+            "inline-flex items-center gap-2 px-3.5 py-2 border rounded-sm font-body-md text-[15px] transition-colors duration-200 " +
+            (estPhare
+              ? "border-seal/35 bg-seal/[0.07] text-primary hover:border-seal hover:bg-seal/[0.12]"
+              : "border-tertiary-fixed-dim/25 bg-surface-container-lowest text-on-surface-variant hover:border-tertiary-fixed-dim hover:text-primary")
+          }
           href={lien(lang, "/traductions/#langues")}
-          title={estPhare ? "Traducteur juré disponible" : undefined}
+          title={estPhare ? "Traducteur juré disponible" : "Traduction libre"}
         >
-          {estPhare && (
-            <span className="w-1.5 h-1.5 rounded-full bg-secondary shrink-0" aria-hidden="true" />
-          )}
+          <span
+            className={
+              "w-1.5 h-1.5 rounded-full shrink-0 " +
+              (estPhare ? "bg-seal" : "bg-tertiary-fixed-dim/40")
+            }
+            aria-hidden="true"
+          />
           {nom}
         </a>
       ),
@@ -128,6 +137,7 @@ export function GrilleLangues({
         placeholder="Ex : neerlandais, arabe, mandarin…"
         uniteCompteur="langues affichées"
         rendu="pastilles"
+        classesGrille="flex flex-wrap gap-2.5 p-6 md:p-7 border border-tertiary-fixed-dim/20 rounded-sm bg-surface-container-lowest"
         repli={{
           titre: "Votre langue n’est pas dans la liste ?",
           texte:
@@ -136,10 +146,19 @@ export function GrilleLangues({
           href: `mailto:${CONTACT.email}`,
         }}
       />
-      <p className="flex items-center gap-2 mt-8 font-body-md text-[15px] text-on-surface-variant">
-        <span className="w-1.5 h-1.5 rounded-full bg-secondary" aria-hidden="true" />
-        Traducteur juré disponible — les autres langues sont proposées en traduction libre.
-      </p>
+      <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mt-10 pt-6 border-t border-tertiary-fixed-dim/20">
+        <span className="flex items-center gap-2.5 font-body-md text-[15px] text-on-surface">
+          <span className="w-2 h-2 rounded-full bg-seal shrink-0" aria-hidden="true" />
+          Traducteur juré assermenté disponible
+        </span>
+        <span className="flex items-center gap-2.5 font-body-md text-[15px] text-on-surface-variant">
+          <span
+            className="w-2 h-2 rounded-full bg-tertiary-fixed-dim/40 shrink-0"
+            aria-hidden="true"
+          />
+          Traduction libre
+        </span>
+      </div>
     </Section>
   );
 }
@@ -219,12 +238,12 @@ export function DestinationsPhares({
         {DESTINATIONS_PHARES.map((d) => (
           <a
             key={d.court}
-            className="group relative flex flex-col justify-end min-h-[420px] border border-tertiary-fixed-dim/30 rounded-sm overflow-hidden bg-primary"
+            className="group relative flex flex-col justify-end min-h-[440px] border border-tertiary-fixed-dim/30 rounded-sm overflow-hidden bg-primary hover:border-tertiary-fixed-dim transition-colors duration-300"
             href={lien(lang, `/${d.lien ?? "visas/"}`)}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              className="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
+              className="absolute inset-0 w-full h-full object-cover opacity-[0.68] group-hover:opacity-90 group-hover:scale-[1.06] transition-all duration-700 ease-out"
               src={`/${d.image}`}
               alt={d.alt}
               loading="lazy"
@@ -232,17 +251,25 @@ export function DestinationsPhares({
               height={1000}
             />
             <div
-              className="absolute inset-0 bg-gradient-to-t from-primary via-primary/70 to-transparent"
+              className="absolute inset-0 bg-gradient-to-t from-primary via-primary/75 to-primary/10"
               aria-hidden="true"
             />
-            <div className="relative z-10 p-7 flex flex-col gap-4">
-              <span className="self-start px-3 py-1.5 border border-tertiary-fixed-dim/60 rounded-sm font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed-dim bg-primary/60">
-                {d.type}
-              </span>
+            {/* filet laiton qui se trace au survol */}
+            <span
+              className="absolute inset-x-0 top-0 h-0.5 bg-tertiary-fixed-dim origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-20"
+              aria-hidden="true"
+            />
+
+            {/* badge type, ancré en haut */}
+            <span className="absolute top-5 left-5 z-10 px-3 py-1.5 border border-tertiary-fixed-dim/50 rounded-sm font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed-dim bg-primary/50 backdrop-blur-sm">
+              {d.type}
+            </span>
+
+            <div className="relative z-10 p-7 flex flex-col gap-5">
               <h3 className="font-display-lg text-[26px] md:text-[30px] text-on-primary leading-tight">
                 {d.nom}
               </h3>
-              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-tertiary-fixed-dim/30">
+              <div className="grid grid-cols-2 gap-4 pt-5 border-t border-tertiary-fixed-dim/30">
                 <div>
                   <p className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest mb-1">
                     Délai moyen
@@ -256,6 +283,14 @@ export function DestinationsPhares({
                   <p className="font-body-md text-body-md text-on-primary">{d.prix}</p>
                 </div>
               </div>
+              <span className="inline-flex items-center gap-2 pt-1 font-label-sm text-label-sm uppercase tracking-widest text-tertiary-fixed-dim">
+                Voir les conditions
+                <Icone
+                  nom="arrow_forward"
+                  taille="text-[16px] group-hover:translate-x-1 transition-transform"
+                  couleur=""
+                />
+              </span>
             </div>
           </a>
         ))}
@@ -265,6 +300,22 @@ export function DestinationsPhares({
 }
 
 // --------------------------------------------------------------------------
+/** Icône de catégorie déduite du libellé du document (rendu plus lisible). */
+function iconeDocument(nom: string): string {
+  const n = aplatir(nom);
+  if (/(naissance|mariage|deces|divorce|celibat|etat civil|filiation|residence|nationalite)/.test(n))
+    return "family_restroom";
+  if (/(diplome|releve|note|bulletin|scolaire|etude|academique|universit)/.test(n)) return "school";
+  if (/(apostille|legalis)/.test(n)) return "verified";
+  if (/(commercial|procuration|power of attorney|facture|contrat|statut|societe|entreprise|brochure)/.test(n))
+    return "gavel";
+  if (/(casier|judiciaire|police)/.test(n)) return "policy";
+  if (/(technique|manuel|notice|ingenier)/.test(n)) return "engineering";
+  if (/(site web|\bweb\b|numerique|logiciel)/.test(n)) return "language";
+  if (/(medic|sante|vaccin)/.test(n)) return "medical_services";
+  return "description";
+}
+
 export function ListeDocuments({
   variante,
   fond = "basse",
@@ -285,14 +336,17 @@ export function ListeDocuments({
   return (
     <Section fond={fond} id="documents">
       <EnteteSection surtitre="Documents traités" titre={titre} chapeau={chapeau} />
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-16 border-t border-tertiary-fixed-dim/20">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
         {docs.map((d) => (
-          <li
-            key={d}
-            className="flex items-start gap-4 py-4 border-b border-tertiary-fixed-dim/20"
-          >
-            <span className="w-4 h-px bg-tertiary-fixed-dim mt-3 shrink-0" aria-hidden="true" />
-            <span className="font-body-md text-body-md text-on-surface">{d}</span>
+          <li key={d}>
+            <div className="group h-full flex items-start gap-4 p-5 border border-tertiary-fixed-dim/25 rounded-sm bg-surface-container-lowest hover:border-tertiary-fixed-dim hover:bg-surface-container-low transition-colors duration-300">
+              <span className="w-10 h-10 shrink-0 flex items-center justify-center rounded-sm bg-surface-container border border-tertiary-fixed-dim/20 text-on-tertiary-fixed-variant group-hover:border-tertiary-fixed-dim/60 transition-colors">
+                <Icone nom={iconeDocument(d)} taille="text-[20px]" plein />
+              </span>
+              <span className="font-body-md text-body-md text-on-surface leading-snug pt-1.5">
+                {d}
+              </span>
+            </div>
           </li>
         ))}
       </ul>
@@ -449,5 +503,45 @@ export function LeBureau({
         </div>
       </div>
     </Section>
+  );
+}
+
+// --------------------------------------------------------------------------
+/**
+ * Bandeau carte, pleine largeur — bas de la page d'accueil.
+ *
+ * Uniquement le plan d'accès (les coordonnées détaillées restent sur la page
+ * contact). En-tête sobre aligné sur la grille, carte en pleine largeur.
+ */
+export function BandeauCarte({ lang = "fr" }: { lang?: Locale }) {
+  return (
+    <section
+      id="bureau"
+      className="w-full bg-surface-container-lowest border-t border-tertiary-fixed-dim/20 pt-14 md:pt-16"
+    >
+      <div
+        className={`${MAXW} flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8`}
+      >
+        <div>
+          <div className="flex items-center gap-4 mb-3">
+            <span className="w-8 h-px bg-tertiary-fixed-dim" aria-hidden="true" />
+            <span className="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">
+              Le bureau
+            </span>
+          </div>
+          <h2 className="font-display-lg text-headline-md text-primary leading-tight">
+            367, avenue Louise · 1050 Bruxelles
+          </h2>
+          <p className="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+            {CONTACT.horaires}. Dépôt et récupération des documents sur place.
+          </p>
+        </div>
+        <LienFleche href={lien(lang, "/a-propos/#contact")}>
+          Nous contacter
+        </LienFleche>
+      </div>
+
+      <PlanAcces bandeau />
+    </section>
   );
 }

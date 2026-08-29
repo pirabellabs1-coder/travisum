@@ -1,14 +1,10 @@
 /**
- * Gabarit des pages légales.
- *
- * Ces textes ont leur propre régime : longs, consultés délibérément,
- * adressables par une URL stable et accessibles depuis chaque page. D'où
- * quatre pages autonomes plutôt que des blocs ancrés dans « À propos ».
+ * Gabarit des pages légales — style « v3 ».
+ * Hero sombre + sommaire ancré (sticky) + contenu en prose.
  */
 
 import type { ReactNode } from "react";
-import Page from "./Page";
-import { Icone, MAXW } from "./ui";
+import PageV3 from "./PageV3";
 import { pagesLegales } from "@/lib/navigation";
 import type { Locale } from "@/lib/i18n";
 
@@ -20,26 +16,16 @@ export type Article = {
 
 export function Liste({ items }: { items: ReactNode[] }) {
   return (
-    <ul className="flex flex-col gap-2.5 mb-5 max-w-3xl">
+    <ul>
       {items.map((x, i) => (
-        <li
-          key={i}
-          className="flex items-start gap-3 font-body-md text-body-md text-on-surface-variant"
-        >
-          <span className="w-4 h-px bg-tertiary-fixed-dim mt-3 shrink-0" aria-hidden="true" />
-          <span>{x}</span>
-        </li>
+        <li key={i}>{x}</li>
       ))}
     </ul>
   );
 }
 
 export function P({ children }: { children: ReactNode }) {
-  return (
-    <p className="font-body-md text-body-md text-on-surface-variant max-w-3xl mb-4">
-      {children}
-    </p>
-  );
+  return <p>{children}</p>;
 }
 
 export function Encart({
@@ -52,35 +38,17 @@ export function Encart({
   ton?: "laiton" | "rouge";
 }) {
   return (
-    <div
-      className={`my-6 p-6 border border-tertiary-fixed-dim/30 border-l-2 ${
-        ton === "rouge" ? "border-l-error" : "border-l-tertiary-fixed-dim"
-      } rounded-sm bg-surface-container-lowest flex items-start gap-4 max-w-3xl`}
-    >
-      <Icone
-        nom={ton === "rouge" ? "warning" : "info"}
-        taille="text-[20px] mt-0.5 shrink-0"
-        couleur={ton === "rouge" ? "text-error" : "text-on-tertiary-fixed-variant"}
-      />
-      <div>
-        <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-2">
-          {titre}
-        </p>
-        <div className="font-body-md text-body-md text-on-surface-variant">{children}</div>
-      </div>
+    <div className="encart" style={ton === "rouge" ? { borderLeftColor: "#b3261e" } : undefined}>
+      <p>
+        <strong>{titre}</strong>
+      </p>
+      <div>{children}</div>
     </div>
   );
 }
 
 export function Lien({ href, children }: { href: string; children: ReactNode }) {
-  return (
-    <a
-      className="underline decoration-tertiary-fixed-dim underline-offset-4 hover:text-primary transition-colors"
-      href={href}
-    >
-      {children}
-    </a>
-  );
+  return <a href={href}>{children}</a>;
 }
 
 export default function PageLegale({
@@ -101,101 +69,79 @@ export default function PageLegale({
   articles: Article[];
 }) {
   return (
-    <Page sansRythme lang={lang} cheminFr={courante}>
-      {/* ---------------------------------------------------------- BANNIÈRE */}
-      <section className="w-full bg-surface relative overflow-hidden -mt-20 pt-28 md:pt-32 pb-14 md:pb-16 border-b border-tertiary-fixed-dim/20">
-        <div
-          className="guilloche absolute inset-0 opacity-[0.08] pointer-events-none"
-          aria-hidden="true"
-        />
-        <div className={`${MAXW} relative z-10 max-w-4xl`}>
-          <div className="flex items-center gap-4 mb-6">
-            <span className="font-label-sm text-label-sm uppercase tracking-widest text-on-tertiary-fixed-variant">
-              {surtitre}
-            </span>
-            <span className="h-px bg-tertiary-fixed-dim grow max-w-[120px]" />
-          </div>
-          <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight mb-6">
-            {titre}
-          </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+    <PageV3 lang={lang} cheminFr={courante}>
+      {/* HERO */}
+      <section className="dark hero-lite">
+        <div className="wrap">
+          <div className="eb">{surtitre}</div>
+          <h1 style={{ maxWidth: 760 }}>{titre}</h1>
+          <p className="sub" style={{ maxWidth: 640 }}>
             {chapeau}
           </p>
-          <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mt-8 pt-6 border-t border-tertiary-fixed-dim/25">
+          <p
+            style={{
+              marginTop: 20,
+              paddingTop: 18,
+              borderTop: "1px solid rgba(255,255,255,.12)",
+              color: "var(--muted-d)",
+              fontSize: 12,
+              letterSpacing: ".12em",
+              textTransform: "uppercase",
+              fontWeight: 600,
+            }}
+          >
             Dernière mise à jour : {maj}
           </p>
         </div>
       </section>
 
-      {/* ------------------------------------------------------------ CORPS */}
-      <section className="w-full bg-surface py-16 md:py-20">
-        <div className={`${MAXW} max-w-4xl`}>
-          <nav
-            className="border border-tertiary-fixed-dim/30 rounded-sm bg-surface-container-lowest p-7 mb-14"
-            aria-label="Sommaire"
-          >
-            <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest pb-4 mb-3 border-b border-tertiary-fixed-dim/30">
-              Sommaire
-            </p>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-10">
+      {/* CORPS */}
+      <section>
+        <div className="wrap">
+          <div className="legalgrid">
+            <nav className="toc" aria-label="Sommaire">
+              <p>Sommaire</p>
               {articles.map((a, i) => (
-                <li key={a.ancre}>
-                  <a
-                    className="flex items-baseline gap-3 py-2 font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors"
-                    href={`#${a.ancre}`}
-                  >
-                    <span className="font-label-sm text-label-sm text-on-tertiary-fixed-variant shrink-0">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    {a.titre}
-                  </a>
-                </li>
+                <a key={a.ancre} href={`#${a.ancre}`}>
+                  {String(i + 1).padStart(2, "0")} · {a.titre}
+                </a>
               ))}
-            </ul>
-          </nav>
+            </nav>
 
-          {articles.map((a, i) => (
-            <article
-              key={a.ancre}
-              id={a.ancre}
-              className="py-10 border-b border-tertiary-fixed-dim/20 last:border-b-0"
-            >
-              <div className="flex items-baseline gap-4 mb-5">
-                <span className="font-label-sm text-label-sm text-on-tertiary-fixed-variant shrink-0">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h2 className="font-display-lg text-headline-md text-primary leading-snug">
-                  {a.titre}
-                </h2>
-              </div>
-              <div className="pl-0 md:pl-10">{a.contenu}</div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------ AUTRES TEXTES */}
-      <section className="w-full bg-surface-container-low py-16 md:py-20 border-t border-tertiary-fixed-dim/20">
-        <div className={MAXW}>
-          <p className="font-label-sm text-label-sm text-on-tertiary-fixed-variant uppercase tracking-widest mb-6">
-            Les autres textes
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-            {pagesLegales(lang).filter(([, href]) => href !== courante).map(([libelle, href]) => (
-              <a
-                key={href}
-                className="group flex items-center justify-between gap-4 p-6 border border-tertiary-fixed-dim/30 rounded-sm bg-surface-container-lowest hover:border-tertiary-fixed-dim transition-colors"
-                href={href}
-              >
-                <span className="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
-                  {libelle}
-                </span>
-                <Icone nom="arrow_forward" taille="text-[16px]" />
-              </a>
-            ))}
+            <div className="prose">
+              {articles.map((a, i) => (
+                <article key={a.ancre} id={a.ancre} style={{ paddingBottom: 8, marginBottom: 24 }}>
+                  <h2 style={{ marginTop: i === 0 ? 0 : 40 }}>
+                    {String(i + 1).padStart(2, "0")}. {a.titre}
+                  </h2>
+                  {a.contenu}
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
-    </Page>
+
+      {/* AUTRES TEXTES */}
+      <section className="tint">
+        <div className="wrap">
+          <div className="eb">Les autres textes</div>
+          <h2 className="sec-h">Documents légaux.</h2>
+          <div className="cards3">
+            {pagesLegales(lang)
+              .filter(([, href]) => href !== courante)
+              .map(([libelle, href]) => (
+                <a key={href} className="card" href={href}>
+                  <div className="num">Légal</div>
+                  <h3 style={{ fontSize: 19 }}>{libelle}</h3>
+                  <span className="more" style={{ marginTop: 8 }}>
+                    Consulter <span className="ar">→</span>
+                  </span>
+                </a>
+              ))}
+          </div>
+        </div>
+      </section>
+    </PageV3>
   );
 }

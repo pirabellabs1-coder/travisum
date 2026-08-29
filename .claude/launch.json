@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "travisum-next",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["--yes", "serve", "out", "-l", "8124"],
-      "port": 8124
+      "name": "travisum-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
     }
   ]
 }
