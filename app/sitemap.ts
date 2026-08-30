@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { PAYS, URL_SITE } from "@/lib/donnees";
+import { EVISA_PAYS } from "@/lib/evisa-contenu";
 import { LOCALES, lien } from "@/lib/i18n";
 
 /**
@@ -29,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const chemins: [string, number, "weekly" | "monthly" | "yearly"][] = [
     ...fixes,
     ...PAYS.map((p) => [`/visas/${p.slug}/`, 0.8, "monthly"] as [string, number, "monthly"]),
+    ...EVISA_PAYS.map((p) => [`/e-visa/${p.evSlug}/`, 0.7, "monthly"] as [string, number, "monthly"]),
   ];
 
   // Chaque URL est declinee dans les trois langues, avec les alternates hreflang.

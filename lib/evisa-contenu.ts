@@ -304,3 +304,186 @@ export const EVISA_BUSINESS_MOTIFS = [
   "Effectuer une mission professionnelle",
   "Visiter un partenaire commercial",
 ];
+
+// --------------------------------------------------------------------------
+// Métadonnées par pays pour les pages dédiées `/e-visa/{evSlug}/`.
+// Clé = `nom` exact tel qu'il figure dans EVISA_REGIONS. `seoTitre`/`seoDesc`
+// sont repris tels quels du brief (FR). `nomLoc` donne le nom localisé quand
+// il diffère du français (utilisé dans les titres NL/EN).
+// --------------------------------------------------------------------------
+export type EVisaMeta = {
+  evSlug: string;
+  seoTitre: string;
+  seoDesc: string;
+  nomLoc?: { nl?: string; en?: string };
+};
+
+export const EVISA_META: Record<string, EVisaMeta> = {
+  Malawi: {
+    evSlug: "malawi",
+    seoTitre: "E-Visa Malawi depuis la Belgique et l’Europe | Demande en ligne",
+    seoDesc: "Demandez votre e-Visa pour le Malawi depuis la Belgique ou l’Europe. Documents, procédure, délais et accompagnement pour tourisme ou voyage professionnel.",
+  },
+  Tchad: {
+    evSlug: "tchad",
+    seoTitre: "E-Visa Tchad en ligne | Visa tourisme et affaires depuis l’Europe",
+    seoDesc: "Besoin d’un e-Visa pour le Tchad ? Assistance pour votre demande depuis la Belgique et l’Europe : documents, invitation professionnelle, délais et procédure.",
+    nomLoc: { nl: "Tsjaad", en: "Chad" },
+  },
+  "Guinée": {
+    evSlug: "guinee",
+    seoTitre: "E-Visa Guinée depuis la Belgique | Demande de visa électronique",
+    seoDesc: "Préparez votre e-Visa Guinée depuis la Belgique ou l’Europe. Visa touristique ou professionnel, documents nécessaires et assistance à la demande.",
+    nomLoc: { nl: "Guinee", en: "Guinea" },
+  },
+  "Bénin": {
+    evSlug: "benin",
+    seoTitre: "E-Visa Bénin en ligne | Visa depuis la Belgique et l’Europe",
+    seoDesc: "Demandez votre e-Visa Bénin en ligne. Assistance depuis la Belgique, la France, le Luxembourg, les Pays-Bas, l’Allemagne et l’Espagne.",
+    nomLoc: { nl: "Benin", en: "Benin" },
+  },
+  Togo: {
+    evSlug: "togo",
+    seoTitre: "E-Visa Togo | Demande de visa Togo en ligne depuis l’Europe",
+    seoDesc: "Obtenez votre e-Visa Togo depuis la Belgique et l’Europe. Tourisme, affaires, documents, durée du visa et accompagnement de votre demande.",
+  },
+  "Éthiopie": {
+    evSlug: "ethiopie",
+    seoTitre: "E-Visa Éthiopie | Tourisme et Business depuis la Belgique",
+    seoDesc: "Demandez votre e-Visa Éthiopie depuis la Belgique ou l’Europe. Visa 30 ou 90 jours, tourisme et affaires, documents et procédure en ligne.",
+    nomLoc: { nl: "Ethiopië", en: "Ethiopia" },
+  },
+  Tanzanie: {
+    evSlug: "tanzanie",
+    seoTitre: "E-Visa Tanzanie depuis la Belgique | Visa en ligne",
+    seoDesc: "Demande d’e-Visa Tanzanie pour tourisme ou affaires. Vérification des documents et accompagnement depuis la Belgique et l’Europe.",
+    nomLoc: { nl: "Tanzania", en: "Tanzania" },
+  },
+  Ouganda: {
+    evSlug: "ouganda",
+    seoTitre: "E-Visa Ouganda | Demande depuis la Belgique et l’Europe",
+    seoDesc: "Préparez votre e-Visa Ouganda en ligne : documents, passeport, vaccination, tourisme et voyages professionnels depuis la Belgique et l’Europe.",
+    nomLoc: { nl: "Oeganda", en: "Uganda" },
+  },
+  Zambie: {
+    evSlug: "zambie",
+    seoTitre: "E-Visa Zambie | Visa électronique depuis l’Europe",
+    seoDesc: "Assistance pour votre e-Visa Zambie depuis la Belgique et l’Europe. Documents, tourisme, business et procédure de demande en ligne.",
+    nomLoc: { nl: "Zambia", en: "Zambia" },
+  },
+  Zimbabwe: {
+    evSlug: "zimbabwe",
+    seoTitre: "E-Visa Zimbabwe en ligne | Belgique et Europe",
+    seoDesc: "Vérifiez votre éligibilité et préparez votre e-Visa Zimbabwe depuis la Belgique ou l’Europe pour tourisme ou déplacement professionnel.",
+  },
+  Mozambique: {
+    evSlug: "mozambique",
+    seoTitre: "E-Visa Mozambique 2026 | Nouvelle procédure en ligne",
+    seoDesc: "Nouvelle procédure e-Visa Mozambique. Demande depuis la Belgique et l’Europe pour tourisme, affaires ou investissement : documents et accompagnement.",
+  },
+  Cameroun: {
+    evSlug: "cameroun",
+    seoTitre: "E-Visa Cameroun depuis la Belgique | Tourisme et Affaires",
+    seoDesc: "Demandez votre e-Visa Cameroun depuis la Belgique et l’Europe. Assistance pour tourisme, affaires, invitations et constitution du dossier.",
+    nomLoc: { nl: "Kameroen", en: "Cameroon" },
+  },
+  Nigeria: {
+    evSlug: "nigeria",
+    seoTitre: "E-Visa Nigeria Business | Visa d’affaires depuis la Belgique",
+    seoDesc: "Voyage professionnel au Nigeria ? Assistance e-Visa Nigeria pour réunions, conférences et affaires depuis la Belgique et l’Europe.",
+  },
+  "Égypte": {
+    evSlug: "egypte",
+    seoTitre: "E-Visa Égypte depuis la Belgique | Demande en ligne",
+    seoDesc: "Demandez votre e-Visa Égypte depuis la Belgique ou l’Europe. Passeports belge, français, néerlandais, allemand, espagnol et luxembourgeois.",
+    nomLoc: { nl: "Egypte", en: "Egypt" },
+  },
+  Inde: {
+    evSlug: "inde",
+    seoTitre: "E-Visa Inde depuis la Belgique | Tourisme et Business",
+    seoDesc: "Demandez votre e-Visa Inde depuis la Belgique ou l’Europe. Visa touristique et business, documents, photo, passeport et assistance complète.",
+    nomLoc: { nl: "India", en: "India" },
+  },
+  Vietnam: {
+    evSlug: "vietnam",
+    seoTitre: "E-Visa Vietnam 90 jours | Visa Vietnam depuis la Belgique",
+    seoDesc: "Demandez votre e-Visa Vietnam jusqu’à 90 jours, simple ou multiples entrées. Assistance depuis la Belgique, France, Luxembourg et Europe.",
+  },
+  Cambodge: {
+    evSlug: "cambodge",
+    seoTitre: "E-Visa Cambodge | Demande de visa en ligne depuis l’Europe",
+    seoDesc: "Préparez votre e-Visa Cambodge depuis la Belgique ou l’Europe. Documents, délais, validité et assistance pour votre demande en ligne.",
+    nomLoc: { nl: "Cambodja", en: "Cambodia" },
+  },
+  "Indonésie": {
+    evSlug: "indonesie",
+    seoTitre: "E-Visa Indonésie | Visa Bali et Indonésie depuis la Belgique",
+    seoDesc: "Demandez votre e-Visa Indonésie ou Bali depuis la Belgique et l’Europe. Tourisme, business, documents et accompagnement de votre dossier.",
+    nomLoc: { nl: "Indonesië", en: "Indonesia" },
+  },
+  Laos: {
+    evSlug: "laos",
+    seoTitre: "E-Visa Laos | Demande en ligne depuis la Belgique",
+    seoDesc: "Obtenez votre e-Visa Laos en ligne. Documents, délai indicatif de 3 jours ouvrables et accompagnement depuis la Belgique et l’Europe.",
+  },
+  Pakistan: {
+    evSlug: "pakistan",
+    seoTitre: "E-Visa Pakistan | Tourisme et Business depuis l’Europe",
+    seoDesc: "Assistance pour votre e-Visa Pakistan depuis la Belgique et l’Europe : tourisme, affaires, invitation professionnelle et documents nécessaires.",
+  },
+  Myanmar: {
+    evSlug: "myanmar",
+    seoTitre: "E-Visa Myanmar | Business et voyage depuis l’Europe",
+    seoDesc: "Vérifiez les conditions actuelles de l’e-Visa Myanmar. Assistance pour les demandes business et les formalités électroniques depuis l’Europe.",
+  },
+  "Azerbaïdjan": {
+    evSlug: "azerbaidjan",
+    seoTitre: "E-Visa Azerbaïdjan | ASAN Visa depuis la Belgique",
+    seoDesc: "Demandez votre e-Visa Azerbaïdjan depuis la Belgique ou l’Europe. ASAN Visa standard ou urgent, documents et assistance en ligne.",
+    nomLoc: { nl: "Azerbeidzjan", en: "Azerbaijan" },
+  },
+  "Arabie saoudite": {
+    evSlug: "arabie-saoudite",
+    seoTitre: "E-Visa Arabie saoudite | Visa en ligne depuis la Belgique",
+    seoDesc: "Demandez votre e-Visa Arabie saoudite depuis la Belgique et l’Europe. Visa touristique 1 an, entrées multiples et séjour jusqu’à 90 jours.",
+    nomLoc: { nl: "Saoedi-Arabië", en: "Saudi Arabia" },
+  },
+  Oman: {
+    evSlug: "oman",
+    seoTitre: "E-Visa Oman | Visa électronique depuis la Belgique et l’Europe",
+    seoDesc: "Préparez votre e-Visa Oman en ligne. Tourisme, visa sponsorisé, documents et vérification de l’éligibilité depuis la Belgique et l’Europe.",
+  },
+  "Bahreïn": {
+    evSlug: "bahrein",
+    seoTitre: "E-Visa Bahreïn | Tourisme et Business depuis l’Europe",
+    seoDesc: "Demandez votre e-Visa Bahreïn depuis la Belgique ou l’Europe. Tourisme et affaires : éligibilité, documents, validité et procédure en ligne.",
+    nomLoc: { nl: "Bahrein", en: "Bahrain" },
+  },
+  Irak: {
+    evSlug: "irak",
+    seoTitre: "E-Visa Irak | Nouvelle demande de visa électronique",
+    seoDesc: "Demandez votre e-Visa Irak en ligne. Vérification de l’éligibilité, documents, tourisme ou voyage professionnel depuis la Belgique et l’Europe.",
+    nomLoc: { en: "Iraq" },
+  },
+};
+
+export type EVisaPaysComplet = EVisaPays & EVisaMeta & { region: string };
+
+/** Liste à plat des pays e-Visa (jointure REGIONS × META), pour les routes. */
+export const EVISA_PAYS: EVisaPaysComplet[] = EVISA_REGIONS.flatMap((r) =>
+  r.pays
+    .filter((p) => EVISA_META[p.nom])
+    .map((p) => ({ ...p, ...EVISA_META[p.nom], region: r.region }))
+);
+
+export const EVISA_SLUGS: string[] = EVISA_PAYS.map((p) => p.evSlug);
+
+export function evisaParSlug(slug: string): EVisaPaysComplet | undefined {
+  return EVISA_PAYS.find((p) => p.evSlug === slug);
+}
+
+/** Nom du pays dans la langue demandée (repli sur le français). */
+export function evisaNom(p: EVisaPaysComplet, lang: "fr" | "nl" | "en"): string {
+  if (lang === "fr") return p.nom;
+  return p.nomLoc?.[lang] ?? p.nom;
+}
