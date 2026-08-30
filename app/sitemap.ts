@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/traductions/", 0.9, "monthly"],
     ["/legalisations/", 0.9, "monthly"],
     ["/visas/", 0.9, "monthly"],
+    ["/e-visa/", 0.9, "monthly"],
     ["/ressources/", 0.6, "monthly"],
     ["/a-propos/", 0.6, "monthly"],
     ["/contact/", 0.7, "monthly"],

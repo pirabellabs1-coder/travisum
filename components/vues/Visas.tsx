@@ -1,6 +1,6 @@
 import PageV3 from "@/components/PageV3";
 import { CONTACT, fichePays, type SousPage } from "@/lib/donnees";
-import { listePaysVisa, type PaysVisa } from "@/lib/pays-meta";
+import { listePaysVisa } from "@/lib/pays-meta";
 import { lien, type Locale } from "@/lib/i18n";
 import { RechercheDestination, GrilleDestinations } from "@/components/vues/VisasClient";
 
@@ -36,7 +36,8 @@ const T = {
     popText: "Accédez rapidement aux informations et aux formalités pour nos destinations les plus consultées.",
     evEb: "e-Visa",
     evTitle: "Destinations disponibles en e-Visa",
-    evText: "Ces destinations délivrent un visa électronique (e-Visa), demandé en ligne, accessible aux voyageurs de nationalité européenne. Cliquez sur un pays pour voir les formalités et les documents.",
+    evText: "De nombreuses destinations délivrent un visa électronique (e-Visa), demandé en ligne, accessible aux voyageurs de nationalité européenne — sans déposer physiquement son passeport. Retrouvez la liste complète par région, les documents et la procédure sur notre page e-Visa.",
+    evCta: "Voir toutes les destinations e-Visa",
     evNote: "Ouvert aux voyageurs de nationalité européenne (dont la Belgique). Les conditions, les frais et la validité varient selon la destination ; la décision finale appartient aux autorités du pays.",
     voir: "Voir les formalités",
     // toutes
@@ -100,7 +101,8 @@ const T = {
     popText: "Krijg snel toegang tot de informatie en formaliteiten voor onze meest geraadpleegde bestemmingen.",
     evEb: "e-Visa",
     evTitle: "Bestemmingen beschikbaar met een e-Visum",
-    evText: "Deze bestemmingen geven een elektronisch visum (e-Visum) af, online aan te vragen, toegankelijk voor reizigers met een Europese nationaliteit. Klik op een land voor de formaliteiten en documenten.",
+    evText: "Talrijke bestemmingen geven een elektronisch visum (e-Visum) af, online aan te vragen, toegankelijk voor reizigers met een Europese nationaliteit — zonder uw paspoort fysiek af te geven. Bekijk de volledige lijst per regio, de documenten en de procedure op onze e-Visum-pagina.",
+    evCta: "Alle e-Visum-bestemmingen bekijken",
     evNote: "Toegankelijk voor reizigers met een Europese nationaliteit (waaronder België). Voorwaarden, kosten en geldigheid verschillen per bestemming; de eindbeslissing ligt bij de autoriteiten van het land.",
     voir: "Formaliteiten bekijken",
     allTitle: "Alle bestemmingen",
@@ -158,7 +160,8 @@ const T = {
     popText: "Quickly access the information and requirements for our most consulted destinations.",
     evEb: "e-Visa",
     evTitle: "Destinations available with an e-Visa",
-    evText: "These destinations issue an electronic visa (e-Visa), applied for online, available to travellers of European nationality. Click a country to see the requirements and documents.",
+    evText: "Many destinations issue an electronic visa (e-Visa), applied for online, available to travellers of European nationality — without physically submitting your passport. See the full list by region, the documents and the procedure on our e-Visa page.",
+    evCta: "See all e-Visa destinations",
     evNote: "Open to travellers of European nationality (including Belgium). Conditions, fees and validity vary by destination; the final decision rests with the country's authorities.",
     voir: "See the requirements",
     allTitle: "All destinations",
@@ -256,19 +259,6 @@ export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale;
       : [];
     return { slug, nom: f?.nom ?? slug, drapeau: meta?.drapeau ?? "", iso2: meta?.iso2 ?? "", types };
   });
-
-  // Destinations proposant un e-Visa (voyageurs de nationalité européenne).
-  const EVISA_SLUGS = [
-    "angola", "arabie-saoudite", "bangladesh", "birmanie-myanmar", "burkina-faso", "burundi", "benin",
-    "cambodge-2", "cameroun", "djibouti", "egypte", "gabon", "ghana", "guinee-republique", "guinee-equatoriale",
-    "guinee-bissau", "inde", "indonesie", "kenya", "laos", "madagascar", "malawi", "mauritanie", "namibie",
-    "nigeria", "oman", "ouganda", "pakistan", "papouasie-nouvelle-guinee", "russie", "rwanda", "sao-tome-et-principe",
-    "sierra-leone", "suriname", "tadjikistan", "tanzanie", "tchad", "togo", "vietnam", "zimbabwe", "ethiopie",
-  ];
-  const EVISA = EVISA_SLUGS
-    .map((slug) => pays.find((p) => p.slug === slug))
-    .filter((p): p is PaysVisa => Boolean(p))
-    .sort((a, b) => a.nom.localeCompare(b.nom, "fr"));
 
   const contactHref = `${pre}/contact/`;
   const mapQ = encodeURIComponent("Travisum Louise Office, 367 Avenue Louise, 1050 Bruxelles");
@@ -374,21 +364,7 @@ export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale;
             <span className="vz-eb">{d.evEb}</span>
             <h2 className="vz-h2">{d.evTitle}</h2>
             <p className="vz-sub">{d.evText}</p>
-            <ul className="vz-evgrid">
-              {EVISA.map((p) => (
-                <li key={p.slug}>
-                  <a href={`${pre}/visas/${p.slug}/`}>
-                    {p.iso2 ? (
-                      <img className="vz-flag-img" src={`https://flagcdn.com/${p.iso2.toLowerCase()}.svg`} alt="" loading="lazy" width={26} height={19} />
-                    ) : (
-                      <span className="vz-flag" aria-hidden="true">{p.nom.slice(0, 2)}</span>
-                    )}
-                    <span className="vz-dname">{p.nom}</span>
-                    <span className="vz-etag">e-Visa</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <a className="vz-btn vz-btn-primary vz-evbtn" href={`${pre}/e-visa/`}>{d.evCta} →</a>
             <p className="vz-evnote">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>
               <span>{d.evNote}</span>
@@ -625,6 +601,7 @@ const CSS = String.raw`
 .vz-ptypes{display:flex;flex-wrap:wrap;gap:6px}
 /* section e-Visa */
 .vz-evsec{background:var(--clair)}
+.vz-evbtn{margin-top:20px}
 .vz-evgrid{list-style:none;padding:0;margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
 .vz-evgrid a{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--bord);border-radius:11px;padding:11px 14px;text-decoration:none;color:var(--ink);transition:border-color .15s,box-shadow .15s,transform .15s}
 .vz-evgrid a:hover{border-color:var(--or);box-shadow:0 8px 22px rgba(11,27,46,.08);transform:translateY(-1px)}

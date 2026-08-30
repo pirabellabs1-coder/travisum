@@ -273,6 +273,7 @@ const BODY = String.raw`
     <a href="/" class="logo">TRAVISUM<i></i></a>
     <ul>
       <li><a class="lk" href="/visas/" data-i="nav1">Visa</a></li>
+      <li><a class="lk" href="/e-visa/" data-i="navEvisa">e-Visa</a></li>
       <li><a class="lk" href="/traductions/" data-i="nav2">Traduction</a></li>
       <li><a class="lk" href="/legalisations/" data-i="nav3">Légalisation</a></li>
       <li><a class="lk" href="/#steps" data-i="nav4">Comment ça marche</a></li>
@@ -515,7 +516,7 @@ const T: Record<string, any> = {
     s1h: "Visa", s1p: "Visa touristique, affaires, études et transit. Constitution du dossier, rendez-vous consulaire, dépôt et récupération.", s1a: "Découvrir les visas",
     s2h: "Traduction", s2p: "Traductions libres et assermentées, reconnues par les administrations belges et étrangères.", s2a: "Voir les tarifs",
     s3h: "Légalisation", s3p: "Apostille, légalisation et dépôts auprès du SPF Justice, des Affaires étrangères, des tribunaux et des ambassades.", s3a: "Comprendre la procédure",
-    navContact: "Contact",
+    navContact: "Contact", navEvisa: "e-Visa",
     prEb: "Délais & prestations", prH: "Nos prestations et délais, en toute clarté.",
     prC1: "Formule", prC2: "Délai", prC3: "Tarif indicatif", prC4: "Ce qui est compris",
     prNote: "Les frais officiels reversés aux administrations et aux consulats sont facturés séparément, au montant exact et sur justificatif. Montants à confirmer avec vous avant mise en ligne.",
@@ -588,7 +589,7 @@ const T: Record<string, any> = {
     s1h: "Visas", s1p: "Tourist, business, study and transit visas. File preparation, consular appointment, submission and collection.", s1a: "Explore visas",
     s2h: "Translation", s2p: "Standard and sworn translations, accepted by Belgian and foreign authorities.", s2a: "See pricing",
     s3h: "Legalisation", s3p: "Apostille, legalisation and submissions to the FPS Justice, Foreign Affairs, courts and embassies.", s3a: "Understand the process",
-    navContact: "Contact",
+    navContact: "Contact", navEvisa: "e-Visa",
     prEb: "Timelines & services", prH: "Our services and timelines, clearly.",
     prC1: "Option", prC2: "Timeline", prC3: "Indicative price", prC4: "What's included",
     prNote: "Official fees paid to authorities and consulates are billed separately, at cost and against receipt. Amounts to be confirmed with you before going live.",
@@ -661,7 +662,7 @@ const T: Record<string, any> = {
     s1h: "Visum", s1p: "Toeristen-, zaken-, studie- en transitvisa. Samenstelling van het dossier, consulaire afspraak, indiening en afhaling.", s1a: "Visa ontdekken",
     s2h: "Vertaling", s2p: "Vrije en beëdigde vertalingen, erkend door Belgische en buitenlandse administraties.", s2a: "Tarieven bekijken",
     s3h: "Legalisatie", s3p: "Apostille, legalisatie en indiening bij FOD Justitie, Buitenlandse Zaken, rechtbanken en ambassades.", s3a: "De procedure begrijpen",
-    navContact: "Contact",
+    navContact: "Contact", navEvisa: "e-Visum",
     prEb: "Termijnen & diensten", prH: "Onze diensten en termijnen, helder.",
     prC1: "Formule", prC2: "Termijn", prC3: "Indicatief tarief", prC4: "Wat is inbegrepen",
     prNote: "Officiële kosten voor administraties en consulaten worden apart gefactureerd, tegen het exacte bedrag en op voorlegging van bewijs. Bedragen te bevestigen vóór publicatie.",

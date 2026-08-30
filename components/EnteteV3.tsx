@@ -16,6 +16,7 @@ const OUTFIT = { fontFamily: "Outfit, sans-serif" } as const;
 const NAV: Record<Locale, { label: string; href: string }[]> = {
   fr: [
     { label: "Visa", href: "/visas/" },
+    { label: "e-Visa", href: "/e-visa/" },
     { label: "Traduction", href: "/traductions/" },
     { label: "Légalisation", href: "/legalisations/" },
     { label: "Comment ça marche", href: "/#steps" },
@@ -23,6 +24,7 @@ const NAV: Record<Locale, { label: string; href: string }[]> = {
   ],
   nl: [
     { label: "Visum", href: "/visas/" },
+    { label: "e-Visum", href: "/e-visa/" },
     { label: "Vertaling", href: "/traductions/" },
     { label: "Legalisatie", href: "/legalisations/" },
     { label: "Hoe het werkt", href: "/#steps" },
@@ -30,6 +32,7 @@ const NAV: Record<Locale, { label: string; href: string }[]> = {
   ],
   en: [
     { label: "Visas", href: "/visas/" },
+    { label: "e-Visa", href: "/e-visa/" },
     { label: "Translation", href: "/traductions/" },
     { label: "Legalisation", href: "/legalisations/" },
     { label: "How it works", href: "/#steps" },
