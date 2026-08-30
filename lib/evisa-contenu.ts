@@ -9,6 +9,7 @@ export type EVisaPays = {
   nom: string;
   slug?: string; // fiche /visas/{slug}/ si disponible
   intro: string;
+  nationalites?: string; // note « Nationalités européennes » propre au pays
   tourisme?: string;
   affaires?: string;
   documents?: string[];
@@ -25,7 +26,8 @@ export const EVISA_REGIONS: EVisaRegion[] = [
       {
         nom: "Malawi",
         slug: "malawi",
-        intro: "Le Malawi dispose d’un système officiel de visa électronique permettant d’introduire une demande avant le voyage. Les voyageurs éligibles au visa à l’arrivée sont également encouragés par les autorités à demander leur visa en ligne avant le départ.",
+        intro: "Le Malawi dispose d’un système officiel de visa électronique permettant d’introduire une demande avant le voyage.",
+        nationalites: "Procédure disponible selon la catégorie de nationalité. Les voyageurs éligibles au visa à l’arrivée sont également encouragés par les autorités à demander leur visa en ligne avant le départ.",
         tourisme: "Oui.",
         affaires: "Oui, selon le motif du séjour.",
         documents: ["Passeport en cours de validité", "Photographie d’identité", "Informations personnelles", "Dates et itinéraire du voyage", "Justificatif d’hébergement", "Billet ou réservation de transport", "Documents professionnels ou invitation si nécessaire"],
@@ -36,6 +38,7 @@ export const EVISA_REGIONS: EVisaRegion[] = [
         nom: "Tchad",
         slug: "tchad",
         intro: "Le Tchad a développé une procédure électronique permettant d’effectuer les formalités de visa en ligne.",
+        nationalites: "Ressortissants européens soumis à l’obligation de visa, selon leur nationalité.",
         tourisme: "Oui selon catégorie.",
         affaires: "Oui.",
         documents: ["Passeport valide", "Photographie récente", "Justificatif de profession", "Informations concernant le séjour", "Réservation ou adresse d’hébergement", "Pour les affaires : ordre de mission et/ou lettre d’invitation", "Documents de l’entreprise invitante lorsque requis"],
@@ -46,6 +49,7 @@ export const EVISA_REGIONS: EVisaRegion[] = [
         nom: "Guinée",
         slug: "guinee-republique",
         intro: "La République de Guinée propose une procédure électronique pour les voyageurs soumis à visa.",
+        nationalites: "Selon le passeport utilisé et les règles d’entrée applicables.",
         tourisme: "Oui.",
         affaires: "Oui.",
         documents: ["Passeport valable au moins six mois", "Photographie", "Copie du passeport", "Billet aller-retour ou de continuation", "Hébergement", "Certificat de vaccination contre la fièvre jaune lorsque requis", "Invitation ou documents professionnels pour un déplacement d’affaires"],
@@ -56,6 +60,7 @@ export const EVISA_REGIONS: EVisaRegion[] = [
         nom: "Bénin",
         slug: "benin",
         intro: "Le Bénin possède une plateforme gouvernementale entièrement dédiée aux demandes d’e-Visa.",
+        nationalites: "Nombreuses nationalités étrangères éligibles ; vérification selon le passeport.",
         tourisme: "Oui.",
         affaires: "Oui selon le motif déclaré.",
         documents: ["Passeport", "Adresse e-mail", "Informations personnelles", "Dates du séjour", "Informations relatives au voyage", "Documents complémentaires lorsque demandés"],
@@ -86,6 +91,7 @@ export const EVISA_REGIONS: EVisaRegion[] = [
         nom: "Tanzanie",
         slug: "tanzanie",
         intro: "La Tanzanie dispose d’un système officiel permettant d’introduire les demandes de visa en ligne (Tanzanie continentale et Zanzibar).",
+        nationalites: "Selon la nationalité et le régime d’entrée applicable.",
         tourisme: "Oui.",
         affaires: "Catégories spécifiques disponibles.",
         documents: ["Passeport", "Photographie", "Informations personnelles", "Informations de voyage", "Hébergement", "Billet retour ou continuation", "Justificatifs professionnels pour certaines catégories"],

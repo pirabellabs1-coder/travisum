@@ -11,7 +11,7 @@ import { lien, type Locale } from "@/lib/i18n";
 
 const T: Record<Locale, any> = {
   fr: {
-    services: "Services", visa: "Visa", trad: "Traduction", legal: "Légalisation", tarifs: "Tarifs",
+    services: "Services", visa: "Visa", evisa: "e-Visa", trad: "Traduction", legal: "Légalisation", tarifs: "Tarifs",
     apropos: "À propos", cmt: "Comment ça marche", contact: "Contact", faq: "FAQ",
     infosLeg: "Informations légales", ml: "Mentions légales", conf: "Politique de confidentialité", cgv: "Conditions générales", cookies: "Cookies",
     horaires: "Horaires", hr: "Du lundi au vendredi<br>9h00 – 17h00, sans interruption",
@@ -20,7 +20,7 @@ const T: Record<Locale, any> = {
     dis: "Travisum n’est pas une autorité consulaire. Les informations fournies sont indicatives.",
   },
   nl: {
-    services: "Diensten", visa: "Visum", trad: "Vertaling", legal: "Legalisatie", tarifs: "Tarieven",
+    services: "Diensten", visa: "Visum", evisa: "e-Visum", trad: "Vertaling", legal: "Legalisatie", tarifs: "Tarieven",
     apropos: "Over ons", cmt: "Hoe het werkt", contact: "Contact", faq: "FAQ",
     infosLeg: "Juridische informatie", ml: "Wettelijke vermeldingen", conf: "Privacybeleid", cgv: "Algemene voorwaarden", cookies: "Cookies",
     horaires: "Openingsuren", hr: "Van maandag tot vrijdag<br>9u00 – 17u00, doorlopend",
@@ -29,7 +29,7 @@ const T: Record<Locale, any> = {
     dis: "Travisum is geen consulaire overheid. De verstrekte informatie is indicatief.",
   },
   en: {
-    services: "Services", visa: "Visas", trad: "Translation", legal: "Legalisation", tarifs: "Pricing",
+    services: "Services", visa: "Visas", evisa: "e-Visa", trad: "Translation", legal: "Legalisation", tarifs: "Pricing",
     apropos: "About", cmt: "How it works", contact: "Contact", faq: "FAQ",
     infosLeg: "Legal information", ml: "Legal notice", conf: "Privacy policy", cgv: "Terms and conditions", cookies: "Cookies",
     horaires: "Opening hours", hr: "Monday to Friday<br>9:00 – 17:00, no lunch break",
@@ -61,6 +61,7 @@ export default function PiedV3({ lang = "fr" }: { lang?: Locale }) {
           <div className="fcol">
             <h4>{d.services}</h4>
             <a href={L("/visas/")}>{d.visa}</a>
+            <a href={L("/e-visa/")}>{d.evisa}</a>
             <a href={L("/traductions/")}>{d.trad}</a>
             <a href={L("/legalisations/")}>{d.legal}</a>
           </div>

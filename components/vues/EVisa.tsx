@@ -21,6 +21,7 @@ const T = {
     warn: "L’éligibilité à un e-Visa dépend principalement de la nationalité indiquée sur le passeport utilisé pour voyager, et non du pays de résidence du demandeur.",
     destTitre: "Destinations e-Visa par région",
     tourisme: "Tourisme", affaires: "Affaires", docs: "Documents",
+    natLbl: "Nationalités européennes :",
     delai: "Délai", validite: "Validité", voir: "Voir la fiche",
     stepsTitre: "Comment demander un e-Visa ?",
     tourTitre: "e-Visa touristique",
@@ -48,6 +49,7 @@ const T = {
     warn: "De toegang tot een e-Visum hangt vooral af van de nationaliteit vermeld op het reispaspoort, en niet van het land van verblijf van de aanvrager.",
     destTitre: "e-Visum-bestemmingen per regio",
     tourisme: "Toerisme", affaires: "Zaken", docs: "Documenten",
+    natLbl: "Europese nationaliteiten:",
     delai: "Termijn", validite: "Geldigheid", voir: "Fiche bekijken",
     stepsTitre: "Hoe vraagt u een e-Visum aan?",
     tourTitre: "Toeristisch e-Visum",
@@ -75,6 +77,7 @@ const T = {
     warn: "Eligibility for an e-Visa depends mainly on the nationality shown on the passport used for travel, not on the applicant's country of residence.",
     destTitre: "e-Visa destinations by region",
     tourisme: "Tourism", affaires: "Business", docs: "Documents",
+    natLbl: "European nationalities:",
     delai: "Timeline", validite: "Validity", voir: "View the page",
     stepsTitre: "How to apply for an e-Visa?",
     tourTitre: "Tourist e-Visa",
@@ -144,6 +147,9 @@ export function EVisaVue({ lang = "fr", cheminFr = "/e-visa/" }: { lang?: Locale
                       </summary>
                       <div className="ev-body">
                         <p>{p.intro}</p>
+                        {p.nationalites && (
+                          <p className="ev-natline"><strong>{d.natLbl}</strong> {p.nationalites}</p>
+                        )}
                         <dl className="ev-meta">
                           {p.tourisme && (<><dt>{d.tourisme}</dt><dd>{p.tourisme}</dd></>)}
                           {p.affaires && (<><dt>{d.affaires}</dt><dd>{p.affaires}</dd></>)}
@@ -269,6 +275,8 @@ const CSS = String.raw`
 .ev-b-a{color:#365a86;background:#eef3f9;border:1px solid #d8e4f0}
 .ev-body{padding:16px 18px 18px}
 .ev-body>p{font-size:14.5px;line-height:1.6;color:var(--ink);margin-bottom:14px}
+.ev-natline{font-size:13.5px;line-height:1.55;color:var(--ink2);background:var(--clair);border-left:3px solid var(--or);border-radius:0 8px 8px 0;padding:9px 12px;margin:0 0 14px!important}
+.ev-natline strong{color:var(--or-d);font-weight:600}
 .ev-meta{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 14px}
 .ev-meta dt{font:600 12px Inter;color:var(--or-d);text-transform:uppercase;letter-spacing:.05em;padding-top:1px}
 .ev-meta dd{margin:0;font-size:13.5px;color:var(--ink);line-height:1.5}

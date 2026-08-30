@@ -471,7 +471,7 @@ const BODY = String.raw`
         <p class="bce" data-i="fBce">Numéro d'entreprise (BCE) : [à compléter]</p>
       </div>
       <div class="fcol"><h4 data-i="fS">Services</h4>
-        <a href="/visas/" data-i="nav1">Visa</a><a href="/traductions/" data-i="nav2">Traduction</a><a href="/legalisations/" data-i="nav3">Légalisation</a></div>
+        <a href="/visas/" data-i="nav1">Visa</a><a href="/e-visa/" data-i="navEvisa">e-Visa</a><a href="/traductions/" data-i="nav2">Traduction</a><a href="/legalisations/" data-i="nav3">Légalisation</a></div>
       <div class="fcol"><h4>Travisum</h4>
         <a href="/a-propos/" data-i="nav5">À propos</a><a href="#steps" data-i="nav4">Comment ça marche</a><a href="/contact/" data-i="fCt">Contact</a><a href="/ressources/#faq">FAQ</a></div>
       <div class="fcol"><h4 data-i="fL">Informations légales</h4>
