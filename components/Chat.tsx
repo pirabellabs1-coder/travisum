@@ -31,7 +31,6 @@ const T = {
     rdv_intro: "Laissez vos coordonnées : le bureau vous recontacte pour confirmer.",
     nom: "Nom et prénom",
     email: "E-mail",
-    tel: "Téléphone",
     service: "Concerne",
     date: "Date souhaitée (indicative)",
     msg: "Votre demande",
@@ -40,7 +39,7 @@ const T = {
     ok: "Merci ! Votre demande est bien envoyée. Le bureau vous recontacte rapidement.",
     ko_mail: "L'envoi automatique n'est pas encore activé. Cliquez ci-dessous pour envoyer votre demande par e-mail :",
     ko_lien: "Ouvrir l'e-mail pré-rempli",
-    requis: "Indiquez au moins votre nom et un moyen de contact.",
+    requis: "Indiquez votre nom et votre e-mail.",
     services: ["Traduction", "Légalisation / Apostille", "Visa", "Autre"],
   },
   nl: {
@@ -58,7 +57,6 @@ const T = {
     rdv_intro: "Laat uw gegevens achter: het kantoor neemt contact op ter bevestiging.",
     nom: "Naam en voornaam",
     email: "E-mail",
-    tel: "Telefoon",
     service: "Betreft",
     date: "Gewenste datum (indicatief)",
     msg: "Uw aanvraag",
@@ -67,7 +65,7 @@ const T = {
     ok: "Bedankt! Uw aanvraag is verstuurd. Het kantoor neemt snel contact op.",
     ko_mail: "Automatische verzending is nog niet actief. Klik hieronder om per e-mail te versturen:",
     ko_lien: "Vooraf ingevulde e-mail openen",
-    requis: "Vermeld minstens uw naam en een contactmogelijkheid.",
+    requis: "Vermeld uw naam en uw e-mail.",
     services: ["Vertaling", "Legalisatie / Apostille", "Visum", "Andere"],
   },
   en: {
@@ -85,7 +83,6 @@ const T = {
     rdv_intro: "Leave your details: the office will contact you to confirm.",
     nom: "Full name",
     email: "Email",
-    tel: "Phone",
     service: "Regarding",
     date: "Preferred date (indicative)",
     msg: "Your request",
@@ -94,7 +91,7 @@ const T = {
     ok: "Thank you! Your request has been sent. The office will contact you shortly.",
     ko_mail: "Automatic sending isn't enabled yet. Click below to send your request by email:",
     ko_lien: "Open pre-filled email",
-    requis: "Please provide at least your name and one contact detail.",
+    requis: "Please provide your name and email.",
     services: ["Translation", "Legalisation / Apostille", "Visa", "Other"],
   },
 } as const;
@@ -373,13 +370,12 @@ function FormulaireRdv({ d, lang }: { d: (typeof T)[Locale]; lang: Locale }) {
     const charge = {
       nom: String(f.get("nom") || ""),
       email: String(f.get("email") || ""),
-      telephone: String(f.get("telephone") || ""),
       service: String(f.get("service") || ""),
       date: String(f.get("date") || ""),
       message: String(f.get("message") || ""),
       lang,
     };
-    if (!charge.nom.trim() || (!charge.email.trim() && !charge.telephone.trim())) {
+    if (!charge.nom.trim() || !charge.email.trim()) {
       setErreur(d.requis);
       return;
     }
@@ -440,14 +436,9 @@ function FormulaireRdv({ d, lang }: { d: (typeof T)[Locale]; lang: Locale }) {
       <Champ label={d.nom}>
         <input name="nom" required className={CHAMP} autoComplete="name" />
       </Champ>
-      <div className="grid grid-cols-2 gap-3">
-        <Champ label={d.email}>
-          <input name="email" type="email" className={CHAMP} autoComplete="email" />
-        </Champ>
-        <Champ label={d.tel}>
-          <input name="telephone" type="tel" className={CHAMP} autoComplete="tel" />
-        </Champ>
-      </div>
+      <Champ label={d.email}>
+        <input name="email" type="email" required className={CHAMP} autoComplete="email" />
+      </Champ>
       <Champ label={d.service}>
         <select name="service" className={CHAMP} defaultValue={d.services[0]}>
           {d.services.map((s) => (

@@ -21,7 +21,7 @@ const T = {
     hours: "Horaires",
     itin: "Obtenir l’itinéraire", write: "Nous écrire", call: "Appeler",
     rdv: {
-      nom: "Nom et prénom", email: "E-mail", tel: "Téléphone",
+      nom: "Nom et prénom", email: "E-mail",
       service: "Concerne", services: ["Visa", "Traduction", "Légalisation / Apostille", "Autre"],
       date: "Date souhaitée (indicative)", datePh: "ex. 12/09, matin", msg: "Votre message",
       submit: "Envoyer la demande", sending: "Envoi…",
@@ -29,7 +29,7 @@ const T = {
       mailIntro: "L’envoi automatique n’est pas encore activé. Cliquez ci-dessous pour envoyer votre demande par e-mail :",
       mailBtn: "Ouvrir l’e-mail pré-rempli",
       err: "Connexion impossible. Réessayez ou écrivez à info@travisum.com.",
-      required: "Indiquez au moins votre nom et un moyen de contact (e-mail ou téléphone).",
+      required: "Indiquez votre nom et votre e-mail.",
     } as RdvLabels,
   },
   nl: {
@@ -43,7 +43,7 @@ const T = {
     hours: "Openingsuren",
     itin: "Routebeschrijving", write: "Schrijf ons", call: "Bellen",
     rdv: {
-      nom: "Naam en voornaam", email: "E-mail", tel: "Telefoon",
+      nom: "Naam en voornaam", email: "E-mail",
       service: "Betreft", services: ["Visum", "Vertaling", "Legalisatie / Apostille", "Andere"],
       date: "Gewenste datum (indicatief)", datePh: "bv. 12/09, ochtend", msg: "Uw bericht",
       submit: "Aanvraag versturen", sending: "Versturen…",
@@ -51,7 +51,7 @@ const T = {
       mailIntro: "Automatische verzending is nog niet actief. Klik hieronder om per e-mail te versturen:",
       mailBtn: "Vooraf ingevulde e-mail openen",
       err: "Verbinding mislukt. Probeer opnieuw of mail info@travisum.com.",
-      required: "Vermeld minstens uw naam en een contactmogelijkheid (e-mail of telefoon).",
+      required: "Vermeld uw naam en uw e-mail.",
     } as RdvLabels,
   },
   en: {
@@ -65,7 +65,7 @@ const T = {
     hours: "Opening hours",
     itin: "Get directions", write: "Write to us", call: "Call",
     rdv: {
-      nom: "Full name", email: "Email", tel: "Phone",
+      nom: "Full name", email: "Email",
       service: "Regarding", services: ["Visa", "Translation", "Legalisation / Apostille", "Other"],
       date: "Preferred date (indicative)", datePh: "e.g. 12/09, morning", msg: "Your message",
       submit: "Send request", sending: "Sending…",
@@ -73,7 +73,7 @@ const T = {
       mailIntro: "Automatic sending isn’t enabled yet. Click below to send your request by email:",
       mailBtn: "Open pre-filled email",
       err: "Connection failed. Try again or email info@travisum.com.",
-      required: "Please provide at least your name and one contact detail (email or phone).",
+      required: "Please provide your name and email.",
     } as RdvLabels,
   },
 };

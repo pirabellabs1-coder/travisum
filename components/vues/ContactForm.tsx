@@ -10,7 +10,7 @@ import { useState, type FormEvent } from "react";
 import type { Locale } from "@/lib/i18n";
 
 export type RdvLabels = {
-  nom: string; email: string; tel: string; service: string; services: string[];
+  nom: string; email: string; service: string; services: string[];
   date: string; datePh: string; msg: string; submit: string; sending: string;
   okTitre: string; okTexte: string; mailIntro: string; mailBtn: string;
   err: string; required: string;
@@ -27,13 +27,12 @@ export default function ContactForm({ lang, t }: { lang: Locale; t: RdvLabels })
     const charge = {
       nom: String(f.get("nom") || ""),
       email: String(f.get("email") || ""),
-      telephone: String(f.get("telephone") || ""),
       service: String(f.get("service") || ""),
       date: String(f.get("date") || ""),
       message: String(f.get("message") || ""),
       lang,
     };
-    if (!charge.nom.trim() || (!charge.email.trim() && !charge.telephone.trim())) {
+    if (!charge.nom.trim() || !charge.email.trim()) {
       setErr(t.required);
       return;
     }
@@ -88,15 +87,9 @@ export default function ContactForm({ lang, t }: { lang: Locale; t: RdvLabels })
         <label htmlFor="rdv-nom">{t.nom}</label>
         <input id="rdv-nom" name="nom" required autoComplete="name" />
       </div>
-      <div className="cx-row">
-        <div className="cx-field">
-          <label htmlFor="rdv-email">{t.email}</label>
-          <input id="rdv-email" name="email" type="email" autoComplete="email" />
-        </div>
-        <div className="cx-field">
-          <label htmlFor="rdv-tel">{t.tel}</label>
-          <input id="rdv-tel" name="telephone" type="tel" autoComplete="tel" />
-        </div>
+      <div className="cx-field">
+        <label htmlFor="rdv-email">{t.email}</label>
+        <input id="rdv-email" name="email" type="email" required autoComplete="email" />
       </div>
       <div className="cx-row">
         <div className="cx-field">

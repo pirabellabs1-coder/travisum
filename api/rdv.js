@@ -50,15 +50,14 @@ export default async function handler(req, res) {
 
   const nom = texte(corps?.nom, 120);
   const email = texte(corps?.email, 160);
-  const telephone = texte(corps?.telephone, 60);
   const service = texte(corps?.service, 60);
   const date = texte(corps?.date, 80);
   const message = texte(corps?.message, 2000);
 
-  if (!nom || (!emailValide(email) && !telephone)) {
+  if (!nom || !emailValide(email)) {
     return res.status(400).json({
       error: "champs_manquants",
-      message: "Nom et au moins un moyen de contact (e-mail ou téléphone) sont requis.",
+      message: "Le nom et une adresse e-mail valide sont requis.",
     });
   }
 
@@ -66,7 +65,6 @@ export default async function handler(req, res) {
   const lignes = [
     ["Nom", nom],
     ["E-mail", email || "—"],
-    ["Téléphone", telephone || "—"],
     ["Service", service || "—"],
     ["Date souhaitée", date || "—"],
     ["Message", message || "—"],
