@@ -19,7 +19,7 @@ const T = {
     intro:
       "Travisum vous accompagne dans vos demandes de visa, e-visa et carte touristique, pour vos voyages touristiques, professionnels ou vos études.",
     reassure: "Vérification de votre dossier avant transmission aux autorités compétentes.",
-    heroBtn1: "Rechercher une destination", heroBtn2: "Parler à un conseiller",
+    heroBtn1: "Rechercher une destination", heroBtn2: "Écrire un e-mail",
     tb1: "Dossier vérifié", tb2: "Accompagnement personnalisé", tb3: "Livraison sécurisée",
     // recherche
     schTitle: "De quel visa avez-vous besoin ?",
@@ -50,7 +50,7 @@ const T = {
     nfTitle: "Vous ne trouvez pas votre destination ?",
     nfText:
       "Nos conseillers peuvent également vous renseigner pour d’autres pays. Contactez notre bureau afin que nous puissions vérifier les formalités correspondant à votre voyage.",
-    nfBtn1: "Contacter un conseiller", nfBtn2: "Appeler le 02 642 00 25",
+    nfBtn1: "Contacter un conseiller", nfBtn2: "Écrire un e-mail",
     // process
     prEb: "Notre accompagnement", prTitle: "Comment Travisum vous accompagne",
     prText: "Un accompagnement en trois étapes pour réduire les erreurs et faciliter vos démarches.",
@@ -86,7 +86,7 @@ const T = {
     intro:
       "Travisum begeleidt u bij uw aanvragen voor een visum, e-visum en toeristenkaart, voor uw toeristische of zakelijke reizen of uw studie.",
     reassure: "Controle van uw dossier vóór verzending naar de bevoegde autoriteiten.",
-    heroBtn1: "Een bestemming zoeken", heroBtn2: "Een adviseur spreken",
+    heroBtn1: "Een bestemming zoeken", heroBtn2: "Een e-mail sturen",
     tb1: "Gecontroleerd dossier", tb2: "Persoonlijke begeleiding", tb3: "Beveiligde levering",
     schTitle: "Welk visum heeft u nodig?",
     schText: "Kies uw bestemming om de formaliteiten en de vereiste documenten te bekijken.",
@@ -113,7 +113,7 @@ const T = {
     nfTitle: "Vindt u uw bestemming niet?",
     nfText:
       "Onze adviseurs kunnen u ook informeren over andere landen. Neem contact op met ons kantoor zodat wij de formaliteiten voor uw reis kunnen nagaan.",
-    nfBtn1: "Een adviseur contacteren", nfBtn2: "Bel 02 642 00 25",
+    nfBtn1: "Een adviseur contacteren", nfBtn2: "Een e-mail sturen",
     prEb: "Onze begeleiding", prTitle: "Hoe Travisum u begeleidt",
     prText: "Een begeleiding in drie stappen om fouten te beperken en uw formaliteiten te vergemakkelijken.",
     p1t: "Wij informeren u",
@@ -145,7 +145,7 @@ const T = {
     intro:
       "Travisum supports you with your visa, e-visa and travel-card applications, for your leisure or business trips and your studies.",
     reassure: "Your file is checked before it is sent to the competent authorities.",
-    heroBtn1: "Find a destination", heroBtn2: "Speak to an adviser",
+    heroBtn1: "Find a destination", heroBtn2: "Send an email",
     tb1: "Checked file", tb2: "Personalised support", tb3: "Secure delivery",
     schTitle: "Which visa do you need?",
     schText: "Select your destination to see the requirements and the documents needed.",
@@ -172,7 +172,7 @@ const T = {
     nfTitle: "Can’t find your destination?",
     nfText:
       "Our advisers can also help you with other countries. Contact our office so we can check the requirements for your trip.",
-    nfBtn1: "Contact an adviser", nfBtn2: "Call +32 2 642 00 25",
+    nfBtn1: "Contact an adviser", nfBtn2: "Send an email",
     prEb: "Our support", prTitle: "How Travisum supports you",
     prText: "A three-step support process to reduce errors and make your formalities easier.",
     p1t: "We inform you",
@@ -289,7 +289,7 @@ export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale;
               <p className="vz-reassure">{IcShield} {d.reassure}</p>
               <div className="vz-hero-cta">
                 <a className="vz-btn vz-btn-primary" href="#recherche">{d.heroBtn1} {IcArrow}</a>
-                <a className="vz-btn vz-btn-ghost" href={`tel:${CONTACT.telephone_tel}`}>{d.heroBtn2}</a>
+                <a className="vz-btn vz-btn-ghost" href={`mailto:${CONTACT.email}`}>{d.heroBtn2}</a>
               </div>
               <ul className="vz-badges">
                 <li>{IcCheck} {d.tb1}</li>
@@ -392,7 +392,7 @@ export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale;
               </div>
               <div className="vz-nf-cta">
                 <a className="vz-btn vz-btn-primary" href={contactHref}>{d.nfBtn1}</a>
-                <a className="vz-btn vz-btn-line" href={`tel:${CONTACT.telephone_tel}`}>{IcPhone} {d.nfBtn2}</a>
+                <a className="vz-btn vz-btn-line" href={`mailto:${CONTACT.email}`}>{IcMail} {d.nfBtn2}</a>
               </div>
             </div>
           </div>
@@ -437,7 +437,6 @@ export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale;
                 <p className="vz-craison">{CONTACT.raison}</p>
                 <ul className="vz-clist">
                   <li>{IcPin}<span>{CONTACT.rue}<br />{CONTACT.code_postal} {CONTACT.ville}, {CONTACT.pays}</span></li>
-                  <li>{IcPhone}<a href={`tel:${CONTACT.telephone_tel}`}>{CONTACT.telephone}</a></li>
                   <li>{IcMail}<a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
                   <li>{IcClock}<span><b>{d.ctHours}</b><br />{CONTACT.horaires}</span></li>
                 </ul>

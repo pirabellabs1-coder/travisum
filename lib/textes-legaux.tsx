@@ -30,7 +30,6 @@ export const MENTIONS: Article[] = [
         <Liste
           items={[
             `Adresse : ${ADRESSE}`,
-            `Téléphone : ${CONTACT.telephone} — ${CONTACT.mobile}`,
             <>
               Courriel : <Mail />
             </>,

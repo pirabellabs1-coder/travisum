@@ -20,7 +20,7 @@ export function AProposVue({ lang = "fr", cheminFr = "/a-propos/" }: { lang?: Lo
             <p className="sub">{d.ap_sub.replace("{r}", CONTACT.raison)}</p>
             <div className="cta">
               <a className="btn btn-p" href="#contact">{d.ap_visite} <span className="ar">→</span></a>
-              <a className="btn btn-out" href="tel:026420025">{d.cta_conseiller}</a>
+              <a className="btn btn-out" href="mailto:info@travisum.com">{d.cta_conseiller}</a>
             </div>
           </div>
           <div className="statbox">
@@ -96,11 +96,6 @@ export function AProposVue({ lang = "fr", cheminFr = "/a-propos/" }: { lang?: Lo
             <div className="eb">{d.ap_ct_eb}</div>
             <h2 className="sec-h">{CONTACT.rue}.</h2>
             <p className="sec-p">{CONTACT.code_postal} {CONTACT.ville}. {CONTACT.horaires}</p>
-            <p style={{ marginBottom: 8 }}>
-              <strong>{d.ap_ct_tel}</strong> —{" "}
-              <a className="more-l" href={`tel:${CONTACT.telephone_tel}`}>{CONTACT.telephone}</a> ·{" "}
-              <a className="more-l" href={`tel:${CONTACT.mobile_tel}`}>{CONTACT.mobile}</a>
-            </p>
             <p style={{ marginBottom: 8 }}>
               <strong>{d.ap_ct_mail}</strong> —{" "}
               <a className="more-l" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>

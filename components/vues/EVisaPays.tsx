@@ -150,7 +150,7 @@ export function EVisaPaysVue({ slug, lang = "fr", cheminFr }: { slug: string; la
             <p>{d.ctaText}</p>
             <div className="ev-cta">
               <a className="ev-btn ev-btn-p" href={L("/contact/")}>{d.ctaBtn} →</a>
-              <a className="ev-btn ev-btn-out" href={`tel:${CONTACT.telephone_tel}`}>{d.ctaCall}</a>
+              <a className="ev-btn ev-btn-out" href={`mailto:${CONTACT.email}`}>{d.ctaCall}</a>
             </div>
             <div className="evp-backrow">
               <a className="evp-back" href={L("/e-visa/")}>← {d2.retour}</a>

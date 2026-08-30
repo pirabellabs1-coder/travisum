@@ -1,6 +1,6 @@
 import PageV3 from "@/components/PageV3";
 import { DOCUMENTS_TRADUCTION, LANGUES } from "@/lib/donnees";
-import { faqL, tarifsL } from "@/lib/data-i18n";
+import { faqL } from "@/lib/data-i18n";
 import { trData } from "@/lib/translate-data";
 import { lien, type Locale } from "@/lib/i18n";
 import { tp } from "@/lib/tpages";
@@ -8,7 +8,6 @@ import { tp } from "@/lib/tpages";
 export function TraductionsVue({ lang = "fr", cheminFr = "/traductions/" }: { lang?: Locale; cheminFr?: string }) {
   const L = (c: string) => lien(lang, c);
   const d = tp(lang);
-  const tar = tarifsL(lang);
   const faq = faqL(lang);
 
   return (
@@ -21,7 +20,7 @@ export function TraductionsVue({ lang = "fr", cheminFr = "/traductions/" }: { la
             <p className="sub">{d.tr_sub}</p>
             <div className="cta">
               <a className="btn btn-p" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a>
-              <a className="btn btn-out" href="tel:026420025">{d.cta_conseiller}</a>
+              <a className="btn btn-out" href="mailto:info@travisum.com">{d.cta_conseiller}</a>
             </div>
           </div>
           <div className="statbox">
@@ -36,7 +35,7 @@ export function TraductionsVue({ lang = "fr", cheminFr = "/traductions/" }: { la
           <div className="facts">
             <div><span className="k">{LANGUES.length}</span><h3>{d.tr_f1}</h3><p>{d.tr_f1p}</p></div>
             <div><span className="k">Jurés</span><h3>{d.tr_f2}</h3><p>{d.tr_f2p}</p></div>
-            <div><span className="k">3–5 j</span><h3>{d.tr_f3}</h3><p>{d.tr_f3p}</p></div>
+            <div><span className="k">Express</span><h3>{d.tr_f3}</h3><p>{d.tr_f3p}</p></div>
             <div><span className="k">Louise</span><h3>{d.tr_f4}</h3><p>{d.tr_f4p}</p></div>
           </div>
         </div>
@@ -81,19 +80,13 @@ export function TraductionsVue({ lang = "fr", cheminFr = "/traductions/" }: { la
 
       <section>
         <div className="wrap">
-          <div className="eb">{d.tarifs_delais}</div>
-          <h2 className="sec-h">{d.tr_tar_h}</h2>
-          <div className="tscroll">
-            <table className="ptable">
-              <thead><tr>{tar.traduction.colonnes.map((c) => (<th key={c}>{c}</th>))}</tr></thead>
-              <tbody>
-                {tar.traduction.lignes.map((r, i) => (
-                  <tr key={i}>{r.map((cell, j) => (<td key={j}>{j === 0 ? cell : <span className="pph">{cell}</span>}</td>))}</tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="eb">{d.tr_proc_eb}</div>
+          <h2 className="sec-h">{d.tr_proc_h}</h2>
+          <p className="sec-p">{d.tr_proc_p}</p>
+          <div className="cards3" style={{ gridTemplateColumns: "repeat(2,1fr)", marginTop: 18 }}>
+            <div className="card"><div className="num">01</div><h3>{d.tr_proc_n_h}</h3><p>{d.tr_proc_n_p}</p></div>
+            <div className="card"><div className="num">02</div><h3>{d.tr_proc_e_h}</h3><p>{d.tr_proc_e_p}</p></div>
           </div>
-          {tar.traduction.note && <p className="tnote">{tar.traduction.note}</p>}
         </div>
       </section>
 

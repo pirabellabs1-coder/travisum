@@ -298,7 +298,7 @@ const BODY = String.raw`
       <p class="sub" data-i="heroSub">Visa, traduction et légalisation de documents. Décrivez votre situation en une phrase : l'assistant identifie la démarche, nos experts la vérifient.</p>
       <div class="cta">
         <a href="/contact/" class="btn btn-p"><span data-i="heroC1">Demander un devis</span><span class="ar">→</span></a>
-        <a href="tel:026420025" class="btn btn-out"><span data-i="heroC2">Parler à un conseiller</span></a>
+        <a href="mailto:info@travisum.com" class="btn btn-out"><span data-i="heroC2">Écrire un e-mail</span></a>
       </div>
       <div class="priv"><b>⌂</b><span data-i="heroPriv">Vos documents sont traités de façon confidentielle, consultés uniquement par l'équipe en charge du dossier, et les copies sont supprimées après traitement.</span></div>
     </div>
@@ -446,7 +446,7 @@ const BODY = String.raw`
     <p data-i="fP">Expliquez-nous votre situation. Nous vous indiquons la prochaine étape.</p>
     <div class="cta">
       <a href="#hero" class="btn btn-p"><span data-i="fC1">Commencer avec l'assistant</span><span class="ar">→</span></a>
-      <a href="tel:026420025" class="btn btn-out"><span data-i="fC2">02 642 00 25</span></a>
+      <a href="mailto:info@travisum.com" class="btn btn-out"><span data-i="fC2">info@travisum.com</span></a>
     </div>
   </div>
 </section>
@@ -466,7 +466,6 @@ const BODY = String.raw`
         <a href="/" class="logo">TRAVISUM<i></i></a>
         <p>367, avenue Louise</p>
         <p data-i="fAddr">1050 Bruxelles, Belgique</p>
-        <p class="hi">02 642 00 25</p>
         <p class="hi">info@travisum.com</p>
         <p class="bce" data-i="fBce">Numéro d'entreprise (BCE) : [à compléter]</p>
       </div>
@@ -489,7 +488,7 @@ const BODY = String.raw`
 <nav class="mbar">
   <a href="#hero" class="m1" data-i="mb1">Assistant</a>
   <a href="/contact/" class="m2" data-i="mb2">Devis</a>
-  <a href="tel:026420025" class="m3" data-i="mb3">Appeler</a>
+  <a href="mailto:info@travisum.com" class="m3" data-i="mb3">E-mail</a>
 </nav>
 `;
 
@@ -503,7 +502,7 @@ const T: Record<string, any> = {
   fr: { nav1: "Visa", nav2: "Traduction", nav3: "Légalisation", nav4: "Comment ça marche", nav5: "À propos", nav6: "Tarifs", navcta: "Obtenir un devis",
     heroEb: "Bruxelles · Démarches internationales", h1a: "Vos démarches internationales,", h1b: "sans les complications.",
     heroSub: "Visa, traduction et légalisation de documents. Décrivez votre situation en une phrase : l'assistant identifie la démarche, nos experts la vérifient.",
-    heroC1: "Demander un devis", heroC2: "Parler à un conseiller",
+    heroC1: "Demander un devis", heroC2: "Écrire un e-mail",
     heroPriv: "Vos documents sont traités de façon confidentielle, consultés uniquement par l'équipe en charge du dossier, et les copies sont supprimées après traitement.",
     acH: "De quoi avez-vous besoin ?", acP: "Décrivez simplement votre situation. Nous vous indiquons la démarche et les documents nécessaires.",
     acPh: "Ex. Je pars au Congo pour travailler pendant 2 mois...", acBtn: "Commencer", restart: "↻ Recommencer",
@@ -538,12 +537,12 @@ const T: Record<string, any> = {
     ggP: "Les avis publiés sur la fiche Google Business Profile de Travisum Louise Office s'afficheront ici automatiquement, avec la note et le nombre d'avis réels. Aucun témoignage ne sera rédigé.",
     ggBtn: "Voir la fiche Google", ggNum: "4,5 M", ggLab: "vues cumulées sur la fiche Google Local Guide du bureau",
     fH: "Vous ne savez pas par où commencer ?", fP: "Expliquez-nous votre situation. Nous vous indiquons la prochaine étape.",
-    fC1: "Commencer avec l'assistant", fC2: "02 642 00 25",
+    fC1: "Commencer avec l'assistant", fC2: "info@travisum.com",
     fAddr: "1050 Bruxelles, Belgique", fBce: "Numéro d'entreprise (BCE) : [à compléter]", fS: "Services", fCt: "Contact",
     fL: "Informations légales", fL1: "Mentions légales", fL2: "Politique de confidentialité", fL3: "Conditions générales", fL4: "Cookies",
     fH2: "Horaires", fHr: "Du lundi au vendredi<br>9h00 – 17h00, sans interruption",
     fCp: "© 2026 Travisum. Tous droits réservés.", fDis: "Travisum n'est pas une autorité consulaire. Les informations fournies sont indicatives.",
-    mb1: "Assistant", mb2: "Devis", mb3: "Appeler",
+    mb1: "Assistant", mb2: "Devis", mb3: "E-mail",
     prices: [
       [["Traduction assermentée (jurée)", "Selon le volume", "Sur devis", "Traduction, relecture et cachet du traducteur juré"],
        ["Traduction libre", "Selon le volume", "Sur devis", "Traduction professionnelle, sans cachet"]],
@@ -563,20 +562,20 @@ const T: Record<string, any> = {
       { chip: "Je dois faire traduire mon acte de naissance…",
         msgs: [["u", "Je dois faire traduire mon acte de naissance."], ["a", "Pour quelle administration ou quel pays ?"], ["u", "Pour un mariage en Belgique"], ["a", "Dans quelle langue est le document d'origine ?"], ["u", "En arabe"]],
         lab: "Démarche identifiée", h: "Traduction assermentée arabe → français.",
-        li: ["Délai standard : 3 à 5 jours ouvrés", "Cachet du traducteur juré inclus", "Légalisation possible en complément"],
+        li: ["Délai selon le document et son caractère", "Cachet du traducteur juré inclus", "Légalisation possible en complément"],
         disc: "Informations indicatives — le service de l'état civil peut exiger une légalisation supplémentaire. Nous le vérifions avec vous.",
         btn: "Demander mon devis" },
       { chip: "Je dois légaliser mon diplôme…",
-        msgs: [["u", "Je dois légaliser mon diplôme."], ["a", "Pour quel pays de destination ?"], ["u", "Pour le Canada"], ["a", "Le diplôme a-t-il déjà été traduit ?"], ["u", "Non, pas encore"]],
+        msgs: [["u", "Je dois légaliser mon diplôme."], ["a", "Pour quel pays de destination ?"], ["u", "Pour l'Espagne"], ["a", "Le diplôme a-t-il déjà été traduit ?"], ["u", "Non, pas encore"]],
         lab: "Démarche identifiée", h: "Apostille de La Haye + traduction assermentée.",
-        li: ["Le Canada accepte l'apostille depuis 2024", "Traduction à réaliser avant l'apostille", "Délai indicatif : 5 à 8 jours ouvrés"],
+        li: ["L'Espagne applique l'apostille (Convention de La Haye)", "Traduction à réaliser avant l'apostille", "Délai indicatif : 5 à 8 jours ouvrés"],
         disc: "Informations indicatives — l'ordre des étapes conditionne la validité du document. Un expert Travisum confirme la procédure avant traitement.",
         btn: "Lancer ma démarche" }] },
 
   en: { nav1: "Visas", nav2: "Translation", nav3: "Legalisation", nav4: "How it works", nav5: "About", nav6: "Pricing", navcta: "Get a quote",
     heroEb: "Brussels · International formalities", h1a: "Your international paperwork,", h1b: "without the complications.",
     heroSub: "Visas, document translation and legalisation. Describe your situation in one sentence: the assistant identifies the procedure, our experts verify it.",
-    heroC1: "Get a quote", heroC2: "Speak to an adviser",
+    heroC1: "Get a quote", heroC2: "Send an email",
     heroPriv: "Your documents are handled confidentially, seen only by the team handling your file, and copies are deleted after processing.",
     acH: "What do you need?", acP: "Describe your situation in plain words. We tell you which procedure applies and which documents you need.",
     acPh: "E.g. I'm going to Congo to work for two months...", acBtn: "Start", restart: "↻ Start over",
@@ -611,12 +610,12 @@ const T: Record<string, any> = {
     ggP: "Reviews published on the Google Business Profile of Travisum Louise Office will appear here automatically, with the real rating and review count. No testimonial will be written.",
     ggBtn: "View the Google profile", ggNum: "4.5 M", ggLab: "cumulative views on the office's Google Local Guide profile",
     fH: "Not sure where to start?", fP: "Just tell us your situation. We'll tell you the next step.",
-    fC1: "Start with the assistant", fC2: "+32 2 642 00 25",
+    fC1: "Start with the assistant", fC2: "info@travisum.com",
     fAddr: "1050 Brussels, Belgium", fBce: "Company number (BCE): [to be completed]", fS: "Services", fCt: "Contact",
     fL: "Legal information", fL1: "Legal notice", fL2: "Privacy policy", fL3: "Terms and conditions", fL4: "Cookies",
     fH2: "Opening hours", fHr: "Monday to Friday<br>9:00 – 17:00, no lunch break",
     fCp: "© 2026 Travisum. All rights reserved.", fDis: "Travisum is not a consular authority. The information provided is indicative.",
-    mb1: "Assistant", mb2: "Quote", mb3: "Call",
+    mb1: "Assistant", mb2: "Quote", mb3: "Email",
     prices: [
       [["Sworn translation", "Depends on length", "On quote", "Translation, proofreading and sworn translator's stamp"],
        ["Standard translation", "Depends on length", "On quote", "Professional translation, no stamp"]],
@@ -636,20 +635,20 @@ const T: Record<string, any> = {
       { chip: "I need my birth certificate translated…",
         msgs: [["u", "I need my birth certificate translated."], ["a", "For which authority or country?"], ["u", "For a marriage in Belgium"], ["a", "What language is the original document in?"], ["u", "Arabic"]],
         lab: "Procedure identified", h: "Sworn translation, Arabic → French.",
-        li: ["Standard timeline: 3 to 5 working days", "Sworn translator's stamp included", "Legalisation available as an add-on"],
+        li: ["Timeline depends on the document and its nature", "Sworn translator's stamp included", "Legalisation available as an add-on"],
         disc: "Indicative information — the civil registry may require additional legalisation. We check that with you.",
         btn: "Request my quote" },
       { chip: "I need my diploma legalised…",
-        msgs: [["u", "I need my diploma legalised."], ["a", "For which destination country?"], ["u", "For Canada"], ["a", "Has the diploma already been translated?"], ["u", "Not yet"]],
+        msgs: [["u", "I need my diploma legalised."], ["a", "For which destination country?"], ["u", "For Spain"], ["a", "Has the diploma already been translated?"], ["u", "Not yet"]],
         lab: "Procedure identified", h: "Hague apostille + sworn translation.",
-        li: ["Canada has accepted the apostille since 2024", "Translation must come before the apostille", "Indicative timeline: 5 to 8 working days"],
+        li: ["Spain applies the apostille (Hague Convention)", "Translation must come before the apostille", "Indicative timeline: 5 to 8 working days"],
         disc: "Indicative information — the order of steps determines the document's validity. A Travisum expert confirms the procedure before processing.",
         btn: "Start my procedure" }] },
 
   nl: { nav1: "Visum", nav2: "Vertaling", nav3: "Legalisatie", nav4: "Hoe het werkt", nav5: "Over ons", nav6: "Tarieven", navcta: "Offerte aanvragen",
     heroEb: "Brussel · Internationale formaliteiten", h1a: "Uw internationale formaliteiten,", h1b: "zonder de rompslomp.",
     heroSub: "Visa, vertaling en legalisatie van documenten. Beschrijf uw situatie in één zin: de assistent bepaalt de procedure, onze experts controleren ze.",
-    heroC1: "Offerte aanvragen", heroC2: "Een adviseur spreken",
+    heroC1: "Offerte aanvragen", heroC2: "Een e-mail sturen",
     heroPriv: "Uw documenten worden vertrouwelijk behandeld, enkel ingekeken door het team dat uw dossier behandelt, en de kopieën worden na behandeling verwijderd.",
     acH: "Wat heeft u nodig?", acP: "Beschrijf uw situatie in gewone woorden. Wij vertellen u welke procedure geldt en welke documenten u nodig heeft.",
     acPh: "Bv. Ik ga twee maanden in Congo werken...", acBtn: "Beginnen", restart: "↻ Opnieuw beginnen",
@@ -684,12 +683,12 @@ const T: Record<string, any> = {
     ggP: "De beoordelingen op het Google Business Profile van Travisum Louise Office verschijnen hier automatisch, met de echte score en het echte aantal. Er wordt geen enkele getuigenis geschreven.",
     ggBtn: "De Google-pagina bekijken", ggNum: "4,5 mln", ggLab: "gecumuleerde weergaven op de Google Local Guide-pagina van het kantoor",
     fH: "Weet u niet waar te beginnen?", fP: "Leg ons uw situatie uit. Wij vertellen u de volgende stap.",
-    fC1: "Beginnen met de assistent", fC2: "02 642 00 25",
+    fC1: "Beginnen met de assistent", fC2: "info@travisum.com",
     fAddr: "1050 Brussel, België", fBce: "Ondernemingsnummer (KBO): [aan te vullen]", fS: "Diensten", fCt: "Contact",
     fL: "Juridische informatie", fL1: "Wettelijke vermeldingen", fL2: "Privacybeleid", fL3: "Algemene voorwaarden", fL4: "Cookies",
     fH2: "Openingsuren", fHr: "Van maandag tot vrijdag<br>9u00 – 17u00, doorlopend",
     fCp: "© 2026 Travisum. Alle rechten voorbehouden.", fDis: "Travisum is geen consulaire overheid. De verstrekte informatie is indicatief.",
-    mb1: "Assistent", mb2: "Offerte", mb3: "Bellen",
+    mb1: "Assistent", mb2: "Offerte", mb3: "E-mail",
     prices: [
       [["Beëdigde vertaling", "Afhankelijk van de omvang", "Op offerte", "Vertaling, nalezing en stempel van de beëdigd vertaler"],
        ["Vrije vertaling", "Afhankelijk van de omvang", "Op offerte", "Professionele vertaling, zonder stempel"]],
@@ -709,13 +708,13 @@ const T: Record<string, any> = {
       { chip: "Ik moet mijn geboorteakte laten vertalen…",
         msgs: [["u", "Ik moet mijn geboorteakte laten vertalen."], ["a", "Voor welke administratie of welk land?"], ["u", "Voor een huwelijk in België"], ["a", "In welke taal is het originele document?"], ["u", "In het Arabisch"]],
         lab: "Procedure geïdentificeerd", h: "Beëdigde vertaling Arabisch → Frans.",
-        li: ["Standaardtermijn: 3 tot 5 werkdagen", "Stempel van de beëdigd vertaler inbegrepen", "Legalisatie mogelijk als aanvulling"],
+        li: ["Termijn volgens het document en zijn aard", "Stempel van de beëdigd vertaler inbegrepen", "Legalisatie mogelijk als aanvulling"],
         disc: "Indicatieve informatie — de burgerlijke stand kan een bijkomende legalisatie eisen. Wij controleren dat samen met u.",
         btn: "Mijn offerte aanvragen" },
       { chip: "Ik moet mijn diploma laten legaliseren…",
-        msgs: [["u", "Ik moet mijn diploma laten legaliseren."], ["a", "Voor welk bestemmingsland?"], ["u", "Voor Canada"], ["a", "Is het diploma al vertaald?"], ["u", "Nog niet"]],
+        msgs: [["u", "Ik moet mijn diploma laten legaliseren."], ["a", "Voor welk bestemmingsland?"], ["u", "Voor Spanje"], ["a", "Is het diploma al vertaald?"], ["u", "Nog niet"]],
         lab: "Procedure geïdentificeerd", h: "Haagse apostille + beëdigde vertaling.",
-        li: ["Canada aanvaardt de apostille sinds 2024", "Vertaling moet vóór de apostille gebeuren", "Indicatieve termijn: 5 tot 8 werkdagen"],
+        li: ["Spanje past de apostille toe (Verdrag van Den Haag)", "Vertaling moet vóór de apostille gebeuren", "Indicatieve termijn: 5 tot 8 werkdagen"],
         disc: "Indicatieve informatie — de volgorde van de stappen bepaalt de geldigheid van het document. Een Travisum-expert bevestigt de procedure vóór behandeling.",
         btn: "Mijn procedure starten" }] },
 };
@@ -896,7 +895,7 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
         reply = data && data.reply ? String(data.reply) : "";
       } catch { reply = ""; }
       ty.remove();
-      if (!reply) reply = lang === "nl" ? "Verbinding mislukt. Bel 02 642 00 25 of mail info@travisum.com." : lang === "en" ? "Connection failed. Call +32 2 642 00 25 or email info@travisum.com." : "Connexion impossible. Appelez le 02 642 00 25 ou écrivez à info@travisum.com.";
+      if (!reply) reply = lang === "nl" ? "Verbinding mislukt. Mail naar info@travisum.com." : lang === "en" ? "Connection failed. Email info@travisum.com." : "Connexion impossible. Écrivez à info@travisum.com.";
       messages.push({ role: "assistant", content: reply });
       await taper(reply);
       if (cin) { cin.disabled = false; cin.focus(); }

@@ -28,7 +28,7 @@ const T = {
       okTitre: "Demande envoyée", okTexte: "Merci ! Le bureau vous recontacte rapidement pour confirmer.",
       mailIntro: "L’envoi automatique n’est pas encore activé. Cliquez ci-dessous pour envoyer votre demande par e-mail :",
       mailBtn: "Ouvrir l’e-mail pré-rempli",
-      err: "Connexion impossible. Réessayez ou appelez le 02 642 00 25.",
+      err: "Connexion impossible. Réessayez ou écrivez à info@travisum.com.",
       required: "Indiquez au moins votre nom et un moyen de contact (e-mail ou téléphone).",
     } as RdvLabels,
   },
@@ -50,7 +50,7 @@ const T = {
       okTitre: "Aanvraag verstuurd", okTexte: "Bedankt! Het kantoor neemt snel contact op ter bevestiging.",
       mailIntro: "Automatische verzending is nog niet actief. Klik hieronder om per e-mail te versturen:",
       mailBtn: "Vooraf ingevulde e-mail openen",
-      err: "Verbinding mislukt. Probeer opnieuw of bel 02 642 00 25.",
+      err: "Verbinding mislukt. Probeer opnieuw of mail info@travisum.com.",
       required: "Vermeld minstens uw naam en een contactmogelijkheid (e-mail of telefoon).",
     } as RdvLabels,
   },
@@ -72,7 +72,7 @@ const T = {
       okTitre: "Request sent", okTexte: "Thank you! The office will contact you shortly to confirm.",
       mailIntro: "Automatic sending isn’t enabled yet. Click below to send your request by email:",
       mailBtn: "Open pre-filled email",
-      err: "Connection failed. Try again or call +32 2 642 00 25.",
+      err: "Connection failed. Try again or email info@travisum.com.",
       required: "Please provide at least your name and one contact detail (email or phone).",
     } as RdvLabels,
   },
@@ -108,7 +108,6 @@ export function ContactVue({ lang = "fr", cheminFr = "/contact/" }: { lang?: Loc
             <h1>{d.h1}</h1>
             <p className="cx-sub">{d.sub}</p>
             <div className="cx-chips">
-              <a href={`tel:${CONTACT.telephone_tel}`}>{IcPhone} {CONTACT.telephone}</a>
               <a href={`mailto:${CONTACT.email}`}>{IcMail} {CONTACT.email}</a>
             </div>
           </div>
@@ -130,7 +129,6 @@ export function ContactVue({ lang = "fr", cheminFr = "/contact/" }: { lang?: Loc
                 <p className="cx-raison">{CONTACT.raison}</p>
                 <ul className="cx-list">
                   <li>{IcPin}<span>{CONTACT.rue}<br />{CONTACT.code_postal} {CONTACT.ville}, {CONTACT.pays}</span></li>
-                  <li>{IcPhone}<span><a href={`tel:${CONTACT.telephone_tel}`}>{CONTACT.telephone}</a> · <a href={`tel:${CONTACT.mobile_tel}`}>{CONTACT.mobile}</a></span></li>
                   <li>{IcMail}<a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
                   <li>{IcClock}<span><b>{d.hours}</b><br />{CONTACT.horaires}</span></li>
                 </ul>

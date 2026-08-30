@@ -38,7 +38,7 @@ export const T = {
     diffText: "L’e-Visa est un visa obtenu par une procédure électronique. Contrairement au visa consulaire traditionnel, il n’est généralement pas nécessaire de déposer physiquement le passeport auprès d’une ambassade ou d’un consulat. L’autorisation est reçue sous format électronique et est liée aux informations du passeport utilisées lors de la demande. L’e-Visa ne doit pas être confondu avec une simple autorisation électronique de voyage.",
     ctaTitre: "Besoin d’un e-Visa ?",
     ctaText: "Envoyez-nous votre nationalité, votre destination, votre date de départ, la durée du séjour et le motif du voyage (tourisme ou affaires). Nous vérifions la procédure applicable et les documents nécessaires.",
-    ctaBtn: "Demander mon e-Visa", ctaCall: "Appeler le bureau",
+    ctaBtn: "Demander mon e-Visa", ctaCall: "Écrire un e-mail",
     disc: "Les conditions d’entrée, l’éligibilité, les délais et la validité des visas sont déterminés exclusivement par les autorités du pays de destination et peuvent être modifiés sans préavis. L’acceptation d’une demande reste de la compétence exclusive des autorités concernées.",
   },
   nl: {
@@ -66,7 +66,7 @@ export const T = {
     diffText: "Het e-Visum is een visum verkregen via een elektronische procedure. In tegenstelling tot het traditionele consulaire visum hoeft u het paspoort meestal niet fysiek af te geven. De machtiging wordt elektronisch ontvangen en is gekoppeld aan de bij de aanvraag gebruikte paspoortgegevens. Verwar het e-Visum niet met een eenvoudige elektronische reismachtiging.",
     ctaTitre: "Nood aan een e-Visum?",
     ctaText: "Stuur ons uw nationaliteit, uw bestemming, uw vertrekdatum, de duur van het verblijf en het reismotief (toerisme of zaken). Wij controleren de toepasselijke procedure en de nodige documenten.",
-    ctaBtn: "Mijn e-Visum aanvragen", ctaCall: "Het kantoor bellen",
+    ctaBtn: "Mijn e-Visum aanvragen", ctaCall: "Een e-mail sturen",
     disc: "De toegangsvoorwaarden, de ontvankelijkheid, de termijnen en de geldigheid van visa worden uitsluitend bepaald door de autoriteiten van het land van bestemming en kunnen zonder voorafgaande kennisgeving worden gewijzigd. De aanvaarding van een aanvraag blijft de exclusieve bevoegdheid van de betrokken autoriteiten.",
   },
   en: {
@@ -94,7 +94,7 @@ export const T = {
     diffText: "The e-Visa is a visa obtained through an electronic procedure. Unlike a traditional consular visa, you generally don't need to physically submit your passport to an embassy or consulate. The authorisation is received electronically and is linked to the passport details used in the application. The e-Visa should not be confused with a simple electronic travel authorisation.",
     ctaTitre: "Need an e-Visa?",
     ctaText: "Send us your nationality, your destination, your departure date, the length of stay and the purpose of the trip (tourism or business). We check the applicable procedure and the required documents.",
-    ctaBtn: "Request my e-Visa", ctaCall: "Call the office",
+    ctaBtn: "Request my e-Visa", ctaCall: "Send an email",
     disc: "Entry conditions, eligibility, timelines and visa validity are determined exclusively by the authorities of the destination country and may change without notice. Acceptance of an application remains the sole responsibility of the relevant authorities.",
   },
 } as const;
@@ -211,7 +211,7 @@ export function EVisaVue({ lang = "fr", cheminFr = "/e-visa/" }: { lang?: Locale
             <p>{d.ctaText}</p>
             <div className="ev-cta">
               <a className="ev-btn ev-btn-p" href={L("/contact/")}>{d.ctaBtn} →</a>
-              <a className="ev-btn ev-btn-out" href={`tel:${CONTACT.telephone_tel}`}>{d.ctaCall}</a>
+              <a className="ev-btn ev-btn-out" href={`mailto:${CONTACT.email}`}>{d.ctaCall}</a>
             </div>
             <p className="ev-disc">{d.disc}</p>
           </div>

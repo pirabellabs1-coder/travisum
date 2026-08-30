@@ -196,10 +196,10 @@ export default function Chat({ lang = "fr" }: { lang?: Locale }) {
       const data = await r.json().catch(() => ({}));
       reply = (data && data.reply && String(data.reply)) || "";
     } catch {
-      reply = "Connexion impossible pour le moment. Téléphone : 02 642 00 25 — e-mail : info@travisum.com.";
+      reply = "Connexion impossible pour le moment. E-mail : info@travisum.com.";
     }
     if (!reply)
-      reply = "Désolé, une erreur est survenue. Vous pouvez appeler le 02 642 00 25 ou écrire à info@travisum.com.";
+      reply = "Désolé, une erreur est survenue. Vous pouvez écrire à info@travisum.com.";
     setCharge(false);
     await taperMessage(reply);
   }
@@ -403,7 +403,7 @@ function FormulaireRdv({ d, lang }: { d: (typeof T)[Locale]; lang: Locale }) {
       }
     } catch {
       setEtat("saisie");
-      setErreur("Connexion impossible. Réessayez ou appelez le 02 642 00 25.");
+      setErreur("Connexion impossible. Réessayez ou écrivez à info@travisum.com.");
     }
   }
 

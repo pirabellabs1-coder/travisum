@@ -54,7 +54,6 @@ export default function PiedV3({ lang = "fr" }: { lang?: Locale }) {
             <p>
               {CONTACT.code_postal} {CONTACT.ville}, {lang === "nl" ? "België" : lang === "en" ? "Belgium" : "Belgique"}
             </p>
-            <p className="hi">{CONTACT.telephone}</p>
             <p className="hi">{CONTACT.email}</p>
             <p className="bce">{d.bce}</p>
           </div>

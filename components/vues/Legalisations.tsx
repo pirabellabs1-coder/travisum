@@ -24,7 +24,7 @@ export function LegalisationsVue({ lang = "fr", cheminFr = "/legalisations/" }: 
             <p className="sub">{d.lg_sub}</p>
             <div className="cta">
               <a className="btn btn-p" href={L("/contact/")}>{d.cta_devis} <span className="ar">→</span></a>
-              <a className="btn btn-out" href="tel:026420025">{d.cta_conseiller}</a>
+              <a className="btn btn-out" href="mailto:info@travisum.com">{d.cta_conseiller}</a>
             </div>
           </div>
           <div className="statbox">

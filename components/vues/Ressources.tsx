@@ -76,7 +76,7 @@ export function RessourcesVue({ lang = "fr", cheminFr = "/ressources/" }: { lang
           <h2>{d.re_cta_h}</h2>
           <p>{d.re_cta_p}</p>
           <div className="cta">
-            <a className="btn btn-p" href="tel:026420025">02 642 00 25</a>
+            <a className="btn btn-p" href="mailto:info@travisum.com">info@travisum.com</a>
             <a className="btn btn-out" href={L("/contact/")}>{d.cta_ecrire}</a>
           </div>
         </div>
