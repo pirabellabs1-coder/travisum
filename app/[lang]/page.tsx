@@ -14,10 +14,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
   const lang = (estLocale(params.lang) ? params.lang : "fr") as Locale;
   return {
-    title: "Traduction assermentée, légalisation et visa à Bruxelles",
+    title: "Traduction assermentée, légalisation et visa",
     description:
-      "Travisum, bureau de traduction jurée avenue Louise à Bruxelles : traductions " +
-      "assermentées, légalisations, apostilles et visas de voyage.",
+      "Travisum, bureau de traduction jurée : traductions assermentées, légalisations, " +
+      "apostilles et visas de voyage.",
     alternates: { ...alternates("/"), canonical: lien(lang, "/") },
   };
 }

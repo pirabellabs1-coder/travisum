@@ -282,8 +282,8 @@ const BODY = String.raw`
     <div class="spacer"></div>
     <div class="lang" role="group" aria-label="Langue">
       <button data-l="fr" aria-pressed="true">FR</button>
-      <button data-l="en" aria-pressed="false">EN</button>
       <button data-l="nl" aria-pressed="false">NL</button>
+      <button data-l="en" aria-pressed="false">EN</button>
     </div>
     <a href="/contact/" class="btn btn-p"><span data-i="navcta">Obtenir un devis</span></a>
     <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -338,29 +338,6 @@ const BODY = String.raw`
       <div class="card"><div class="num">01</div><h3 data-i="s1h">Visa</h3><p data-i="s1p">Visa touristique, affaires, études et transit. Constitution du dossier, rendez-vous consulaire, dépôt et récupération.</p><a class="more" href="/visas/"><span data-i="s1a">Découvrir les visas</span><span class="ar">→</span></a></div>
       <div class="card"><div class="num">02</div><h3 data-i="s2h">Traduction</h3><p data-i="s2p">Traductions libres et assermentées, reconnues par les administrations belges et étrangères.</p><a class="more" href="/traductions/"><span data-i="s2a">Voir les tarifs</span><span class="ar">→</span></a></div>
       <div class="card"><div class="num">03</div><h3 data-i="s3h">Légalisation</h3><p data-i="s3p">Apostille, légalisation et dépôts auprès du SPF Justice, des Affaires étrangères, des tribunaux et des ambassades.</p><a class="more" href="/legalisations/"><span data-i="s3a">Comprendre la procédure</span><span class="ar">→</span></a></div>
-    </div>
-  </div>
-</section>
-
-<section id="tarifs">
-  <div class="wrap">
-    <div class="rv">
-      <div class="eb" data-i="prEb">Tarifs et délais</div>
-      <h2 class="sec-h" data-i="prH">Les prix, avant de décrocher le téléphone.</h2>
-    </div>
-    <div class="rv">
-      <div class="tabs" role="tablist">
-        <button class="tab" role="tab" aria-selected="true" data-t="0" data-i="nav2">Traduction</button>
-        <button class="tab" role="tab" aria-selected="false" data-t="1" data-i="nav3">Légalisation</button>
-        <button class="tab" role="tab" aria-selected="false" data-t="2" data-i="nav1">Visa</button>
-      </div>
-      <table class="ptable">
-        <thead><tr>
-          <th data-i="prC1">Formule</th><th data-i="prC2">Délai</th><th data-i="prC3">Tarif indicatif</th><th data-i="prC4">Ce qui est compris</th>
-        </tr></thead>
-        <tbody id="ptb"></tbody>
-      </table>
-      <p class="tnote" data-i="prNote">Les frais officiels reversés aux administrations et aux consulats sont facturés séparément, au montant exact et sur justificatif. Montants à confirmer avec vous avant mise en ligne.</p>
     </div>
   </div>
 </section>
@@ -763,7 +740,7 @@ T.nl.prices = [
 
 export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale }) {
   useEffect(() => {
-    let lang = "fr", tab = 0, timers: ReturnType<typeof setTimeout>[] = [];
+    let lang = "fr", timers: ReturnType<typeof setTimeout>[] = [];
     const $ = (s: string) => document.querySelector(s) as HTMLElement | null;
     const $$ = (s: string) => Array.from(document.querySelectorAll(s)) as HTMLElement[];
 
@@ -786,7 +763,7 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
       $$("[data-i]").forEach((el) => { const v = d[el.dataset.i as string]; if (v !== undefined) el.innerHTML = v; });
       $$("[data-ip]").forEach((el) => { const v = d[el.dataset.ip as string]; if (v !== undefined) (el as HTMLInputElement).placeholder = v; });
       $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.l === l)));
-      renderChips(); renderPrices(); renderMaillage(); resetCard(); relink(l);
+      renderChips(); renderMaillage(); resetCard(); relink(l);
     }
 
     let messages: { role: string; content: string }[] = [];
@@ -901,13 +878,6 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
       if (cin) { cin.disabled = false; cin.focus(); }
     }
 
-    function renderPrices() {
-      const rows = T[lang].prices[tab];
-      const ptb = $("#ptb"); if (!ptb) return;
-      ptb.innerHTML = rows.map((r: string[]) => `<tr><td>${r[0]}</td><td>${r[1]}</td>
-    <td><span class="pph">${r[2]}</span></td><td><span class="d">${r[3]}</span></td></tr>`).join("");
-    }
-
     function renderMaillage() {
       const d = T[lang]; const pre = lang === "fr" ? "" : "/" + lang;
       const dg = $("#destgrid"); if (dg) dg.innerHTML = DEST.map(([n, t, slug]) => `<a class="dcard" href="${pre}/visas/${slug}/"><b>${n}</b><span>${t}</span></a>`).join("");
@@ -921,8 +891,6 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
       apply(l);
     };
     $$(".lang button").forEach((b) => b.addEventListener("click", onLang));
-    const onTab = (e: Event) => { const b = e.currentTarget as HTMLElement; tab = +(b.dataset.t as string); $$(".tab").forEach((x) => x.setAttribute("aria-selected", String(x === b))); renderPrices(); };
-    $$(".tab").forEach((b) => b.addEventListener("click", onTab));
     const reBtn = $("#re"); if (reBtn) reBtn.onclick = resetCard;
 
     const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12, rootMargin: "0px 0px -40px" });

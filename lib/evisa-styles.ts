@@ -97,11 +97,11 @@ export const EVISA_CSS = String.raw`
 .ev-final h2{color:#fff;font-size:clamp(24px,3vw,32px);margin-bottom:12px}
 .ev-final>.ev-wrap>p{color:rgba(255,255,255,.82);font-size:16px;line-height:1.6;max-width:60ch;margin:0 auto 24px}
 .ev-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
-.ev-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:11px;font:600 15px Inter;cursor:pointer;border:1px solid transparent;transition:.15s}
-.ev-btn-p{background:var(--or);color:var(--nuit)}.ev-btn-p:hover{background:var(--or-l);transform:translateY(-1px)}
-.ev-btn-out{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}.ev-btn-out:hover{background:rgba(255,255,255,.1)}
-.ev-btn-s{background:var(--nuit);color:#fff;justify-content:center}.ev-btn-s:hover{background:var(--nuit-2)}
-.ev-btn-so{background:#fff;color:var(--nuit);border-color:var(--bord);justify-content:center}.ev-btn-so:hover{border-color:var(--or)}
+.ev .ev-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:11px;font:600 15px Inter;cursor:pointer;border:1px solid transparent;transition:.15s}
+.ev .ev-btn-p{background:var(--or);color:var(--nuit)}.ev .ev-btn-p:hover{background:var(--or-l);transform:translateY(-1px)}
+.ev .ev-btn-out{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}.ev .ev-btn-out:hover{background:rgba(255,255,255,.1)}
+.ev .ev-btn-s{background:var(--nuit);color:#fff;justify-content:center}.ev .ev-btn-s:hover{background:var(--nuit-2)}
+.ev .ev-btn-so{background:#fff;color:var(--nuit);border-color:var(--bord);justify-content:center}.ev .ev-btn-so:hover{border-color:var(--or)}
 .ev-disc{color:rgba(255,255,255,.55);font-size:12.5px;line-height:1.6;max-width:80ch;margin:0 auto}
 
 @media(max-width:820px){
