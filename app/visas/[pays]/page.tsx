@@ -12,9 +12,8 @@ export function generateMetadata({ params }: { params: { pays: string } }): Meta
   return {
     title: `Visa ${fiche.nom} depuis la Belgique — procédure, documents et délai`,
     description:
-      `Demande de visa ${articleDe(fiche.nom)} depuis Bruxelles : liste des documents ` +
-      `à fournir, procédure, délai d’obtention et tarifs. Dossier constitué et déposé ` +
-      `par Travisum, 367 avenue Louise.`,
+      `Demande de visa ${articleDe(fiche.nom)} depuis la Belgique : liste des documents ` +
+      `à fournir, procédure et délai d’obtention. Dossier constitué et déposé par Travisum.`,
     alternates: alternates(`/visas/${fiche.slug}/`),
   };
 }

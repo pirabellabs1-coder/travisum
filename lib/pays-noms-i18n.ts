@@ -1,0 +1,85 @@
+import type { Locale } from "@/lib/i18n";
+
+/**
+ * Noms localisés (NL/EN) des 69 destinations visa, indexés par slug.
+ * Sert aux métadonnées SEO des fiches `/[lang]/visas/{slug}/` (le dico
+ * `data-pays-i18n.json` ne contient pas les noms de pays). Cohérent avec les
+ * `nomLoc` des fiches e-Visa (lib/evisa-contenu.ts). Repli sur le nom FR si absent.
+ */
+export const PAYS_NOMS: Record<string, { nl: string; en: string }> = {
+  algerie: { nl: "Algerije", en: "Algeria" },
+  angola: { nl: "Angola", en: "Angola" },
+  "arabie-saoudite": { nl: "Saoedi-Arabië", en: "Saudi Arabia" },
+  bangladesh: { nl: "Bangladesh", en: "Bangladesh" },
+  "birmanie-myanmar": { nl: "Myanmar (Birma)", en: "Myanmar (Burma)" },
+  bielorussie: { nl: "Belarus", en: "Belarus" },
+  "burkina-faso": { nl: "Burkina Faso", en: "Burkina Faso" },
+  burundi: { nl: "Burundi", en: "Burundi" },
+  benin: { nl: "Benin", en: "Benin" },
+  "cambodge-2": { nl: "Cambodja", en: "Cambodia" },
+  cameroun: { nl: "Kameroen", en: "Cameroon" },
+  chine: { nl: "China", en: "China" },
+  "congo-brazzaville": { nl: "Congo-Brazzaville", en: "Congo-Brazzaville" },
+  "republique-democratique-du-congo": { nl: "DR Congo", en: "DR Congo" },
+  "coree-du-sud": { nl: "Zuid-Korea", en: "South Korea" },
+  cuba: { nl: "Cuba", en: "Cuba" },
+  djibouti: { nl: "Djibouti", en: "Djibouti" },
+  egypte: { nl: "Egypte", en: "Egypt" },
+  gabon: { nl: "Gabon", en: "Gabon" },
+  ghana: { nl: "Ghana", en: "Ghana" },
+  "guinee-republique": { nl: "Guinee", en: "Guinea" },
+  "guinee-equatoriale": { nl: "Equatoriaal-Guinea", en: "Equatorial Guinea" },
+  "guinee-bissau": { nl: "Guinee-Bissau", en: "Guinea-Bissau" },
+  inde: { nl: "India", en: "India" },
+  indonesie: { nl: "Indonesië", en: "Indonesia" },
+  iran: { nl: "Iran", en: "Iran" },
+  jordanie: { nl: "Jordanië", en: "Jordan" },
+  kazakhstan: { nl: "Kazachstan", en: "Kazakhstan" },
+  kenya: { nl: "Kenia", en: "Kenya" },
+  laos: { nl: "Laos", en: "Laos" },
+  liban: { nl: "Libanon", en: "Lebanon" },
+  liberia: { nl: "Liberia", en: "Liberia" },
+  madagascar: { nl: "Madagaskar", en: "Madagascar" },
+  malawi: { nl: "Malawi", en: "Malawi" },
+  mali: { nl: "Mali", en: "Mali" },
+  mauritanie: { nl: "Mauritanië", en: "Mauritania" },
+  "mongolie-2": { nl: "Mongolië", en: "Mongolia" },
+  mozambique: { nl: "Mozambique", en: "Mozambique" },
+  namibie: { nl: "Namibië", en: "Namibia" },
+  niger: { nl: "Niger", en: "Niger" },
+  nigeria: { nl: "Nigeria", en: "Nigeria" },
+  nepal: { nl: "Nepal", en: "Nepal" },
+  oman: { nl: "Oman", en: "Oman" },
+  ouganda: { nl: "Oeganda", en: "Uganda" },
+  ouzbekistan: { nl: "Oezbekistan", en: "Uzbekistan" },
+  pakistan: { nl: "Pakistan", en: "Pakistan" },
+  "papouasie-nouvelle-guinee": { nl: "Papoea-Nieuw-Guinea", en: "Papua New Guinea" },
+  qatar: { nl: "Qatar", en: "Qatar" },
+  russie: { nl: "Rusland", en: "Russia" },
+  rwanda: { nl: "Rwanda", en: "Rwanda" },
+  "republique-centrafricaine": { nl: "Centraal-Afrikaanse Republiek", en: "Central African Republic" },
+  "sao-tome-et-principe": { nl: "Sao Tomé en Principe", en: "São Tomé and Príncipe" },
+  "sierra-leone": { nl: "Sierra Leone", en: "Sierra Leone" },
+  soudan: { nl: "Soedan", en: "Sudan" },
+  "sud-soudan": { nl: "Zuid-Soedan", en: "South Sudan" },
+  suriname: { nl: "Suriname", en: "Suriname" },
+  tadjikistan: { nl: "Tadzjikistan", en: "Tajikistan" },
+  tanzanie: { nl: "Tanzania", en: "Tanzania" },
+  tchad: { nl: "Tsjaad", en: "Chad" },
+  thailande: { nl: "Thailand", en: "Thailand" },
+  togo: { nl: "Togo", en: "Togo" },
+  turkmenistan: { nl: "Turkmenistan", en: "Turkmenistan" },
+  vietnam: { nl: "Vietnam", en: "Vietnam" },
+  yemen: { nl: "Jemen", en: "Yemen" },
+  zambie: { nl: "Zambia", en: "Zambia" },
+  zimbabwe: { nl: "Zimbabwe", en: "Zimbabwe" },
+  "emirats-arabes-unis": { nl: "Verenigde Arabische Emiraten", en: "United Arab Emirates" },
+  erythree: { nl: "Eritrea", en: "Eritrea" },
+  ethiopie: { nl: "Ethiopië", en: "Ethiopia" },
+};
+
+/** Nom du pays dans la langue voulue ; repli sur le nom FR fourni. */
+export function nomPaysLoc(slug: string, nomFr: string, lang: Locale): string {
+  if (lang === "fr") return nomFr;
+  return PAYS_NOMS[slug]?.[lang] ?? nomFr;
+}
