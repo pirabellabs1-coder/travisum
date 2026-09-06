@@ -68,7 +68,7 @@ export default function EnteteV3({
 
   return (
     <header className={`${sticky ? "sticky" : "fixed"} top-0 inset-x-0 z-50 bg-primary border-b border-white/10`}>
-      <div className="relative h-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex items-center gap-6">
+      <div className="h-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex min-[1081px]:grid min-[1081px]:grid-cols-[1fr_auto_1fr] items-center justify-between gap-4">
         <a
           href={L("/")}
           className="flex items-center gap-1.5 text-white text-[16px] font-semibold tracking-[0.22em] shrink-0"
@@ -79,12 +79,12 @@ export default function EnteteV3({
           <span className="w-[5px] h-[5px] rounded-full bg-tertiary-fixed-dim mt-0.5" aria-hidden="true" />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2" aria-label="Navigation">
+        <nav className="hidden min-[1081px]:flex items-center gap-8 min-[1081px]:justify-self-center" aria-label="Navigation">
           {items.map((it) => (
             <a
               key={it.label}
               href={L(it.href)}
-              className="group relative text-[14px] text-white/85 hover:text-white transition-colors py-1"
+              className="group relative text-[14px] text-white/85 hover:text-white transition-colors py-1 whitespace-nowrap"
             >
               {it.label}
               <span className="pointer-events-none absolute left-0 -bottom-0.5 h-px w-0 bg-tertiary-fixed-dim transition-all duration-200 group-hover:w-full" />
@@ -92,7 +92,7 @@ export default function EnteteV3({
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-3 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4 min-[1081px]:justify-self-end">
           <div className="flex bg-white/10 rounded-md p-[3px] gap-[2px]" role="group" aria-label="Langue">
             {LOCALES.map((l) => (
               <a
@@ -121,7 +121,7 @@ export default function EnteteV3({
           </a>
 
           <button
-            className="lg:hidden w-10 h-10 -mr-2 flex flex-col items-center justify-center gap-[5px]"
+            className="min-[1081px]:hidden w-10 h-10 -mr-2 flex flex-col items-center justify-center gap-[5px]"
             onClick={() => setOuvert((v) => !v)}
             aria-expanded={ouvert}
             aria-label="Menu"
@@ -135,7 +135,7 @@ export default function EnteteV3({
 
       {/* Menu mobile */}
       {ouvert && (
-        <div className="lg:hidden border-t border-white/10 bg-primary px-margin-mobile pb-6 pt-2">
+        <div className="min-[1081px]:hidden border-t border-white/10 bg-primary px-margin-mobile pb-6 pt-2">
           <nav className="flex flex-col" aria-label="Navigation (mobile)">
             {items.map((it) => (
               <a

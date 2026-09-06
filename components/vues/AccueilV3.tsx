@@ -55,14 +55,14 @@ section{padding:112px 0}
 
 header{position:sticky;top:0;z-index:60;background:var(--night);border-bottom:1px solid var(--hair-d)}
 header.stuck{box-shadow:0 8px 30px rgba(0,0,0,.3)}
-.nav{display:flex;align-items:center;gap:30px;height:74px;position:relative}
-.logo{font:600 16px Outfit;letter-spacing:.22em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:6px}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:20px;height:74px}
+.logo{font:600 16px Outfit;letter-spacing:.22em;color:#fff;text-decoration:none;display:flex;align-items:center;gap:6px;justify-self:start}
 .logo i{width:5px;height:5px;border-radius:50%;background:var(--gold);margin-top:2px}
-.nav ul{display:flex;gap:24px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
-.nav a.lk{color:rgba(255,255,255,.82);text-decoration:none;font-size:14.5px;position:relative;padding:4px 0}
+.nav ul{display:flex;gap:24px;list-style:none;justify-self:center;margin:0;padding:0}
+.nav a.lk{color:rgba(255,255,255,.82);text-decoration:none;font-size:14.5px;position:relative;padding:4px 0;white-space:nowrap}
 .nav a.lk::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:width .22s}
 .nav a.lk:hover{color:#fff}.nav a.lk:hover::after{width:100%}
-.spacer{flex:1}
+.navctrl{display:flex;align-items:center;gap:16px;justify-self:end}
 .lang{display:flex;background:rgba(255,255,255,.08);border-radius:7px;padding:3px;gap:2px}
 .lang button{border:0;background:transparent;color:rgba(255,255,255,.6);font:600 11.5px/1 Inter;letter-spacing:.06em;padding:7px 11px;border-radius:5px;cursor:pointer}
 .lang button[aria-pressed="true"]{background:rgba(255,255,255,.92);color:var(--night)}
@@ -240,21 +240,22 @@ footer{background:var(--night);color:#fff;padding:74px 0 32px}
   .cards3,.steps{grid-template-columns:1fr 1fr;gap:20px}
   .dest{grid-template-columns:repeat(3,1fr)}
   .fgrid{grid-template-columns:1fr 1fr 1fr}
-}
-@media(max-width:720px){
-  section{padding:70px 0}.wrap,.wide,.narrow{padding:0 20px}
-  .nav ul,.spacer{display:none}
-  .nav{justify-content:space-between;gap:10px;height:62px}
-  .burger{display:block;order:3}.lang{order:2;margin-left:auto}
-  .nav .btn{display:none}
-  #hd.open .nav ul{display:flex;flex-direction:column;gap:0;position:fixed;top:62px;left:0;right:0;transform:none;background:var(--night-2);border-top:1px solid rgba(255,255,255,.12);padding:6px 0;box-shadow:0 24px 44px rgba(0,0,0,.45);max-height:calc(100dvh - 62px);overflow:auto;z-index:59}
+  /* En-tête : menu dense replié en burger avant tout chevauchement */
+  .nav{display:flex;justify-content:space-between;column-gap:12px;height:62px}
+  .nav ul{display:none}
+  .navctrl{gap:12px}
+  .burger{display:block}
+  #hd.open .nav ul{display:flex;flex-direction:column;gap:0;position:fixed;top:62px;left:0;right:0;width:100%;transform:none;background:var(--night-2);border-top:1px solid rgba(255,255,255,.12);padding:6px 0;box-shadow:0 24px 44px rgba(0,0,0,.45);max-height:calc(100dvh - 62px);overflow:auto;z-index:59}
   #hd.open .nav ul li{width:100%}
   #hd.open .nav a.lk{display:block;padding:16px 20px;font-size:16px;color:#fff}
   #hd.open .nav a.lk::after{display:none}
+}
+@media(max-width:720px){
+  section{padding:70px 0}.wrap,.wide,.narrow{padding:0 20px}
+  .navctrl .btn{display:none}
   .cards3,.steps,.facts,.fgrid{grid-template-columns:1fr}
   .facts>div{padding:0;border-left:0}
   .dest{grid-template-columns:1fr 1fr}
-  .ptable{display:block;overflow-x:auto}
   body{padding-bottom:68px}
   .mbar{display:flex}
 }
@@ -279,21 +280,22 @@ const BODY = String.raw`
       <li><a class="lk" href="/#steps" data-i="nav4">Comment ça marche</a></li>
       <li><a class="lk" href="/contact/" data-i="navContact">Contact</a></li>
     </ul>
-    <div class="spacer"></div>
-    <div class="lang" role="group" aria-label="Langue">
-      <button data-l="fr" aria-pressed="true">FR</button>
-      <button data-l="nl" aria-pressed="false">NL</button>
-      <button data-l="en" aria-pressed="false">EN</button>
+    <div class="navctrl">
+      <div class="lang" role="group" aria-label="Langue">
+        <button data-l="fr" aria-pressed="true">FR</button>
+        <button data-l="nl" aria-pressed="false">NL</button>
+        <button data-l="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="/contact/" class="btn btn-p"><span data-i="navcta">Obtenir un devis</span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-    <a href="/contact/" class="btn btn-p"><span data-i="navcta">Obtenir un devis</span></a>
-    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="dark hero" id="hero">
   <div class="wrap hgrid">
     <div>
-      <div class="eb" data-i="heroEb">Bruxelles · Démarches internationales</div>
+      <div class="eb" data-i="heroEb">Démarches internationales</div>
       <h1><span data-i="h1a">Vos démarches internationales,</span><span class="g" data-i="h1b">sans les complications.</span></h1>
       <p class="sub" data-i="heroSub">Visa, traduction et légalisation de documents. Décrivez votre situation en une phrase : l'assistant identifie la démarche, nos experts la vérifient.</p>
       <div class="cta">
@@ -477,7 +479,7 @@ const LANGS = ["Néerlandais", "Anglais", "Arabe", "Espagnol", "Mandarin", "Russ
 
 const T: Record<string, any> = {
   fr: { nav1: "Visa", nav2: "Traduction", nav3: "Légalisation", nav4: "Comment ça marche", nav5: "À propos", nav6: "Tarifs", navcta: "Obtenir un devis",
-    heroEb: "Bruxelles · Démarches internationales", h1a: "Vos démarches internationales,", h1b: "sans les complications.",
+    heroEb: "Démarches internationales", h1a: "Vos démarches internationales,", h1b: "sans les complications.",
     heroSub: "Visa, traduction et légalisation de documents. Décrivez votre situation en une phrase : l'assistant identifie la démarche, nos experts la vérifient.",
     heroC1: "Demander un devis", heroC2: "Écrire un e-mail",
     heroPriv: "Vos documents sont traités de façon confidentielle, consultés uniquement par l'équipe en charge du dossier, et les copies sont supprimées après traitement.",
@@ -550,7 +552,7 @@ const T: Record<string, any> = {
         btn: "Lancer ma démarche" }] },
 
   en: { nav1: "Visas", nav2: "Translation", nav3: "Legalisation", nav4: "How it works", nav5: "About", nav6: "Pricing", navcta: "Get a quote",
-    heroEb: "Brussels · International formalities", h1a: "Your international paperwork,", h1b: "without the complications.",
+    heroEb: "International formalities", h1a: "Your international paperwork,", h1b: "without the complications.",
     heroSub: "Visas, document translation and legalisation. Describe your situation in one sentence: the assistant identifies the procedure, our experts verify it.",
     heroC1: "Get a quote", heroC2: "Send an email",
     heroPriv: "Your documents are handled confidentially, seen only by the team handling your file, and copies are deleted after processing.",
@@ -623,7 +625,7 @@ const T: Record<string, any> = {
         btn: "Start my procedure" }] },
 
   nl: { nav1: "Visum", nav2: "Vertaling", nav3: "Legalisatie", nav4: "Hoe het werkt", nav5: "Over ons", nav6: "Tarieven", navcta: "Offerte aanvragen",
-    heroEb: "Brussel · Internationale formaliteiten", h1a: "Uw internationale formaliteiten,", h1b: "zonder de rompslomp.",
+    heroEb: "Internationale formaliteiten", h1a: "Uw internationale formaliteiten,", h1b: "zonder de rompslomp.",
     heroSub: "Visa, vertaling en legalisatie van documenten. Beschrijf uw situatie in één zin: de assistent bepaalt de procedure, onze experts controleren ze.",
     heroC1: "Offerte aanvragen", heroC2: "Een e-mail sturen",
     heroPriv: "Uw documenten worden vertrouwelijk behandeld, enkel ingekeken door het team dat uw dossier behandelt, en de kopieën worden na behandeling verwijderd.",
