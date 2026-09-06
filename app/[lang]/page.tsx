@@ -11,13 +11,29 @@ export function generateStaticParams() {
   return LOCALES.filter((l) => l !== "fr").map((lang) => ({ lang }));
 }
 
+const META: Record<string, { title: string; description: string }> = {
+  nl: {
+    title: "Beëdigde vertaling, legalisatie en visum",
+    description:
+      "Travisum, kantoor voor beëdigde vertalingen: beëdigde vertalingen, legalisaties, " +
+      "apostilles en reisvisa.",
+  },
+  en: {
+    title: "Sworn translation, legalisation and visa",
+    description:
+      "Travisum, sworn translation office: sworn translations, legalisations, apostilles " +
+      "and travel visas.",
+  },
+};
+
 export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
   const lang = (estLocale(params.lang) ? params.lang : "fr") as Locale;
+  const m = META[lang];
   return {
-    title: "Traduction assermentée, légalisation et visa",
-    description:
-      "Travisum, bureau de traduction jurée : traductions assermentées, légalisations, " +
-      "apostilles et visas de voyage.",
+    title: m ? m.title : "Traduction assermentée, légalisation et visa",
+    description: m
+      ? m.description
+      : "Travisum, bureau de traduction jurée : traductions assermentées, légalisations, apostilles et visas de voyage.",
     alternates: { ...alternates("/"), canonical: lien(lang, "/") },
   };
 }

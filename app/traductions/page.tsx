@@ -3,7 +3,7 @@ import { alternates } from "@/lib/i18n";
 import { TraductionsVue } from "@/components/vues/Traductions";
 
 export const metadata: Metadata = {
-  title: "Traductions assermentées, jurées et libres à Bruxelles",
+  title: "Traductions assermentées, jurées et libres",
   description:
     "Traductions assermentées reconnues par les autorités belges et internationales. " +
     "Actes d'état civil, diplômes, jugements, statuts de société. Estimation immédiate.",

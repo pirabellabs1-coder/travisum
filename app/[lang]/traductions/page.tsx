@@ -6,9 +6,28 @@ export function generateStaticParams() {
   return LOCALES.filter((l) => l !== "fr").map((lang) => ({ lang }));
 }
 
+const META: Record<string, { title: string; description: string }> = {
+  nl: {
+    title: "Beëdigde, gezworen en vrije vertalingen",
+    description:
+      "Beëdigde vertalingen erkend door de Belgische en internationale autoriteiten. " +
+      "Akten van de burgerlijke stand, diploma's, vonnissen, statuten van vennootschappen. Onmiddellijke inschatting.",
+  },
+  en: {
+    title: "Sworn, certified and standard translations",
+    description:
+      "Sworn translations recognised by Belgian and international authorities. " +
+      "Civil-status records, diplomas, judgments, company articles. Immediate estimate.",
+  },
+};
+
 export function generateMetadata({ params }: { params: { lang: string } }): Metadata {
   const lang = (estLocale(params.lang) ? params.lang : "fr") as Locale;
-  return { alternates: { ...alternates("/traductions/"), canonical: lien(lang, "/traductions/") } };
+  const m = META[lang];
+  return {
+    ...(m ? { title: m.title, description: m.description } : {}),
+    alternates: { ...alternates("/traductions/"), canonical: lien(lang, "/traductions/") },
+  };
 }
 
 export default function Localise({ params }: { params: { lang: string } }) {
