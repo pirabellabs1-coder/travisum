@@ -54,8 +54,16 @@ export default function PiedV3({ lang = "fr" }: { lang?: Locale }) {
             <p>
               {CONTACT.code_postal} {CONTACT.ville}, {lang === "nl" ? "België" : lang === "en" ? "Belgium" : "Belgique"}
             </p>
-            <p className="hi">{CONTACT.email}</p>
-            <p className="bce">{d.bce}</p>
+            <p className="hi">
+              <a href={`mailto:${CONTACT.email}`} style={{ color: "inherit", textDecoration: "none" }}>
+                {CONTACT.email}
+              </a>
+            </p>
+            <p className="hi">
+              <a href={`tel:${CONTACT.telephone_tel}`} style={{ color: "inherit", textDecoration: "none" }}>
+                {CONTACT.telephone}
+              </a>
+            </p>
           </div>
           <div className="fcol">
             <h4>{d.services}</h4>

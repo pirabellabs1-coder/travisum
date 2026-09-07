@@ -9,6 +9,7 @@
  */
 
 import { useEffect, useState } from "react";
+import { CONTACT } from "@/lib/donnees";
 import { LOCALES, lien, type Locale } from "@/lib/i18n";
 
 const OUTFIT = { fontFamily: "Outfit, sans-serif" } as const;
@@ -46,6 +47,18 @@ const CTA: Record<Locale, string> = {
   en: "Get a quote",
 };
 
+const HR: Record<Locale, string> = {
+  fr: "Lun–ven, 9 h–17 h",
+  nl: "Ma–vr, 9–17 u",
+  en: "Mon–Fri, 9am–5pm",
+};
+
+const IcTel = (
+  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z" />
+  </svg>
+);
+
 export default function EnteteV3({
   lang = "fr",
   cheminFr = "/",
@@ -67,6 +80,16 @@ export default function EnteteV3({
   }, [ouvert]);
 
   return (
+    <>
+    <div className="bg-primary-container border-b border-white/10">
+      <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-[38px] flex items-center justify-center min-[600px]:justify-end gap-[18px] text-[12.5px] font-semibold">
+        <a href={`tel:${CONTACT.telephone_tel}`} className="inline-flex items-center gap-1.5 text-[#C9A96A] hover:text-[#DFC38C] transition-colors">
+          {IcTel}{CONTACT.telephone}
+        </a>
+        <a href={`mailto:${CONTACT.email}`} className="hidden min-[600px]:inline text-[#C9A96A] hover:text-[#DFC38C] transition-colors">{CONTACT.email}</a>
+        <span className="hidden min-[600px]:inline text-white/55 font-medium">{HR[lang] ?? HR.fr}</span>
+      </div>
+    </div>
     <header className={`${sticky ? "sticky" : "fixed"} top-0 inset-x-0 z-50 bg-primary border-b border-white/10`}>
       <div className="h-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex min-[1081px]:grid min-[1081px]:grid-cols-[1fr_auto_1fr] items-center justify-between gap-4">
         <a
@@ -160,5 +183,6 @@ export default function EnteteV3({
         </div>
       )}
     </header>
+    </>
   );
 }

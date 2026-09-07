@@ -53,6 +53,14 @@ section{padding:112px 0}
 .btn-out-d:hover{border-color:#c3ccd4}
 .ar{transition:transform .18s}.btn:hover .ar{transform:translateX(3px)}
 
+.topbar{background:var(--night-2);border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar .tb{display:flex;justify-content:flex-end;align-items:center;gap:18px;height:38px;font:600 12.5px/1 Inter}
+.topbar a{color:var(--gold);text-decoration:none;transition:color .15s}
+.topbar a:hover{color:var(--gold-l)}
+.topbar .tb-tel{display:inline-flex;align-items:center;gap:6px}
+.topbar .tb-hr{color:rgba(255,255,255,.55);font-weight:500}
+@media(max-width:600px){.topbar .tb{justify-content:center;gap:14px}.topbar .tb-hr,.topbar .tb-mail{display:none}}
+.fbrand .hi a{color:inherit;text-decoration:none}.fbrand .hi a:hover{color:var(--gold)}
 header{position:sticky;top:0;z-index:60;background:var(--night);border-bottom:1px solid var(--hair-d)}
 header.stuck{box-shadow:0 8px 30px rgba(0,0,0,.3)}
 .nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:20px;height:74px}
@@ -269,6 +277,13 @@ footer{background:var(--night);color:#fff;padding:74px 0 32px}
 `;
 
 const BODY = String.raw`
+<div class="topbar">
+  <div class="wrap tb">
+    <a class="tb-tel" href="tel:+3226420025"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>02 642 00 25</a>
+    <a class="tb-mail" href="mailto:info@travisum.com">info@travisum.com</a>
+    <span class="tb-hr" data-i="tbHr">Lun–ven, 9 h–17 h</span>
+  </div>
+</div>
 <header id="hd">
   <div class="wrap nav">
     <a href="/" class="logo">TRAVISUM<i></i></a>
@@ -445,8 +460,8 @@ const BODY = String.raw`
         <a href="/" class="logo">TRAVISUM<i></i></a>
         <p>367, avenue Louise</p>
         <p data-i="fAddr">1050 Bruxelles, Belgique</p>
-        <p class="hi">info@travisum.com</p>
-        <p class="bce" data-i="fBce">Numéro d'entreprise (BCE) : [à compléter]</p>
+        <p class="hi"><a href="mailto:info@travisum.com">info@travisum.com</a></p>
+        <p class="hi"><a href="tel:+3226420025">02 642 00 25</a></p>
       </div>
       <div class="fcol"><h4 data-i="fS">Services</h4>
         <a href="/visas/" data-i="nav1">Visa</a><a href="/e-visa/" data-i="navEvisa">e-Visa</a><a href="/traductions/" data-i="nav2">Traduction</a><a href="/legalisations/" data-i="nav3">Légalisation</a></div>
@@ -517,7 +532,7 @@ const T: Record<string, any> = {
     ggBtn: "Voir nos avis Google", ggNum: "4,5 M", ggLab: "vues cumulées sur notre fiche Google",
     fH: "Vous ne savez pas par où commencer ?", fP: "Expliquez-nous votre situation. Nous vous indiquons la prochaine étape.",
     fC1: "Commencer avec l'assistant", fC2: "info@travisum.com",
-    fAddr: "1050 Bruxelles, Belgique", fBce: "Numéro d'entreprise (BCE) : [à compléter]", fS: "Services", fCt: "Contact",
+    fAddr: "1050 Bruxelles, Belgique", fBce: "Numéro d'entreprise (BCE) : [à compléter]", fS: "Services", fCt: "Contact", tbHr: "Lun–ven, 9 h–17 h",
     fL: "Informations légales", fL1: "Mentions légales", fL2: "Politique de confidentialité", fL3: "Conditions générales", fL4: "Cookies",
     fH2: "Horaires", fHr: "Du lundi au vendredi<br>9h00 – 17h00, sans interruption",
     fCp: "© 2026 Travisum. Tous droits réservés.", fDis: "Travisum n'est pas une autorité consulaire. Les informations fournies sont indicatives.",
@@ -590,7 +605,7 @@ const T: Record<string, any> = {
     ggBtn: "See our Google reviews", ggNum: "4.5 M", ggLab: "cumulative views on our Google profile",
     fH: "Not sure where to start?", fP: "Just tell us your situation. We'll tell you the next step.",
     fC1: "Start with the assistant", fC2: "info@travisum.com",
-    fAddr: "1050 Brussels, Belgium", fBce: "Company number (BCE): [to be completed]", fS: "Services", fCt: "Contact",
+    fAddr: "1050 Brussels, Belgium", fBce: "Company number (BCE): [to be completed]", fS: "Services", fCt: "Contact", tbHr: "Mon–Fri, 9am–5pm",
     fL: "Legal information", fL1: "Legal notice", fL2: "Privacy policy", fL3: "Terms and conditions", fL4: "Cookies",
     fH2: "Opening hours", fHr: "Monday to Friday<br>9:00 – 17:00, no lunch break",
     fCp: "© 2026 Travisum. All rights reserved.", fDis: "Travisum is not a consular authority. The information provided is indicative.",
@@ -663,7 +678,7 @@ const T: Record<string, any> = {
     ggBtn: "Onze Google-beoordelingen bekijken", ggNum: "4,5 mln", ggLab: "gecumuleerde weergaven op onze Google-pagina",
     fH: "Weet u niet waar te beginnen?", fP: "Leg ons uw situatie uit. Wij vertellen u de volgende stap.",
     fC1: "Beginnen met de assistent", fC2: "info@travisum.com",
-    fAddr: "1050 Brussel, België", fBce: "Ondernemingsnummer (KBO): [aan te vullen]", fS: "Diensten", fCt: "Contact",
+    fAddr: "1050 Brussel, België", fBce: "Ondernemingsnummer (KBO): [aan te vullen]", fS: "Diensten", fCt: "Contact", tbHr: "Ma–vr, 9–17 u",
     fL: "Juridische informatie", fL1: "Wettelijke vermeldingen", fL2: "Privacybeleid", fL3: "Algemene voorwaarden", fL4: "Cookies",
     fH2: "Openingsuren", fHr: "Van maandag tot vrijdag<br>9u00 – 17u00, doorlopend",
     fCp: "© 2026 Travisum. Alle rechten voorbehouden.", fDis: "Travisum is geen consulaire overheid. De verstrekte informatie is indicatief.",

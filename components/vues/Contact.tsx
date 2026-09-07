@@ -108,6 +108,7 @@ export function ContactVue({ lang = "fr", cheminFr = "/contact/" }: { lang?: Loc
             <h1>{d.h1}</h1>
             <p className="cx-sub">{d.sub}</p>
             <div className="cx-chips">
+              <a href={`tel:${CONTACT.telephone_tel}`}>{IcPhone} {CONTACT.telephone}</a>
               <a href={`mailto:${CONTACT.email}`}>{IcMail} {CONTACT.email}</a>
             </div>
           </div>
@@ -129,6 +130,7 @@ export function ContactVue({ lang = "fr", cheminFr = "/contact/" }: { lang?: Loc
                 <p className="cx-raison">{CONTACT.raison}</p>
                 <ul className="cx-list">
                   <li>{IcPin}<span>{CONTACT.rue}<br />{CONTACT.code_postal} {CONTACT.ville}, {CONTACT.pays}</span></li>
+                  <li>{IcPhone}<a href={`tel:${CONTACT.telephone_tel}`}>{CONTACT.telephone}</a></li>
                   <li>{IcMail}<a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
                   <li>{IcClock}<span><b>{d.hours}</b><br />{CONTACT.horaires}</span></li>
                 </ul>
