@@ -554,7 +554,7 @@ const CSS = String.raw`
 .vz-lead{color:rgba(255,255,255,.86);font-size:17.5px;line-height:1.6;max-width:44ch;margin-bottom:22px}
 .vz-reassure{display:flex;align-items:flex-start;gap:10px;color:rgba(255,255,255,.92);font-size:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:13px 16px;max-width:46ch;margin-bottom:34px}
 .vz-reassure svg{width:18px;height:18px;flex:none;color:var(--or)}
-.vz-hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+.vz-hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:36px}
 .vz-badges{list-style:none;display:flex;flex-wrap:wrap;gap:16px 26px;padding:26px 0 0;margin:0;border-top:1px solid rgba(255,255,255,.12)}
 .vz-badges li{display:flex;align-items:center;gap:8px;font-size:13.5px;color:rgba(255,255,255,.9)}
 .vz-badges svg{width:18px;height:18px;color:var(--or)}
@@ -644,7 +644,7 @@ const CSS = String.raw`
 .vz-nf-txt p{color:var(--ink2);font-size:15px}
 .vz-nf-mail{margin-top:8px!important}
 .vz-nf-mail a{color:var(--bleu);font-weight:600;text-decoration:underline}
-.vz-nf-cta{display:flex;flex-direction:column;gap:10px;flex:none}
+.vz-nf-cta{display:flex;flex-direction:column;gap:16px;flex:none}
 
 /* process */
 .vz-steps{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;position:relative}
@@ -673,7 +673,7 @@ const CSS = String.raw`
 .vz-clist li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:var(--ink)}
 .vz-clist svg{width:20px;height:20px;color:var(--bleu);flex:none;margin-top:2px}
 .vz-clist a:hover{color:var(--bleu);text-decoration:underline}
-.vz-ccta{display:flex;gap:10px;flex-wrap:wrap}
+.vz-ccta{display:flex;gap:16px;flex-wrap:wrap}
 .vz-map{border:1px solid var(--bord);border-radius:16px;overflow:hidden;min-height:320px}
 .vz-map iframe{display:block;width:100%;height:100%;min-height:320px;border:0}
 
@@ -681,7 +681,7 @@ const CSS = String.raw`
 .vz-final{background:linear-gradient(135deg,#16314A,#0B1B2E);color:#fff;padding:70px 0;text-align:center}
 .vz-final h2{color:#fff;font-size:clamp(24px,3.2vw,34px);margin-bottom:14px}
 .vz-final>.vz-wrap>p{color:rgba(255,255,255,.85);font-size:16.5px;max-width:60ch;margin:0 auto 26px}
-.vz-final-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.vz-final-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .vz-final-note{color:rgba(255,255,255,.6)!important;font-size:12.5px;margin-top:22px!important;max-width:52ch;margin-left:auto;margin-right:auto}
 
 /* responsive */

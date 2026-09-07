@@ -114,7 +114,7 @@ export default function EnteteV3({
 
           <a
             href={L("/contact/")}
-            className="hidden sm:inline-flex items-center h-[44px] px-[20px] rounded-sm bg-tertiary-fixed-dim text-primary text-[13.5px] font-semibold hover:bg-white transition-colors whitespace-nowrap"
+            className="hidden sm:inline-flex items-center h-[44px] px-[20px] rounded-sm bg-[#C9A96A] text-[#0B1B2E] text-[13.5px] font-semibold hover:bg-[#DFC38C] hover:-translate-y-px transition whitespace-nowrap"
             style={OUTFIT}
           >
             {CTA[lang] ?? CTA.fr}
@@ -152,7 +152,7 @@ export default function EnteteV3({
           <a
             href={L("/contact/")}
             onClick={() => setOuvert(false)}
-            className="mt-5 inline-flex items-center justify-center w-full h-[46px] rounded-sm bg-tertiary-fixed-dim text-primary text-[14px] font-semibold"
+            className="mt-5 inline-flex items-center justify-center w-full h-[46px] rounded-sm bg-[#C9A96A] text-[#0B1B2E] text-[14px] font-semibold hover:bg-[#DFC38C] transition-colors"
             style={OUTFIT}
           >
             {CTA[lang] ?? CTA.fr}

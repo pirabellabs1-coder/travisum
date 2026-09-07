@@ -165,7 +165,7 @@ header.stuck{box-shadow:0 8px 30px rgba(0,0,0,.3)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .step{padding-top:20px;border-top:1px solid var(--hair);position:relative}
 .step::before{content:"";position:absolute;top:-1px;left:0;width:34px;height:2px;background:var(--gold)}
-.step h3{font:600 15.5px Inter;letter-spacing:0;margin-bottom:8px;line-height:1.45}
+.step h3{font:600 15.5px Inter;letter-spacing:0;margin-bottom:8px;line-height:1.45;min-height:2.9em}
 .step p{font-size:13.5px;color:var(--muted);line-height:1.6}
 
 /* MAILLAGE */
@@ -406,13 +406,13 @@ const BODY = String.raw`
     <div class="gg">
       <div>
         <div class="eb" data-i="ggEb">Avis clients</div>
-        <h2 data-i="ggH">Notre fiche Google est déjà là. Le site va enfin s'y connecter.</h2>
-        <p data-i="ggP">Les avis publiés sur la fiche Google Business Profile de Travisum Louise Office s'afficheront ici automatiquement, avec la note et le nombre d'avis réels. Aucun témoignage ne sera rédigé.</p>
-        <a class="btn btn-out-d" href="https://maps.app.goo.gl/avsW7i5xRo2qmt2s5" target="_blank" rel="noopener noreferrer"><span data-i="ggBtn">Voir la fiche Google</span><span class="ar">→</span></a>
+        <h2 data-i="ggH">Des avis authentiques, vérifiables sur Google.</h2>
+        <p data-i="ggP">Nos clients partagent leur expérience directement sur notre fiche Google Business Profile. Vous y retrouvez notre note et l'ensemble des avis, publiés en toute transparence — sans aucun témoignage rédigé par nos soins.</p>
+        <a class="btn btn-out-d" href="https://maps.app.goo.gl/avsW7i5xRo2qmt2s5" target="_blank" rel="noopener noreferrer"><span data-i="ggBtn">Voir nos avis Google</span><span class="ar">→</span></a>
       </div>
       <div class="ggbox">
         <b data-i="ggNum">4,5 M</b>
-        <span data-i="ggLab">vues cumulées sur la fiche Google Local Guide du bureau</span>
+        <span data-i="ggLab">vues cumulées sur notre fiche Google</span>
       </div>
     </div>
   </div>
@@ -512,9 +512,9 @@ const T: Record<string, any> = {
     tmEb: "L'équipe", tmH: "Derrière chaque dossier, une équipe.",
     tmP: "Les technologies nous permettent d'aller plus vite. Nos experts restent au cœur de chaque dossier : ce sont eux qui vérifient, qui déposent et qui répondent au téléphone.",
     phH: "Photo de l'équipe Travisum à intégrer", phP: "Photo professionnelle réelle, prise au bureau de l'avenue Louise. Format recommandé : 1600 × 1000 px.",
-    ggEb: "Avis clients", ggH: "Notre fiche Google est déjà là. Le site va enfin s'y connecter.",
-    ggP: "Les avis publiés sur la fiche Google Business Profile de Travisum Louise Office s'afficheront ici automatiquement, avec la note et le nombre d'avis réels. Aucun témoignage ne sera rédigé.",
-    ggBtn: "Voir la fiche Google", ggNum: "4,5 M", ggLab: "vues cumulées sur la fiche Google Local Guide du bureau",
+    ggEb: "Avis clients", ggH: "Des avis authentiques, vérifiables sur Google.",
+    ggP: "Nos clients partagent leur expérience directement sur notre fiche Google Business Profile. Vous y retrouvez notre note et l'ensemble des avis, publiés en toute transparence — sans aucun témoignage rédigé par nos soins.",
+    ggBtn: "Voir nos avis Google", ggNum: "4,5 M", ggLab: "vues cumulées sur notre fiche Google",
     fH: "Vous ne savez pas par où commencer ?", fP: "Expliquez-nous votre situation. Nous vous indiquons la prochaine étape.",
     fC1: "Commencer avec l'assistant", fC2: "info@travisum.com",
     fAddr: "1050 Bruxelles, Belgique", fBce: "Numéro d'entreprise (BCE) : [à compléter]", fS: "Services", fCt: "Contact",
@@ -585,9 +585,9 @@ const T: Record<string, any> = {
     tmEb: "The team", tmH: "Behind every file, a team.",
     tmP: "Technology lets us move faster. Our experts remain at the heart of every file: they check, they submit, and they answer the phone.",
     phH: "Travisum team photo to be added", phP: "Real professional photograph, taken at the avenue Louise office. Recommended format: 1600 × 1000 px.",
-    ggEb: "Client reviews", ggH: "Our Google profile already exists. The site will finally connect to it.",
-    ggP: "Reviews published on the Google Business Profile of Travisum Louise Office will appear here automatically, with the real rating and review count. No testimonial will be written.",
-    ggBtn: "View the Google profile", ggNum: "4.5 M", ggLab: "cumulative views on the office's Google Local Guide profile",
+    ggEb: "Client reviews", ggH: "Genuine reviews, verifiable on Google.",
+    ggP: "Our clients share their experience directly on our Google Business Profile. You'll find our rating and every review, published with full transparency — with no testimonials written by us.",
+    ggBtn: "See our Google reviews", ggNum: "4.5 M", ggLab: "cumulative views on our Google profile",
     fH: "Not sure where to start?", fP: "Just tell us your situation. We'll tell you the next step.",
     fC1: "Start with the assistant", fC2: "info@travisum.com",
     fAddr: "1050 Brussels, Belgium", fBce: "Company number (BCE): [to be completed]", fS: "Services", fCt: "Contact",
@@ -658,9 +658,9 @@ const T: Record<string, any> = {
     tmEb: "Het team", tmH: "Achter elk dossier staat een team.",
     tmP: "Technologie laat ons sneller werken. Onze experts blijven de kern van elk dossier: zij controleren, zij dienen in en zij nemen de telefoon op.",
     phH: "Foto van het Travisum-team toe te voegen", phP: "Echte professionele foto, genomen op het kantoor aan de Louizalaan. Aanbevolen formaat: 1600 × 1000 px.",
-    ggEb: "Klantbeoordelingen", ggH: "Onze Google-pagina bestaat al. De website gaat er eindelijk mee verbinden.",
-    ggP: "De beoordelingen op het Google Business Profile van Travisum Louise Office verschijnen hier automatisch, met de echte score en het echte aantal. Er wordt geen enkele getuigenis geschreven.",
-    ggBtn: "De Google-pagina bekijken", ggNum: "4,5 mln", ggLab: "gecumuleerde weergaven op de Google Local Guide-pagina van het kantoor",
+    ggEb: "Klantbeoordelingen", ggH: "Echte beoordelingen, verifieerbaar op Google.",
+    ggP: "Onze klanten delen hun ervaring rechtstreeks op ons Google Business Profile. U vindt er onze score en alle beoordelingen, volledig transparant gepubliceerd — zonder door ons geschreven getuigenissen.",
+    ggBtn: "Onze Google-beoordelingen bekijken", ggNum: "4,5 mln", ggLab: "gecumuleerde weergaven op onze Google-pagina",
     fH: "Weet u niet waar te beginnen?", fP: "Leg ons uw situatie uit. Wij vertellen u de volgende stap.",
     fC1: "Beginnen met de assistent", fC2: "info@travisum.com",
     fAddr: "1050 Brussel, België", fBce: "Ondernemingsnummer (KBO): [aan te vullen]", fS: "Diensten", fCt: "Contact",
