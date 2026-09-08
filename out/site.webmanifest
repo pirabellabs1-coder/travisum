@@ -1,0 +1,15 @@
+{
+  "name": "Travisum Louise Office",
+  "short_name": "Travisum",
+  "description": "Traductions assermentées, légalisations et visas de voyage à Bruxelles.",
+  "lang": "fr-BE",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf9fb",
+  "theme_color": "#0b1f33",
+  "icons": [
+    { "src": "assets/img/favicon/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/favicon/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/img/logo-mark.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

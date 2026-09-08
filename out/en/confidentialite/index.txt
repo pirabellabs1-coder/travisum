@@ -1,0 +1,438 @@
+2:I[2223,["197","static/chunks/197-e6de0ae4dbed95c8.js","251","static/chunks/251-37805403308ee411.js","177","static/chunks/app/%5Blang%5D/confidentialite/page-ac814e8906c1ea15.js"],"SyncLangue"]
+4:I[8903,["197","static/chunks/197-e6de0ae4dbed95c8.js","251","static/chunks/251-37805403308ee411.js","177","static/chunks/app/%5Blang%5D/confidentialite/page-ac814e8906c1ea15.js"],"default"]
+5:I[7473,["197","static/chunks/197-e6de0ae4dbed95c8.js","251","static/chunks/251-37805403308ee411.js","177","static/chunks/app/%5Blang%5D/confidentialite/page-ac814e8906c1ea15.js"],"default"]
+6:I[8197,["197","static/chunks/197-e6de0ae4dbed95c8.js","251","static/chunks/251-37805403308ee411.js","177","static/chunks/app/%5Blang%5D/confidentialite/page-ac814e8906c1ea15.js"],"default"]
+7:I[4707,[],""]
+9:I[6423,[],""]
+a:I[1996,["185","static/chunks/app/layout-331912a804d304ba.js"],"default"]
+c:I[5778,["185","static/chunks/app/layout-331912a804d304ba.js"],"default"]
+3:T3afe,
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{
+  --night:#0B1B2E;--night-2:#0F2438;--night-3:#16314A;
+  --white:#fff;--tint:#F5F7F9;
+  --gold:#C9A96A;--gold-l:#DFC38C;--gold-d:#A8863F;
+  --blue:#2F7FF0;
+  --ink:#16202C;--muted:#6B7785;--muted-d:#93A3B5;
+  --hair:#E4E8EC;--hair-d:rgba(255,255,255,.10);
+  --r:12px;--rb:8px;--maxw:1200px;
+}
+.v3 *{box-sizing:border-box}
+.v3{font-family:Inter,system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.v3 h1,.v3 h2,.v3 h3,.v3 h4{font-family:Outfit,sans-serif;letter-spacing:-.025em;line-height:1.1;font-weight:600}
+.v3 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+.v3 .wide{max-width:1480px;margin:0 auto;padding:0 32px}
+.v3 .narrow{max-width:660px;margin:0 auto;padding:0 32px}
+.v3 section{padding:112px 0}
+.v3 .tint{background:var(--tint)}
+.v3 .dark{background:linear-gradient(168deg,var(--night) 0%,var(--night-2) 100%);color:#fff}
+.v3 .dark h2,.v3 .dark h3,.v3 .dark h4{color:#fff}
+
+.v3 .eb{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px}
+.v3 .eb::before{content:"";width:26px;height:1px;background:var(--gold);flex:none}
+.v3 .eb.ctr{justify-content:center}
+
+.v3 .btn{display:inline-flex;align-items:center;gap:9px;height:46px;padding:0 22px;border-radius:var(--rb);
+  font:600 14.5px Inter;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:.18s ease;white-space:nowrap}
+.v3 .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.v3 .btn-p{background:var(--gold);color:var(--night)}
+.v3 .btn-p:hover{background:var(--gold-l);transform:translateY(-1px)}
+.v3 .btn-out{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
+.v3 .btn-out:hover{background:rgba(255,255,255,.07)}
+.v3 .btn-out-d{background:#fff;color:var(--ink);border-color:var(--hair)}
+.v3 .btn-out-d:hover{border-color:#c3ccd4}
+.v3 .ar{transition:transform .18s}.v3 .btn:hover .ar{transform:translateX(3px)}
+
+/* HERO leger (pages internes) */
+.v3 .hero-lite{padding:56px 0 84px}
+.v3 .hgrid-lite{display:grid;grid-template-columns:1.5fr .9fr;gap:56px;align-items:center}
+.v3 .hero-lite h1{font-size:clamp(34px,4vw,52px);font-weight:700;color:#fff;margin-bottom:20px}
+.v3 .hero-lite h1 .g{color:var(--gold)}
+.v3 .hero-lite .sub{color:var(--muted-d);font-size:17px;max-width:600px;margin-bottom:26px}
+.v3 .hero-lite .cta{display:flex;gap:12px;flex-wrap:wrap}
+.v3 .statbox{border:1px solid var(--hair-d);border-radius:var(--r);padding:26px 30px;text-align:center;background:rgba(255,255,255,.04)}
+.v3 .statbox .k{font:700 34px Outfit;letter-spacing:-.03em;color:var(--gold);display:block}
+.v3 .statbox .l{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d);margin-top:8px;line-height:1.5}
+
+.v3 .lead-h{font-size:clamp(24px,2.4vw,32px);max-width:560px;padding-bottom:38px;border-bottom:1px solid var(--hair);margin-bottom:42px}
+.v3 .sec-h{font-size:clamp(28px,3vw,40px);max-width:680px;margin-bottom:20px}
+.v3 .sec-p{color:var(--muted);font-size:16px;max-width:640px;margin-bottom:46px}
+.v3 .dark .sec-p{color:var(--muted-d)}
+
+.v3 .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.v3 .card{background:#fff;border:1px solid var(--hair);border-radius:var(--r);padding:32px 28px;transition:.22s;display:flex;flex-direction:column;text-decoration:none}
+.v3 .card:hover{transform:translateY(-4px);border-color:#d3dae0;box-shadow:0 14px 34px rgba(11,27,46,.07)}
+.v3 .num{font:600 11px Inter;letter-spacing:.18em;color:var(--gold);margin-bottom:18px}
+.v3 .card h3{font-size:22px;margin-bottom:12px;color:var(--ink)}
+.v3 .card p{font-size:14.5px;color:var(--muted);margin-bottom:24px;flex:1}
+.v3 .card .more{color:var(--ink);font:600 14px Inter;text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.v3 .card:hover .more{color:var(--gold-d)}
+
+/* TARIFS */
+.v3 .ptable{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--hair);border-radius:var(--r);overflow:hidden}
+.v3 .ptable th,.v3 .ptable td{padding:16px 20px;text-align:left;font-size:14px;border-bottom:1px solid var(--hair)}
+.v3 .ptable thead th{background:var(--night);color:#fff;font:600 12px Inter;letter-spacing:.06em;text-transform:uppercase}
+.v3 .ptable tbody tr:last-child td{border-bottom:0}
+.v3 .ptable td:first-child{font-weight:600}
+.v3 .ptable .d{color:var(--muted);font-size:13px;display:block;font-weight:400}
+.v3 .pph{color:var(--gold-d);font-weight:600;border-bottom:1px dashed var(--gold);padding-bottom:1px}
+.v3 .tnote{margin-top:18px;font-size:13px;color:var(--muted);max-width:820px}
+.v3 .tscroll{overflow-x:auto}
+
+/* STEPS */
+.v3 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.v3 .step{padding-top:20px;border-top:1px solid var(--hair);position:relative}
+.v3 .dark .step{border-top-color:var(--hair-d)}
+.v3 .step::before{content:"";position:absolute;top:-1px;left:0;width:34px;height:2px;background:var(--gold)}
+.v3 .step h3{font:600 15.5px Inter;letter-spacing:0;margin-bottom:8px;line-height:1.45}
+.v3 .dark .step h3{color:#fff}
+.v3 .step p{font-size:13.5px;color:var(--muted);line-height:1.6}
+.v3 .dark .step p{color:var(--muted-d)}
+
+/* MAILLAGE */
+.v3 .dest{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.v3 .dcard{border:1px solid var(--hair);border-radius:10px;padding:14px 15px;text-decoration:none;color:var(--ink);transition:.16s;background:#fff}
+.v3 .dcard:hover{border-color:var(--gold);background:#FDFBF6;transform:translateY(-2px)}
+.v3 .dcard b{display:block;font:600 14px Inter}
+.v3 .dcard span{font-size:11.5px;color:var(--muted)}
+.v3 .langs{display:flex;flex-wrap:wrap;gap:7px}
+.v3 .lchip{border:1px solid var(--hair);border-radius:16px;padding:5px 12px;font-size:12.5px;color:var(--muted);text-decoration:none;background:#fff;transition:.14s}
+.v3 .lchip:hover{border-color:var(--gold);color:var(--ink)}
+.v3 .more-l{color:var(--gold-d);font:600 12.5px Inter;text-decoration:none;padding:5px 4px}
+.v3 .subh{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:38px 0 16px}
+
+/* FAQ */
+.v3 .volets{margin-top:24px}
+.v3 .volets-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.v3 .volets-tabs button{border:1px solid var(--hair);background:#fff;color:var(--ink);border-radius:999px;padding:10px 18px;font:600 13.5px Inter;cursor:pointer;transition:.15s}
+.v3 .volets-tabs button:hover{border-color:var(--gold);color:var(--gold-d)}
+.v3 .volets-tabs button.on{background:var(--night);border-color:var(--night);color:#fff}
+.v3 .volets-tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.v3 .v3faq{border-top:1px solid var(--hair);max-width:860px}
+.v3 .v3faq details{border-bottom:1px solid var(--hair)}
+.v3 .v3faq summary{list-style:none;cursor:pointer;padding:18px 0;font:600 16px Inter;color:var(--ink);display:flex;justify-content:space-between;gap:16px;align-items:center}
+.v3 .v3faq summary::-webkit-details-marker{display:none}
+.v3 .v3faq summary::after{content:"+";color:var(--gold);font-size:22px;font-weight:400;line-height:1}
+.v3 .v3faq details[open] summary::after{content:"–"}
+.v3 .v3faq p{padding:0 0 20px;color:var(--muted);font-size:14.5px;line-height:1.7;max-width:760px}
+
+/* FINAL */
+.v3 .final{text-align:center}
+.v3 .final .rule{width:34px;height:1px;background:rgba(255,255,255,.4);margin:0 auto 24px}
+.v3 .final h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:14px}
+.v3 .final p{color:var(--muted-d);font-size:16.5px;margin-bottom:30px;max-width:560px;margin-left:auto;margin-right:auto}
+.v3 .final .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+.v3 footer{background:var(--night);color:#fff;padding:74px 0 32px}
+.v3 .fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr 1fr;gap:38px}
+.v3 .fcol h4{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:17px}
+.v3 .fcol a,.v3 .fcol p{display:block;color:rgba(255,255,255,.72);text-decoration:none;font-size:14px;margin-bottom:10px}
+.v3 .fcol a:hover{color:#fff}
+.v3 .flogo{font:600 16px Outfit;letter-spacing:.22em;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:18px}
+.v3 .flogo i{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.v3 .fbrand .hi{color:#fff;font-weight:500}
+.v3 .fbrand .bce{color:var(--muted-d);font-size:12.5px;margin-top:14px}
+.v3 .fbot{border-top:1px solid var(--hair-d);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-d)}
+
+.v3 .rv{opacity:0;transform:translateY(20px)}
+.v3 .rv.in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+
+@media(max-width:1080px){
+  .v3 .hgrid-lite,.v3 .cards3{grid-template-columns:1fr;gap:20px}
+  .v3 .steps{grid-template-columns:1fr 1fr;gap:22px}
+  .v3 .dest{grid-template-columns:repeat(3,1fr)}
+  .v3 .fgrid{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:720px){
+  .v3 section{padding:70px 0}.v3 .wrap,.v3 .wide,.v3 .narrow{padding:0 20px}
+  .v3 .steps,.v3 .dest,.v3 .fgrid{grid-template-columns:1fr}
+}
+/* FAITS (bandeau de chiffres) */
+.v3 .facts{display:grid;grid-template-columns:repeat(4,1fr)}
+.v3 .facts>div{padding:0 28px;border-left:1px solid var(--hair)}
+.v3 .dark .facts>div{border-left-color:var(--hair-d)}
+.v3 .facts>div:first-child{padding-left:0;border-left:0}
+.v3 .facts .k{font:700 30px Outfit;letter-spacing:-.03em;display:block;margin-bottom:6px;color:var(--ink)}
+.v3 .dark .facts .k{color:#fff}
+.v3 .facts h3{font:600 15px Inter;letter-spacing:0;margin-bottom:5px}
+.v3 .facts p{font-size:13.5px;color:var(--muted);line-height:1.55}
+.v3 .dark .facts p{color:var(--muted-d)}
+
+/* CONFIDENTIALITÉ (liste centrée, sur fond sombre) */
+.v3 .conf{text-align:center}
+.v3 .conf p.intro{color:var(--muted-d);font-size:16px;margin:0 auto 30px;max-width:520px}
+.v3 .conf ul{list-style:none;display:flex;flex-direction:column;gap:12px;text-align:left;max-width:470px;margin:0 auto}
+.v3 .conf li{display:flex;gap:12px;font-size:14.5px;color:#D9E2EA;line-height:1.6}
+.v3 .conf li b{color:var(--gold);flex:none}
+
+/* ÉQUIPE / GOOGLE (deux colonnes + encadré) */
+.v3 .split{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.v3 .holder{border:1.5px dashed var(--gold);border-radius:var(--r);background:#FAFBFC;aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;gap:8px}
+.v3 .holder .hlab{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.v3 .holder h3{font-size:17px;color:var(--ink)}
+.v3 .holder p{font-size:13px;color:var(--muted);max-width:300px}
+.v3 .ggbox{border:1.5px dashed var(--gold);border-radius:10px;background:#FDFBF6;padding:28px;text-align:center}
+.v3 .ggbox .hlab{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
+.v3 .ggbox b{display:block;font:700 26px Outfit;letter-spacing:-.03em;margin-bottom:4px;color:var(--ink)}
+.v3 .ggbox span{font-size:13.5px;color:var(--muted)}
+.v3 .mapframe{width:100%;height:100%;min-height:360px;border:1px solid var(--hair);border-radius:var(--r);display:block}
+/* pages légales (prose) */
+.v3 .prose{max-width:760px}
+.v3 .prose h2{font-size:22px;margin:38px 0 12px;color:var(--ink)}
+.v3 .prose h3{font-size:17px;margin:26px 0 10px;color:var(--ink)}
+.v3 .prose p{color:var(--muted);font-size:15px;line-height:1.75;margin-bottom:14px}
+.v3 .prose ul{margin:0 0 16px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.v3 .prose li{color:var(--muted);font-size:15px;line-height:1.7;display:flex;gap:10px}
+.v3 .prose li::before{content:"—";color:var(--gold);flex:none}
+.v3 .prose a{color:var(--gold-d);text-decoration:underline}
+.v3 .prose strong{color:var(--ink)}
+.v3 .prose .encart{border:1px solid var(--hair);border-left:3px solid var(--gold);border-radius:8px;background:#FDFBF6;padding:16px 18px;margin:18px 0}
+.v3 .prose .encart p{margin:0}
+.v3 .toc{border:1px solid var(--hair);border-radius:var(--r);padding:22px 24px;background:#fff;position:sticky;top:96px}
+.v3 .toc p{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);margin-bottom:12px}
+.v3 .toc a{display:block;color:var(--muted);text-decoration:none;font-size:14px;padding:5px 0}
+.v3 .toc a:hover{color:var(--ink)}
+.v3 .legalgrid{display:grid;grid-template-columns:.9fr 2fr;gap:48px;align-items:start}
+@media(max-width:1080px){.v3 .legalgrid{grid-template-columns:1fr;gap:24px}.v3 .toc{position:static}}
+@media(max-width:1080px){.v3 .split{grid-template-columns:1fr;gap:32px}.v3 .facts{grid-template-columns:1fr 1fr;gap:26px 0}.v3 .facts>div:nth-child(3){padding-left:0;border-left:0}}
+@media(max-width:720px){.v3 .facts{grid-template-columns:1fr}.v3 .facts>div{padding:0;border-left:0}}
+
+/* fil d'ariane + synthese pays */
+.v3 .bread{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-d);margin-bottom:22px}
+.v3 .bread a{color:var(--muted-d);text-decoration:none}
+.v3 .bread a:hover{color:#fff}
+.v3 .bread .cur{color:var(--gold)}
+.v3 .synth{border:1px solid var(--hair);border-radius:var(--r);padding:28px 30px;position:relative;overflow:hidden;background:#fff;max-width:860px}
+.v3 .synth::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--gold)}
+.v3 .synth .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.v3 .synth .lab{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d)}
+.v3 .synth .date{font:600 10px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--hair);border-radius:6px;padding:5px 10px}
+.v3 .synth .statut{font:600 20px Outfit;color:var(--ink);margin-bottom:18px;line-height:1.3}
+.v3 .synth .facts{display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;border-top:1px solid var(--hair);padding-top:18px}
+.v3 .synth .fk{font:600 10px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.v3 .synth .fv{font-size:14.5px;color:var(--ink)}
+.v3 .synth .reforme{margin-top:16px;background:#FDFBF6;border:1px solid rgba(201,169,106,.35);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--ink)}
+.v3 .synth .disc{margin-top:16px;padding-top:14px;border-top:1px solid var(--hair);font-size:12px;color:var(--muted);line-height:1.6}
+.v3 .synth a{color:var(--gold-d);text-decoration:underline;word-break:break-word}
+.v3 .doctable{width:100%;border-collapse:collapse;margin-top:6px}
+.v3 .doctable td{border:1px solid var(--hair);padding:8px 12px;font-size:13.5px}
+@media(max-width:720px){.v3 .synth .facts{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.v3 .rv{opacity:1;transform:none}}
+8:["lang","en","d"]
+b:T3afe,
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{
+  --night:#0B1B2E;--night-2:#0F2438;--night-3:#16314A;
+  --white:#fff;--tint:#F5F7F9;
+  --gold:#C9A96A;--gold-l:#DFC38C;--gold-d:#A8863F;
+  --blue:#2F7FF0;
+  --ink:#16202C;--muted:#6B7785;--muted-d:#93A3B5;
+  --hair:#E4E8EC;--hair-d:rgba(255,255,255,.10);
+  --r:12px;--rb:8px;--maxw:1200px;
+}
+.v3 *{box-sizing:border-box}
+.v3{font-family:Inter,system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.v3 h1,.v3 h2,.v3 h3,.v3 h4{font-family:Outfit,sans-serif;letter-spacing:-.025em;line-height:1.1;font-weight:600}
+.v3 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+.v3 .wide{max-width:1480px;margin:0 auto;padding:0 32px}
+.v3 .narrow{max-width:660px;margin:0 auto;padding:0 32px}
+.v3 section{padding:112px 0}
+.v3 .tint{background:var(--tint)}
+.v3 .dark{background:linear-gradient(168deg,var(--night) 0%,var(--night-2) 100%);color:#fff}
+.v3 .dark h2,.v3 .dark h3,.v3 .dark h4{color:#fff}
+
+.v3 .eb{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px}
+.v3 .eb::before{content:"";width:26px;height:1px;background:var(--gold);flex:none}
+.v3 .eb.ctr{justify-content:center}
+
+.v3 .btn{display:inline-flex;align-items:center;gap:9px;height:46px;padding:0 22px;border-radius:var(--rb);
+  font:600 14.5px Inter;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:.18s ease;white-space:nowrap}
+.v3 .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.v3 .btn-p{background:var(--gold);color:var(--night)}
+.v3 .btn-p:hover{background:var(--gold-l);transform:translateY(-1px)}
+.v3 .btn-out{background:transparent;color:#fff;border-color:rgba(255,255,255,.28)}
+.v3 .btn-out:hover{background:rgba(255,255,255,.07)}
+.v3 .btn-out-d{background:#fff;color:var(--ink);border-color:var(--hair)}
+.v3 .btn-out-d:hover{border-color:#c3ccd4}
+.v3 .ar{transition:transform .18s}.v3 .btn:hover .ar{transform:translateX(3px)}
+
+/* HERO leger (pages internes) */
+.v3 .hero-lite{padding:56px 0 84px}
+.v3 .hgrid-lite{display:grid;grid-template-columns:1.5fr .9fr;gap:56px;align-items:center}
+.v3 .hero-lite h1{font-size:clamp(34px,4vw,52px);font-weight:700;color:#fff;margin-bottom:20px}
+.v3 .hero-lite h1 .g{color:var(--gold)}
+.v3 .hero-lite .sub{color:var(--muted-d);font-size:17px;max-width:600px;margin-bottom:26px}
+.v3 .hero-lite .cta{display:flex;gap:12px;flex-wrap:wrap}
+.v3 .statbox{border:1px solid var(--hair-d);border-radius:var(--r);padding:26px 30px;text-align:center;background:rgba(255,255,255,.04)}
+.v3 .statbox .k{font:700 34px Outfit;letter-spacing:-.03em;color:var(--gold);display:block}
+.v3 .statbox .l{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d);margin-top:8px;line-height:1.5}
+
+.v3 .lead-h{font-size:clamp(24px,2.4vw,32px);max-width:560px;padding-bottom:38px;border-bottom:1px solid var(--hair);margin-bottom:42px}
+.v3 .sec-h{font-size:clamp(28px,3vw,40px);max-width:680px;margin-bottom:20px}
+.v3 .sec-p{color:var(--muted);font-size:16px;max-width:640px;margin-bottom:46px}
+.v3 .dark .sec-p{color:var(--muted-d)}
+
+.v3 .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.v3 .card{background:#fff;border:1px solid var(--hair);border-radius:var(--r);padding:32px 28px;transition:.22s;display:flex;flex-direction:column;text-decoration:none}
+.v3 .card:hover{transform:translateY(-4px);border-color:#d3dae0;box-shadow:0 14px 34px rgba(11,27,46,.07)}
+.v3 .num{font:600 11px Inter;letter-spacing:.18em;color:var(--gold);margin-bottom:18px}
+.v3 .card h3{font-size:22px;margin-bottom:12px;color:var(--ink)}
+.v3 .card p{font-size:14.5px;color:var(--muted);margin-bottom:24px;flex:1}
+.v3 .card .more{color:var(--ink);font:600 14px Inter;text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.v3 .card:hover .more{color:var(--gold-d)}
+
+/* TARIFS */
+.v3 .ptable{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--hair);border-radius:var(--r);overflow:hidden}
+.v3 .ptable th,.v3 .ptable td{padding:16px 20px;text-align:left;font-size:14px;border-bottom:1px solid var(--hair)}
+.v3 .ptable thead th{background:var(--night);color:#fff;font:600 12px Inter;letter-spacing:.06em;text-transform:uppercase}
+.v3 .ptable tbody tr:last-child td{border-bottom:0}
+.v3 .ptable td:first-child{font-weight:600}
+.v3 .ptable .d{color:var(--muted);font-size:13px;display:block;font-weight:400}
+.v3 .pph{color:var(--gold-d);font-weight:600;border-bottom:1px dashed var(--gold);padding-bottom:1px}
+.v3 .tnote{margin-top:18px;font-size:13px;color:var(--muted);max-width:820px}
+.v3 .tscroll{overflow-x:auto}
+
+/* STEPS */
+.v3 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.v3 .step{padding-top:20px;border-top:1px solid var(--hair);position:relative}
+.v3 .dark .step{border-top-color:var(--hair-d)}
+.v3 .step::before{content:"";position:absolute;top:-1px;left:0;width:34px;height:2px;background:var(--gold)}
+.v3 .step h3{font:600 15.5px Inter;letter-spacing:0;margin-bottom:8px;line-height:1.45}
+.v3 .dark .step h3{color:#fff}
+.v3 .step p{font-size:13.5px;color:var(--muted);line-height:1.6}
+.v3 .dark .step p{color:var(--muted-d)}
+
+/* MAILLAGE */
+.v3 .dest{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.v3 .dcard{border:1px solid var(--hair);border-radius:10px;padding:14px 15px;text-decoration:none;color:var(--ink);transition:.16s;background:#fff}
+.v3 .dcard:hover{border-color:var(--gold);background:#FDFBF6;transform:translateY(-2px)}
+.v3 .dcard b{display:block;font:600 14px Inter}
+.v3 .dcard span{font-size:11.5px;color:var(--muted)}
+.v3 .langs{display:flex;flex-wrap:wrap;gap:7px}
+.v3 .lchip{border:1px solid var(--hair);border-radius:16px;padding:5px 12px;font-size:12.5px;color:var(--muted);text-decoration:none;background:#fff;transition:.14s}
+.v3 .lchip:hover{border-color:var(--gold);color:var(--ink)}
+.v3 .more-l{color:var(--gold-d);font:600 12.5px Inter;text-decoration:none;padding:5px 4px}
+.v3 .subh{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:38px 0 16px}
+
+/* FAQ */
+.v3 .volets{margin-top:24px}
+.v3 .volets-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.v3 .volets-tabs button{border:1px solid var(--hair);background:#fff;color:var(--ink);border-radius:999px;padding:10px 18px;font:600 13.5px Inter;cursor:pointer;transition:.15s}
+.v3 .volets-tabs button:hover{border-color:var(--gold);color:var(--gold-d)}
+.v3 .volets-tabs button.on{background:var(--night);border-color:var(--night);color:#fff}
+.v3 .volets-tabs button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.v3 .v3faq{border-top:1px solid var(--hair);max-width:860px}
+.v3 .v3faq details{border-bottom:1px solid var(--hair)}
+.v3 .v3faq summary{list-style:none;cursor:pointer;padding:18px 0;font:600 16px Inter;color:var(--ink);display:flex;justify-content:space-between;gap:16px;align-items:center}
+.v3 .v3faq summary::-webkit-details-marker{display:none}
+.v3 .v3faq summary::after{content:"+";color:var(--gold);font-size:22px;font-weight:400;line-height:1}
+.v3 .v3faq details[open] summary::after{content:"–"}
+.v3 .v3faq p{padding:0 0 20px;color:var(--muted);font-size:14.5px;line-height:1.7;max-width:760px}
+
+/* FINAL */
+.v3 .final{text-align:center}
+.v3 .final .rule{width:34px;height:1px;background:rgba(255,255,255,.4);margin:0 auto 24px}
+.v3 .final h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:14px}
+.v3 .final p{color:var(--muted-d);font-size:16.5px;margin-bottom:30px;max-width:560px;margin-left:auto;margin-right:auto}
+.v3 .final .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+.v3 footer{background:var(--night);color:#fff;padding:74px 0 32px}
+.v3 .fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr 1fr;gap:38px}
+.v3 .fcol h4{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:17px}
+.v3 .fcol a,.v3 .fcol p{display:block;color:rgba(255,255,255,.72);text-decoration:none;font-size:14px;margin-bottom:10px}
+.v3 .fcol a:hover{color:#fff}
+.v3 .flogo{font:600 16px Outfit;letter-spacing:.22em;color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:6px;margin-bottom:18px}
+.v3 .flogo i{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.v3 .fbrand .hi{color:#fff;font-weight:500}
+.v3 .fbrand .bce{color:var(--muted-d);font-size:12.5px;margin-top:14px}
+.v3 .fbot{border-top:1px solid var(--hair-d);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-d)}
+
+.v3 .rv{opacity:0;transform:translateY(20px)}
+.v3 .rv.in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+
+@media(max-width:1080px){
+  .v3 .hgrid-lite,.v3 .cards3{grid-template-columns:1fr;gap:20px}
+  .v3 .steps{grid-template-columns:1fr 1fr;gap:22px}
+  .v3 .dest{grid-template-columns:repeat(3,1fr)}
+  .v3 .fgrid{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:720px){
+  .v3 section{padding:70px 0}.v3 .wrap,.v3 .wide,.v3 .narrow{padding:0 20px}
+  .v3 .steps,.v3 .dest,.v3 .fgrid{grid-template-columns:1fr}
+}
+/* FAITS (bandeau de chiffres) */
+.v3 .facts{display:grid;grid-template-columns:repeat(4,1fr)}
+.v3 .facts>div{padding:0 28px;border-left:1px solid var(--hair)}
+.v3 .dark .facts>div{border-left-color:var(--hair-d)}
+.v3 .facts>div:first-child{padding-left:0;border-left:0}
+.v3 .facts .k{font:700 30px Outfit;letter-spacing:-.03em;display:block;margin-bottom:6px;color:var(--ink)}
+.v3 .dark .facts .k{color:#fff}
+.v3 .facts h3{font:600 15px Inter;letter-spacing:0;margin-bottom:5px}
+.v3 .facts p{font-size:13.5px;color:var(--muted);line-height:1.55}
+.v3 .dark .facts p{color:var(--muted-d)}
+
+/* CONFIDENTIALITÉ (liste centrée, sur fond sombre) */
+.v3 .conf{text-align:center}
+.v3 .conf p.intro{color:var(--muted-d);font-size:16px;margin:0 auto 30px;max-width:520px}
+.v3 .conf ul{list-style:none;display:flex;flex-direction:column;gap:12px;text-align:left;max-width:470px;margin:0 auto}
+.v3 .conf li{display:flex;gap:12px;font-size:14.5px;color:#D9E2EA;line-height:1.6}
+.v3 .conf li b{color:var(--gold);flex:none}
+
+/* ÉQUIPE / GOOGLE (deux colonnes + encadré) */
+.v3 .split{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.v3 .holder{border:1.5px dashed var(--gold);border-radius:var(--r);background:#FAFBFC;aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;gap:8px}
+.v3 .holder .hlab{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.v3 .holder h3{font-size:17px;color:var(--ink)}
+.v3 .holder p{font-size:13px;color:var(--muted);max-width:300px}
+.v3 .ggbox{border:1.5px dashed var(--gold);border-radius:10px;background:#FDFBF6;padding:28px;text-align:center}
+.v3 .ggbox .hlab{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
+.v3 .ggbox b{display:block;font:700 26px Outfit;letter-spacing:-.03em;margin-bottom:4px;color:var(--ink)}
+.v3 .ggbox span{font-size:13.5px;color:var(--muted)}
+.v3 .mapframe{width:100%;height:100%;min-height:360px;border:1px solid var(--hair);border-radius:var(--r);display:block}
+/* pages légales (prose) */
+.v3 .prose{max-width:760px}
+.v3 .prose h2{font-size:22px;margin:38px 0 12px;color:var(--ink)}
+.v3 .prose h3{font-size:17px;margin:26px 0 10px;color:var(--ink)}
+.v3 .prose p{color:var(--muted);font-size:15px;line-height:1.75;margin-bottom:14px}
+.v3 .prose ul{margin:0 0 16px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.v3 .prose li{color:var(--muted);font-size:15px;line-height:1.7;display:flex;gap:10px}
+.v3 .prose li::before{content:"—";color:var(--gold);flex:none}
+.v3 .prose a{color:var(--gold-d);text-decoration:underline}
+.v3 .prose strong{color:var(--ink)}
+.v3 .prose .encart{border:1px solid var(--hair);border-left:3px solid var(--gold);border-radius:8px;background:#FDFBF6;padding:16px 18px;margin:18px 0}
+.v3 .prose .encart p{margin:0}
+.v3 .toc{border:1px solid var(--hair);border-radius:var(--r);padding:22px 24px;background:#fff;position:sticky;top:96px}
+.v3 .toc p{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d);margin-bottom:12px}
+.v3 .toc a{display:block;color:var(--muted);text-decoration:none;font-size:14px;padding:5px 0}
+.v3 .toc a:hover{color:var(--ink)}
+.v3 .legalgrid{display:grid;grid-template-columns:.9fr 2fr;gap:48px;align-items:start}
+@media(max-width:1080px){.v3 .legalgrid{grid-template-columns:1fr;gap:24px}.v3 .toc{position:static}}
+@media(max-width:1080px){.v3 .split{grid-template-columns:1fr;gap:32px}.v3 .facts{grid-template-columns:1fr 1fr;gap:26px 0}.v3 .facts>div:nth-child(3){padding-left:0;border-left:0}}
+@media(max-width:720px){.v3 .facts{grid-template-columns:1fr}.v3 .facts>div{padding:0;border-left:0}}
+
+/* fil d'ariane + synthese pays */
+.v3 .bread{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-d);margin-bottom:22px}
+.v3 .bread a{color:var(--muted-d);text-decoration:none}
+.v3 .bread a:hover{color:#fff}
+.v3 .bread .cur{color:var(--gold)}
+.v3 .synth{border:1px solid var(--hair);border-radius:var(--r);padding:28px 30px;position:relative;overflow:hidden;background:#fff;max-width:860px}
+.v3 .synth::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--gold)}
+.v3 .synth .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:16px}
+.v3 .synth .lab{font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-d)}
+.v3 .synth .date{font:600 10px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--hair);border-radius:6px;padding:5px 10px}
+.v3 .synth .statut{font:600 20px Outfit;color:var(--ink);margin-bottom:18px;line-height:1.3}
+.v3 .synth .facts{display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;border-top:1px solid var(--hair);padding-top:18px}
+.v3 .synth .fk{font:600 10px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.v3 .synth .fv{font-size:14.5px;color:var(--ink)}
+.v3 .synth .reforme{margin-top:16px;background:#FDFBF6;border:1px solid rgba(201,169,106,.35);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--ink)}
+.v3 .synth .disc{margin-top:16px;padding-top:14px;border-top:1px solid var(--hair);font-size:12px;color:var(--muted);line-height:1.6}
+.v3 .synth a{color:var(--gold-d);text-decoration:underline;word-break:break-word}
+.v3 .doctable{width:100%;border-collapse:collapse;margin-top:6px}
+.v3 .doctable td{border:1px solid var(--hair);padding:8px 12px;font-size:13.5px}
+@media(max-width:720px){.v3 .synth .facts{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.v3 .rv{opacity:1;transform:none}}
+0:["V89vGdkI1JX7aXImRA8ws",[[["",{"children":[["lang","en","d"],{"children":["confidentialite",{"children":["__PAGE__?{\"lang\":\"en\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":[["lang","en","d"],{"children":["confidentialite",{"children":["__PAGE__",{},[["$L1",["$","div",null,{"className":"v3","children":[["$","$L2",null,{"lang":"en"}],["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$3"}}],["$","$L4",null,{"lang":"en","cheminFr":"/en/confidentialite/","sticky":true}],["$","main",null,{"children":[["$","section",null,{"className":"dark hero-lite","children":["$","div",null,{"className":"wrap","children":[["$","div",null,{"className":"eb","children":"Informations légales"}],["$","h1",null,{"style":{"maxWidth":760},"children":"Politique de confidentialité"}],["$","p",null,{"className":"sub","style":{"maxWidth":640},"children":"Le bureau reçoit des copies de passeports, d’actes de naissance et de diplômes. Voici précisément ce qu’elles deviennent."}],["$","p",null,{"style":{"marginTop":20,"paddingTop":18,"borderTop":"1px solid rgba(255,255,255,.12)","color":"var(--muted-d)","fontSize":12,"letterSpacing":".12em","textTransform":"uppercase","fontWeight":600},"children":["Dernière mise à jour : ","24 août 2026"]}]]}]}],["$","section",null,{"children":["$","div",null,{"className":"wrap","children":["$","div",null,{"className":"legalgrid","children":[["$","nav",null,{"className":"toc","aria-label":"Sommaire","children":[["$","p",null,{"children":"Sommaire"}],[["$","a","responsable",{"href":"#responsable","children":["01"," · ","Responsable du traitement"]}],["$","a","donnees",{"href":"#donnees","children":["02"," · ","Quelles données sont collectées"]}],["$","a","finalites",{"href":"#finalites","children":["03"," · ","À quoi elles servent"]}],["$","a","destinataires",{"href":"#destinataires","children":["04"," · ","Qui y a accès"]}],["$","a","transferts",{"href":"#transferts","children":["05"," · ","Transferts hors Union européenne"]}],["$","a","conservation",{"href":"#conservation","children":["06"," · ","Combien de temps elles sont conservées"]}],["$","a","securite",{"href":"#securite","children":["07"," · ","Comment elles sont protégées"]}],["$","a","droits",{"href":"#droits","children":["08"," · ","Vos droits"]}]]]}],["$","div",null,{"className":"prose","children":[["$","article","responsable",{"id":"responsable","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":0},"children":["01",". ","Responsable du traitement"]}],[["$","p",null,{"children":["Travisum Louise Office",", ","367, avenue Louise, 1050 Bruxelles, Belgique",", est responsable du traitement des données personnelles collectées dans le cadre de ses prestations."]}],["$","p",null,{"children":["Pour toute question relative à vos données : ",["$","a",null,{"href":"mailto:info@travisum.com","children":"info@travisum.com"}],"."]}]]]}],["$","article","donnees",{"id":"donnees","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["02",". ","Quelles données sont collectées"]}],[["$","p",null,{"children":"Le métier du bureau suppose la manipulation de documents sensibles. Les catégories suivantes sont susceptibles d’être traitées :"}],["$","ul",null,{"children":[["$","li","0",{"children":[["$","strong",null,{"children":"Données d’identification"}]," : nom, prénom, date et lieu de naissance, nationalité, adresse."]}],["$","li","1",{"children":[["$","strong",null,{"children":"Données de contact"}]," : adresse électronique, numéro de téléphone, éventuellement société."]}],["$","li","2",{"children":[["$","strong",null,{"children":"Copies de documents officiels"}]," : passeport, carte d’identité, acte de naissance, acte de mariage, diplôme, extrait de casier judiciaire, acte notarié."]}],["$","li","3",{"children":[["$","strong",null,{"children":"Données relatives au dossier"}]," : destination, motif du séjour, langue source et cible, échanges liés au traitement."]}]]}],["$","div",null,{"className":"encart","style":"$undefined","children":[["$","p",null,{"children":["$","strong",null,{"children":"Données particulières"}]}],["$","div",null,{"children":"Certains documents (certificat médical, extrait de casier judiciaire) contiennent des données relevant de catégories particulières au sens de l’article 9 du RGPD. Ils ne sont traités que sur votre demande expresse, pour la seule exécution de la prestation."}]]}],["$","div",null,{"className":"encart","style":"$undefined","children":[["$","p",null,{"children":["$","strong",null,{"children":"Assistant en ligne et prise de rendez-vous"}]}],["$","div",null,{"children":"Le site propose un assistant de discussion : le contenu des messages que vous y saisissez est transmis à un prestataire technique d’intelligence artificielle (Anthropic) dans le seul but de générer une réponse. N’y communiquez ni pièces d’identité ni données sensibles. Le formulaire « Prendre rendez-vous » transmet les coordonnées que vous indiquez, par courrier électronique et via un prestataire d’envoi d’e-mails, au bureau afin qu’il vous recontacte. Ces échanges ne servent qu’à traiter votre demande."}]]}]]]}],["$","article","finalites",{"id":"finalites","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["03",". ","À quoi elles servent"]}],[["$","ul",null,{"children":[["$","li","0",{"children":"Établir un devis et exécuter la prestation demandée — base légale : exécution du contrat ou mesures précontractuelles."}],["$","li","1",{"children":"Transmettre les pièces aux administrations, tribunaux et représentations diplomatiques compétents — base légale : exécution du contrat."}],["$","li","2",{"children":"Respecter les obligations comptables et fiscales du bureau — base légale : obligation légale."}],["$","li","3",{"children":"Répondre à vos demandes d’information — base légale : intérêt légitime."}]]}],["$","p",null,{"children":"Vos données ne sont utilisées ni à des fins de prospection commerciale, ni de profilage, et ne font l’objet d’aucune décision automatisée."}]]]}],["$","article","destinataires",{"id":"destinataires","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["04",". ","Qui y a accès"]}],[["$","p",null,{"children":"Les données ne sont communiquées qu’aux personnes et organismes dont l’intervention est nécessaire à la prestation :"}],["$","ul",null,{"children":[["$","li","0",{"children":"Les collaborateurs et traducteurs jurés du bureau, tenus au secret professionnel."}],["$","li","1",{"children":"Les administrations belges compétentes : SPF Justice, SPF Affaires étrangères, tribunaux de première instance, cours d’appel, communes, chambres de commerce."}],["$","li","2",{"children":"Les ambassades et consulats du pays de destination, lorsque la démarche l’exige."}]]}],["$","p",null,{"children":"Aucune donnée n’est vendue, louée ou cédée à des tiers à des fins commerciales."}]]]}],["$","article","transferts",{"id":"transferts","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["05",". ","Transferts hors Union européenne"]}],[["$","p",null,{"children":"Le dépôt d’un dossier de visa implique, par nature, la transmission de pièces à la représentation diplomatique du pays de destination, qui peut se situer hors de l’Espace économique européen."}],["$","p",null,{"children":"Ce transfert est nécessaire à l’exécution du contrat que vous concluez avec le bureau, au sens de l’article 49 du RGPD. Il ne peut être évité sans renoncer à la démarche elle-même."}]]]}],["$","article","conservation",{"id":"conservation","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["06",". ","Combien de temps elles sont conservées"]}],[["$","ul",null,{"children":[["$","li","0",{"children":"Copies numériques des documents : supprimées après clôture du dossier, dans un délai de à compléter par le bureau."}],["$","li","1",{"children":"Documents originaux : restitués au client ; ils ne sont jamais conservés au-delà de la remise."}],["$","li","2",{"children":"Données de facturation : conservées le temps imposé par la législation comptable belge."}],["$","li","3",{"children":"Demandes d’information sans suite : à compléter par le bureau."}]]}],["$","div",null,{"className":"encart","style":{"borderLeftColor":"#b3261e"},"children":[["$","p",null,{"children":["$","strong",null,{"children":"À arrêter avec le bureau"}]}],["$","div",null,{"children":"Les durées exactes de conservation doivent être fixées par le bureau et inscrites dans son registre des traitements."}]]}]]]}],["$","article","securite",{"id":"securite","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["07",". ","Comment elles sont protégées"]}],["$","ul",null,{"children":[["$","li","0",{"children":"Les documents originaux confiés au bureau font l’objet d’un suivi et ne quittent jamais les locaux sans traçabilité."}],["$","li","1",{"children":"Les échanges électroniques transitent par une connexion chiffrée."}],["$","li","2",{"children":"L’accès aux dossiers est restreint aux personnes qui en ont besoin pour exécuter la prestation."}],["$","li","3",{"children":"Les copies numériques sont supprimées à l’issue du délai de conservation."}]]}]]}],["$","article","droits",{"id":"droits","style":{"paddingBottom":8,"marginBottom":24},"children":[["$","h2",null,{"style":{"marginTop":40},"children":["08",". ","Vos droits"]}],[["$","p",null,{"children":"Conformément au RGPD, vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité sur les données qui vous concernent."}],["$","p",null,{"children":["Ces droits s’exercent par courriel à ",["$","a",null,{"href":"mailto:info@travisum.com","children":"info@travisum.com"}]," ou par courrier à l’adresse du bureau. Une pièce justificative d’identité pourra être demandée."]}],["$","p",null,{"children":"Le droit à l’effacement ne peut s’exercer sur les données dont la conservation est imposée par la loi, notamment en matière comptable."}],["$","p",null,{"children":"Vous pouvez introduire une réclamation auprès de l’Autorité de protection des données, rue de la Presse 35, 1000 Bruxelles."}]]]}]]}]]}]}]}],["$","section",null,{"className":"tint","children":["$","div",null,{"className":"wrap","children":[["$","div",null,{"className":"eb","children":"Les autres textes"}],["$","h2",null,{"className":"sec-h","children":"Documents légaux."}],["$","div",null,{"className":"cards3","children":[["$","a","/en/mentions-legales/",{"className":"card","href":"/en/mentions-legales/","children":[["$","div",null,{"className":"num","children":"Légal"}],["$","h3",null,{"style":{"fontSize":19},"children":"Mentions légales"}],["$","span",null,{"className":"more","style":{"marginTop":8},"children":["Consulter ",["$","span",null,{"className":"ar","children":"→"}]]}]]}],["$","a","/en/cgv/",{"className":"card","href":"/en/cgv/","children":[["$","div",null,{"className":"num","children":"Légal"}],["$","h3",null,{"style":{"fontSize":19},"children":"Conditions générales"}],["$","span",null,{"className":"more","style":{"marginTop":8},"children":["Consulter ",["$","span",null,{"className":"ar","children":"→"}]]}]]}],["$","a","/en/cookies/",{"className":"card","href":"/en/cookies/","children":[["$","div",null,{"className":"num","children":"Légal"}],["$","h3",null,{"style":{"fontSize":19},"children":"Cookies"}],["$","span",null,{"className":"more","style":{"marginTop":8},"children":["Consulter ",["$","span",null,{"className":"ar","children":"→"}]]}]]}]]}]]}]}]]}],["$","$L5",null,{"lang":"en"}],["$","$L6",null,{"lang":"en"}]]}],null],null],null]},[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","$8","children","confidentialite","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","$8","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2394c0f79ddbfa7a.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"fr","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":""}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap","rel":"stylesheet"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"bg-surface font-body-md text-on-surface","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"ProfessionalService\",\"@id\":\"https://www.travisum.com/#business\",\"name\":\"Travisum Louise Office\",\"url\":\"https://www.travisum.com\",\"image\":\"https://www.travisum.com/assets/img/photos/hero-avenue-louise.jpg\",\"telephone\":\"+3226420025\",\"email\":\"info@travisum.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"367, avenue Louise\",\"postalCode\":\"1050\",\"addressLocality\":\"Bruxelles\",\"addressCountry\":\"BE\"},\"areaServed\":{\"@type\":\"Country\",\"name\":\"Belgique\"},\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"09:00\",\"closes\":\"17:00\"}],\"sameAs\":[\"https://maps.app.goo.gl/avsW7i5xRo2qmt2s5\"],\"description\":\"Bureau de traduction jurée, de légalisation (apostille) et de visas de voyage. Devis en moins de 2 heures ouvrables.\"}"}}],["$","$La",null,{}],["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"v3","children":[false,["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$b"}}],["$","$L4",null,{"lang":"fr","cheminFr":"/","sticky":true}],["$","main",null,{"children":[["$","section",null,{"className":"dark hero-lite","children":["$","div",null,{"className":"wrap","children":[["$","div",null,{"className":"eb","children":"Erreur 404"}],["$","h1",null,{"style":{"maxWidth":720},"children":["Cette page n’existe pas, ",["$","span",null,{"className":"g","children":"ou plus."}]]}],["$","p",null,{"className":"sub","style":{"maxWidth":560},"children":"L’adresse est peut-être erronée, ou la page a été déplacée lors de la refonte du site. Voici par où reprendre."}],["$","div",null,{"className":"cta","children":[["$","a",null,{"className":"btn btn-p","href":"/","children":["Retour à l’accueil ",["$","span",null,{"className":"ar","children":"→"}]]}],["$","a",null,{"className":"btn btn-out","href":"/visas/","children":"Voir les destinations"}]]}]]}]}],["$","section",null,{"children":["$","div",null,{"className":"wrap","children":[["$","div",null,{"className":"eb","children":"Nos services"}],["$","h2",null,{"className":"sec-h","children":"Reprendre par un service."}],["$","div",null,{"className":"cards3","children":[["$","a","/traductions/",{"className":"card","href":"/traductions/","children":[["$","h3",null,{"style":{"marginTop":4},"children":"Traductions"}],["$","p",null,{"children":"Assermentées, jurées et libres."}],["$","span",null,{"className":"more","children":["Ouvrir ",["$","span",null,{"className":"ar","children":"→"}]]}]]}],["$","a","/legalisations/",{"className":"card","href":"/legalisations/","children":[["$","h3",null,{"style":{"marginTop":4},"children":"Légalisations"}],["$","p",null,{"children":"Apostille, légalisation, dépôts."}],["$","span",null,{"className":"more","children":["Ouvrir ",["$","span",null,{"className":"ar","children":"→"}]]}]]}],["$","a","/visas/",{"className":"card","href":"/visas/","children":[["$","h3",null,{"style":{"marginTop":4},"children":"Visas de voyage"}],["$","p",null,{"children":"70 destinations, fiches à jour."}],["$","span",null,{"className":"more","children":["Ouvrir ",["$","span",null,{"className":"ar","children":"→"}]]}]]}]]}]]}]}]]}],["$","$L5",null,{"lang":"fr"}],["$","$L6",null,{"lang":"fr"}]]}],"notFoundStyles":[]}],["$","$Lc",null,{}]]}]]}]],null],null],["$Ld",null]]]]
+d:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"name":"theme-color","content":"#0b1f33"}],["$","meta","2",{"charSet":"utf-8"}],["$","title","3",{"children":"Politique de confidentialité — Travisum"}],["$","meta","4",{"name":"description","content":"Travisum : traductions assermentées, légalisations, apostilles et visas de voyage. Devis en moins de 2 heures ouvrables."}],["$","meta","5",{"name":"application-name","content":"Travisum"}],["$","meta","6",{"name":"author","content":"Travisum Louise Office"}],["$","link","7",{"rel":"manifest","href":"/site.webmanifest","crossOrigin":"use-credentials"}],["$","meta","8",{"name":"keywords","content":"traduction assermentée,traduction jurée,traducteur juré,traduction officielle,légalisation de documents,apostille,visa,e-visa,demande de visa,Travisum"}],["$","link","9",{"rel":"canonical","href":"https://www.travisum.com/en/confidentialite/"}],["$","link","10",{"rel":"alternate","hrefLang":"fr","href":"https://www.travisum.com/confidentialite/"}],["$","link","11",{"rel":"alternate","hrefLang":"nl","href":"https://www.travisum.com/nl/confidentialite/"}],["$","link","12",{"rel":"alternate","hrefLang":"en","href":"https://www.travisum.com/en/confidentialite/"}],["$","link","13",{"rel":"alternate","hrefLang":"x-default","href":"https://www.travisum.com/confidentialite/"}],["$","meta","14",{"property":"og:title","content":"Politique de confidentialité — Travisum"}],["$","meta","15",{"property":"og:description","content":"Travisum : traductions assermentées, légalisations, apostilles et visas de voyage. Devis en moins de 2 heures ouvrables."}],["$","meta","16",{"property":"og:url","content":"https://www.travisum.com/"}],["$","meta","17",{"property":"og:site_name","content":"Travisum"}],["$","meta","18",{"property":"og:locale","content":"fr_BE"}],["$","meta","19",{"property":"og:image","content":"https://www.travisum.com/assets/img/photos/hero-avenue-louise.jpg"}],["$","meta","20",{"property":"og:image:alt","content":"Travisum — traduction assermentée, légalisation et visa"}],["$","meta","21",{"property":"og:locale:alternate","content":"nl_BE"}],["$","meta","22",{"property":"og:locale:alternate","content":"en_GB"}],["$","meta","23",{"property":"og:type","content":"website"}],["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","25",{"name":"twitter:title","content":"Politique de confidentialité — Travisum"}],["$","meta","26",{"name":"twitter:description","content":"Travisum : traductions assermentées, légalisations, apostilles et visas de voyage. Devis en moins de 2 heures ouvrables."}],["$","meta","27",{"name":"twitter:image","content":"https://www.travisum.com/assets/img/photos/hero-avenue-louise.jpg"}],["$","link","28",{"rel":"icon","href":"/assets/img/logo-mark.svg","type":"image/svg+xml"}],["$","link","29",{"rel":"icon","href":"/assets/img/favicon/favicon-32.png","sizes":"32x32","type":"image/png"}],["$","link","30",{"rel":"icon","href":"/assets/img/favicon/favicon-16.png","sizes":"16x16","type":"image/png"}],["$","link","31",{"rel":"apple-touch-icon","href":"/assets/img/favicon/apple-touch-icon.png"}]]
+1:null
