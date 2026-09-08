@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { URL_SITE } from "@/lib/donnees";
 import BandeauCookies from "@/components/Cookies";
 import AutoLangue from "@/components/AutoLangue";
+import SchemaLocalBusiness from "@/components/SchemaLocalBusiness";
 import "./globals.css";
 
 /**
@@ -48,7 +49,19 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_BE",
+    alternateLocale: ["nl_BE", "en_GB"],
+    url: URL_SITE,
     siteName: "Travisum",
+    images: [
+      {
+        url: "/assets/img/photos/hero-avenue-louise.jpg",
+        alt: "Travisum — traduction assermentée, légalisation et visa",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/assets/img/photos/hero-avenue-louise.jpg"],
   },
 };
 
@@ -74,6 +87,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="bg-surface font-body-md text-on-surface">
+        <SchemaLocalBusiness />
         <AutoLangue />
         {children}
         <BandeauCookies />
