@@ -1039,6 +1039,226 @@
       "source": "/en/tarifs/",
       "destination": "/en/a-propos/",
       "permanent": true
+    },
+    {
+      "source": "/back-office/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/legalisation/questions-reponses-legalisations/",
+      "destination": "/legalisations/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/angola/informations-generales-angola/",
+      "destination": "/visas/angola/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/arabie-saoudite/ig-arabie-saoudite/",
+      "destination": "/visas/arabie-saoudite/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/burkina-faso/bf-informations-generales/",
+      "destination": "/visas/burkina-faso/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/burkina-faso/burkina-faso-visa-business/",
+      "destination": "/visas/burkina-faso/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/burkina-faso/burkina-faso-visa-tourisme/",
+      "destination": "/visas/burkina-faso/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/cambodge-2/cambodge-informations-generales/",
+      "destination": "/visas/cambodge-2/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/cambodge-2/cambodge-visa-business/",
+      "destination": "/visas/cambodge-2/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/cambodge-2/cambodge-visa-tourisme/",
+      "destination": "/visas/cambodge-2/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/chine/chine-informations-generales/",
+      "destination": "/visas/chine/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/chine/chine-visa-business/",
+      "destination": "/visas/chine/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/chine/chine-visa-tourisme/",
+      "destination": "/visas/chine/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/congo-brazzaville/cb-informations-generales/",
+      "destination": "/visas/congo-brazzaville/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/congo-brazzaville/congo-brazzaville-visa-business/",
+      "destination": "/visas/congo-brazzaville/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/congo-brazzaville/congo-brazzaville-visa-tourisme/",
+      "destination": "/visas/congo-brazzaville/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/djibouti/djibouti-informations-generales/",
+      "destination": "/visas/djibouti/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/djibouti/djibouti-visa-business/",
+      "destination": "/visas/djibouti/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/djibouti/djibouti-visa-tourisme/",
+      "destination": "/visas/djibouti/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/erythree/erythree-visa-tourisme/",
+      "destination": "/visas/erythree/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/ethiopie/ethiopie-informations-generales/",
+      "destination": "/visas/ethiopie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/ethiopie/ethiopie-visa-business/",
+      "destination": "/visas/ethiopie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/ethiopie/ethiopie-visa-tourisme/",
+      "destination": "/visas/ethiopie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-bissau/gb-informations-generales/",
+      "destination": "/visas/guinee-bissau/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-bissau/guinee-bissau-visa-business/",
+      "destination": "/visas/guinee-bissau/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-bissau/guinee-bissau-visa-tourisme/",
+      "destination": "/visas/guinee-bissau/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-equatoriale/ge-informations-generales/",
+      "destination": "/visas/guinee-equatoriale/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-equatoriale/guinee-equatoriale-visa-business/",
+      "destination": "/visas/guinee-equatoriale/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-equatoriale/guinee-equatoriale-visa-tourisme/",
+      "destination": "/visas/guinee-equatoriale/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-republique/gr-informations-generales/",
+      "destination": "/visas/guinee-republique/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-republique/guinee-republique-visa-business/",
+      "destination": "/visas/guinee-republique/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/guinee-republique/guinee-republique-visa-tourisme/",
+      "destination": "/visas/guinee-republique/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/inde/inde-informations-generales/",
+      "destination": "/visas/inde/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/inde/inde-visa-business/",
+      "destination": "/visas/inde/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/inde/inde-visa-tourisme/",
+      "destination": "/visas/inde/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/republique-democratique-du-congo/rd-du-congo-informations-generales/",
+      "destination": "/visas/republique-democratique-du-congo/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/republique-democratique-du-congo/rd-du-congo-visa-business/",
+      "destination": "/visas/republique-democratique-du-congo/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/republique-democratique-du-congo/rd-du-congo-visa-tourisme/",
+      "destination": "/visas/republique-democratique-du-congo/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/russie/autresvisas/",
+      "destination": "/visas/russie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/russie/russie-informations-generales/",
+      "destination": "/visas/russie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/russie/russie-visa-business/",
+      "destination": "/visas/russie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/russie/russie-visa-tourisme/",
+      "destination": "/visas/russie/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/etats-unis-2/",
+      "destination": "/visas/",
+      "permanent": true
+    },
+    {
+      "source": "/visas/mongolie/",
+      "destination": "/visas/mongolie-2/",
+      "permanent": true
     }
   ]
 }
