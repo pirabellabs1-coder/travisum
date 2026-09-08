@@ -1,74 +1,57 @@
 # Déploiement du site Travisum sur Plesk (Ubuntu)
 
-Document technique pour l'informaticien. Tout le nécessaire est dans ce dossier
-`deploy-plesk/` (récupérable via l'extension Git de Plesk).
+Guide d'installation. Le code se récupère via l'extension **Git** de Plesk.
+Dépôt : **https://github.com/pirabellabs1-coder/travisum** (branche `main`).
 
-Dépôt : **https://github.com/pirabellabs1-coder/travisum** (branche `main`)
+## En bref
+- Le site est une application **Next.js exportée en statique** → dossier `out/`
+  (HTML/CSS/JS). **Aucune base de données.**
+- Un **serveur Node unique** ([`server.mjs`](../server.mjs), à la racine du dépôt)
+  sert le site **et** gère les 2 fonctions dynamiques **et** applique les
+  redirections — une seule application à lancer dans Plesk.
+- Environnement confirmé : **nginx** en façade, **Node.js 24.20.0** (déjà installé).
 
----
+## Installation (Plesk > Node.js)
+1. **Git** : cloner le dépôt sur le domaine.
+2. **Version de Node** : sélectionner **24.20.0** (LTS ; éviter 25/26 qui sont
+   « Current »). 20.x ou 22.x conviennent aussi.
+3. **NPM install** : lancer `npm install` (bouton Plesk) — installe Next + Express.
+4. **Build** : exécuter le script `build` (`npm run build`) → génère le dossier `out/`.
+   *(Si le build sur le serveur pose problème, on peut fournir `out/` déjà compilé.)*
+5. **Application Startup File** : `server.mjs`.
+   **Application Root** : la racine du dépôt. (Plesk lance `node server.mjs` via Passenger ;
+   le port est fourni par Plesk dans `PORT`.)
+6. **Variables d'environnement** (Plesk > Node.js > *Custom environment variables*) :
 
-## 1. Nature du site
-Application **Next.js exportée en statique** (`output: "export"`) → un dossier
-`out/` contenant des fichiers **HTML/CSS/JS statiques**. **Aucune base de
-données.** URLs avec **slash final** (`trailingSlash: true`) : chaque page est
-un dossier avec un `index.html`, servi nativement par Apache/nginx.
+   | Variable | Rôle | Requis |
+   |---|---|---|
+   | `OPENROUTER_API_KEY` | Assistant IA (clé openrouter.ai `sk-or-…`) | pour activer le chat |
+   | `CHAT_MODEL` | Modèle (défaut `anthropic/claude-haiku-4.5`) | non |
+   | `RESEND_API_KEY` | Envoi e-mail des demandes de RDV (resend.com) | pour l'envoi réel |
+   | `RDV_FROM` | Expéditeur, ex. `Travisum <site@travisum.com>` (domaine vérifié chez Resend) | non |
+   | `RDV_TO` | Destinataire (défaut `info@travisum.com`) | non |
 
-Deux fonctions **dynamiques et optionnelles** : l'assistant IA (`/api/chat`) et
-l'envoi par e-mail des demandes de rendez-vous (`/api/rdv`).
+   > Sans `OPENROUTER_API_KEY` : le chat affiche un message de repli.
+   > Sans `RESEND_API_KEY` : le formulaire de RDV bascule sur un envoi `mailto:`.
+   > Le site (pages, SEO, redirections) fonctionne dans tous les cas.
+7. **Démarrer / redémarrer** l'application.
 
-## 2. Récupérer et construire le site
-- Cloner le dépôt via **Plesk > Git**.
-- Build (Node 18+ requis) :
-  ```bash
-  npm install
-  npm run build      # génère le dossier out/
-  ```
-- Le **document root** du domaine doit pointer sur le dossier **`out/`**.
-- Si le build sur le serveur n'est pas souhaité, nous pouvons fournir le dossier
-  `out/` déjà compilé (à téléverser tel quel).
-
-## 3. Redirections 301 (préserver le SEO / le trafic)
-**252 redirections** des anciennes URL WordPress vers les nouvelles pages sont
-fournies dans deux formats — utiliser celui qui correspond au serveur web :
-
-- **Apache** : [`redirects.htaccess`](./redirects.htaccess) → placer dans le
-  document root (ou fusionner avec le `.htaccess` existant).
+## Redirections 301 (SEO — anciennes URL WordPress)
+`server.mjs` applique déjà les **252 redirections** (lues depuis `vercel.json`) —
+rien d'autre à faire. Si vous préférez les gérer au niveau du serveur web, deux
+fichiers prêts sont fournis (à utiliser à la place, pas en plus) :
 - **nginx** : [`redirects.nginx.conf`](./redirects.nginx.conf) → Plesk >
   *Apache & nginx Settings* > *Additional nginx directives*.
+- **Apache** : [`redirects.htaccess`](./redirects.htaccess).
 
-Ces redirections évitent que les anciennes URL indexées ne tombent en 404 au
-moment du basculement.
+## Domaine et HTTPS
+Le site actuel reste en place jusqu'au basculement. Une fois le nouveau site en
+place, activer **HTTPS via Let's Encrypt** (intégré à Plesk).
 
-## 4. Fonctions dynamiques (chat + formulaire RDV) — optionnel
-Les deux endpoints sont de simples handlers Node sans dépendance (juste `fetch`
-+ variables d'environnement) :
-
-| Endpoint | Rôle | Variables d'environnement |
-|---|---|---|
-| `/api/chat` | Assistant IA (proxy OpenRouter) | `OPENROUTER_API_KEY` (option. `CHAT_MODEL`) |
-| `/api/rdv`  | Envoi e-mail des demandes de RDV (Resend) | `RESEND_API_KEY`, `RDV_FROM`, `RDV_TO` |
-
-Deux possibilités :
-
-- **Avec Node.js (recommandé)** : Plesk supporte Node.js. Un petit fichier
-  serveur prêt à l'emploi peut être fourni pour exposer `/api/*` **et** servir le
-  statique en une seule application. Il suffit alors de définir les variables
-  d'environnement ci-dessus dans Plesk.
-- **Sans runtime (site 100 % statique)** : le site fonctionne parfaitement ;
-  simplement l'assistant IA est indisponible et le formulaire de RDV bascule
-  automatiquement sur un envoi via la messagerie du visiteur (`mailto:`).
-
-## 5. Domaine et HTTPS
-Le site actuel reste en place jusqu'au basculement. Le domaine `travisum.com`
-continue d'être géré comme aujourd'hui. Activer **HTTPS via Let's Encrypt**
-(intégré à Plesk) une fois le nouveau site en place.
-
----
-
-## Questions pour finaliser la mise en ligne
-1. **Serveur web** : Apache (`.htaccess`) ou nginx ? (pour le bon fichier de redirections)
-2. **Node.js** disponible sous Plesk pour l'assistant + l'envoi des RDV ? (sinon : statique + `mailto`)
-3. **Build sur le serveur** (`npm run build`) possible, ou faut-il fournir le dossier `out/` déjà compilé ?
-
-Dès vos réponses, nous fournissons le fichier serveur Node adapté (si Node) et/ou
-le `out/` prébuild, prêts à installer.
+## Vérifications rapides après démarrage
+- `https://<domaine>/` → l'accueil s'affiche.
+- `https://<domaine>/visas/inde/` → une fiche pays s'affiche.
+- `https://<domaine>/api/chat/` → `{"ok":true,"service":"chat","configured":true}`
+  (`configured:true` confirme que la clé est bien prise en compte).
+- Une ancienne URL, ex. `…/visas/chine/chine-informations-generales/` → redirige
+  vers `/visas/chine/`.
