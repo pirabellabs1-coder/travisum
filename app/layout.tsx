@@ -37,6 +37,7 @@ export const metadata: Metadata = {
   ],
   applicationName: "Travisum",
   authors: [{ name: "Travisum Louise Office" }],
+  verification: { google: "3avUK3EUeB-DBUOmjMmL-ece7HHWy1sywuIzptGWdXw" },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
