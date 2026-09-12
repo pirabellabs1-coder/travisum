@@ -941,7 +941,6 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
       if (track && slides.length && dotsWrap) {
         let idx = 0;
         let timer: ReturnType<typeof setInterval> | null = null;
-        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
         dotsWrap.innerHTML = "";
         slides.forEach((_, i) => {
           const b = document.createElement("button");
@@ -962,7 +961,7 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
           if (user) restart();
         }
         const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
-        const start = () => { if (reduce) return; stop(); timer = setInterval(() => go(idx + 1), 3000); };
+        const start = () => { stop(); timer = setInterval(() => go(idx + 1), 3000); };
         const restart = () => { stop(); start(); };
         (car.querySelector(".teamcar-next") as HTMLElement)?.addEventListener("click", () => go(idx + 1, true));
         (car.querySelector(".teamcar-prev") as HTMLElement)?.addEventListener("click", () => go(idx - 1, true));
