@@ -201,8 +201,20 @@ header.stuck{box-shadow:0 8px 30px rgba(0,0,0,.3)}
 .team h2{font-size:clamp(26px,2.9vw,36px);margin-bottom:16px}
 .team p{color:var(--muted);font-size:15.5px}
 .holder{border:1.5px dashed var(--gold);border-radius:var(--r);background:#FAFBFC;aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:36px;gap:8px}
-.team-photo{border-radius:var(--r);overflow:hidden;aspect-ratio:16/11;box-shadow:0 20px 48px rgba(11,27,46,.16);background:var(--tint)}
+.team-photo{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:0 20px 48px rgba(11,27,46,.16);background:var(--tint)}
 .team-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.teamcar{position:relative}
+.teamcar-track{display:flex;height:100%;transition:transform .6s cubic-bezier(.5,0,.2,1);will-change:transform}
+.teamcar-slide{flex:0 0 100%;height:100%;margin:0}
+.teamcar-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(11,27,46,.45);color:#fff;font:400 24px/1 Inter;cursor:pointer;display:flex;align-items:center;justify-content:center;padding-bottom:3px;opacity:0;transition:background .18s ease,opacity .2s ease}
+.teamcar:hover .teamcar-nav,.teamcar:focus-within .teamcar-nav{opacity:1}
+.teamcar-nav:hover{background:var(--gold);color:var(--night)}
+.teamcar-nav:focus-visible{opacity:1;outline:2px solid #fff;outline-offset:2px}
+.teamcar-prev{left:12px}.teamcar-next{right:12px}
+.teamcar-dots{position:absolute;left:0;right:0;bottom:14px;display:flex;justify-content:center;gap:7px}
+.teamcar-dots button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer;transition:background .18s ease,transform .18s ease;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.teamcar-dots button[aria-selected="true"]{background:#fff;transform:scale(1.3)}
+@media(hover:none){.teamcar-nav{opacity:1;background:rgba(11,27,46,.4)}}
 .holder .lab{font:600 11px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 .holder h3{font-size:18px}.holder p{font-size:13.5px;color:var(--muted);max-width:320px}
 
@@ -410,8 +422,17 @@ const BODY = String.raw`
       <h2 data-i="tmH">Derrière chaque dossier, une équipe.</h2>
       <p data-i="tmP">Les technologies nous permettent d'aller plus vite. Nos experts restent au cœur de chaque dossier : ce sont eux qui vérifient, qui déposent et qui répondent au téléphone.</p>
     </div>
-    <div class="team-photo">
-      <img src="/assets/img/photos/hero-avenue-louise.jpg" alt="Le bureau Travisum, 367 avenue Louise à Bruxelles" loading="lazy" />
+    <div class="team-photo teamcar" data-carousel aria-roledescription="carrousel" aria-label="Photos du bureau Travisum, 367 avenue Louise">
+      <div class="teamcar-track">
+        <figure class="teamcar-slide"><img src="/assets/img/photos/bureau-facade.jpg" alt="La façade du bureau Travisum, avenue Louise à Bruxelles" loading="lazy" /></figure>
+        <figure class="teamcar-slide"><img src="/assets/img/photos/bureau-entree.jpg" alt="L'entrée du 367 avenue Louise" loading="lazy" /></figure>
+        <figure class="teamcar-slide"><img src="/assets/img/photos/bureau-escalier.jpg" alt="L'escalier du bureau Travisum" loading="lazy" /></figure>
+        <figure class="teamcar-slide"><img src="/assets/img/photos/bureau-salon.jpg" alt="Le salon d'accueil du bureau Travisum" loading="lazy" /></figure>
+        <figure class="teamcar-slide"><img src="/assets/img/photos/bureau-reunion.jpg" alt="La salle de réunion du bureau Travisum" loading="lazy" /></figure>
+      </div>
+      <button class="teamcar-nav teamcar-prev" type="button" aria-label="Photo précédente">‹</button>
+      <button class="teamcar-nav teamcar-next" type="button" aria-label="Photo suivante">›</button>
+      <div class="teamcar-dots" role="tablist" aria-label="Choisir une photo"></div>
     </div>
   </div>
 </section>
@@ -909,6 +930,50 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
     };
     $$(".lang button").forEach((b) => b.addEventListener("click", onLang));
     const reBtn = $("#re"); if (reBtn) reBtn.onclick = resetCard;
+
+    // Carrousel photos du bureau (accessible, pause au survol/focus, respect reduced-motion)
+    const car = $("[data-carousel]") as HTMLElement | null;
+    if (car && !car.dataset.init) {
+      car.dataset.init = "1";
+      const track = car.querySelector<HTMLElement>(".teamcar-track");
+      const slides = Array.from(car.querySelectorAll(".teamcar-slide"));
+      const dotsWrap = car.querySelector<HTMLElement>(".teamcar-dots");
+      if (track && slides.length && dotsWrap) {
+        let idx = 0;
+        let timer: ReturnType<typeof setInterval> | null = null;
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        dotsWrap.innerHTML = "";
+        slides.forEach((_, i) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.setAttribute("role", "tab");
+          b.setAttribute("aria-label", `Photo ${i + 1} sur ${slides.length}`);
+          b.addEventListener("click", () => go(i, true));
+          dotsWrap.appendChild(b);
+        });
+        const dots = Array.from(dotsWrap.children) as HTMLElement[];
+        const render = () => {
+          track.style.transform = `translateX(-${idx * 100}%)`;
+          dots.forEach((d, i) => d.setAttribute("aria-selected", String(i === idx)));
+        };
+        function go(i: number, user?: boolean) {
+          idx = (i + slides.length) % slides.length;
+          render();
+          if (user) restart();
+        }
+        const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+        const start = () => { if (reduce) return; stop(); timer = setInterval(() => go(idx + 1), 4800); };
+        const restart = () => { stop(); start(); };
+        (car.querySelector(".teamcar-next") as HTMLElement)?.addEventListener("click", () => go(idx + 1, true));
+        (car.querySelector(".teamcar-prev") as HTMLElement)?.addEventListener("click", () => go(idx - 1, true));
+        car.addEventListener("mouseenter", stop);
+        car.addEventListener("mouseleave", start);
+        car.addEventListener("focusin", stop);
+        car.addEventListener("focusout", start);
+        render();
+        start();
+      }
+    }
 
     const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.12, rootMargin: "0px 0px -40px" });
     $$(".rv").forEach((el) => io.observe(el));
