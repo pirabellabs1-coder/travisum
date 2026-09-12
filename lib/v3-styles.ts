@@ -131,6 +131,8 @@ export const V3_CSS = String.raw`
 .v3 .fbrand .hi{color:#fff;font-weight:500}
 .v3 .fbrand .bce{color:var(--muted-d);font-size:12.5px;margin-top:14px}
 .v3 .fbot{border-top:1px solid var(--hair-d);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-d)}
+.v3 .made{margin-top:16px;text-align:center;font-size:12px;color:var(--muted-d)}
+.v3 .made a{color:var(--gold-d);text-decoration:none;font-weight:600}.v3 .made a:hover{text-decoration:underline}
 
 .v3 .rv{opacity:0;transform:translateY(20px)}
 .v3 .rv.in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}

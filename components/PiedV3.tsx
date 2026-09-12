@@ -18,6 +18,7 @@ const T: Record<Locale, any> = {
     bce: "Numéro d’entreprise (BCE) : [à compléter]",
     cp: "© 2026 Travisum. Tous droits réservés.",
     dis: "Travisum n’est pas une autorité consulaire. Les informations fournies sont indicatives.",
+    madePre: "Réalisé par", madeSuf: "— agence web, marketing & SEO",
   },
   nl: {
     services: "Diensten", visa: "Visum", evisa: "e-Visum", trad: "Vertaling", legal: "Legalisatie", tarifs: "Tarieven",
@@ -27,6 +28,7 @@ const T: Record<Locale, any> = {
     bce: "Ondernemingsnummer (KBO): [aan te vullen]",
     cp: "© 2026 Travisum. Alle rechten voorbehouden.",
     dis: "Travisum is geen consulaire overheid. De verstrekte informatie is indicatief.",
+    madePre: "Ontworpen door", madeSuf: "— web-, marketing- & SEO-bureau",
   },
   en: {
     services: "Services", visa: "Visas", evisa: "e-Visa", trad: "Translation", legal: "Legalisation", tarifs: "Pricing",
@@ -36,6 +38,7 @@ const T: Record<Locale, any> = {
     bce: "Company number (BCE): [to be completed]",
     cp: "© 2026 Travisum. All rights reserved.",
     dis: "Travisum is not a consular authority. The information provided is indicative.",
+    madePre: "Built by", madeSuf: "— web, marketing & SEO agency",
   },
 };
 
@@ -95,6 +98,11 @@ export default function PiedV3({ lang = "fr" }: { lang?: Locale }) {
           <span>{d.cp}</span>
           <span>{d.dis}</span>
         </div>
+        <p className="made">
+          {d.madePre}{" "}
+          <a href="https://pirabellabs.com" target="_blank" rel="noopener noreferrer">Pirabel Labs</a>{" "}
+          {d.madeSuf}
+        </p>
       </div>
     </footer>
   );

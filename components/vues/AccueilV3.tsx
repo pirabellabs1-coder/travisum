@@ -243,6 +243,8 @@ footer{background:var(--night);color:#fff;padding:74px 0 32px}
 .fbrand .hi{color:#fff;font-weight:500}
 .fbrand .bce{color:var(--muted-d);font-size:12.5px;margin-top:14px}
 .fbot{border-top:1px solid var(--hair-d);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--muted-d)}
+.made{margin-top:16px;text-align:center;font-size:12px;color:var(--muted-d)}
+.made a{color:var(--gold-d);text-decoration:none;font-weight:600}.made a:hover{text-decoration:underline}
 
 /* CARTE pleine largeur (bas de page) */
 .mapwrap{background:#fff}
@@ -497,6 +499,7 @@ const BODY = String.raw`
       <span data-i="fCp">© 2026 Travisum. Tous droits réservés.</span>
       <span data-i="fDis">Travisum n'est pas une autorité consulaire. Les informations fournies sont indicatives.</span>
     </div>
+    <p class="made" data-i="fMade">Réalisé par <a href="https://pirabellabs.com" target="_blank" rel="noopener noreferrer">Pirabel Labs</a> — agence web, marketing &amp; SEO</p>
   </div>
 </footer>
 
@@ -557,6 +560,7 @@ const T: Record<string, any> = {
     fL: "Informations légales", fL1: "Mentions légales", fL2: "Politique de confidentialité", fL3: "Conditions générales", fL4: "Cookies",
     fH2: "Horaires", fHr: "Du lundi au vendredi<br>9h00 – 17h00, sans interruption",
     fCp: "© 2026 Travisum. Tous droits réservés.", fDis: "Travisum n'est pas une autorité consulaire. Les informations fournies sont indicatives.",
+    fMade: "Réalisé par <a href='https://pirabellabs.com' target='_blank' rel='noopener noreferrer'>Pirabel Labs</a> — agence web, marketing &amp; SEO",
     mb1: "Assistant", mb2: "Devis", mb3: "E-mail",
     prices: [
       [["Traduction assermentée (jurée)", "Selon le volume", "Sur devis", "Traduction, relecture et cachet du traducteur juré"],
@@ -630,6 +634,7 @@ const T: Record<string, any> = {
     fL: "Legal information", fL1: "Legal notice", fL2: "Privacy policy", fL3: "Terms and conditions", fL4: "Cookies",
     fH2: "Opening hours", fHr: "Monday to Friday<br>9:00 – 17:00, no lunch break",
     fCp: "© 2026 Travisum. All rights reserved.", fDis: "Travisum is not a consular authority. The information provided is indicative.",
+    fMade: "Built by <a href='https://pirabellabs.com' target='_blank' rel='noopener noreferrer'>Pirabel Labs</a> — web, marketing &amp; SEO agency",
     mb1: "Assistant", mb2: "Quote", mb3: "Email",
     prices: [
       [["Sworn translation", "Depends on length", "On quote", "Translation, proofreading and sworn translator's stamp"],
@@ -703,6 +708,7 @@ const T: Record<string, any> = {
     fL: "Juridische informatie", fL1: "Wettelijke vermeldingen", fL2: "Privacybeleid", fL3: "Algemene voorwaarden", fL4: "Cookies",
     fH2: "Openingsuren", fHr: "Van maandag tot vrijdag<br>9u00 – 17u00, doorlopend",
     fCp: "© 2026 Travisum. Alle rechten voorbehouden.", fDis: "Travisum is geen consulaire overheid. De verstrekte informatie is indicatief.",
+    fMade: "Ontworpen door <a href='https://pirabellabs.com' target='_blank' rel='noopener noreferrer'>Pirabel Labs</a> — web-, marketing- &amp; SEO-bureau",
     mb1: "Assistent", mb2: "Offerte", mb3: "E-mail",
     prices: [
       [["Beëdigde vertaling", "Afhankelijk van de omvang", "Op offerte", "Vertaling, nalezing en stempel van de beëdigd vertaler"],
