@@ -962,7 +962,7 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
           if (user) restart();
         }
         const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
-        const start = () => { if (reduce) return; stop(); timer = setInterval(() => go(idx + 1), 4800); };
+        const start = () => { if (reduce) return; stop(); timer = setInterval(() => go(idx + 1), 3000); };
         const restart = () => { stop(); start(); };
         (car.querySelector(".teamcar-next") as HTMLElement)?.addEventListener("click", () => go(idx + 1, true));
         (car.querySelector(".teamcar-prev") as HTMLElement)?.addEventListener("click", () => go(idx - 1, true));
