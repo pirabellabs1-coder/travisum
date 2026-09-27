@@ -171,6 +171,19 @@ app.all(["/api/rdv", "/api/rdv/"], async (req, res) => {
   const nom = t(corps.nom, 120), email = t(corps.email, 160), service = t(corps.service, 60), date = t(corps.date, 80), message = t(corps.message, 2000);
   if (!nom || !emailValide(email)) return res.status(400).json({ error: "champs_manquants", message: "Le nom et une adresse e-mail valide sont requis." });
 
+  // Anti-spam : honeypot + délai minimal + heuristiques de contenu.
+  const honeypot = t(corps.website, 200);
+  const ts = Number(corps.ts) || 0;
+  const url = /(https?:\/\/|www\.)/i;
+  const nbLiens = (message.match(/https?:\/\//gi) || []).length;
+  const estSpam =
+    honeypot !== "" ||
+    (ts > 0 && Date.now() - ts < 2500) ||
+    url.test(nom) || url.test(service) ||
+    nbLiens >= 2 ||
+    /\[url=|<a\s|\bbit\.ly\b|\bviagra\b|\bcasino\b/i.test(nom + " " + message);
+  if (estSpam) { console.warn("rdv spam bloqué", { nom: nom.slice(0, 40) }); return res.json({ ok: true }); }
+
   const sujet = `Demande de rendez-vous — ${nom}${service ? " (" + service + ")" : ""}`;
   const lignes = [["Nom", nom], ["E-mail", email || "—"], ["Service", service || "—"], ["Date souhaitée", date || "—"], ["Message", message || "—"]];
   const html = `<h2 style="font-family:sans-serif">Nouvelle demande de rendez-vous</h2><table style="font-family:sans-serif;border-collapse:collapse">` +

@@ -20,6 +20,7 @@ export default function ContactForm({ lang, t }: { lang: Locale; t: RdvLabels })
   const [etat, setEtat] = useState<"idle" | "envoi" | "ok" | "mailto">("idle");
   const [mailto, setMailto] = useState("");
   const [err, setErr] = useState("");
+  const [t0] = useState(() => Date.now()); // anti-spam : instant d'ouverture du formulaire
 
   async function soumettre(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -30,6 +31,8 @@ export default function ContactForm({ lang, t }: { lang: Locale; t: RdvLabels })
       service: String(f.get("service") || ""),
       date: String(f.get("date") || ""),
       message: String(f.get("message") || ""),
+      website: String(f.get("website") || ""), // honeypot : doit rester vide
+      ts: t0,
       lang,
     };
     if (!charge.nom.trim() || !charge.email.trim()) {
@@ -83,6 +86,10 @@ export default function ContactForm({ lang, t }: { lang: Locale; t: RdvLabels })
 
   return (
     <form className="cx-form" onSubmit={soumettre} noValidate>
+      {/* Honeypot anti-spam : invisible et hors tabulation ; les humains le laissent vide */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
+        <label>Ne pas remplir<input type="text" name="website" tabIndex={-1} autoComplete="off" /></label>
+      </div>
       <div className="cx-field">
         <label htmlFor="rdv-nom">{t.nom}</label>
         <input id="rdv-nom" name="nom" required autoComplete="name" />

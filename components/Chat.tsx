@@ -363,6 +363,7 @@ function FormulaireRdv({ d, lang }: { d: (typeof T)[Locale]; lang: Locale }) {
   const [etat, setEtat] = useState<"saisie" | "envoi" | "ok" | "mailto">("saisie");
   const [mailto, setMailto] = useState<string>("");
   const [erreur, setErreur] = useState("");
+  const [t0] = useState(() => Date.now()); // anti-spam : instant d'ouverture
 
   async function soumettre(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -373,6 +374,8 @@ function FormulaireRdv({ d, lang }: { d: (typeof T)[Locale]; lang: Locale }) {
       service: String(f.get("service") || ""),
       date: String(f.get("date") || ""),
       message: String(f.get("message") || ""),
+      website: String(f.get("website") || ""), // honeypot
+      ts: t0,
       lang,
     };
     if (!charge.nom.trim() || !charge.email.trim()) {
@@ -431,6 +434,10 @@ function FormulaireRdv({ d, lang }: { d: (typeof T)[Locale]; lang: Locale }) {
 
   return (
     <form onSubmit={soumettre} className="grow overflow-y-auto px-4 py-4 flex flex-col gap-3">
+      {/* Honeypot anti-spam : invisible, hors tabulation */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
+        <label>Ne pas remplir<input type="text" name="website" tabIndex={-1} autoComplete="off" /></label>
+      </div>
       <p className="font-body-md text-[13px] text-on-surface-variant">{d.rdv_intro}</p>
 
       <Champ label={d.nom}>
