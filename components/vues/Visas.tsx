@@ -520,6 +520,8 @@ const CSS = String.raw`
 .vz *{box-sizing:border-box}
 .vz h1,.vz h2,.vz h3{font-family:Outfit,Inter,sans-serif;color:var(--nuit);letter-spacing:-.02em;line-height:1.12;margin:0}
 .vz p{margin:0}
+.vz p.vz-lead{margin-bottom:22px}
+.vz p.vz-reassure{margin-bottom:34px}
 .vz a{color:inherit;text-decoration:none}
 .vz-wrap{max-width:1160px;margin:0 auto;padding:0 24px}
 .vz-eb{display:inline-flex;align-items:center;gap:8px;font:600 11px/1 Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--bleu);margin-bottom:14px}

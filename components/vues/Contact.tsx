@@ -155,6 +155,7 @@ const CSS = String.raw`
 .cx *{box-sizing:border-box}
 .cx h1,.cx h2,.cx h3{font-family:Outfit,Inter,sans-serif;color:var(--nuit);letter-spacing:-.02em;line-height:1.14;margin:0}
 .cx p{margin:0}
+.cx p.cx-sub{margin-bottom:22px}
 .cx a{color:inherit;text-decoration:none}
 .cx-wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .cx-eb{display:inline-block;font:600 11px/1 Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:14px}
