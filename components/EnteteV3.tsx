@@ -81,8 +81,8 @@ export default function EnteteV3({
 
   return (
     <>
-    <div className="bg-primary-container border-b border-white/10">
-      <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-[38px] flex items-center justify-center min-[600px]:justify-end gap-[18px] text-[12.5px] font-semibold">
+    <div className="bg-[#0F2438] border-b border-white/[0.08]">
+      <div className="max-w-[1200px] mx-auto px-5 md:px-8 h-[38px] flex items-center justify-center min-[600px]:justify-end gap-[18px] text-[12.5px] font-semibold">
         <a href={`tel:${CONTACT.telephone_tel}`} className="inline-flex items-center gap-1.5 text-[#C9A96A] hover:text-[#DFC38C] transition-colors">
           {IcTel}{CONTACT.telephone}
         </a>
@@ -90,8 +90,8 @@ export default function EnteteV3({
         <span className="hidden min-[600px]:inline text-white/55 font-medium">{HR[lang] ?? HR.fr}</span>
       </div>
     </div>
-    <header className={`${sticky ? "sticky" : "fixed"} top-0 inset-x-0 z-50 bg-primary border-b border-white/10`}>
-      <div className="h-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex min-[1081px]:grid min-[1081px]:grid-cols-[1fr_auto_1fr] items-center justify-between gap-4">
+    <header className={`${sticky ? "sticky" : "fixed"} top-0 inset-x-0 z-50 bg-[#0B1B2E] border-b border-white/10`}>
+      <div className="h-[74px] max-w-[1200px] mx-auto px-5 md:px-8 flex min-[1081px]:grid min-[1081px]:grid-cols-[1fr_auto_1fr] items-center justify-between gap-4">
         <a
           href={L("/")}
           className="flex items-center gap-1.5 text-white text-[16px] font-semibold tracking-[0.22em] shrink-0"
@@ -116,7 +116,7 @@ export default function EnteteV3({
         </nav>
 
         <div className="flex items-center gap-3 md:gap-4 min-[1081px]:justify-self-end">
-          <div className="flex bg-white/10 rounded-md p-[3px] gap-[2px]" role="group" aria-label="Langue">
+          <div className="flex bg-white/[0.08] rounded-md p-[3px] gap-[2px]" role="group" aria-label="Langue">
             {LOCALES.map((l) => (
               <a
                 key={l}
@@ -126,7 +126,7 @@ export default function EnteteV3({
                 aria-current={l === lang ? "true" : undefined}
                 className={`px-[11px] py-[7px] rounded-[5px] text-[11.5px] font-semibold tracking-[0.06em] transition-colors ${
                   l === lang
-                    ? "bg-white/90 text-primary"
+                    ? "bg-white/[0.92] text-[#0B1B2E]"
                     : "text-white/60 hover:text-white"
                 }`}
               >
@@ -137,7 +137,7 @@ export default function EnteteV3({
 
           <a
             href={L("/contact/")}
-            className="hidden sm:inline-flex items-center h-[44px] px-[20px] rounded-sm bg-[#C9A96A] text-[#0B1B2E] text-[13.5px] font-semibold hover:bg-[#DFC38C] hover:-translate-y-px transition whitespace-nowrap"
+            className="hidden sm:inline-flex items-center h-[46px] px-[22px] rounded-[8px] bg-[#C9A96A] text-[#0B1B2E] text-[14.5px] font-semibold hover:bg-[#DFC38C] hover:-translate-y-px transition whitespace-nowrap"
             style={OUTFIT}
           >
             {CTA[lang] ?? CTA.fr}
