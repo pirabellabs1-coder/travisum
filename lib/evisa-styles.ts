@@ -8,6 +8,8 @@ export const EVISA_CSS = String.raw`
 .ev *{box-sizing:border-box}
 .ev h1,.ev h2,.ev h3{font-family:Outfit,Inter,sans-serif;color:var(--nuit);letter-spacing:-.02em;line-height:1.15;margin:0}
 .ev p{margin:0}
+.ev .ev-hero p{margin-bottom:16px}
+.ev .ev-warn{margin-top:4px}
 .ev a{color:inherit;text-decoration:none}
 .ev-wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .ev-eb{display:inline-block;font:600 11px/1 Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-bottom:14px}

@@ -99,18 +99,18 @@ export default function EnteteV3({
           aria-label="Travisum"
         >
           TRAVISUM
-          <span className="w-[5px] h-[5px] rounded-full bg-tertiary-fixed-dim mt-0.5" aria-hidden="true" />
+          <span className="w-[5px] h-[5px] rounded-full bg-[#C9A96A] mt-0.5" aria-hidden="true" />
         </a>
 
-        <nav className="hidden min-[1081px]:flex items-center gap-8 min-[1081px]:justify-self-center" aria-label="Navigation">
+        <nav className="hidden min-[1081px]:flex items-center gap-6 min-[1081px]:justify-self-center" aria-label="Navigation">
           {items.map((it) => (
             <a
               key={it.label}
               href={L(it.href)}
-              className="group relative text-[14px] text-white/85 hover:text-white transition-colors py-1 whitespace-nowrap"
+              className="group relative text-[14.5px] text-white/[0.82] hover:text-white transition-colors py-1 whitespace-nowrap"
             >
               {it.label}
-              <span className="pointer-events-none absolute left-0 -bottom-0.5 h-px w-0 bg-tertiary-fixed-dim transition-all duration-200 group-hover:w-full" />
+              <span className="pointer-events-none absolute left-0 -bottom-0.5 h-px w-0 bg-[#C9A96A] transition-all duration-200 group-hover:w-full" />
             </a>
           ))}
         </nav>
