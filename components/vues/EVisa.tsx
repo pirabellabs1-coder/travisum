@@ -139,7 +139,7 @@ export function EVisaVue({ lang = "fr", cheminFr = "/e-visa/" }: { lang?: Locale
                 <div className="ev-cards">
                   {r.pays.map((p) => {
                     const evSlug = EVISA_META[p.nom]?.evSlug;
-                    const href = evSlug ? `${pre}/e-visa/${evSlug}/` : `${pre}/visas/${p.slug}/`;
+                    const href = evSlug ? `${pre}/e-visa/${evSlug}/` : `${pre}/visa/${p.slug}/`;
                     return (
                       <a key={p.nom} className="ev-lcard" href={href}>
                         <div className="ev-lc-top">

@@ -22,7 +22,7 @@ const MARQUEE = [
 const METIERS_META = [
   { icone: "g_translate", href: "/traductions/" },
   { icone: "verified", href: "/legalisations/" },
-  { icone: "airplane_ticket", href: "/visas/" },
+  { icone: "airplane_ticket", href: "/visa/" },
 ];
 
 /* Icônes des 4 étapes du processus, par ordre (indépendant de la langue). */

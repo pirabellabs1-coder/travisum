@@ -2,7 +2,7 @@ import type { Locale } from "@/lib/i18n";
 
 /**
  * Noms localisés (NL/EN) des 69 destinations visa, indexés par slug.
- * Sert aux métadonnées SEO des fiches `/[lang]/visas/{slug}/` (le dico
+ * Sert aux métadonnées SEO des fiches `/[lang]/visa/{slug}/` (le dico
  * `data-pays-i18n.json` ne contient pas les noms de pays). Cohérent avec les
  * `nomLoc` des fiches e-Visa (lib/evisa-contenu.ts). Repli sur le nom FR si absent.
  */

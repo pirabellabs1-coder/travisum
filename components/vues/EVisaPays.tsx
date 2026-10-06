@@ -119,7 +119,7 @@ export function EVisaPaysVue({ slug, lang = "fr", cheminFr }: { slug: string; la
               <div className="evp-links">
                 <a className="ev-btn ev-btn-s" href={L("/contact/")}>{d.ctaBtn} →</a>
                 {p.slug && (
-                  <a className="ev-btn ev-btn-so" href={`${pre}/visas/${p.slug}/`}>{d2.fiche}</a>
+                  <a className="ev-btn ev-btn-so" href={`${pre}/visa/${p.slug}/`}>{d2.fiche}</a>
                 )}
               </div>
             </aside>

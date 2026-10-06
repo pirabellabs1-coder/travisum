@@ -302,7 +302,7 @@ const BODY = String.raw`
   <div class="wrap nav">
     <a href="/" class="logo">TRAVISUM<i></i></a>
     <ul>
-      <li><a class="lk" href="/visas/" data-i="nav1">Visa</a></li>
+      <li><a class="lk" href="/visa/" data-i="nav1">Visa</a></li>
       <li><a class="lk" href="/e-visa/" data-i="navEvisa">e-Visa</a></li>
       <li><a class="lk" href="/traductions/" data-i="nav2">Traduction</a></li>
       <li><a class="lk" href="/legalisations/" data-i="nav3">Légalisation</a></li>
@@ -366,7 +366,7 @@ const BODY = String.raw`
       <h2 class="sec-h" data-i="svH">Une seule équipe pour toutes vos démarches.</h2>
     </div>
     <div class="cards3 rv">
-      <div class="card"><div class="num">01</div><h3 data-i="s1h">Visa</h3><p data-i="s1p">Visa touristique, affaires, études et transit. Constitution du dossier, rendez-vous consulaire, dépôt et récupération.</p><a class="more" href="/visas/"><span data-i="s1a">Découvrir les visas</span><span class="ar">→</span></a></div>
+      <div class="card"><div class="num">01</div><h3 data-i="s1h">Visa</h3><p data-i="s1p">Visa touristique, affaires, études et transit. Constitution du dossier, rendez-vous consulaire, dépôt et récupération.</p><a class="more" href="/visa/"><span data-i="s1a">Découvrir les visas</span><span class="ar">→</span></a></div>
       <div class="card"><div class="num">02</div><h3 data-i="s2h">Traduction</h3><p data-i="s2p">Traductions libres et assermentées, reconnues par les administrations belges et étrangères.</p><a class="more" href="/traductions/"><span data-i="s2a">Voir les tarifs</span><span class="ar">→</span></a></div>
       <div class="card"><div class="num">03</div><h3 data-i="s3h">Légalisation</h3><p data-i="s3p">Apostille, légalisation et dépôts auprès du SPF Justice, des Affaires étrangères, des tribunaux et des ambassades.</p><a class="more" href="/legalisations/"><span data-i="s3a">Comprendre la procédure</span><span class="ar">→</span></a></div>
     </div>
@@ -487,7 +487,7 @@ const BODY = String.raw`
         <p class="hi"><a href="tel:+3226420025">02 642 00 25</a></p>
       </div>
       <div class="fcol"><h4 data-i="fS">Services</h4>
-        <a href="/visas/" data-i="nav1">Visa</a><a href="/e-visa/" data-i="navEvisa">e-Visa</a><a href="/traductions/" data-i="nav2">Traduction</a><a href="/legalisations/" data-i="nav3">Légalisation</a></div>
+        <a href="/visa/" data-i="nav1">Visa</a><a href="/e-visa/" data-i="navEvisa">e-Visa</a><a href="/traductions/" data-i="nav2">Traduction</a><a href="/legalisations/" data-i="nav3">Légalisation</a></div>
       <div class="fcol"><h4>Travisum</h4>
         <a href="/a-propos/" data-i="nav5">À propos</a><a href="#steps" data-i="nav4">Comment ça marche</a><a href="/contact/" data-i="fCt">Contact</a><a href="/ressources/#faq">FAQ</a></div>
       <div class="fcol"><h4 data-i="fL">Informations légales</h4>
@@ -924,7 +924,7 @@ export default function AccueilV3({ initialLang = "fr" }: { initialLang?: Locale
 
     function renderMaillage() {
       const d = T[lang]; const pre = lang === "fr" ? "" : "/" + lang;
-      const dg = $("#destgrid"); if (dg) dg.innerHTML = DEST.map(([n, t, slug]) => `<a class="dcard" href="${pre}/visas/${slug}/"><b>${n}</b><span>${t}</span></a>`).join("");
+      const dg = $("#destgrid"); if (dg) dg.innerHTML = DEST.map(([n, t, slug]) => `<a class="dcard" href="${pre}/visa/${slug}/"><b>${n}</b><span>${t}</span></a>`).join("");
       const lg = $("#langgrid"); if (lg) lg.innerHTML = LANGS.map((l) => `<a class="lchip" href="${pre}/traductions/">${l}</a>`).join("") + `<a class="more-l" href="${pre}/traductions/">${d.dsMore}</a>`;
     }
 

@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/", 1.0, "weekly"],
     ["/traductions/", 0.9, "monthly"],
     ["/legalisations/", 0.9, "monthly"],
-    ["/visas/", 0.9, "monthly"],
+    ["/visa/", 0.9, "monthly"],
     ["/e-visa/", 0.9, "monthly"],
     ["/ressources/", 0.6, "monthly"],
     ["/a-propos/", 0.6, "monthly"],
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const chemins: [string, number, "weekly" | "monthly" | "yearly"][] = [
     ...fixes,
-    ...PAYS.map((p) => [`/visas/${p.slug}/`, 0.8, "monthly"] as [string, number, "monthly"]),
+    ...PAYS.map((p) => [`/visa/${p.slug}/`, 0.8, "monthly"] as [string, number, "monthly"]),
     ...EVISA_PAYS.map((p) => [`/e-visa/${p.evSlug}/`, 0.7, "monthly"] as [string, number, "monthly"]),
   ];
 

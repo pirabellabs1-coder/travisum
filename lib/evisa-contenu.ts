@@ -7,7 +7,7 @@
 
 export type EVisaPays = {
   nom: string;
-  slug?: string; // fiche /visas/{slug}/ si disponible
+  slug?: string; // fiche /visa/{slug}/ si disponible
   intro: string;
   nationalites?: string; // note « Nationalités européennes » propre au pays
   tourisme?: string;

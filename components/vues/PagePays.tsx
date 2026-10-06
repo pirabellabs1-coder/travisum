@@ -17,7 +17,7 @@ import VoletsPays, { type Volet } from "@/components/vues/VoletsPays";
 
 /**
  * Fiche pays — gabarit le plus important pour le référencement. Style « v3 ».
- * Les URL (`/visas/inde/`) et les contenus (synthèse à jour, pièces à fournir)
+ * Les URL (`/visa/inde/`) et les contenus (synthèse à jour, pièces à fournir)
  * sont préservés.
  */
 
@@ -124,7 +124,7 @@ export function PagePaysVue({
           <nav className="bread" aria-label={d.fil_aria}>
             <a href={L("/")}>{d.fil_accueil}</a>
             <span>/</span>
-            <a href={L("/visas/")}>{d.fil_visas}</a>
+            <a href={L("/visa/")}>{d.fil_visas}</a>
             <span>/</span>
             <span className="cur">{fiche.nom}</span>
           </nav>
@@ -184,14 +184,14 @@ export function PagePaysVue({
           <h2 className="sec-h">{d.pp_autres_h}</h2>
           <div className="dest">
             {voisins.map((v) => (
-              <a key={v.slug} className="dcard" href={`${pre}/visas/${v.slug}/`}>
+              <a key={v.slug} className="dcard" href={`${pre}/visa/${v.slug}/`}>
                 <b>{v.nom}</b>
                 <span>{d.pp_fiche}</span>
               </a>
             ))}
           </div>
           <p style={{ marginTop: 26 }}>
-            <a className="more-l" href={L("/visas/#toutes")}>
+            <a className="more-l" href={L("/visa/#toutes")}>
               {d.pp_toutes.replace("{n}", String(PAYS.length))}
             </a>
           </p>

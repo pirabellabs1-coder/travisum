@@ -177,7 +177,7 @@ export function ToutesDestinations({
     noeud: (
       <a
         className="group flex items-center justify-between gap-3 px-5 py-4 border border-tertiary-fixed-dim/25 rounded-sm bg-surface-container-lowest hover:border-tertiary-fixed-dim transition-colors"
-        href={lien(lang, `/visas/${SLUGS[pays]}/`)}
+        href={lien(lang, `/visa/${SLUGS[pays]}/`)}
       >
         <span className="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
           {pays}
@@ -231,7 +231,7 @@ export function DestinationsPhares({
           chapeau="Les corridors diplomatiques les plus demandés pour les professionnels belges."
           sansMarge
         />
-        <LienFleche href={lien(lang, "/visas/#toutes")}>Toutes les destinations</LienFleche>
+        <LienFleche href={lien(lang, "/visa/#toutes")}>Toutes les destinations</LienFleche>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">

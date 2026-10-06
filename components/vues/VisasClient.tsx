@@ -106,7 +106,7 @@ export function RechercheDestination({
     e.preventDefault();
     const s = trouver();
     if (s) {
-      window.location.href = `${pre}/visas/${s}/`;
+      window.location.href = `${pre}/visa/${s}/`;
     } else {
       setErr(true);
     }
@@ -258,7 +258,7 @@ export function GrilleDestinations({
         <ul className="vz-grid">
           {filtres.map((p) => (
             <li key={p.slug}>
-              <a href={`${pre}/visas/${p.slug}/`} aria-label={`${p.nom} — ${t.fiche}`}>
+              <a href={`${pre}/visa/${p.slug}/`} aria-label={`${p.nom} — ${t.fiche}`}>
                 <Pastille p={p} />
                 <span className="vz-dname">{p.nom}</span>
                 <span className="vz-darr"><Fleche /></span>

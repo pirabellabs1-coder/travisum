@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const SECOURS: [string, string, string][] = [
   ["Traductions", "Assermentées, jurées et libres.", "/traductions/"],
   ["Légalisations", "Apostille, légalisation, dépôts.", "/legalisations/"],
-  ["Visas de voyage", "70 destinations, fiches à jour.", "/visas/"],
+  ["Visas de voyage", "70 destinations, fiches à jour.", "/visa/"],
 ];
 
 export default function Introuvable() {
@@ -31,7 +31,7 @@ export default function Introuvable() {
             <a className="btn btn-p" href="/">
               Retour à l’accueil <span className="ar">→</span>
             </a>
-            <a className="btn btn-out" href="/visas/">
+            <a className="btn btn-out" href="/visa/">
               Voir les destinations
             </a>
           </div>

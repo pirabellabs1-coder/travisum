@@ -63,7 +63,7 @@ export default function PiedDePage({ lang = "fr" }: { lang?: Locale }) {
               ["Traductions libres", L("/traductions/")],
               ["Légalisation consulaire", L("/legalisations/")],
               ["Apostille de La Haye", L("/legalisations/")],
-              ["Visas de voyage", L("/visas/")],
+              ["Visas de voyage", L("/visa/")],
               ["Tarifs et délais", L("/tarifs/")],
             ]}
           />
@@ -71,11 +71,11 @@ export default function PiedDePage({ lang = "fr" }: { lang?: Locale }) {
           <Colonne
             titre={d.destinations}
             liens={[
-              ["Fédération de Russie", L("/visas/russie/")],
-              ["République Populaire de Chine", L("/visas/chine/")],
-              ["République de l’Inde", L("/visas/inde/")],
-              ["États-Unis — ESTA", L("/visas/etats-unis-2/")],
-              [d.toutes_destinations.replace("{n}", String(DESTINATIONS.length)), L("/visas/#toutes")],
+              ["Fédération de Russie", L("/visa/russie/")],
+              ["République Populaire de Chine", L("/visa/chine/")],
+              ["République de l’Inde", L("/visa/inde/")],
+              ["États-Unis — ESTA", L("/visa/etats-unis-2/")],
+              [d.toutes_destinations.replace("{n}", String(DESTINATIONS.length)), L("/visa/#toutes")],
             ]}
           />
 

@@ -26,7 +26,7 @@ export type Entree = {
 const CHEMINS: Record<CleEntree, string> = {
   traductions: "/traductions/",
   legalisations: "/legalisations/",
-  visas: "/visas/",
+  visas: "/visa/",
   tarifs: "/tarifs/",
   ressources: "/ressources/",
   "a-propos": "/a-propos/",
@@ -140,27 +140,27 @@ export function mega(lang: Locale): Partial<Record<CleEntree, BlocMega>> {
         {
           titre: "Destinations phares",
           liens: [
-            ["Fédération de Russie", L("/visas/russie/")],
-            ["République Populaire de Chine", L("/visas/chine/")],
-            ["République de l’Inde", L("/visas/inde/")],
-            ["États-Unis — ESTA", L("/visas/etats-unis-2/")],
+            ["Fédération de Russie", L("/visa/russie/")],
+            ["République Populaire de Chine", L("/visa/chine/")],
+            ["République de l’Inde", L("/visa/inde/")],
+            ["États-Unis — ESTA", L("/visa/etats-unis-2/")],
           ],
         },
         {
           titre: "Par motif",
           liens: [
-            ["Tourisme", L("/visas/#toutes")],
-            ["Affaires", L("/visas/#toutes")],
-            ["Études", L("/visas/#toutes")],
-            ["Transit", L("/visas/#toutes")],
+            ["Tourisme", L("/visa/#toutes")],
+            ["Affaires", L("/visa/#toutes")],
+            ["Études", L("/visa/#toutes")],
+            ["Transit", L("/visa/#toutes")],
           ],
         },
         {
           titre: "Types de procédure",
           liens: [
-            ["Visa consulaire", L("/visas/#toutes")],
-            ["e-Visa", L("/visas/#toutes")],
-            ["ESTA", L("/visas/etats-unis-2/")],
+            ["Visa consulaire", L("/visa/#toutes")],
+            ["e-Visa", L("/visa/#toutes")],
+            ["ESTA", L("/visa/etats-unis-2/")],
           ],
         },
       ],
@@ -168,7 +168,7 @@ export function mega(lang: Locale): Partial<Record<CleEntree, BlocMega>> {
         surtitre: "Vérificateur",
         titre: "Ai-je besoin d’un visa pour ce voyage ?",
         action: "Vérifier mes conditions",
-        href: L("/visas/#verifier"),
+        href: L("/visa/#verifier"),
       },
     },
   };

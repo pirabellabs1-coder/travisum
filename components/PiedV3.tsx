@@ -70,7 +70,7 @@ export default function PiedV3({ lang = "fr" }: { lang?: Locale }) {
           </div>
           <div className="fcol">
             <h4>{d.services}</h4>
-            <a href={L("/visas/")}>{d.visa}</a>
+            <a href={L("/visa/")}>{d.visa}</a>
             <a href={L("/e-visa/")}>{d.evisa}</a>
             <a href={L("/traductions/")}>{d.trad}</a>
             <a href={L("/legalisations/")}>{d.legal}</a>

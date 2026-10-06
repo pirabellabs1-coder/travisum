@@ -245,7 +245,7 @@ const VOL_LABEL: Record<SousPage["type"], string> = {
   "autre": "Autre",
 };
 
-export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale; cheminFr?: string }) {
+export function VisasVue({ lang = "fr", cheminFr = "/visa/" }: { lang?: Locale; cheminFr?: string }) {
   const d = T[lang];
   const L = (c: string) => lien(lang, c);
   const pre = lang === "fr" ? "" : "/" + lang;
@@ -329,7 +329,7 @@ export function VisasVue({ lang = "fr", cheminFr = "/visas/" }: { lang?: Locale;
             <p className="vz-sub">{d.popText}</p>
             <div className="vz-pop">
               {POP.map((p) => (
-                <a key={p.slug} className="vz-pcard" href={`${pre}/visas/${p.slug}/`}>
+                <a key={p.slug} className="vz-pcard" href={`${pre}/visa/${p.slug}/`}>
                   <span
                     className="vz-pimg"
                     style={{ backgroundImage: `url(/assets/img/photos/visa-${p.slug}.jpg)` }}

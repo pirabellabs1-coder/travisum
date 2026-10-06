@@ -11,7 +11,7 @@ export function RessourcesVue({ lang = "fr", cheminFr = "/ressources/" }: { lang
   const guides: [string, string, string, string][] = [
     ["01", d.re_g1h, d.re_g1p, L("/traductions/")],
     ["02", d.re_g2h, d.re_g2p, L("/legalisations/")],
-    ["03", d.re_g3h, d.re_g3p, L("/visas/")],
+    ["03", d.re_g3h, d.re_g3p, L("/visa/")],
   ];
 
   return (
@@ -56,7 +56,7 @@ export function RessourcesVue({ lang = "fr", cheminFr = "/ressources/" }: { lang
           <div className="eb">{d.re_l_eb}</div>
           <h2 className="sec-h">{d.re_l_h}</h2>
           <p className="sec-p">{d.re_l_p.replace("{n}", String(PAYS.length))}</p>
-          <a className="btn btn-out-d" href={L("/visas/")}>{d.re_l_btn} <span className="ar">→</span></a>
+          <a className="btn btn-out-d" href={L("/visa/")}>{d.re_l_btn} <span className="ar">→</span></a>
         </div>
       </section>
 

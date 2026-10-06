@@ -35,6 +35,10 @@ const REDIR = new Map(redirects.map((r) => [r.source, { to: r.destination, code:
 app.use((req, res, next) => {
   const hit = REDIR.get(req.path);
   if (hit) return res.redirect(hit.code, hit.to);
+  // Renommage /visas -> /visa (toutes langues) pour les URL directes non listées
+  if (/^(?:\/(?:nl|en))?\/visas(\/|$)/.test(req.path)) {
+    return res.redirect(308, req.path.replace(/\/visas(\/|$)/, "/visa$1"));
+  }
   next();
 });
 

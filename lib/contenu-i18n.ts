@@ -169,7 +169,7 @@ export const ACCUEIL: Trad<Accueil> = {
     doors: [
       ["J’ai un document à faire traduire", "/traductions/"],
       ["J’ai un document à faire légaliser", "/legalisations/"],
-      ["Je pars à l’étranger", "/visas/"],
+      ["Je pars à l’étranger", "/visa/"],
     ],
     stats: ["Langues traitées", "Dépôt & retrait", "Traducteurs jurés", "Vues Google"],
     metiers_surtitre: "Notre expertise",
@@ -228,7 +228,7 @@ export const ACCUEIL: Trad<Accueil> = {
     doors: [
       ["Ik moet een document laten vertalen", "/traductions/"],
       ["Ik moet een document laten legaliseren", "/legalisations/"],
-      ["Ik vertrek naar het buitenland", "/visas/"],
+      ["Ik vertrek naar het buitenland", "/visa/"],
     ],
     stats: ["Behandelde talen", "Indienen & ophalen", "Beëdigde vertalers", "Google-weergaven"],
     metiers_surtitre: "Onze expertise",
@@ -287,7 +287,7 @@ export const ACCUEIL: Trad<Accueil> = {
     doors: [
       ["I need a document translated", "/traductions/"],
       ["I need a document legalised", "/legalisations/"],
-      ["I’m travelling abroad", "/visas/"],
+      ["I’m travelling abroad", "/visa/"],
     ],
     stats: ["Languages handled", "Drop-off & pickup", "Sworn translators", "Google views"],
     metiers_surtitre: "Our expertise",
